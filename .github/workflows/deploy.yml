@@ -29,6 +29,12 @@ jobs:
       - run: npm run lint
       - run: npm test
 
+      # Media are fetched locally (network + ffmpeg) and committed; the bundles must match them.
+      - name: Check generated content is up to date
+        run: |
+          npm run content:build
+          git diff --exit-code -- public/content
+
       - name: Build
         run: npm run build
         env:
