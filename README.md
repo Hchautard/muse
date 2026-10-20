@@ -7,14 +7,15 @@ le contenu est statique, la progression reste sur l'appareil.
 Le cahier des charges complet est dans [`PLAN.md`](PLAN.md), les choix de conception dans
 [`DECISIONS.md`](DECISIONS.md).
 
-> **État : phase 1** — squelette installable, accueil factice et un exercice QCM image codé en
-> dur. Le pipeline de contenu arrive en phase 2.
+> **État : phase 2** — pipeline de contenu (Wikidata, Commons, validation) et premier parcours :
+> « Musique classique », unité 1 « Les grands repères » (8 leçons, 24 œuvres avec extraits). Les
+> sessions d'exercices arrivent en phase 3.
 
 ## Prérequis
 
 - Node.js ≥ 22.12 (voir `.nvmrc`)
 - npm 10+
-- Pour les scripts de contenu (phase 2) : `ffmpeg` dans le `PATH`
+- Pour les scripts de contenu : `ffmpeg` et `ffprobe` dans le `PATH`
 
 ## Commandes
 
@@ -29,6 +30,10 @@ Le cahier des charges complet est dans [`PLAN.md`](PLAN.md), les choix de concep
 | `npm run lint`       | ESLint                                                     |
 | `npm run format`     | Formater avec Prettier (`format:check` pour vérifier)      |
 | `npm run icons`      | Régénérer les icônes PNG depuis `public/icons/icon.svg`    |
+| `npm run content`    | Pipeline de contenu complet (les trois étapes ci-dessous)  |
+| `content:ingest`     | Compléter `content/entities/*.yaml` depuis Wikidata        |
+| `content:media`      | Télécharger et convertir images et extraits audio          |
+| `content:build`      | Valider le contenu et générer `public/content/*.json`      |
 
 Pour reproduire localement le build de GitHub Pages (servi sous `/muse/`) :
 
@@ -43,13 +48,24 @@ BASE_PATH=/muse/ npm run build && BASE_PATH=/muse/ npm run preview
 ## Structure
 
 ```
+content/          SOURCE éditable à la main (YAML)
+├── courses/      unités et leçons de chaque parcours
+├── entities/     œuvres, compositeurs, périodes…
+├── manifests/    extraits audio choisis à la main
+├── generated/    registre des médias (écrit par content:media)
+└── TO_REVIEW.md  affirmations, dates et licences à vérifier
+scripts/          pipeline de contenu (Node + TypeScript, lancé avec tsx)
 src/
 ├── app/          routes, layout, bandeau de mise à jour
-├── features/     un dossier par écran (home, session, exercises…)
+├── content/      chargement et index du contenu
 ├── engine/       logique pure, sans React ni IndexedDB, couverte par Vitest
-└── ui/           composants partagés (icônes)
-scripts/          scripts Node (icônes ; pipeline de contenu en phase 2)
-public/           fichiers statiques (icônes, image de démo)
+├── features/     un dossier par écran (home, course, exercises…)
+├── schemas/      schémas zod partagés par l'app et les scripts
+└── ui/           composants partagés
+public/
+├── content/      JSON GÉNÉRÉS (ne pas éditer)
+├── media/        images et audio GÉNÉRÉS
+└── icons/
 ```
 
 ## Déploiement (GitHub Pages)
@@ -87,13 +103,48 @@ Recharger » apparaît en haut de l'écran.
 > **Mode silencieux** : le comportement de l'audio quand le commutateur silencieux de l'iPhone
 > est activé sera testé et documenté ici en phase 3 (premier exercice audio).
 
+## Ajouter du contenu
+
+Tout se passe dans `content/` ; `public/content/` et `public/media/` sont générés.
+
+1. **Entités** — ajouter une fiche dans `content/entities/<parcours>-*.yaml` :
+   ```yaml
+   - id: debussy-la-mer # identifiant stable, minuscules et tirets
+     type: work # work, person, period, movement, concept, instrument
+     name: La Mer
+     wikidataId: Q1057812
+     relations:
+       inPeriod: musique-debut-xxe
+     summary: >-
+       Une à trois phrases factuelles, montrées après la réponse.
+   ```
+   `createdBy`, l'année, les dates d'une personne et son portrait sont complétés par
+   `npm run content:ingest`. Une valeur écrite à la main n'est jamais écrasée : les désaccords avec
+   Wikidata sont listés dans `reports/ingest.md`.
+2. **Extrait audio** — l'ajouter dans `content/manifests/<parcours>-audio.yaml` (fichier Commons,
+   début, durée de 15 à 25 s). Hors Commons, renseigner aussi `credit`, `license` et `sourceUrl`.
+3. **Leçon** — référencer les nouvelles entités dans `content/courses/<parcours>.yaml` (au moins
+   3 par leçon).
+4. Lancer `npm run content`, vérifier le rapport, écouter les extraits dans l'écran Parcours
+   (toucher une leçon), puis commiter `content/`, `public/content/` et `public/media/`.
+
+Le build refuse le contenu, avec un message par problème, si un identifiant est dupliqué, si une
+relation pointe dans le vide, si un média manque, si une leçon introduit moins de 3 entités, ou si
+une œuvre ne peut pas être exercée avec les compétences de sa leçon (extrait, compositeur,
+période ou année manquants).
+
+**Wikimedia** limite fortement les téléchargements : le pipeline fait une requête par seconde sur
+les API, attend 5 s entre deux fichiers et respecte `Retry-After`. Déjà téléchargés, les fichiers
+sont gardés dans `.cache/` et ne sont pas retéléchargés. Pour s'identifier comme le demande la
+[politique User-Agent](https://meta.wikimedia.org/wiki/User-Agent_policy), définir
+`WIKIMEDIA_CONTACT` (adresse ou URL de contact) avant de lancer le pipeline.
+
 ## Contenu et licences
 
-Seuls les médias du domaine public ou sous licence libre (CC0, CC BY, CC BY-SA) sont acceptés,
-avec auteur, licence et source conservés pour chaque fichier et affichés après chaque réponse.
+Seuls les médias du domaine public ou sous licence libre (CC0, CC BY, CC BY-SA) sont acceptés : le
+pipeline refuse tout autre fichier. Auteur, licence et source de chaque média sont conservés dans
+`content/generated/media.json` et affichés dans l'app avec le média.
 
-Image de démonstration de la phase 1 : Johannes Vermeer, _La Jeune Fille à la perle_ (vers
-1665), Mauritshuis, La Haye — domaine public, via
-[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1665_Girl_with_a_Pearl_Earring.jpg).
-
-L'ajout de contenu (YAML dans `content/`, scripts `npm run content`) sera documenté en phase 2.
+Les points incertains (dates, attributions, licences d’enregistrements
+historiques, points de départ des extraits) sont listés dans
+[`content/TO_REVIEW.md`](content/TO_REVIEW.md).
