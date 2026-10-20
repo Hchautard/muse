@@ -1,0 +1,125 @@
+@import 'tailwindcss';
+
+/* Semantic color tokens; dark values follow the system setting. */
+:root {
+  color-scheme: light dark;
+  --paper: #f6f2ea;
+  --surface: #fffdf8;
+  --ink: #1d1a16;
+  --muted: #6b6359;
+  --line: #e2dacb;
+  --accent: #7b2232;
+  --accent-ink: #fffaf2;
+  --gold: #9a7632;
+  --success: #2f6b4f;
+  --success-soft: #e3efe6;
+  --danger: #a3392c;
+  --danger-soft: #f6e3df;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #16130f;
+    --surface: #211d18;
+    --ink: #f1ebe0;
+    --muted: #a59c8e;
+    --line: #3a332a;
+    --accent: #b8495b;
+    --accent-ink: #fffaf2;
+    --gold: #d2b06a;
+    --success: #7cc59d;
+    --success-soft: #1d3127;
+    --danger: #e58a7b;
+    --danger-soft: #3a211c;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-gold: var(--gold);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+
+  --font-serif: ui-serif, 'New York', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+
+  --animate-sheet-up: sheet-up 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --animate-fade-in: fade-in 200ms ease-out;
+}
+
+@keyframes sheet-up {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* Safe-area helpers for the iPhone notch and home indicator. */
+@utility pt-safe {
+  padding-top: max(env(safe-area-inset-top), 0.75rem);
+}
+@utility pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom), 1rem);
+}
+@utility px-safe {
+  padding-left: max(env(safe-area-inset-left), 1rem);
+  padding-right: max(env(safe-area-inset-right), 1rem);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+    min-height: 100dvh;
+    overscroll-behavior-y: none;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-serif;
+  }
+
+  /* No accidental double-tap zoom on controls. */
+  button,
+  a,
+  [role='button'] {
+    touch-action: manipulation;
+  }
+
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 1ms !important;
+      transition-duration: 1ms !important;
+    }
+  }
+}
