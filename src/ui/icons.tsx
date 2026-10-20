@@ -58,3 +58,37 @@ export function FlameIcon(props: IconProps) {
     </Icon>
   )
 }
+
+export function ArrowLeftIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M19 12H5M11 6l-6 6 6 6" />
+    </Icon>
+  )
+}
+
+export function LockIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <rect x="5" y="11" width="14" height="10" rx="2" />
+      <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+    </Icon>
+  )
+}
+
+export function PlayIcon(props: IconProps) {
+  return (
+    <Icon {...props} fill="currentColor" stroke="none">
+      <path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z" />
+    </Icon>
+  )
+}
+
+export function PauseIcon(props: IconProps) {
+  return (
+    <Icon {...props} fill="currentColor" stroke="none">
+      <rect x="6" y="5" width="4" height="14" rx="1" />
+      <rect x="14" y="5" width="4" height="14" rx="1" />
+    </Icon>
+  )
+}

@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router'
+import { CoursePage } from '../features/course/CoursePage'
 import { HomePage } from '../features/home/HomePage'
-import { DemoSessionPage } from '../features/session/DemoSessionPage'
 import { AppLayout } from './AppLayout'
 import { NotFoundPage } from './NotFoundPage'
 
@@ -13,7 +13,7 @@ export const router = createBrowserRouter(
       element: <AppLayout />,
       children: [
         { index: true, element: <HomePage /> },
-        { path: 'session/demo', element: <DemoSessionPage /> },
+        { path: 'parcours/:courseId', element: <CoursePage /> },
         { path: '*', element: <NotFoundPage /> },
       ],
     },

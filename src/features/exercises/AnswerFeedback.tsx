@@ -1,4 +1,5 @@
 import { CheckIcon, CrossIcon } from '../../ui/icons'
+import { licenseLabel } from '../../schemas/licenses'
 import type { MediaCredit } from './types'
 
 interface AnswerFeedbackProps {
@@ -44,7 +45,7 @@ export function AnswerFeedback({
           <p className="text-[15px] leading-relaxed">{summary}</p>
           {credit && (
             <p className="text-xs text-muted">
-              {credit.credit} · {credit.license} ·{' '}
+              {credit.credit} · {licenseLabel(credit.license)} ·{' '}
               <a href={credit.sourceUrl} target="_blank" rel="noreferrer" className="underline">
                 source
               </a>
