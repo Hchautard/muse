@@ -27,5 +27,11 @@ export default defineConfig([
       globals: globals.node,
     },
   },
+  {
+    files: ['**/*.ts', '**/*.tsx'],
+    rules: {
+      '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true }],
+    },
+  },
   prettier,
 ])

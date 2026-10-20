@@ -31,3 +31,6 @@ coverage
 
 # Content pipeline download cache
 .cache
+
+# Content pipeline reports
+reports
