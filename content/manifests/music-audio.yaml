@@ -1,0 +1,126 @@
+# Extraits audio du parcours musique, choisis à la main parmi des enregistrements libres.
+#   source   : fichier Wikimedia Commons (« File:… » ou URL de la page), ou URL directe
+#   start    : début de l'extrait, en secondes ou « m:ss » (le silence initial est retiré)
+#   duration : 15 à 25 s
+#   credit / license / sourceUrl : obligatoires pour une source hors Commons, sinon facultatifs
+#     (ils remplacent alors les métadonnées Commons). Les crédits ci-dessous reprennent les
+#     descriptions des fichiers Commons, dont le champ « auteur » ne nomme souvent que le compositeur.
+# Les points de départ n'ont pas été écoutés : voir content/TO_REVIEW.md.
+course: music
+excerpts:
+  # — Bach —
+  - entity: bach-toccata-fugue-re-mineur
+    source: File:Toccata et Fugue BWV565.ogg
+    credit: Ashtar Moïra (orgue)
+    duration: 20
+  - entity: bach-brandebourgeois-3
+    source: File:Bach - Brandenburg Concerto No. 3 - 1. Allegro.ogg
+    credit: Concert de décembre 2006, collection Al Goldstein (ibiblio)
+    duration: 20
+  - entity: bach-suite-orchestre-3
+    source: File:Air - Air Force Strings - United States Air Force Band.mp3
+    credit: Air Force Strings, United States Air Force Band
+    duration: 25
+
+  # — Vivaldi —
+  - entity: vivaldi-printemps
+    source: File:Vivaldi - Four Seasons 1 Spring mvt 1 Allegro - John Harrison violin.oga
+    credit: John Harrison (violon), Wichita State University
+    duration: 20
+  - entity: vivaldi-ete
+    source: File:Vivaldi - Four Seasons 2 Summer mvt 3 Presto - John Harrison violin.oga
+    credit: John Harrison (violon), Wichita State University
+    duration: 20
+  - entity: vivaldi-hiver
+    source: File:Vivaldi - Four Seasons 4 Winter mvt 1 Allegro non molto - John Harrison violin.oga
+    credit: John Harrison (violon), Wichita State University
+    duration: 25
+
+  # — Mozart —
+  - entity: mozart-petite-musique-de-nuit
+    source: File:Mozart - Eine kleine Nachtmusik - 1. Allegro.ogg
+    credit: Advent Chamber Orchestra, dir. Roxanna Pavel Goldstein (2005)
+    duration: 20
+  - entity: mozart-symphonie-40
+    source: File:Mozart Symphony 40 G minor - 1 Molto allegro.oga
+    credit: Tsumugi Orchestra, dir. Takashi Inoue (2010)
+    duration: 20
+  - entity: mozart-requiem
+    source: File:Mozart - Requiem (Krips) - VIII. Lacrimosa.flac
+    credit: Dir. Josef Krips, Decca (1950)
+    duration: 25
+    note: Lacrimosa
+
+  # — Beethoven —
+  - entity: beethoven-symphonie-5
+    source: File:Ludwig van Beethoven - Symphonie 5 c-moll - 1. Allegro con brio.ogg
+    credit: Fulda Symphonic Orchestra, dir. Simon Schindler (2002)
+    duration: 20
+  - entity: beethoven-lettre-a-elise
+    source: File:Fur Elise.ogg
+    credit: Sebion7125
+    duration: 20
+  - entity: beethoven-sonate-clair-de-lune
+    source: "File:Ludwig van Beethoven - sonata no. 14 in c sharp minor 'moonlight', op. 27 no. 2 - i. adagio sostenuto.ogg"
+    credit: Paul Pitman (piano), Musopen
+    duration: 25
+
+  # — Chopin —
+  - entity: chopin-nocturne-op9-2
+    source: File:Chopin - Nocturne No. 2 in E-flat major, Op. 9 No. 2 (Frank Levy).flac
+    credit: Frank Lévy (piano)
+    duration: 25
+  - entity: chopin-polonaise-heroique
+    source: "File:Chopin - Polonaise No. 6 in A-flat major, Op. 53 'Héroïque' (Luke Faulkner).flac"
+    credit: Luke Faulkner (piano)
+    duration: 25
+  - entity: chopin-etude-revolutionnaire
+    source: "File:Chopin - 12 Études, Op. 10 - No. 12 in C minor 'Revolutionary' (Edward Neeman).flac"
+    credit: Edward Neeman (piano), Musopen
+    duration: 20
+
+  # — Tchaïkovski —
+  - entity: tchaikovski-lac-des-cygnes
+    source: File:Tchaikovsky Swan Lake Op.20 No.10. Scène.ogg
+    credit: Enregistrement HMV (1933), archives CHARM
+    duration: 25
+  - entity: tchaikovski-casse-noisette
+    source: File:Tchaikovsky - Dance of the Sugar Plum Fairy - The Nutcracker.ogg
+    credit: Free Classical Music on YouTube (interprète non précisé)
+    duration: 20
+    note: Danse de la fée Dragée
+  - entity: tchaikovski-concerto-piano-1
+    source: File:Tchaikovsky, Concerto No.1 in B-flat minor Op.23, I. Allegro.ogg
+    credit: Musopen (interprète non précisé)
+    duration: 25
+
+  # — Debussy —
+  - entity: debussy-clair-de-lune
+    source: File:Clair de lune (Claude Debussy) Suite bergamasque.ogg
+    credit: Laurens Goedhart (piano), 2011
+    duration: 25
+  - entity: debussy-prelude-faune
+    source: File:Columbia-dwx1550ix-c-wlx1289.ogg
+    credit: Orchestre symphonique Straram, dir. Walther Straram (1930)
+    duration: 25
+  - entity: debussy-arabesques
+    source: File:Claude Debussy - Première Arabesque - Patrizia Prati.ogg
+    credit: Patrizia Prati (piano), 2016
+    duration: 20
+    note: Première arabesque
+
+  # — Ravel —
+  - entity: ravel-bolero
+    source: File:Bolero-Maurice Ravel-Paris Orchestra-Charles Munch-1956.ogg
+    credit: Dir. Charles Munch (1956)
+    # Le thème revient tout au long de l'œuvre ; on prend un passage où l'orchestre est déjà fourni.
+    start: "8:00"
+    duration: 25
+  - entity: ravel-pavane
+    source: File:Maurice Ravel - Thérèse Dussaut - Pavane pour une infante défunte.ogg
+    credit: Thérèse Dussaut (piano)
+    duration: 25
+  - entity: ravel-jeux-d-eau
+    source: File:Ravel's Jeux d'eau, M. 30 - Anna Sutyagina.ogg
+    credit: Anna Sutyagina (piano)
+    duration: 20

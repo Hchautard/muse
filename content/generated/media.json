@@ -1,0 +1,661 @@
+{
+  "assets": [
+    {
+      "id": "bach-brandebourgeois-3-audio",
+      "kind": "audio",
+      "src": "music/audio/bach-brandebourgeois-3-audio.m4a",
+      "bytes": 324727,
+      "durationSec": 20,
+      "credit": "Concert de décembre 2006, collection Al Goldstein (ibiblio)",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bach_-_Brandenburg_Concerto_No._3_-_1._Allegro.ogg",
+      "course": "music",
+      "entityId": "bach-brandebourgeois-3",
+      "origin": {
+        "source": "File:Bach - Brandenburg Concerto No. 3 - 1. Allegro.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "bach-image",
+      "kind": "image",
+      "src": "music/images/bach-image-960.webp",
+      "bytes": 73576,
+      "width": 960,
+      "height": 1246,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/bach-image-480.webp",
+          "bytes": 19962
+        },
+        {
+          "width": 960,
+          "src": "music/images/bach-image-960.webp",
+          "bytes": 73576
+        }
+      ],
+      "credit": "Elias Gottlob Haussmann",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Johann_Sebastian_Bach.png",
+      "course": "music",
+      "entityId": "bach",
+      "origin": {
+        "source": "File:Johann Sebastian Bach.png"
+      }
+    },
+    {
+      "id": "bach-suite-orchestre-3-audio",
+      "kind": "audio",
+      "src": "music/audio/bach-suite-orchestre-3-audio.m4a",
+      "bytes": 405493,
+      "durationSec": 25,
+      "credit": "Air Force Strings, United States Air Force Band",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Air_-_Air_Force_Strings_-_United_States_Air_Force_Band.mp3",
+      "course": "music",
+      "entityId": "bach-suite-orchestre-3",
+      "origin": {
+        "source": "File:Air - Air Force Strings - United States Air Force Band.mp3",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "bach-toccata-fugue-re-mineur-audio",
+      "kind": "audio",
+      "src": "music/audio/bach-toccata-fugue-re-mineur-audio.m4a",
+      "bytes": 324606,
+      "durationSec": 20,
+      "credit": "Ashtar Moïra (orgue)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toccata_et_Fugue_BWV565.ogg",
+      "course": "music",
+      "entityId": "bach-toccata-fugue-re-mineur",
+      "origin": {
+        "source": "File:Toccata et Fugue BWV565.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "beethoven-image",
+      "kind": "image",
+      "src": "music/images/beethoven-image-960.webp",
+      "bytes": 199330,
+      "width": 960,
+      "height": 1154,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/beethoven-image-480.webp",
+          "bytes": 43278
+        },
+        {
+          "width": 960,
+          "src": "music/images/beethoven-image-960.webp",
+          "bytes": 199330
+        }
+      ],
+      "credit": "Joseph Karl Stieler",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beethoven.jpg",
+      "course": "music",
+      "entityId": "beethoven",
+      "origin": {
+        "source": "File:Beethoven.jpg"
+      }
+    },
+    {
+      "id": "beethoven-lettre-a-elise-audio",
+      "kind": "audio",
+      "src": "music/audio/beethoven-lettre-a-elise-audio.m4a",
+      "bytes": 324617,
+      "durationSec": 20,
+      "credit": "Sebion7125",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fur_Elise.ogg",
+      "course": "music",
+      "entityId": "beethoven-lettre-a-elise",
+      "origin": {
+        "source": "File:Fur Elise.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "beethoven-sonate-clair-de-lune-audio",
+      "kind": "audio",
+      "src": "music/audio/beethoven-sonate-clair-de-lune-audio.m4a",
+      "bytes": 405311,
+      "durationSec": 25,
+      "credit": "Paul Pitman (piano), Musopen",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ludwig_van_Beethoven_-_sonata_no._14_in_c_sharp_minor_%27moonlight%27,_op._27_no._2_-_i._adagio_sostenuto.ogg",
+      "course": "music",
+      "entityId": "beethoven-sonate-clair-de-lune",
+      "origin": {
+        "source": "File:Ludwig van Beethoven - sonata no. 14 in c sharp minor 'moonlight', op. 27 no. 2 - i. adagio sostenuto.ogg",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "beethoven-symphonie-5-audio",
+      "kind": "audio",
+      "src": "music/audio/beethoven-symphonie-5-audio.m4a",
+      "bytes": 324788,
+      "durationSec": 20,
+      "credit": "Fulda Symphonic Orchestra, dir. Simon Schindler (2002)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ludwig_van_Beethoven_-_Symphonie_5_c-moll_-_1._Allegro_con_brio.ogg",
+      "course": "music",
+      "entityId": "beethoven-symphonie-5",
+      "origin": {
+        "source": "File:Ludwig van Beethoven - Symphonie 5 c-moll - 1. Allegro con brio.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "chopin-etude-revolutionnaire-audio",
+      "kind": "audio",
+      "src": "music/audio/chopin-etude-revolutionnaire-audio.m4a",
+      "bytes": 324742,
+      "durationSec": 20,
+      "credit": "Edward Neeman (piano), Musopen",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chopin_-_12_%C3%89tudes,_Op._10_-_No._12_in_C_minor_%27Revolutionary%27_(Edward_Neeman).flac",
+      "course": "music",
+      "entityId": "chopin-etude-revolutionnaire",
+      "origin": {
+        "source": "File:Chopin - 12 Études, Op. 10 - No. 12 in C minor 'Revolutionary' (Edward Neeman).flac",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "chopin-image",
+      "kind": "image",
+      "src": "music/images/chopin-image-960.webp",
+      "bytes": 102364,
+      "width": 960,
+      "height": 1295,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/chopin-image-480.webp",
+          "bytes": 25800
+        },
+        {
+          "width": 960,
+          "src": "music/images/chopin-image-960.webp",
+          "bytes": 102364
+        }
+      ],
+      "credit": "Maria Wodzińska",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chopin,_by_Wodzinska.JPG",
+      "course": "music",
+      "entityId": "chopin",
+      "origin": {
+        "source": "File:Chopin, by Wodzinska.JPG"
+      }
+    },
+    {
+      "id": "chopin-nocturne-op9-2-audio",
+      "kind": "audio",
+      "src": "music/audio/chopin-nocturne-op9-2-audio.m4a",
+      "bytes": 405422,
+      "durationSec": 25,
+      "credit": "Frank Lévy (piano)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chopin_-_Nocturne_No._2_in_E-flat_major,_Op._9_No._2_(Frank_Levy).flac",
+      "course": "music",
+      "entityId": "chopin-nocturne-op9-2",
+      "origin": {
+        "source": "File:Chopin - Nocturne No. 2 in E-flat major, Op. 9 No. 2 (Frank Levy).flac",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "chopin-polonaise-heroique-audio",
+      "kind": "audio",
+      "src": "music/audio/chopin-polonaise-heroique-audio.m4a",
+      "bytes": 405394,
+      "durationSec": 25,
+      "credit": "Luke Faulkner (piano)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chopin_-_Polonaise_No._6_in_A-flat_major,_Op._53_%27H%C3%A9ro%C3%AFque%27_(Luke_Faulkner).flac",
+      "course": "music",
+      "entityId": "chopin-polonaise-heroique",
+      "origin": {
+        "source": "File:Chopin - Polonaise No. 6 in A-flat major, Op. 53 'Héroïque' (Luke Faulkner).flac",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "debussy-arabesques-audio",
+      "kind": "audio",
+      "src": "music/audio/debussy-arabesques-audio.m4a",
+      "bytes": 324486,
+      "durationSec": 20,
+      "credit": "Patrizia Prati (piano), 2016",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claude_Debussy_-_Premi%C3%A8re_Arabesque_-_Patrizia_Prati.ogg",
+      "course": "music",
+      "entityId": "debussy-arabesques",
+      "origin": {
+        "source": "File:Claude Debussy - Première Arabesque - Patrizia Prati.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "debussy-clair-de-lune-audio",
+      "kind": "audio",
+      "src": "music/audio/debussy-clair-de-lune-audio.m4a",
+      "bytes": 405413,
+      "durationSec": 25,
+      "credit": "Laurens Goedhart (piano), 2011",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clair_de_lune_(Claude_Debussy)_Suite_bergamasque.ogg",
+      "course": "music",
+      "entityId": "debussy-clair-de-lune",
+      "origin": {
+        "source": "File:Clair de lune (Claude Debussy) Suite bergamasque.ogg",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "debussy-image",
+      "kind": "image",
+      "src": "music/images/debussy-image-960.webp",
+      "bytes": 120380,
+      "width": 960,
+      "height": 1342,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/debussy-image-480.webp",
+          "bytes": 28974
+        },
+        {
+          "width": 960,
+          "src": "music/images/debussy-image-960.webp",
+          "bytes": 120380
+        },
+        {
+          "width": 1600,
+          "src": "music/images/debussy-image-1600.webp",
+          "bytes": 288258
+        }
+      ],
+      "credit": "Atelier Nadar, Bibliothèque nationale de France (restauration Adam Cuerden)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claude_Debussy_by_Atelier_Nadar.jpg",
+      "course": "music",
+      "entityId": "debussy",
+      "origin": {
+        "source": "File:Claude Debussy by Atelier Nadar.jpg"
+      }
+    },
+    {
+      "id": "debussy-prelude-faune-audio",
+      "kind": "audio",
+      "course": "music",
+      "entityId": "debussy-prelude-faune",
+      "origin": {
+        "source": "File:Columbia-dwx1550ix-c-wlx1289.ogg",
+        "start": 0,
+        "duration": 25
+      },
+      "credit": "Orchestre symphonique Straram, dir. Walther Straram (1930)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Columbia-dwx1550ix-c-wlx1289.ogg",
+      "src": "music/audio/debussy-prelude-faune-audio.m4a",
+      "bytes": 403711,
+      "durationSec": 25
+    },
+    {
+      "id": "mozart-image",
+      "kind": "image",
+      "src": "music/images/mozart-image-960.webp",
+      "bytes": 53118,
+      "width": 960,
+      "height": 1231,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/mozart-image-480.webp",
+          "bytes": 15152
+        },
+        {
+          "width": 960,
+          "src": "music/images/mozart-image-960.webp",
+          "bytes": 53118
+        },
+        {
+          "width": 1600,
+          "src": "music/images/mozart-image-1600.webp",
+          "bytes": 121824
+        }
+      ],
+      "credit": "Barbara Krafft",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wolfgang-amadeus-mozart_1.jpg",
+      "course": "music",
+      "entityId": "mozart",
+      "origin": {
+        "source": "File:Wolfgang-amadeus-mozart 1.jpg"
+      }
+    },
+    {
+      "id": "mozart-petite-musique-de-nuit-audio",
+      "kind": "audio",
+      "src": "music/audio/mozart-petite-musique-de-nuit-audio.m4a",
+      "bytes": 324695,
+      "durationSec": 20,
+      "credit": "Advent Chamber Orchestra, dir. Roxanna Pavel Goldstein (2005)",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mozart_-_Eine_kleine_Nachtmusik_-_1._Allegro.ogg",
+      "course": "music",
+      "entityId": "mozart-petite-musique-de-nuit",
+      "origin": {
+        "source": "File:Mozart - Eine kleine Nachtmusik - 1. Allegro.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "mozart-requiem-audio",
+      "kind": "audio",
+      "src": "music/audio/mozart-requiem-audio.m4a",
+      "bytes": 405692,
+      "durationSec": 25,
+      "credit": "Dir. Josef Krips, Decca (1950)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mozart_-_Requiem_(Krips)_-_VIII._Lacrimosa.flac",
+      "course": "music",
+      "entityId": "mozart-requiem",
+      "origin": {
+        "source": "File:Mozart - Requiem (Krips) - VIII. Lacrimosa.flac",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "mozart-symphonie-40-audio",
+      "kind": "audio",
+      "src": "music/audio/mozart-symphonie-40-audio.m4a",
+      "bytes": 324507,
+      "durationSec": 20,
+      "credit": "Tsumugi Orchestra, dir. Takashi Inoue (2010)",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mozart_Symphony_40_G_minor_-_1_Molto_allegro.oga",
+      "course": "music",
+      "entityId": "mozart-symphonie-40",
+      "origin": {
+        "source": "File:Mozart Symphony 40 G minor - 1 Molto allegro.oga",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "ravel-bolero-audio",
+      "kind": "audio",
+      "src": "music/audio/ravel-bolero-audio.m4a",
+      "bytes": 405674,
+      "durationSec": 25,
+      "credit": "Dir. Charles Munch (1956)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bolero-Maurice_Ravel-Paris_Orchestra-Charles_Munch-1956.ogg",
+      "course": "music",
+      "entityId": "ravel-bolero",
+      "origin": {
+        "source": "File:Bolero-Maurice Ravel-Paris Orchestra-Charles Munch-1956.ogg",
+        "start": 480,
+        "duration": 25
+      }
+    },
+    {
+      "id": "ravel-image",
+      "kind": "image",
+      "src": "music/images/ravel-image-960.webp",
+      "bytes": 189854,
+      "width": 960,
+      "height": 1280,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/ravel-image-480.webp",
+          "bytes": 22424
+        },
+        {
+          "width": 960,
+          "src": "music/images/ravel-image-960.webp",
+          "bytes": 189854
+        },
+        {
+          "width": 1600,
+          "src": "music/images/ravel-image-1600.webp",
+          "bytes": 519774
+        }
+      ],
+      "credit": "Photographe inconnu, Bibliothèque nationale de France (1925)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maurice_Ravel_1925.jpg",
+      "course": "music",
+      "entityId": "ravel",
+      "origin": {
+        "source": "File:Maurice Ravel 1925.jpg"
+      }
+    },
+    {
+      "id": "ravel-jeux-d-eau-audio",
+      "kind": "audio",
+      "src": "music/audio/ravel-jeux-d-eau-audio.m4a",
+      "bytes": 324716,
+      "durationSec": 20,
+      "credit": "Anna Sutyagina (piano)",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ravel%27s_Jeux_d%27eau,_M._30_-_Anna_Sutyagina.ogg",
+      "course": "music",
+      "entityId": "ravel-jeux-d-eau",
+      "origin": {
+        "source": "File:Ravel's Jeux d'eau, M. 30 - Anna Sutyagina.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "ravel-pavane-audio",
+      "kind": "audio",
+      "src": "music/audio/ravel-pavane-audio.m4a",
+      "bytes": 405594,
+      "durationSec": 25,
+      "credit": "Thérèse Dussaut (piano)",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maurice_Ravel_-_Th%C3%A9r%C3%A8se_Dussaut_-_Pavane_pour_une_infante_d%C3%A9funte.ogg",
+      "course": "music",
+      "entityId": "ravel-pavane",
+      "origin": {
+        "source": "File:Maurice Ravel - Thérèse Dussaut - Pavane pour une infante défunte.ogg",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "tchaikovski-casse-noisette-audio",
+      "kind": "audio",
+      "src": "music/audio/tchaikovski-casse-noisette-audio.m4a",
+      "bytes": 327066,
+      "durationSec": 20,
+      "credit": "Free Classical Music on YouTube (interprète non précisé)",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tchaikovsky_-_Dance_of_the_Sugar_Plum_Fairy_-_The_Nutcracker.ogg",
+      "course": "music",
+      "entityId": "tchaikovski-casse-noisette",
+      "origin": {
+        "source": "File:Tchaikovsky - Dance of the Sugar Plum Fairy - The Nutcracker.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "tchaikovski-concerto-piano-1-audio",
+      "kind": "audio",
+      "src": "music/audio/tchaikovski-concerto-piano-1-audio.m4a",
+      "bytes": 405787,
+      "durationSec": 25,
+      "credit": "Musopen (interprète non précisé)",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tchaikovsky,_Concerto_No.1_in_B-flat_minor_Op.23,_I._Allegro.ogg",
+      "course": "music",
+      "entityId": "tchaikovski-concerto-piano-1",
+      "origin": {
+        "source": "File:Tchaikovsky, Concerto No.1 in B-flat minor Op.23, I. Allegro.ogg",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "tchaikovski-image",
+      "kind": "image",
+      "src": "music/images/tchaikovski-image-960.webp",
+      "bytes": 72684,
+      "width": 960,
+      "height": 1233,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/tchaikovski-image-480.webp",
+          "bytes": 19954
+        },
+        {
+          "width": 960,
+          "src": "music/images/tchaikovski-image-960.webp",
+          "bytes": 72684
+        },
+        {
+          "width": 1600,
+          "src": "music/images/tchaikovski-image-1600.webp",
+          "bytes": 144762
+        }
+      ],
+      "credit": "Nikolai Kuznetsov",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portr%C3%A4t_des_Komponisten_Pjotr_I._Tschaikowski_(1840-1893).jpg",
+      "course": "music",
+      "entityId": "tchaikovski",
+      "origin": {
+        "source": "File:Porträt des Komponisten Pjotr I. Tschaikowski (1840-1893).jpg"
+      }
+    },
+    {
+      "id": "tchaikovski-lac-des-cygnes-audio",
+      "kind": "audio",
+      "src": "music/audio/tchaikovski-lac-des-cygnes-audio.m4a",
+      "bytes": 405596,
+      "durationSec": 25,
+      "credit": "Enregistrement HMV (1933), archives CHARM",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tchaikovsky_Swan_Lake_Op.20_No.10._Sc%C3%A8ne.ogg",
+      "course": "music",
+      "entityId": "tchaikovski-lac-des-cygnes",
+      "origin": {
+        "source": "File:Tchaikovsky Swan Lake Op.20 No.10. Scène.ogg",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "vivaldi-ete-audio",
+      "kind": "audio",
+      "src": "music/audio/vivaldi-ete-audio.m4a",
+      "bytes": 324693,
+      "durationSec": 20,
+      "credit": "John Harrison (violon), Wichita State University",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vivaldi_-_Four_Seasons_2_Summer_mvt_3_Presto_-_John_Harrison_violin.oga",
+      "course": "music",
+      "entityId": "vivaldi-ete",
+      "origin": {
+        "source": "File:Vivaldi - Four Seasons 2 Summer mvt 3 Presto - John Harrison violin.oga",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "vivaldi-hiver-audio",
+      "kind": "audio",
+      "src": "music/audio/vivaldi-hiver-audio.m4a",
+      "bytes": 405888,
+      "durationSec": 25,
+      "credit": "John Harrison (violon), Wichita State University",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vivaldi_-_Four_Seasons_4_Winter_mvt_1_Allegro_non_molto_-_John_Harrison_violin.oga",
+      "course": "music",
+      "entityId": "vivaldi-hiver",
+      "origin": {
+        "source": "File:Vivaldi - Four Seasons 4 Winter mvt 1 Allegro non molto - John Harrison violin.oga",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "vivaldi-image",
+      "kind": "image",
+      "src": "music/images/vivaldi-image-960.webp",
+      "bytes": 89772,
+      "width": 960,
+      "height": 1275,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/vivaldi-image-480.webp",
+          "bytes": 23070
+        },
+        {
+          "width": 960,
+          "src": "music/images/vivaldi-image-960.webp",
+          "bytes": 89772
+        },
+        {
+          "width": 1600,
+          "src": "music/images/vivaldi-image-1600.webp",
+          "bytes": 294228
+        }
+      ],
+      "credit": "Portrait anonyme, Museo internazionale e biblioteca della musica, Bologne (photo Paul Hermans)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onbekend_-_Antonio_Vivaldi_-_Bologna_Museo_Internationale_e_biblioteca_della_musica_di_bologna_28-04-2012_9-21-050.jpg",
+      "course": "music",
+      "entityId": "vivaldi",
+      "origin": {
+        "source": "File:Onbekend - Antonio Vivaldi - Bologna Museo Internationale e biblioteca della musica di bologna 28-04-2012 9-21-050.jpg"
+      }
+    },
+    {
+      "id": "vivaldi-printemps-audio",
+      "kind": "audio",
+      "src": "music/audio/vivaldi-printemps-audio.m4a",
+      "bytes": 324754,
+      "durationSec": 20,
+      "credit": "John Harrison (violon), Wichita State University",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vivaldi_-_Four_Seasons_1_Spring_mvt_1_Allegro_-_John_Harrison_violin.oga",
+      "course": "music",
+      "entityId": "vivaldi-printemps",
+      "origin": {
+        "source": "File:Vivaldi - Four Seasons 1 Spring mvt 1 Allegro - John Harrison violin.oga",
+        "start": 0,
+        "duration": 20
+      }
+    }
+  ]
+}

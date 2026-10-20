@@ -1,0 +1,114 @@
+# Compositeurs de l'unité 1. Dates et portraits complétés par `npm run content:ingest`.
+course: music
+entities:
+  - id: bach
+    type: person
+    name: Jean-Sébastien Bach
+    wikidataId: Q1339
+    relations:
+      inPeriod: musique-baroque
+    summary: >-
+      Compositeur et organiste allemand, figure majeure de la musique baroque. Son œuvre immense —
+      cantates, passions, pièces pour orgue, pour clavier ou pour orchestre — porte l'art du
+      contrepoint à un sommet.
+    yearStart: 1685
+    yearEnd: 1750
+    image: File:Johann Sebastian Bach.png
+
+  - id: vivaldi
+    type: person
+    name: Antonio Vivaldi
+    wikidataId: Q1340
+    relations:
+      inPeriod: musique-baroque
+    summary: >-
+      Compositeur et violoniste vénitien, prêtre surnommé « le Prêtre roux ». Il a écrit des
+      centaines de concertos, dont Les Quatre Saisons, et a contribué à fixer la forme du concerto
+      en trois mouvements.
+    yearStart: 1678
+    yearEnd: 1741
+    image: "File:Onbekend - Antonio Vivaldi - Bologna Museo Internationale e biblioteca della musica di bologna 28-04-2012 9-21-050.jpg"
+    imageCredit: "Portrait anonyme, Museo internazionale e biblioteca della musica, Bologne (photo Paul Hermans)"
+
+  - id: mozart
+    type: person
+    name: Wolfgang Amadeus Mozart
+    wikidataId: Q254
+    relations:
+      inPeriod: musique-classique
+    summary: >-
+      Compositeur autrichien né à Salzbourg, enfant prodige qui parcourt l'Europe dès son plus jeune
+      âge. Mort à 35 ans, il a abordé tous les genres de son temps : opéras, symphonies, concertos,
+      musique de chambre et musique religieuse.
+    yearStart: 1756
+    yearEnd: 1791
+    image: File:Wolfgang-amadeus-mozart 1.jpg
+
+  - id: beethoven
+    type: person
+    name: Ludwig van Beethoven
+    wikidataId: Q255
+    relations:
+      inPeriod: musique-classique
+    summary: >-
+      Compositeur allemand installé à Vienne, à la charnière des périodes classique et romantique.
+      Malgré une surdité progressive, il compose neuf symphonies, trente-deux sonates pour piano et
+      un opéra, Fidelio.
+    yearStart: 1770
+    yearEnd: 1827
+    image: File:Beethoven.jpg
+
+  - id: chopin
+    type: person
+    name: Frédéric Chopin
+    wikidataId: Q1268
+    relations:
+      inPeriod: musique-romantique
+    summary: >-
+      Compositeur et pianiste polonais installé à Paris à partir de 1831. Presque toute son œuvre
+      est consacrée au piano : nocturnes, études, valses, polonaises et mazurkas.
+    yearStart: 1810
+    yearEnd: 1849
+    image: File:Chopin, by Wodzinska.JPG
+
+  - id: tchaikovski
+    type: person
+    name: Piotr Ilitch Tchaïkovski
+    wikidataId: Q7315
+    relations:
+      inPeriod: musique-romantique
+    summary: >-
+      Compositeur russe de la période romantique, célèbre pour ses ballets — Le Lac des cygnes, La
+      Belle au bois dormant, Casse-Noisette —, ses symphonies et ses concertos.
+    yearStart: 1840
+    yearEnd: 1893
+    image: "File:Porträt des Komponisten Pjotr I. Tschaikowski (1840-1893).jpg"
+
+  - id: debussy
+    type: person
+    name: Claude Debussy
+    wikidataId: Q4700
+    relations:
+      inPeriod: musique-debut-xxe
+    summary: >-
+      Compositeur français dont l'harmonie et les couleurs sonores ont ouvert la voie à la musique
+      moderne. Souvent qualifié d'impressionniste, il refusait lui-même cette étiquette.
+    yearStart: 1862
+    yearEnd: 1918
+    image: File:Claude Debussy by Atelier Nadar.jpg
+    imageCredit: "Atelier Nadar, Bibliothèque nationale de France (restauration Adam Cuerden)"
+
+  - id: ravel
+    type: person
+    name: Maurice Ravel
+    wikidataId: Q1178
+    relations:
+      inPeriod: musique-debut-xxe
+    summary: >-
+      Compositeur français, maître de l'orchestration, souvent associé à Debussy et à
+      l'impressionnisme. Son Boléro, créé en 1928, est l'une des œuvres les plus célèbres du
+      répertoire.
+    yearStart: 1875
+    yearEnd: 1937
+    image: File:Maurice Ravel 1925.jpg
+    imageCredit: "Photographe inconnu, Bibliothèque nationale de France (1925)"

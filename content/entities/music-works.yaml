@@ -1,0 +1,346 @@
+# Œuvres de l'unité 1. Années et compositeurs complétés par `npm run content:ingest` ;
+# une valeur écrite ici n'est jamais écrasée (les désaccords figurent dans reports/ingest.md).
+# Les extraits audio sont choisis dans content/manifests/music-audio.yaml.
+course: music
+entities:
+  # — Bach —
+  - id: bach-toccata-fugue-re-mineur
+    type: work
+    name: Toccata et fugue en ré mineur
+    wikidataId: Q392734
+    relations:
+      inPeriod: musique-baroque
+      createdBy: bach
+    tags: [orgue]
+    summary: >-
+      Pièce pour orgue (BWV 565) au début saisissant, devenue l'une des musiques d'orgue les plus
+      célèbres. Sa date, et même son attribution à Bach, sont discutées par les musicologues.
+    year: 1700
+    audio: File:Toccata et Fugue BWV565.ogg
+
+  - id: bach-brandebourgeois-3
+    type: work
+    name: Concerto brandebourgeois n° 3
+    wikidataId: Q223147
+    relations:
+      inPeriod: musique-baroque
+      createdBy: bach
+    tags: [concerto, cordes]
+    summary: >-
+      L'un des six concertos que Bach dédie en 1721 au margrave de Brandebourg. Il est écrit pour
+      trois violons, trois altos, trois violoncelles et basse continue.
+    year: 1721
+    audio: File:Bach - Brandenburg Concerto No. 3 - 1. Allegro.ogg
+
+  - id: bach-suite-orchestre-3
+    type: work
+    name: Air de la Suite pour orchestre n° 3
+    wikidataId: Q31180976
+    relations:
+      inPeriod: musique-baroque
+      createdBy: bach
+    tags: [suite, cordes]
+    summary: >-
+      Deuxième mouvement de la Suite pour orchestre n° 3 en ré majeur (BWV 1068). Arrangé au XIXe
+      siècle par le violoniste August Wilhelmj, il est aussi connu sous le nom d'« Air sur la corde
+      de sol ».
+    year: 1730
+    audio: File:Air (Bach).ogg
+
+  # — Vivaldi —
+  # Wikidata date ces concertos de 1710 ; on retient ici leur publication (1725).
+  - id: vivaldi-printemps
+    type: work
+    name: Le Printemps (Les Quatre Saisons)
+    wikidataId: Q47008342
+    year: 1725
+    relations:
+      inPeriod: musique-baroque
+      createdBy: vivaldi
+    tags: [concerto, violon]
+    summary: >-
+      Premier des quatre concertos pour violon des Quatre Saisons, publiés en 1725 dans le recueil
+      Il cimento dell'armonia e dell'inventione. Chaque concerto s'accompagne d'un sonnet qui décrit
+      la saison.
+    audio: "File:Vivaldi - Four Seasons 1 Spring mvt 1 Allegro - John Harrison violin.oga"
+
+  - id: vivaldi-ete
+    type: work
+    name: L'Été (Les Quatre Saisons)
+    wikidataId: Q47008540
+    year: 1725
+    relations:
+      inPeriod: musique-baroque
+      createdBy: vivaldi
+    tags: [concerto, violon]
+    summary: >-
+      Deuxième concerto des Quatre Saisons. Son dernier mouvement, un presto tourbillonnant, évoque
+      un orage d'été.
+
+  - id: vivaldi-hiver
+    type: work
+    name: L'Hiver (Les Quatre Saisons)
+    wikidataId: Q47008571
+    year: 1725
+    relations:
+      inPeriod: musique-baroque
+      createdBy: vivaldi
+    tags: [concerto, violon]
+    summary: >-
+      Dernier concerto des Quatre Saisons. Son premier mouvement fait entendre le froid mordant et
+      les dents qui claquent, par des notes répétées et des dissonances.
+
+  # — Mozart —
+  - id: mozart-petite-musique-de-nuit
+    type: work
+    name: Une petite musique de nuit
+    wikidataId: Q12025
+    relations:
+      inPeriod: musique-classique
+      createdBy: mozart
+    tags: [sérénade, cordes]
+    summary: >-
+      Sérénade pour cordes (K. 525) achevée à Vienne en 1787. Son premier mouvement, Allegro, est
+      l'un des airs les plus célèbres de Mozart.
+    year: 1787
+    audio: File:Mozart - Eine kleine Nachtmusik - 1. Allegro.ogg
+
+  - id: mozart-symphonie-40
+    type: work
+    name: Symphonie n° 40
+    wikidataId: Q231390
+    relations:
+      inPeriod: musique-classique
+      createdBy: mozart
+    tags: [symphonie]
+    summary: >-
+      Symphonie en sol mineur (K. 550) composée à l'été 1788, en quelques semaines, avec les
+      symphonies n° 39 et n° 41. C'est l'une des deux seules symphonies de Mozart en mode mineur.
+    year: 1788
+
+  - id: mozart-requiem
+    type: work
+    name: Requiem
+    wikidataId: Q207875
+    relations:
+      inPeriod: musique-classique
+      createdBy: mozart
+    tags: [musique sacrée, chœur]
+    summary: >-
+      Messe des morts en ré mineur (K. 626), laissée inachevée à la mort de Mozart en 1791. Elle a
+      été complétée, notamment par son élève Franz Xaver Süssmayr.
+    year: 1791
+    audio: File:PMLP02751-S002-01-Mozart Requiem Mass.ogg
+
+  # — Beethoven —
+  # Wikidata indique 1807 (début de la composition) ; la symphonie est achevée et créée en 1808.
+  - id: beethoven-symphonie-5
+    type: work
+    name: Symphonie n° 5
+    wikidataId: Q188709
+    year: 1808
+    relations:
+      inPeriod: musique-classique
+      createdBy: beethoven
+    tags: [symphonie]
+    summary: >-
+      Symphonie en ut mineur (op. 67), créée à Vienne en 1808. Son motif initial de quatre notes est
+      l'un des plus reconnaissables de toute la musique.
+    audio: "File:Ludwig van Beethoven - Symphonie 5 c-moll - 1. Allegro con brio.ogg"
+
+  - id: beethoven-lettre-a-elise
+    type: work
+    name: Lettre à Élise
+    wikidataId: Q11980
+    relations:
+      inPeriod: musique-classique
+      createdBy: beethoven
+    tags: [piano]
+    summary: >-
+      Bagatelle pour piano en la mineur (WoO 59), datée de 1810 mais publiée seulement en 1867,
+      après la mort du compositeur. L'identité de la dédicataire, « Élise », reste discutée.
+    year: 1810
+    audio: File:Fur Elise.ogg
+
+  - id: beethoven-sonate-clair-de-lune
+    type: work
+    name: Sonate « Clair de lune »
+    wikidataId: Q12008
+    relations:
+      inPeriod: musique-classique
+      createdBy: beethoven
+    tags: [piano, sonate]
+    summary: >-
+      Sonate pour piano n° 14 (op. 27 n° 2), composée en 1801. Son surnom, qui ne vient pas de
+      Beethoven, lui a été donné après sa mort à cause de son premier mouvement, lent et rêveur.
+    year: 1801
+    audio: File:Beethoven Moonlight 1st movement.ogg
+
+  # — Chopin —
+  - id: chopin-nocturne-op9-2
+    type: work
+    name: Nocturne op. 9 n° 2
+    wikidataId: Q16739831
+    relations:
+      inPeriod: musique-romantique
+      createdBy: chopin
+    tags: [piano, nocturne]
+    summary: >-
+      Nocturne en mi bémol majeur publié en 1832, le plus célèbre des nocturnes de Chopin. Sa
+      mélodie ornée, chantée au-dessus d'un accompagnement régulier, s'inspire du bel canto de
+      l'opéra italien.
+    year: 1830
+    audio: File:Chopin.Nocturne.Es-Dur.opus.9.2.ogg
+
+  - id: chopin-polonaise-heroique
+    type: work
+    name: Polonaise « héroïque »
+    wikidataId: Q3178652
+    relations:
+      inPeriod: musique-romantique
+      createdBy: chopin
+    tags: [piano, polonaise]
+    summary: >-
+      Polonaise en la bémol majeur (op. 53) composée en 1842. Danse nationale polonaise, la
+      polonaise devient chez Chopin, exilé à Paris, une grande pièce de concert.
+    year: 1842
+
+  - id: chopin-etude-revolutionnaire
+    type: work
+    name: Étude « Révolutionnaire »
+    wikidataId: Q147265
+    relations:
+      inPeriod: musique-romantique
+      createdBy: chopin
+    tags: [piano, étude]
+    summary: >-
+      Étude en ut mineur (op. 10 n° 12) écrite vers 1831, au moment où l'insurrection polonaise
+      contre la Russie est écrasée. Sa main gauche déchaînée travaille la vélocité du pianiste.
+    year: 1831
+    audio: "File:Frederic Chopin - Opus 10 - Twelve Grand Etudes - c minor.ogg"
+
+  # — Tchaïkovski —
+  - id: tchaikovski-lac-des-cygnes
+    type: work
+    name: Le Lac des cygnes
+    wikidataId: Q199786
+    year: 1876
+    relations:
+      inPeriod: musique-romantique
+      createdBy: tchaikovski
+    tags: [ballet, orchestre]
+    summary: >-
+      Ballet en quatre actes composé en 1875-1876 et créé au Théâtre Bolchoï de Moscou en 1877. Il
+      raconte l'histoire d'Odette, princesse changée en cygne par un sorcier.
+
+  - id: tchaikovski-casse-noisette
+    type: work
+    name: Casse-Noisette
+    wikidataId: Q193705
+    relations:
+      inPeriod: musique-romantique
+      createdBy: tchaikovski
+    tags: [ballet, orchestre]
+    summary: >-
+      Ballet créé à Saint-Pétersbourg en 1892, d'après un conte d'E. T. A. Hoffmann. La Danse de la
+      fée Dragée y fait entendre le célesta, un instrument alors tout nouveau.
+    year: 1892
+
+  - id: tchaikovski-concerto-piano-1
+    type: work
+    name: Concerto pour piano n° 1
+    wikidataId: Q162935
+    relations:
+      inPeriod: musique-romantique
+      createdBy: tchaikovski
+    tags: [concerto, piano]
+    summary: >-
+      Concerto en si bémol mineur (op. 23) achevé en 1875. Son introduction, où le piano martèle de
+      puissants accords sous le thème des cordes, est l'une des plus célèbres du répertoire.
+    year: 1875
+
+  # — Debussy —
+  - id: debussy-clair-de-lune
+    type: work
+    name: Clair de lune
+    wikidataId: Q29117946
+    year: 1890
+    relations:
+      inPeriod: musique-debut-xxe
+      createdBy: debussy
+    tags: [piano]
+    summary: >-
+      Troisième mouvement de la Suite bergamasque pour piano, esquissée vers 1890 et publiée en
+      1905. Son titre fait référence à un poème de Paul Verlaine.
+    audio: File:Clair de lune (Claude Debussy) Suite bergamasque.ogg
+
+  # Wikidata indique 1892 ; l'œuvre est créée en décembre 1894.
+  - id: debussy-prelude-faune
+    type: work
+    name: Prélude à l'après-midi d'un faune
+    wikidataId: Q1471875
+    year: 1894
+    relations:
+      inPeriod: musique-debut-xxe
+      createdBy: debussy
+    tags: [orchestre, flûte]
+    summary: >-
+      Pièce pour orchestre créée en 1894, inspirée d'un poème de Stéphane Mallarmé. Son solo de
+      flûte initial est souvent présenté comme le point de départ de la musique moderne.
+
+  - id: debussy-arabesques
+    type: work
+    name: Deux Arabesques
+    wikidataId: Q1206599
+    relations:
+      inPeriod: musique-debut-xxe
+      createdBy: debussy
+    tags: [piano]
+    summary: >-
+      Deux pièces pour piano de jeunesse, composées vers 1888-1891. La première, aux lignes fluides
+      en triolets, est l'une des pages les plus jouées de Debussy.
+    year: 1890
+
+  # — Ravel —
+  - id: ravel-bolero
+    type: work
+    name: Boléro
+    wikidataId: Q327331
+    relations:
+      inPeriod: musique-debut-xxe
+      createdBy: ravel
+    tags: [orchestre, ballet]
+    summary: >-
+      Pièce pour orchestre créée à Paris en 1928, d'abord comme musique de ballet pour Ida
+      Rubinstein. Un même thème y est répété sur un rythme immuable de caisse claire, dans un long
+      crescendo.
+    year: 1928
+    audio: "File:Boléro de Ravel, Orchestre de l'Association des Concerts Lamoureux, 1935, 1.mp3"
+
+  - id: ravel-pavane
+    type: work
+    name: Pavane pour une infante défunte
+    wikidataId: Q2271923
+    relations:
+      inPeriod: musique-debut-xxe
+      createdBy: ravel
+    tags: [piano]
+    summary: >-
+      Pièce pour piano composée en 1899, puis orchestrée par Ravel en 1910. Selon le compositeur, le
+      titre a été choisi pour la sonorité des mots plutôt que pour évoquer une infante réelle.
+    year: 1899
+    audio: "File:Maurice Ravel - Thérèse Dussaut - Pavane pour une infante défunte.ogg"
+
+  - id: ravel-jeux-d-eau
+    type: work
+    name: Jeux d'eau
+    wikidataId: Q1684076
+    relations:
+      inPeriod: musique-debut-xxe
+      createdBy: ravel
+    tags: [piano]
+    summary: >-
+      Pièce pour piano composée en 1901 et dédiée à Gabriel Fauré, son professeur. Ses arpèges
+      scintillants évoquent le jaillissement de l'eau et annoncent un nouveau style pianistique.
+    year: 1901
+    audio: File:Ravel's Jeux d'eau, M. 30 - Anna Sutyagina.ogg

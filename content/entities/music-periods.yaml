@@ -1,0 +1,46 @@
+# Grandes périodes de la musique savante occidentale.
+# Les bornes sont conventionnelles (voir content/TO_REVIEW.md).
+course: music
+entities:
+  - id: musique-baroque
+    type: period
+    name: Baroque
+    wikidataId: Q8361
+    yearStart: 1600
+    yearEnd: 1750
+    summary: >-
+      Période qui s'étend environ de 1600 à 1750. La musique baroque aime les contrastes,
+      l'ornementation et la basse continue ; elle voit naître l'opéra et s'épanouir le concerto et
+      la fugue.
+
+  - id: musique-classique
+    type: period
+    name: Classique
+    wikidataId: Q17723
+    yearStart: 1750
+    yearEnd: 1820
+    summary: >-
+      Période qui s'étend environ de 1750 à 1820, autour de Haydn, Mozart et Beethoven. Elle
+      recherche la clarté et l'équilibre : la symphonie, la sonate et le quatuor à cordes y prennent
+      leur forme classique.
+
+  - id: musique-romantique
+    type: period
+    name: Romantique
+    wikidataId: Q207591
+    yearStart: 1820
+    yearEnd: 1900
+    summary: >-
+      Période qui couvre l'essentiel du XIXe siècle. La musique romantique privilégie l'expression
+      des sentiments, la virtuosité et l'imaginaire ; l'orchestre s'agrandit et le piano occupe une
+      place centrale.
+
+  - id: musique-debut-xxe
+    type: period
+    name: Début du XXe siècle
+    yearStart: 1890
+    yearEnd: 1945
+    summary: >-
+      Du tournant du siècle aux années 1940, les compositeurs renouvellent l'harmonie, les timbres
+      et les formes hérités du romantisme. En France, Debussy et Ravel, souvent qualifiés
+      d'impressionnistes, en sont des figures majeures.

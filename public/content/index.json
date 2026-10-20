@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "courses": [
+    {
+      "id": "music",
+      "title": "Musique classique",
+      "version": "05281104a42c",
+      "file": "music.json",
+      "unitCount": 1,
+      "lessonCount": 8,
+      "entityCount": 36,
+      "mediaBytes": 11231910
+    }
+  ]
+}

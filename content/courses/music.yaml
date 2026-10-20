@@ -1,0 +1,41 @@
+# Parcours « Musique classique » : unités et leçons, dans l'ordre de progression.
+# Chaque leçon introduit au moins 3 entités (identifiants de content/entities/).
+id: music
+title: Musique classique
+units:
+  - id: music-1
+    title: Les grands repères
+    description: Huit compositeurs et quatre grandes périodes, du baroque au début du XXe siècle.
+    lessons:
+      - id: music-1-1
+        title: Bach et le baroque
+        introduces: [musique-baroque, bach, bach-toccata-fugue-re-mineur, bach-brandebourgeois-3, bach-suite-orchestre-3]
+        skills: [audio-to-composer, audio-to-period, work-to-date]
+      - id: music-1-2
+        title: Vivaldi et les Quatre Saisons
+        introduces: [vivaldi, vivaldi-printemps, vivaldi-ete, vivaldi-hiver]
+        skills: [audio-to-composer, audio-to-period, work-to-date]
+      - id: music-1-3
+        title: Mozart et le classicisme
+        introduces: [musique-classique, mozart, mozart-petite-musique-de-nuit, mozart-symphonie-40, mozart-requiem]
+        skills: [audio-to-composer, audio-to-period, work-to-date]
+      - id: music-1-4
+        title: Beethoven
+        introduces: [beethoven, beethoven-symphonie-5, beethoven-lettre-a-elise, beethoven-sonate-clair-de-lune]
+        skills: [audio-to-composer, audio-to-period, work-to-date]
+      - id: music-1-5
+        title: Chopin et le romantisme
+        introduces: [musique-romantique, chopin, chopin-nocturne-op9-2, chopin-polonaise-heroique, chopin-etude-revolutionnaire]
+        skills: [audio-to-composer, audio-to-period, work-to-date]
+      - id: music-1-6
+        title: Tchaïkovski et le ballet
+        introduces: [tchaikovski, tchaikovski-lac-des-cygnes, tchaikovski-casse-noisette, tchaikovski-concerto-piano-1]
+        skills: [audio-to-composer, audio-to-period, work-to-date]
+      - id: music-1-7
+        title: Debussy et le XXe siècle
+        introduces: [musique-debut-xxe, debussy, debussy-clair-de-lune, debussy-prelude-faune, debussy-arabesques]
+        skills: [audio-to-composer, audio-to-period, work-to-date]
+      - id: music-1-8
+        title: Ravel
+        introduces: [ravel, ravel-bolero, ravel-pavane, ravel-jeux-d-eau]
+        skills: [audio-to-composer, audio-to-period, work-to-date]

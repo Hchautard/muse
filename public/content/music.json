@@ -1,0 +1,1360 @@
+{
+  "id": "music",
+  "title": "Musique classique",
+  "units": [
+    {
+      "id": "music-1",
+      "title": "Les grands repères",
+      "description": "Huit compositeurs et quatre grandes périodes, du baroque au début du XXe siècle.",
+      "lessons": [
+        {
+          "id": "music-1-1",
+          "title": "Bach et le baroque",
+          "introduces": [
+            "musique-baroque",
+            "bach",
+            "bach-toccata-fugue-re-mineur",
+            "bach-brandebourgeois-3",
+            "bach-suite-orchestre-3"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "music-1-2",
+          "title": "Vivaldi et les Quatre Saisons",
+          "introduces": [
+            "vivaldi",
+            "vivaldi-printemps",
+            "vivaldi-ete",
+            "vivaldi-hiver"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "music-1-3",
+          "title": "Mozart et le classicisme",
+          "introduces": [
+            "musique-classique",
+            "mozart",
+            "mozart-petite-musique-de-nuit",
+            "mozart-symphonie-40",
+            "mozart-requiem"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "music-1-4",
+          "title": "Beethoven",
+          "introduces": [
+            "beethoven",
+            "beethoven-symphonie-5",
+            "beethoven-lettre-a-elise",
+            "beethoven-sonate-clair-de-lune"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "music-1-5",
+          "title": "Chopin et le romantisme",
+          "introduces": [
+            "musique-romantique",
+            "chopin",
+            "chopin-nocturne-op9-2",
+            "chopin-polonaise-heroique",
+            "chopin-etude-revolutionnaire"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "music-1-6",
+          "title": "Tchaïkovski et le ballet",
+          "introduces": [
+            "tchaikovski",
+            "tchaikovski-lac-des-cygnes",
+            "tchaikovski-casse-noisette",
+            "tchaikovski-concerto-piano-1"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "music-1-7",
+          "title": "Debussy et le XXe siècle",
+          "introduces": [
+            "musique-debut-xxe",
+            "debussy",
+            "debussy-clair-de-lune",
+            "debussy-prelude-faune",
+            "debussy-arabesques"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "music-1-8",
+          "title": "Ravel",
+          "introduces": [
+            "ravel",
+            "ravel-bolero",
+            "ravel-pavane",
+            "ravel-jeux-d-eau"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "05281104a42c",
+  "entities": [
+    {
+      "id": "bach",
+      "type": "person",
+      "name": "Jean-Sébastien Bach",
+      "wikidataId": "Q1339",
+      "yearStart": 1685,
+      "yearEnd": 1750,
+      "summary": "Compositeur et organiste allemand, figure majeure de la musique baroque. Son œuvre immense — cantates, passions, pièces pour orgue, pour clavier ou pour orchestre — porte l'art du contrepoint à un sommet.",
+      "mediaIds": [
+        "bach-image"
+      ]
+    },
+    {
+      "id": "vivaldi",
+      "type": "person",
+      "name": "Antonio Vivaldi",
+      "wikidataId": "Q1340",
+      "yearStart": 1678,
+      "yearEnd": 1741,
+      "summary": "Compositeur et violoniste vénitien, prêtre surnommé « le Prêtre roux ». Il a écrit des centaines de concertos, dont Les Quatre Saisons, et a contribué à fixer la forme du concerto en trois mouvements.",
+      "mediaIds": [
+        "vivaldi-image"
+      ]
+    },
+    {
+      "id": "mozart",
+      "type": "person",
+      "name": "Wolfgang Amadeus Mozart",
+      "wikidataId": "Q254",
+      "yearStart": 1756,
+      "yearEnd": 1791,
+      "summary": "Compositeur autrichien né à Salzbourg, enfant prodige qui parcourt l'Europe dès son plus jeune âge. Mort à 35 ans, il a abordé tous les genres de son temps : opéras, symphonies, concertos, musique de chambre et musique religieuse.",
+      "mediaIds": [
+        "mozart-image"
+      ]
+    },
+    {
+      "id": "beethoven",
+      "type": "person",
+      "name": "Ludwig van Beethoven",
+      "wikidataId": "Q255",
+      "yearStart": 1770,
+      "yearEnd": 1827,
+      "summary": "Compositeur allemand installé à Vienne, à la charnière des périodes classique et romantique. Malgré une surdité progressive, il compose neuf symphonies, trente-deux sonates pour piano et un opéra, Fidelio.",
+      "mediaIds": [
+        "beethoven-image"
+      ]
+    },
+    {
+      "id": "chopin",
+      "type": "person",
+      "name": "Frédéric Chopin",
+      "wikidataId": "Q1268",
+      "yearStart": 1810,
+      "yearEnd": 1849,
+      "summary": "Compositeur et pianiste polonais installé à Paris à partir de 1831. Presque toute son œuvre est consacrée au piano : nocturnes, études, valses, polonaises et mazurkas.",
+      "mediaIds": [
+        "chopin-image"
+      ]
+    },
+    {
+      "id": "tchaikovski",
+      "type": "person",
+      "name": "Piotr Ilitch Tchaïkovski",
+      "wikidataId": "Q7315",
+      "yearStart": 1840,
+      "yearEnd": 1893,
+      "summary": "Compositeur russe de la période romantique, célèbre pour ses ballets — Le Lac des cygnes, La Belle au bois dormant, Casse-Noisette —, ses symphonies et ses concertos.",
+      "mediaIds": [
+        "tchaikovski-image"
+      ]
+    },
+    {
+      "id": "debussy",
+      "type": "person",
+      "name": "Claude Debussy",
+      "wikidataId": "Q4700",
+      "yearStart": 1862,
+      "yearEnd": 1918,
+      "summary": "Compositeur français dont l'harmonie et les couleurs sonores ont ouvert la voie à la musique moderne. Souvent qualifié d'impressionniste, il refusait lui-même cette étiquette.",
+      "mediaIds": [
+        "debussy-image"
+      ]
+    },
+    {
+      "id": "ravel",
+      "type": "person",
+      "name": "Maurice Ravel",
+      "wikidataId": "Q1178",
+      "yearStart": 1875,
+      "yearEnd": 1937,
+      "summary": "Compositeur français, maître de l'orchestration, souvent associé à Debussy et à l'impressionnisme. Son Boléro, créé en 1928, est l'une des œuvres les plus célèbres du répertoire.",
+      "mediaIds": [
+        "ravel-image"
+      ]
+    },
+    {
+      "id": "musique-baroque",
+      "type": "period",
+      "name": "Baroque",
+      "wikidataId": "Q8361",
+      "yearStart": 1600,
+      "yearEnd": 1750,
+      "summary": "Période qui s'étend environ de 1600 à 1750. La musique baroque aime les contrastes, l'ornementation et la basse continue ; elle voit naître l'opéra et s'épanouir le concerto et la fugue.",
+      "mediaIds": []
+    },
+    {
+      "id": "musique-classique",
+      "type": "period",
+      "name": "Classique",
+      "wikidataId": "Q17723",
+      "yearStart": 1750,
+      "yearEnd": 1820,
+      "summary": "Période qui s'étend environ de 1750 à 1820, autour de Haydn, Mozart et Beethoven. Elle recherche la clarté et l'équilibre : la symphonie, la sonate et le quatuor à cordes y prennent leur forme classique.",
+      "mediaIds": []
+    },
+    {
+      "id": "musique-romantique",
+      "type": "period",
+      "name": "Romantique",
+      "wikidataId": "Q207591",
+      "yearStart": 1820,
+      "yearEnd": 1900,
+      "summary": "Période qui couvre l'essentiel du XIXe siècle. La musique romantique privilégie l'expression des sentiments, la virtuosité et l'imaginaire ; l'orchestre s'agrandit et le piano occupe une place centrale.",
+      "mediaIds": []
+    },
+    {
+      "id": "musique-debut-xxe",
+      "type": "period",
+      "name": "Début du XXe siècle",
+      "yearStart": 1890,
+      "yearEnd": 1945,
+      "summary": "Du tournant du siècle aux années 1940, les compositeurs renouvellent l'harmonie, les timbres et les formes hérités du romantisme. En France, Debussy et Ravel, souvent qualifiés d'impressionnistes, en sont des figures majeures.",
+      "mediaIds": []
+    },
+    {
+      "id": "bach-toccata-fugue-re-mineur",
+      "type": "work",
+      "name": "Toccata et fugue en ré mineur",
+      "wikidataId": "Q392734",
+      "year": 1700,
+      "summary": "Pièce pour orgue (BWV 565) au début saisissant, devenue l'une des musiques d'orgue les plus célèbres. Sa date, et même son attribution à Bach, sont discutées par les musicologues.",
+      "mediaIds": [
+        "bach-toccata-fugue-re-mineur-audio"
+      ],
+      "tags": [
+        "orgue"
+      ]
+    },
+    {
+      "id": "bach-brandebourgeois-3",
+      "type": "work",
+      "name": "Concerto brandebourgeois n° 3",
+      "wikidataId": "Q223147",
+      "year": 1721,
+      "summary": "L'un des six concertos que Bach dédie en 1721 au margrave de Brandebourg. Il est écrit pour trois violons, trois altos, trois violoncelles et basse continue.",
+      "mediaIds": [
+        "bach-brandebourgeois-3-audio"
+      ],
+      "tags": [
+        "concerto",
+        "cordes"
+      ]
+    },
+    {
+      "id": "bach-suite-orchestre-3",
+      "type": "work",
+      "name": "Air de la Suite pour orchestre n° 3",
+      "wikidataId": "Q31180976",
+      "year": 1730,
+      "summary": "Deuxième mouvement de la Suite pour orchestre n° 3 en ré majeur (BWV 1068). Arrangé au XIXe siècle par le violoniste August Wilhelmj, il est aussi connu sous le nom d'« Air sur la corde de sol ».",
+      "mediaIds": [
+        "bach-suite-orchestre-3-audio"
+      ],
+      "tags": [
+        "suite",
+        "cordes"
+      ]
+    },
+    {
+      "id": "vivaldi-printemps",
+      "type": "work",
+      "name": "Le Printemps (Les Quatre Saisons)",
+      "wikidataId": "Q47008342",
+      "year": 1725,
+      "summary": "Premier des quatre concertos pour violon des Quatre Saisons, publiés en 1725 dans le recueil Il cimento dell'armonia e dell'inventione. Chaque concerto s'accompagne d'un sonnet qui décrit la saison.",
+      "mediaIds": [
+        "vivaldi-printemps-audio"
+      ],
+      "tags": [
+        "concerto",
+        "violon"
+      ]
+    },
+    {
+      "id": "vivaldi-ete",
+      "type": "work",
+      "name": "L'Été (Les Quatre Saisons)",
+      "wikidataId": "Q47008540",
+      "year": 1725,
+      "summary": "Deuxième concerto des Quatre Saisons. Son dernier mouvement, un presto tourbillonnant, évoque un orage d'été.",
+      "mediaIds": [
+        "vivaldi-ete-audio"
+      ],
+      "tags": [
+        "concerto",
+        "violon"
+      ]
+    },
+    {
+      "id": "vivaldi-hiver",
+      "type": "work",
+      "name": "L'Hiver (Les Quatre Saisons)",
+      "wikidataId": "Q47008571",
+      "year": 1725,
+      "summary": "Dernier concerto des Quatre Saisons. Son premier mouvement fait entendre le froid mordant et les dents qui claquent, par des notes répétées et des dissonances.",
+      "mediaIds": [
+        "vivaldi-hiver-audio"
+      ],
+      "tags": [
+        "concerto",
+        "violon"
+      ]
+    },
+    {
+      "id": "mozart-petite-musique-de-nuit",
+      "type": "work",
+      "name": "Une petite musique de nuit",
+      "wikidataId": "Q12025",
+      "year": 1787,
+      "summary": "Sérénade pour cordes (K. 525) achevée à Vienne en 1787. Son premier mouvement, Allegro, est l'un des airs les plus célèbres de Mozart.",
+      "mediaIds": [
+        "mozart-petite-musique-de-nuit-audio"
+      ],
+      "tags": [
+        "sérénade",
+        "cordes"
+      ]
+    },
+    {
+      "id": "mozart-symphonie-40",
+      "type": "work",
+      "name": "Symphonie n° 40",
+      "wikidataId": "Q231390",
+      "year": 1788,
+      "summary": "Symphonie en sol mineur (K. 550) composée à l'été 1788, en quelques semaines, avec les symphonies n° 39 et n° 41. C'est l'une des deux seules symphonies de Mozart en mode mineur.",
+      "mediaIds": [
+        "mozart-symphonie-40-audio"
+      ],
+      "tags": [
+        "symphonie"
+      ]
+    },
+    {
+      "id": "mozart-requiem",
+      "type": "work",
+      "name": "Requiem",
+      "wikidataId": "Q207875",
+      "year": 1791,
+      "summary": "Messe des morts en ré mineur (K. 626), laissée inachevée à la mort de Mozart en 1791. Elle a été complétée, notamment par son élève Franz Xaver Süssmayr.",
+      "mediaIds": [
+        "mozart-requiem-audio"
+      ],
+      "tags": [
+        "musique sacrée",
+        "chœur"
+      ]
+    },
+    {
+      "id": "beethoven-symphonie-5",
+      "type": "work",
+      "name": "Symphonie n° 5",
+      "wikidataId": "Q188709",
+      "year": 1808,
+      "summary": "Symphonie en ut mineur (op. 67), créée à Vienne en 1808. Son motif initial de quatre notes est l'un des plus reconnaissables de toute la musique.",
+      "mediaIds": [
+        "beethoven-symphonie-5-audio"
+      ],
+      "tags": [
+        "symphonie"
+      ]
+    },
+    {
+      "id": "beethoven-lettre-a-elise",
+      "type": "work",
+      "name": "Lettre à Élise",
+      "wikidataId": "Q11980",
+      "year": 1810,
+      "summary": "Bagatelle pour piano en la mineur (WoO 59), datée de 1810 mais publiée seulement en 1867, après la mort du compositeur. L'identité de la dédicataire, « Élise », reste discutée.",
+      "mediaIds": [
+        "beethoven-lettre-a-elise-audio"
+      ],
+      "tags": [
+        "piano"
+      ]
+    },
+    {
+      "id": "beethoven-sonate-clair-de-lune",
+      "type": "work",
+      "name": "Sonate « Clair de lune »",
+      "wikidataId": "Q12008",
+      "year": 1801,
+      "summary": "Sonate pour piano n° 14 (op. 27 n° 2), composée en 1801. Son surnom, qui ne vient pas de Beethoven, lui a été donné après sa mort à cause de son premier mouvement, lent et rêveur.",
+      "mediaIds": [
+        "beethoven-sonate-clair-de-lune-audio"
+      ],
+      "tags": [
+        "piano",
+        "sonate"
+      ]
+    },
+    {
+      "id": "chopin-nocturne-op9-2",
+      "type": "work",
+      "name": "Nocturne op. 9 n° 2",
+      "wikidataId": "Q16739831",
+      "year": 1830,
+      "summary": "Nocturne en mi bémol majeur publié en 1832, le plus célèbre des nocturnes de Chopin. Sa mélodie ornée, chantée au-dessus d'un accompagnement régulier, s'inspire du bel canto de l'opéra italien.",
+      "mediaIds": [
+        "chopin-nocturne-op9-2-audio"
+      ],
+      "tags": [
+        "piano",
+        "nocturne"
+      ]
+    },
+    {
+      "id": "chopin-polonaise-heroique",
+      "type": "work",
+      "name": "Polonaise « héroïque »",
+      "wikidataId": "Q3178652",
+      "year": 1842,
+      "summary": "Polonaise en la bémol majeur (op. 53) composée en 1842. Danse nationale polonaise, la polonaise devient chez Chopin, exilé à Paris, une grande pièce de concert.",
+      "mediaIds": [
+        "chopin-polonaise-heroique-audio"
+      ],
+      "tags": [
+        "piano",
+        "polonaise"
+      ]
+    },
+    {
+      "id": "chopin-etude-revolutionnaire",
+      "type": "work",
+      "name": "Étude « Révolutionnaire »",
+      "wikidataId": "Q147265",
+      "year": 1831,
+      "summary": "Étude en ut mineur (op. 10 n° 12) écrite vers 1831, au moment où l'insurrection polonaise contre la Russie est écrasée. Sa main gauche déchaînée travaille la vélocité du pianiste.",
+      "mediaIds": [
+        "chopin-etude-revolutionnaire-audio"
+      ],
+      "tags": [
+        "piano",
+        "étude"
+      ]
+    },
+    {
+      "id": "tchaikovski-lac-des-cygnes",
+      "type": "work",
+      "name": "Le Lac des cygnes",
+      "wikidataId": "Q199786",
+      "year": 1876,
+      "summary": "Ballet en quatre actes composé en 1875-1876 et créé au Théâtre Bolchoï de Moscou en 1877. Il raconte l'histoire d'Odette, princesse changée en cygne par un sorcier.",
+      "mediaIds": [
+        "tchaikovski-lac-des-cygnes-audio"
+      ],
+      "tags": [
+        "ballet",
+        "orchestre"
+      ]
+    },
+    {
+      "id": "tchaikovski-casse-noisette",
+      "type": "work",
+      "name": "Casse-Noisette",
+      "wikidataId": "Q193705",
+      "year": 1892,
+      "summary": "Ballet créé à Saint-Pétersbourg en 1892, d'après un conte d'E. T. A. Hoffmann. La Danse de la fée Dragée y fait entendre le célesta, un instrument alors tout nouveau.",
+      "mediaIds": [
+        "tchaikovski-casse-noisette-audio"
+      ],
+      "tags": [
+        "ballet",
+        "orchestre"
+      ]
+    },
+    {
+      "id": "tchaikovski-concerto-piano-1",
+      "type": "work",
+      "name": "Concerto pour piano n° 1",
+      "wikidataId": "Q162935",
+      "year": 1875,
+      "summary": "Concerto en si bémol mineur (op. 23) achevé en 1875. Son introduction, où le piano martèle de puissants accords sous le thème des cordes, est l'une des plus célèbres du répertoire.",
+      "mediaIds": [
+        "tchaikovski-concerto-piano-1-audio"
+      ],
+      "tags": [
+        "concerto",
+        "piano"
+      ]
+    },
+    {
+      "id": "debussy-clair-de-lune",
+      "type": "work",
+      "name": "Clair de lune",
+      "wikidataId": "Q29117946",
+      "year": 1890,
+      "summary": "Troisième mouvement de la Suite bergamasque pour piano, esquissée vers 1890 et publiée en 1905. Son titre fait référence à un poème de Paul Verlaine.",
+      "mediaIds": [
+        "debussy-clair-de-lune-audio"
+      ],
+      "tags": [
+        "piano"
+      ]
+    },
+    {
+      "id": "debussy-prelude-faune",
+      "type": "work",
+      "name": "Prélude à l'après-midi d'un faune",
+      "wikidataId": "Q1471875",
+      "year": 1894,
+      "summary": "Pièce pour orchestre créée en 1894, inspirée d'un poème de Stéphane Mallarmé. Son solo de flûte initial est souvent présenté comme le point de départ de la musique moderne.",
+      "mediaIds": [
+        "debussy-prelude-faune-audio"
+      ],
+      "tags": [
+        "orchestre",
+        "flûte"
+      ]
+    },
+    {
+      "id": "debussy-arabesques",
+      "type": "work",
+      "name": "Deux Arabesques",
+      "wikidataId": "Q1206599",
+      "year": 1890,
+      "summary": "Deux pièces pour piano de jeunesse, composées vers 1888-1891. La première, aux lignes fluides en triolets, est l'une des pages les plus jouées de Debussy.",
+      "mediaIds": [
+        "debussy-arabesques-audio"
+      ],
+      "tags": [
+        "piano"
+      ]
+    },
+    {
+      "id": "ravel-bolero",
+      "type": "work",
+      "name": "Boléro",
+      "wikidataId": "Q327331",
+      "year": 1928,
+      "summary": "Pièce pour orchestre créée à Paris en 1928, d'abord comme musique de ballet pour Ida Rubinstein. Un même thème y est répété sur un rythme immuable de caisse claire, dans un long crescendo.",
+      "mediaIds": [
+        "ravel-bolero-audio"
+      ],
+      "tags": [
+        "orchestre",
+        "ballet"
+      ]
+    },
+    {
+      "id": "ravel-pavane",
+      "type": "work",
+      "name": "Pavane pour une infante défunte",
+      "wikidataId": "Q2271923",
+      "year": 1899,
+      "summary": "Pièce pour piano composée en 1899, puis orchestrée par Ravel en 1910. Selon le compositeur, le titre a été choisi pour la sonorité des mots plutôt que pour évoquer une infante réelle.",
+      "mediaIds": [
+        "ravel-pavane-audio"
+      ],
+      "tags": [
+        "piano"
+      ]
+    },
+    {
+      "id": "ravel-jeux-d-eau",
+      "type": "work",
+      "name": "Jeux d'eau",
+      "wikidataId": "Q1684076",
+      "year": 1901,
+      "summary": "Pièce pour piano composée en 1901 et dédiée à Gabriel Fauré, son professeur. Ses arpèges scintillants évoquent le jaillissement de l'eau et annoncent un nouveau style pianistique.",
+      "mediaIds": [
+        "ravel-jeux-d-eau-audio"
+      ],
+      "tags": [
+        "piano"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "bach",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "vivaldi",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "mozart",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "beethoven",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "chopin",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "tchaikovski",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "debussy",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
+      "from": "ravel",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
+      "from": "bach-toccata-fugue-re-mineur",
+      "type": "createdBy",
+      "to": "bach"
+    },
+    {
+      "from": "bach-toccata-fugue-re-mineur",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "bach-brandebourgeois-3",
+      "type": "createdBy",
+      "to": "bach"
+    },
+    {
+      "from": "bach-brandebourgeois-3",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "bach-suite-orchestre-3",
+      "type": "createdBy",
+      "to": "bach"
+    },
+    {
+      "from": "bach-suite-orchestre-3",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "vivaldi-printemps",
+      "type": "createdBy",
+      "to": "vivaldi"
+    },
+    {
+      "from": "vivaldi-printemps",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "vivaldi-ete",
+      "type": "createdBy",
+      "to": "vivaldi"
+    },
+    {
+      "from": "vivaldi-ete",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "vivaldi-hiver",
+      "type": "createdBy",
+      "to": "vivaldi"
+    },
+    {
+      "from": "vivaldi-hiver",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "mozart-petite-musique-de-nuit",
+      "type": "createdBy",
+      "to": "mozart"
+    },
+    {
+      "from": "mozart-petite-musique-de-nuit",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "mozart-symphonie-40",
+      "type": "createdBy",
+      "to": "mozart"
+    },
+    {
+      "from": "mozart-symphonie-40",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "mozart-requiem",
+      "type": "createdBy",
+      "to": "mozart"
+    },
+    {
+      "from": "mozart-requiem",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "beethoven-symphonie-5",
+      "type": "createdBy",
+      "to": "beethoven"
+    },
+    {
+      "from": "beethoven-symphonie-5",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "beethoven-lettre-a-elise",
+      "type": "createdBy",
+      "to": "beethoven"
+    },
+    {
+      "from": "beethoven-lettre-a-elise",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "beethoven-sonate-clair-de-lune",
+      "type": "createdBy",
+      "to": "beethoven"
+    },
+    {
+      "from": "beethoven-sonate-clair-de-lune",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "chopin-nocturne-op9-2",
+      "type": "createdBy",
+      "to": "chopin"
+    },
+    {
+      "from": "chopin-nocturne-op9-2",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "chopin-polonaise-heroique",
+      "type": "createdBy",
+      "to": "chopin"
+    },
+    {
+      "from": "chopin-polonaise-heroique",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "chopin-etude-revolutionnaire",
+      "type": "createdBy",
+      "to": "chopin"
+    },
+    {
+      "from": "chopin-etude-revolutionnaire",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "tchaikovski-lac-des-cygnes",
+      "type": "createdBy",
+      "to": "tchaikovski"
+    },
+    {
+      "from": "tchaikovski-lac-des-cygnes",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "tchaikovski-casse-noisette",
+      "type": "createdBy",
+      "to": "tchaikovski"
+    },
+    {
+      "from": "tchaikovski-casse-noisette",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "tchaikovski-concerto-piano-1",
+      "type": "createdBy",
+      "to": "tchaikovski"
+    },
+    {
+      "from": "tchaikovski-concerto-piano-1",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "debussy-clair-de-lune",
+      "type": "createdBy",
+      "to": "debussy"
+    },
+    {
+      "from": "debussy-clair-de-lune",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
+      "from": "debussy-prelude-faune",
+      "type": "createdBy",
+      "to": "debussy"
+    },
+    {
+      "from": "debussy-prelude-faune",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
+      "from": "debussy-arabesques",
+      "type": "createdBy",
+      "to": "debussy"
+    },
+    {
+      "from": "debussy-arabesques",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
+      "from": "ravel-bolero",
+      "type": "createdBy",
+      "to": "ravel"
+    },
+    {
+      "from": "ravel-bolero",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
+      "from": "ravel-pavane",
+      "type": "createdBy",
+      "to": "ravel"
+    },
+    {
+      "from": "ravel-pavane",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
+      "from": "ravel-jeux-d-eau",
+      "type": "createdBy",
+      "to": "ravel"
+    },
+    {
+      "from": "ravel-jeux-d-eau",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    }
+  ],
+  "media": [
+    {
+      "id": "bach-brandebourgeois-3-audio",
+      "kind": "audio",
+      "src": "music/audio/bach-brandebourgeois-3-audio.m4a",
+      "bytes": 324727,
+      "durationSec": 20,
+      "credit": "Concert de décembre 2006, collection Al Goldstein (ibiblio)",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bach_-_Brandenburg_Concerto_No._3_-_1._Allegro.ogg"
+    },
+    {
+      "id": "bach-image",
+      "kind": "image",
+      "src": "music/images/bach-image-960.webp",
+      "bytes": 73576,
+      "width": 960,
+      "height": 1246,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/bach-image-480.webp",
+          "bytes": 19962
+        },
+        {
+          "width": 960,
+          "src": "music/images/bach-image-960.webp",
+          "bytes": 73576
+        }
+      ],
+      "credit": "Elias Gottlob Haussmann",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Johann_Sebastian_Bach.png"
+    },
+    {
+      "id": "bach-suite-orchestre-3-audio",
+      "kind": "audio",
+      "src": "music/audio/bach-suite-orchestre-3-audio.m4a",
+      "bytes": 405493,
+      "durationSec": 25,
+      "credit": "Air Force Strings, United States Air Force Band",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Air_-_Air_Force_Strings_-_United_States_Air_Force_Band.mp3"
+    },
+    {
+      "id": "bach-toccata-fugue-re-mineur-audio",
+      "kind": "audio",
+      "src": "music/audio/bach-toccata-fugue-re-mineur-audio.m4a",
+      "bytes": 324606,
+      "durationSec": 20,
+      "credit": "Ashtar Moïra (orgue)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toccata_et_Fugue_BWV565.ogg"
+    },
+    {
+      "id": "beethoven-image",
+      "kind": "image",
+      "src": "music/images/beethoven-image-960.webp",
+      "bytes": 199330,
+      "width": 960,
+      "height": 1154,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/beethoven-image-480.webp",
+          "bytes": 43278
+        },
+        {
+          "width": 960,
+          "src": "music/images/beethoven-image-960.webp",
+          "bytes": 199330
+        }
+      ],
+      "credit": "Joseph Karl Stieler",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beethoven.jpg"
+    },
+    {
+      "id": "beethoven-lettre-a-elise-audio",
+      "kind": "audio",
+      "src": "music/audio/beethoven-lettre-a-elise-audio.m4a",
+      "bytes": 324617,
+      "durationSec": 20,
+      "credit": "Sebion7125",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fur_Elise.ogg"
+    },
+    {
+      "id": "beethoven-sonate-clair-de-lune-audio",
+      "kind": "audio",
+      "src": "music/audio/beethoven-sonate-clair-de-lune-audio.m4a",
+      "bytes": 405311,
+      "durationSec": 25,
+      "credit": "Paul Pitman (piano), Musopen",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ludwig_van_Beethoven_-_sonata_no._14_in_c_sharp_minor_%27moonlight%27,_op._27_no._2_-_i._adagio_sostenuto.ogg"
+    },
+    {
+      "id": "beethoven-symphonie-5-audio",
+      "kind": "audio",
+      "src": "music/audio/beethoven-symphonie-5-audio.m4a",
+      "bytes": 324788,
+      "durationSec": 20,
+      "credit": "Fulda Symphonic Orchestra, dir. Simon Schindler (2002)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ludwig_van_Beethoven_-_Symphonie_5_c-moll_-_1._Allegro_con_brio.ogg"
+    },
+    {
+      "id": "chopin-etude-revolutionnaire-audio",
+      "kind": "audio",
+      "src": "music/audio/chopin-etude-revolutionnaire-audio.m4a",
+      "bytes": 324742,
+      "durationSec": 20,
+      "credit": "Edward Neeman (piano), Musopen",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chopin_-_12_%C3%89tudes,_Op._10_-_No._12_in_C_minor_%27Revolutionary%27_(Edward_Neeman).flac"
+    },
+    {
+      "id": "chopin-image",
+      "kind": "image",
+      "src": "music/images/chopin-image-960.webp",
+      "bytes": 102364,
+      "width": 960,
+      "height": 1295,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/chopin-image-480.webp",
+          "bytes": 25800
+        },
+        {
+          "width": 960,
+          "src": "music/images/chopin-image-960.webp",
+          "bytes": 102364
+        }
+      ],
+      "credit": "Maria Wodzińska",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chopin,_by_Wodzinska.JPG"
+    },
+    {
+      "id": "chopin-nocturne-op9-2-audio",
+      "kind": "audio",
+      "src": "music/audio/chopin-nocturne-op9-2-audio.m4a",
+      "bytes": 405422,
+      "durationSec": 25,
+      "credit": "Frank Lévy (piano)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chopin_-_Nocturne_No._2_in_E-flat_major,_Op._9_No._2_(Frank_Levy).flac"
+    },
+    {
+      "id": "chopin-polonaise-heroique-audio",
+      "kind": "audio",
+      "src": "music/audio/chopin-polonaise-heroique-audio.m4a",
+      "bytes": 405394,
+      "durationSec": 25,
+      "credit": "Luke Faulkner (piano)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chopin_-_Polonaise_No._6_in_A-flat_major,_Op._53_%27H%C3%A9ro%C3%AFque%27_(Luke_Faulkner).flac"
+    },
+    {
+      "id": "debussy-arabesques-audio",
+      "kind": "audio",
+      "src": "music/audio/debussy-arabesques-audio.m4a",
+      "bytes": 324486,
+      "durationSec": 20,
+      "credit": "Patrizia Prati (piano), 2016",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claude_Debussy_-_Premi%C3%A8re_Arabesque_-_Patrizia_Prati.ogg"
+    },
+    {
+      "id": "debussy-clair-de-lune-audio",
+      "kind": "audio",
+      "src": "music/audio/debussy-clair-de-lune-audio.m4a",
+      "bytes": 405413,
+      "durationSec": 25,
+      "credit": "Laurens Goedhart (piano), 2011",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clair_de_lune_(Claude_Debussy)_Suite_bergamasque.ogg"
+    },
+    {
+      "id": "debussy-image",
+      "kind": "image",
+      "src": "music/images/debussy-image-960.webp",
+      "bytes": 120380,
+      "width": 960,
+      "height": 1342,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/debussy-image-480.webp",
+          "bytes": 28974
+        },
+        {
+          "width": 960,
+          "src": "music/images/debussy-image-960.webp",
+          "bytes": 120380
+        },
+        {
+          "width": 1600,
+          "src": "music/images/debussy-image-1600.webp",
+          "bytes": 288258
+        }
+      ],
+      "credit": "Atelier Nadar, Bibliothèque nationale de France (restauration Adam Cuerden)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claude_Debussy_by_Atelier_Nadar.jpg"
+    },
+    {
+      "id": "debussy-prelude-faune-audio",
+      "kind": "audio",
+      "src": "music/audio/debussy-prelude-faune-audio.m4a",
+      "bytes": 403711,
+      "durationSec": 25,
+      "credit": "Orchestre symphonique Straram, dir. Walther Straram (1930)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Columbia-dwx1550ix-c-wlx1289.ogg"
+    },
+    {
+      "id": "mozart-image",
+      "kind": "image",
+      "src": "music/images/mozart-image-960.webp",
+      "bytes": 53118,
+      "width": 960,
+      "height": 1231,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/mozart-image-480.webp",
+          "bytes": 15152
+        },
+        {
+          "width": 960,
+          "src": "music/images/mozart-image-960.webp",
+          "bytes": 53118
+        },
+        {
+          "width": 1600,
+          "src": "music/images/mozart-image-1600.webp",
+          "bytes": 121824
+        }
+      ],
+      "credit": "Barbara Krafft",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wolfgang-amadeus-mozart_1.jpg"
+    },
+    {
+      "id": "mozart-petite-musique-de-nuit-audio",
+      "kind": "audio",
+      "src": "music/audio/mozart-petite-musique-de-nuit-audio.m4a",
+      "bytes": 324695,
+      "durationSec": 20,
+      "credit": "Advent Chamber Orchestra, dir. Roxanna Pavel Goldstein (2005)",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mozart_-_Eine_kleine_Nachtmusik_-_1._Allegro.ogg"
+    },
+    {
+      "id": "mozart-requiem-audio",
+      "kind": "audio",
+      "src": "music/audio/mozart-requiem-audio.m4a",
+      "bytes": 405692,
+      "durationSec": 25,
+      "credit": "Dir. Josef Krips, Decca (1950)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mozart_-_Requiem_(Krips)_-_VIII._Lacrimosa.flac"
+    },
+    {
+      "id": "mozart-symphonie-40-audio",
+      "kind": "audio",
+      "src": "music/audio/mozart-symphonie-40-audio.m4a",
+      "bytes": 324507,
+      "durationSec": 20,
+      "credit": "Tsumugi Orchestra, dir. Takashi Inoue (2010)",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mozart_Symphony_40_G_minor_-_1_Molto_allegro.oga"
+    },
+    {
+      "id": "ravel-bolero-audio",
+      "kind": "audio",
+      "src": "music/audio/ravel-bolero-audio.m4a",
+      "bytes": 405674,
+      "durationSec": 25,
+      "credit": "Dir. Charles Munch (1956)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bolero-Maurice_Ravel-Paris_Orchestra-Charles_Munch-1956.ogg"
+    },
+    {
+      "id": "ravel-image",
+      "kind": "image",
+      "src": "music/images/ravel-image-960.webp",
+      "bytes": 189854,
+      "width": 960,
+      "height": 1280,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/ravel-image-480.webp",
+          "bytes": 22424
+        },
+        {
+          "width": 960,
+          "src": "music/images/ravel-image-960.webp",
+          "bytes": 189854
+        },
+        {
+          "width": 1600,
+          "src": "music/images/ravel-image-1600.webp",
+          "bytes": 519774
+        }
+      ],
+      "credit": "Photographe inconnu, Bibliothèque nationale de France (1925)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maurice_Ravel_1925.jpg"
+    },
+    {
+      "id": "ravel-jeux-d-eau-audio",
+      "kind": "audio",
+      "src": "music/audio/ravel-jeux-d-eau-audio.m4a",
+      "bytes": 324716,
+      "durationSec": 20,
+      "credit": "Anna Sutyagina (piano)",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ravel%27s_Jeux_d%27eau,_M._30_-_Anna_Sutyagina.ogg"
+    },
+    {
+      "id": "ravel-pavane-audio",
+      "kind": "audio",
+      "src": "music/audio/ravel-pavane-audio.m4a",
+      "bytes": 405594,
+      "durationSec": 25,
+      "credit": "Thérèse Dussaut (piano)",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maurice_Ravel_-_Th%C3%A9r%C3%A8se_Dussaut_-_Pavane_pour_une_infante_d%C3%A9funte.ogg"
+    },
+    {
+      "id": "tchaikovski-casse-noisette-audio",
+      "kind": "audio",
+      "src": "music/audio/tchaikovski-casse-noisette-audio.m4a",
+      "bytes": 327066,
+      "durationSec": 20,
+      "credit": "Free Classical Music on YouTube (interprète non précisé)",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tchaikovsky_-_Dance_of_the_Sugar_Plum_Fairy_-_The_Nutcracker.ogg"
+    },
+    {
+      "id": "tchaikovski-concerto-piano-1-audio",
+      "kind": "audio",
+      "src": "music/audio/tchaikovski-concerto-piano-1-audio.m4a",
+      "bytes": 405787,
+      "durationSec": 25,
+      "credit": "Musopen (interprète non précisé)",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tchaikovsky,_Concerto_No.1_in_B-flat_minor_Op.23,_I._Allegro.ogg"
+    },
+    {
+      "id": "tchaikovski-image",
+      "kind": "image",
+      "src": "music/images/tchaikovski-image-960.webp",
+      "bytes": 72684,
+      "width": 960,
+      "height": 1233,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/tchaikovski-image-480.webp",
+          "bytes": 19954
+        },
+        {
+          "width": 960,
+          "src": "music/images/tchaikovski-image-960.webp",
+          "bytes": 72684
+        },
+        {
+          "width": 1600,
+          "src": "music/images/tchaikovski-image-1600.webp",
+          "bytes": 144762
+        }
+      ],
+      "credit": "Nikolai Kuznetsov",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portr%C3%A4t_des_Komponisten_Pjotr_I._Tschaikowski_(1840-1893).jpg"
+    },
+    {
+      "id": "tchaikovski-lac-des-cygnes-audio",
+      "kind": "audio",
+      "src": "music/audio/tchaikovski-lac-des-cygnes-audio.m4a",
+      "bytes": 405596,
+      "durationSec": 25,
+      "credit": "Enregistrement HMV (1933), archives CHARM",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tchaikovsky_Swan_Lake_Op.20_No.10._Sc%C3%A8ne.ogg"
+    },
+    {
+      "id": "vivaldi-ete-audio",
+      "kind": "audio",
+      "src": "music/audio/vivaldi-ete-audio.m4a",
+      "bytes": 324693,
+      "durationSec": 20,
+      "credit": "John Harrison (violon), Wichita State University",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vivaldi_-_Four_Seasons_2_Summer_mvt_3_Presto_-_John_Harrison_violin.oga"
+    },
+    {
+      "id": "vivaldi-hiver-audio",
+      "kind": "audio",
+      "src": "music/audio/vivaldi-hiver-audio.m4a",
+      "bytes": 405888,
+      "durationSec": 25,
+      "credit": "John Harrison (violon), Wichita State University",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vivaldi_-_Four_Seasons_4_Winter_mvt_1_Allegro_non_molto_-_John_Harrison_violin.oga"
+    },
+    {
+      "id": "vivaldi-image",
+      "kind": "image",
+      "src": "music/images/vivaldi-image-960.webp",
+      "bytes": 89772,
+      "width": 960,
+      "height": 1275,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/vivaldi-image-480.webp",
+          "bytes": 23070
+        },
+        {
+          "width": 960,
+          "src": "music/images/vivaldi-image-960.webp",
+          "bytes": 89772
+        },
+        {
+          "width": 1600,
+          "src": "music/images/vivaldi-image-1600.webp",
+          "bytes": 294228
+        }
+      ],
+      "credit": "Portrait anonyme, Museo internazionale e biblioteca della musica, Bologne (photo Paul Hermans)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onbekend_-_Antonio_Vivaldi_-_Bologna_Museo_Internationale_e_biblioteca_della_musica_di_bologna_28-04-2012_9-21-050.jpg"
+    },
+    {
+      "id": "vivaldi-printemps-audio",
+      "kind": "audio",
+      "src": "music/audio/vivaldi-printemps-audio.m4a",
+      "bytes": 324754,
+      "durationSec": 20,
+      "credit": "John Harrison (violon), Wichita State University",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vivaldi_-_Four_Seasons_1_Spring_mvt_1_Allegro_-_John_Harrison_violin.oga"
+    }
+  ]
+}
