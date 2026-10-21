@@ -70,3 +70,46 @@ Choix de conception non couverts par `PLAN.md`, du plus ancien au plus récent.
 - **Lecteur d'aperçu** : un seul élément `<audio>` partagé, hors état React.
 - **Lint** : `no-unused-vars` avec `ignoreRestSiblings` (pour retirer des champs par
   déstructuration).
+
+## Phase 3
+
+- **Planification au jour près** : `ts-fsrs` avec `enable_short_term: false` (pas de pas
+  d'apprentissage en minutes ; l'apprentissage à court terme se fait dans la session) et
+  `enable_fuzz` (les cartes apprises ensemble ne reviennent pas toutes le même jour). Une carte est
+  « due » pendant toute la journée locale de son échéance.
+- **Une note FSRS par carte et par session**, à sa première question notée. La présentation
+  d'une œuvre est suivie d'une question notée (QCM, distracteurs faciles) ; les exercices de
+  complément d'une leçon courte et les seconds essais ne sont pas notés.
+- **Seuils « Easy »** : 6 s pour un QCM audio (le toucher sur « Écouter » compris), 4 s pour un
+  QCM image ou un vrai / faux, jamais pour une chronologie.
+- **Leçon de 12 exercices** : les cartes de la leçon (9 pour 3 œuvres × 3 compétences), 2 à 4
+  révisions dues (une par œuvre d'abord), puis des exercices de complément non notés si la leçon
+  est trop courte. Ordonnancement glouton : jamais deux fois la même œuvre de suite, présentation
+  avant les autres questions sur l'œuvre, exercices textuels répartis à intervalles réguliers.
+- **Vrai / faux** : « Cette œuvre est de X » sur l'extrait ou l'image (relation `createdBy`,
+  `inPeriod` ou `belongsTo`, vraie ou falsifiée par un distracteur). Réservé aux cartes un peu
+  connues (maîtrise ≥ 0,3) et aux compléments, pour que le QCM reste la norme.
+- **Chronologie** : 3 œuvres pour une carte nouvelle, 4 à partir d'une maîtrise de 0,5 ; toutes
+  d'années différentes ; le compositeur est affiché ; validation par un bouton (correction possible
+  avant). Elle note la carte « dater » de l'œuvre visée.
+- **Maîtrise** (difficulté des distracteurs) : stabilité FSRS / 21 jours, plafonnée à 1.
+  Proximité de deux entités : dates (sur 150 ans), même période, même mouvement, même créateur.
+- **`concept-definition`** ne crée pas encore de carte : il attend l'exercice d'association
+  (phase 4).
+- **Données ajoutées au modèle** : `courseId` sur les cartes, le journal et les leçons ;
+  `kind`, `expectedId` et `chosenId` dans le journal (pour les confusions de la phase 4) ; `goal`
+  dans chaque journée, pour qu'un changement d'objectif ne réécrive pas les séries passées.
+- **Session abandonnée** : rien n'est enregistré ; une session terminée est écrite en une seule
+  transaction.
+- **Requêtes vivantes** : petit hook maison sur `liveQuery` de Dexie plutôt que
+  `dexie-react-hooks` (une dépendance de moins).
+- **Accueil** : l'objectif du jour, la semaine et la série affichent les vraies données dès cette
+  phase (l'objectif reste fixé à 1 session jusqu'aux réglages de la phase 4). Le bouton « Réviser »
+  sans carte due propose les cartes les plus fragiles une fois toutes les leçons terminées.
+- **Audio** : un seul élément `<audio>` pour toute l'app ; chaque lecteur reprend l'extrait au
+  début ; les médias des trois exercices suivants sont préchargés par `fetch` (ce qui remplit le
+  cache du service worker). Safari 17+ : `navigator.audioSession.type = 'playback'`.
+- **Taille du bundle** : un seul fichier JS (~180 Ko compressés) précaché à l'installation ; le
+  seuil d'avertissement de Vite est relevé à 700 Ko plutôt que de découper le code.
+- **Règles de compétences partagées** : `src/engine/skills.ts` sert au moteur et à la validation
+  du contenu.

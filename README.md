@@ -7,9 +7,9 @@ le contenu est statique, la progression reste sur l'appareil.
 Le cahier des charges complet est dans [`PLAN.md`](PLAN.md), les choix de conception dans
 [`DECISIONS.md`](DECISIONS.md).
 
-> **État : phase 2** — pipeline de contenu (Wikidata, Commons, validation) et premier parcours :
-> « Musique classique », unité 1 « Les grands repères » (8 leçons, 24 œuvres avec extraits). Les
-> sessions d'exercices arrivent en phase 3.
+> **État : phase 3** — sessions d'exercices et répétition espacée sur le parcours « Musique
+> classique », unité 1 « Les grands repères » (8 leçons, 24 œuvres avec extraits). Collection,
+> statistiques, réglages et téléchargement hors ligne arrivent en phase 4.
 
 ## Prérequis
 
@@ -58,8 +58,9 @@ scripts/          pipeline de contenu (Node + TypeScript, lancé avec tsx)
 src/
 ├── app/          routes, layout, bandeau de mise à jour
 ├── content/      chargement et index du contenu
+├── db/           progression dans IndexedDB (Dexie)
 ├── engine/       logique pure, sans React ni IndexedDB, couverte par Vitest
-├── features/     un dossier par écran (home, course, exercises…)
+├── features/     un dossier par écran (home, course, session, exercises…)
 ├── schemas/      schémas zod partagés par l'app et les scripts
 └── ui/           composants partagés
 public/
@@ -67,6 +68,26 @@ public/
 ├── media/        images et audio GÉNÉRÉS
 └── icons/
 ```
+
+## Sessions et révisions
+
+- **Leçon** (« Continuer » sur l'accueil, ou une leçon du Parcours) : une douzaine d'exercices.
+  Chaque nouvelle œuvre est d'abord présentée (compositeur, date, période, écoute), puis
+  interrogée ; 2 à 4 révisions dues sont intercalées.
+- **Révision** (« Réviser (N) » sur l'accueil, quand des cartes sont dues) : jusqu'à 15 cartes,
+  les plus en retard d'abord.
+- Une **carte** est une œuvre × une compétence (reconnaître le compositeur à l'écoute, la
+  période, dater l'œuvre). Chaque carte est planifiée par [FSRS](https://github.com/open-spaced-repetition/ts-fsrs),
+  au jour près : une erreur la fait revenir le lendemain, une bonne réponse quelques jours plus
+  tard, une réponse très rapide encore plus tard. Une carte ratée revient une seconde fois en fin
+  de session, sans nouvelle notation.
+- Exercices : QCM audio, QCM image (parcours Peinture, phase 5), vrai / faux, chronologie (toucher
+  les œuvres dans l'ordre). Au moins la moitié de chaque session fait écouter ou voir.
+- Quitter une session en cours n'enregistre rien. Une session terminée met à jour les cartes, le
+  journal des réponses, la leçon, les XP et la série.
+
+La progression est stockée **sur l'appareil** (IndexedDB) ; l'app demande au navigateur de la
+conserver durablement (`navigator.storage.persist()`). L'export / import JSON arrive en phase 4.
 
 ## Déploiement (GitHub Pages)
 
@@ -100,8 +121,12 @@ servi à la racine ; il faudrait alors fixer `BASE_PATH: /` dans le workflow.)
 Mises à jour : quand une nouvelle version est publiée, un bandeau « Nouvelle version —
 Recharger » apparaît en haut de l'écran.
 
-> **Mode silencieux** : le comportement de l'audio quand le commutateur silencieux de l'iPhone
-> est activé sera testé et documenté ici en phase 3 (premier exercice audio).
+> **Mode silencieux** : les extraits sont lus par un élément `<audio>` (lecture multimédia, comme
+> une app de musique), et sur Safari 17+ l'app déclare `navigator.audioSession.type = 'playback'`.
+> Ils devraient donc s'entendre même commutateur silencieux activé, au volume « multimédia ».
+> **Non vérifié sur un iPhone réel** (les tests ont été faits dans un navigateur de bureau) : si
+> rien ne s'entend en mode silencieux, désactiver le commutateur et le signaler ici.
+> La lecture ne démarre jamais seule : il faut toucher le bouton de lecture.
 
 ## Ajouter du contenu
 
