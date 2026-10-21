@@ -3,6 +3,7 @@
 import { z } from 'zod'
 import {
   contentIndexSchema,
+  COURSE_IDS,
   courseBundleSchema,
   type ContentIndex,
   type CourseId,
@@ -12,6 +13,10 @@ import { createCourseIndex, type CourseIndex } from './course-index'
 const contentUrl = (file: string) => `${import.meta.env.BASE_URL}content/${file}`
 
 export class ContentLoadError extends Error {}
+
+/** Validates a course id taken from the URL. */
+export const isCourseId = (value: string | undefined): value is CourseId =>
+  (COURSE_IDS as readonly string[]).includes(value ?? '')
 
 async function fetchJson<T>(file: string, schema: z.ZodType<T>): Promise<T> {
   let response: Response

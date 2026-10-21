@@ -1,8 +1,9 @@
+import { Link } from 'react-router'
 import type { CourseIndex, LessonRef } from '../../content/course-index'
 import { formatDates } from '../../content/course-index'
 import { mediaUrl } from '../../content/loader'
 import type { LessonState } from '../../engine/progression'
-import type { Entity, EntityType, MediaAsset } from '../../schemas/content'
+import type { CourseId, Entity, EntityType, MediaAsset } from '../../schemas/content'
 import { licenseLabel } from '../../schemas/licenses'
 import { BottomSheet } from '../../ui/BottomSheet'
 import { PauseIcon, PlayIcon } from '../../ui/icons'
@@ -17,6 +18,7 @@ const STATE_EYEBROW: Record<LessonState, string> = {
 }
 
 interface LessonSheetProps {
+  courseId: CourseId
   course: CourseIndex
   lessonRef: LessonRef
   state: LessonState
@@ -24,7 +26,7 @@ interface LessonSheetProps {
 }
 
 /** Preview of what a lesson introduces, with the audio excerpts and portraits it uses. */
-export function LessonSheet({ course, lessonRef, state, onClose }: LessonSheetProps) {
+export function LessonSheet({ courseId, course, lessonRef, state, onClose }: LessonSheetProps) {
   const { lesson, index } = lessonRef
   const { playingId, toggle } = useAudioPreview()
   const entities = lesson.introduces
@@ -54,9 +56,16 @@ export function LessonSheet({ course, lessonRef, state, onClose }: LessonSheetPr
           ))}
         </ul>
 
-        <p className="text-sm text-muted">
-          Les exercices de cette leçon arrivent avec le moteur de sessions.
-        </p>
+        {state === 'locked' ? (
+          <p className="text-sm text-muted">Terminez les leçons précédentes pour l’ouvrir.</p>
+        ) : (
+          <Link
+            to={`/session/${courseId}/lecon/${lesson.id}`}
+            className="flex min-h-13 items-center justify-center rounded-xl bg-accent text-lg font-semibold text-accent-ink transition-transform active:scale-[0.98]"
+          >
+            {state === 'completed' ? 'Refaire la leçon' : 'Commencer'}
+          </Link>
+        )}
       </div>
     </BottomSheet>
   )

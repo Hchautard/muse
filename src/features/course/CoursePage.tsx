@@ -3,14 +3,12 @@ import { Link, useParams } from 'react-router'
 import { AsyncBoundary } from '../../app/AsyncBoundary'
 import { NotFoundPage } from '../../app/NotFoundPage'
 import type { CourseIndex, LessonRef } from '../../content/course-index'
-import { loadCourse } from '../../content/loader'
+import { isCourseId, loadCourse } from '../../content/loader'
+import { useCompletedLessons } from '../../db/hooks'
 import { lessonStates, type LessonState } from '../../engine/progression'
-import { COURSE_IDS, type CourseId } from '../../schemas/content'
+import type { CourseId } from '../../schemas/content'
 import { ArrowLeftIcon, CheckIcon, LockIcon } from '../../ui/icons'
 import { LessonSheet } from './LessonSheet'
-
-const isCourseId = (value: string | undefined): value is CourseId =>
-  (COURSE_IDS as readonly string[]).includes(value ?? '')
 
 export function CoursePage() {
   const { courseId } = useParams()
@@ -35,14 +33,14 @@ export function CoursePage() {
 function CourseTree({ courseId }: { courseId: CourseId }) {
   const course = use(loadCourse(courseId))
   const [openLessonId, setOpenLessonId] = useState<string | null>(null)
-  // Progress is stored from phase 3 on; until then nothing is completed.
+  const completed = useCompletedLessons(courseId)
   const states = useMemo(
     () =>
       lessonStates(
         course.lessons.map((ref) => ref.lesson.id),
-        new Set(),
+        completed ?? new Set(),
       ),
-    [course],
+    [course, completed],
   )
   const openLesson = openLessonId ? course.lesson(openLessonId) : undefined
 
@@ -86,6 +84,7 @@ function CourseTree({ courseId }: { courseId: CourseId }) {
 
       {openLesson && (
         <LessonSheet
+          courseId={courseId}
           course={course}
           lessonRef={openLesson}
           state={states.get(openLesson.lesson.id) ?? 'locked'}

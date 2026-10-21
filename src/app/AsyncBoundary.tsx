@@ -4,18 +4,25 @@ import { resetContentCache } from '../content/loader'
 interface AsyncBoundaryProps {
   children: ReactNode
   fallback: ReactNode
+  /** Called on "Réessayer", e.g. to restart a failed load that the children suspend on. */
+  onRetry?: () => void
 }
 
 /** Suspense plus an error state with a retry button, for screens that load content. */
-export function AsyncBoundary({ children, fallback }: AsyncBoundaryProps) {
+export function AsyncBoundary({ children, fallback, onRetry }: AsyncBoundaryProps) {
   return (
-    <ErrorBoundary>
+    <ErrorBoundary onRetry={onRetry}>
       <Suspense fallback={fallback}>{children}</Suspense>
     </ErrorBoundary>
   )
 }
 
-class ErrorBoundary extends Component<{ children: ReactNode }, { error: Error | null }> {
+interface ErrorBoundaryProps {
+  children: ReactNode
+  onRetry?: () => void
+}
+
+class ErrorBoundary extends Component<ErrorBoundaryProps, { error: Error | null }> {
   state = { error: null as Error | null }
 
   static getDerivedStateFromError(error: Error) {
@@ -24,6 +31,7 @@ class ErrorBoundary extends Component<{ children: ReactNode }, { error: Error | 
 
   retry = () => {
     resetContentCache()
+    this.props.onRetry?.()
     this.setState({ error: null })
   }
 
