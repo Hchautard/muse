@@ -8,6 +8,7 @@ import { lessonStates } from '../../engine/progression'
 import { isGoalMet } from '../../engine/streak'
 import type { CourseId } from '../../schemas/content'
 import { FlameIcon } from '../../ui/icons'
+import { SegmentedControl } from '../../ui/SegmentedControl'
 
 const WEEKDAYS = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche']
 
@@ -25,7 +26,7 @@ export function HomePage() {
   const streak = stats?.streak ?? 0
 
   return (
-    <main className="flex flex-1 flex-col gap-8 px-safe pt-safe pb-safe">
+    <main className="flex flex-1 flex-col gap-8 px-safe pt-safe pb-6">
       <header className="flex items-center justify-between pt-2">
         <h1 className="text-[2rem] leading-none tracking-tight">Muse</h1>
         <p
@@ -116,22 +117,14 @@ function HomeContent() {
   return (
     <>
       {index.courses.length > 1 && (
-        <nav
-          aria-label="Parcours"
-          className="-mt-2 grid auto-cols-fr grid-flow-col gap-1 rounded-full bg-surface p-1 ring-1 ring-line"
-        >
-          {index.courses.map((c) => (
-            <button
-              key={c.id}
-              type="button"
-              aria-pressed={c.id === courseId}
-              onClick={() => setCourseId(c.id)}
-              className="min-h-11 rounded-full px-3 text-sm font-medium text-muted transition-colors aria-pressed:bg-line aria-pressed:text-ink"
-            >
-              {c.title}
-            </button>
-          ))}
-        </nav>
+        <div className="-mt-2">
+          <SegmentedControl
+            label="Parcours"
+            options={index.courses.map((c) => ({ value: c.id, label: c.title }))}
+            value={courseId}
+            onChange={setCourseId}
+          />
+        </div>
       )}
 
       {courseId && (

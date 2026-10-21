@@ -85,6 +85,10 @@
 @utility pb-safe {
   padding-bottom: max(env(safe-area-inset-bottom), 1rem);
 }
+/* Under the tab bar: just clear the home indicator. */
+@utility pb-tab {
+  padding-bottom: max(env(safe-area-inset-bottom), 0.25rem);
+}
 @utility px-safe {
   padding-left: max(env(safe-area-inset-left), 1rem);
   padding-right: max(env(safe-area-inset-right), 1rem);

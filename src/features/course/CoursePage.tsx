@@ -15,7 +15,7 @@ export function CoursePage() {
   if (!isCourseId(courseId)) return <NotFoundPage />
 
   return (
-    <main className="flex flex-1 flex-col gap-6 px-safe pt-safe pb-safe">
+    <main className="flex flex-1 flex-col gap-6 px-safe pt-safe pb-6">
       <Link
         to="/"
         aria-label="Retour à l’accueil"
@@ -113,8 +113,13 @@ function LessonRow({ course, lessonRef, state, isLast, onOpen }: LessonRowProps)
   const { lesson, index } = lessonRef
   const introduced = lesson.introduces.map((id) => course.entity(id)).filter((e) => e !== undefined)
   const people = introduced.filter((e) => e.type === 'person').map((e) => e.name)
-  const workCount = introduced.filter((e) => e.type === 'work').length
-  const summary = [...people, `${workCount} œuvre${workCount > 1 ? 's' : ''}`].join(' · ')
+  const count = (type: string, word: string) => {
+    const n = introduced.filter((e) => e.type === type).length
+    return n > 0 ? `${n} ${word}${n > 1 ? 's' : ''}` : undefined
+  }
+  const summary = [...people, count('work', 'œuvre'), count('concept', 'notion')]
+    .filter(Boolean)
+    .join(' · ')
 
   return (
     <li className="relative">
