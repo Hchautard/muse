@@ -134,7 +134,7 @@
       ]
     }
   ],
-  "version": "05281104a42c",
+  "version": "75831c6f564c",
   "entities": [
     {
       "id": "bach",
@@ -155,7 +155,7 @@
       "wikidataId": "Q1340",
       "yearStart": 1678,
       "yearEnd": 1741,
-      "summary": "Compositeur et violoniste vénitien, prêtre surnommé « le Prêtre roux ». Il a écrit des centaines de concertos, dont Les Quatre Saisons, et a contribué à fixer la forme du concerto en trois mouvements.",
+      "summary": "Compositeur et violoniste vénitien, prêtre surnommé « le Prêtre roux ». Il a écrit des centaines de concertos, dont Les Quatre Saisons, et a contribué à fixer la forme du concerto en trois mouvements.",
       "mediaIds": [
         "vivaldi-image"
       ]
@@ -167,7 +167,7 @@
       "wikidataId": "Q254",
       "yearStart": 1756,
       "yearEnd": 1791,
-      "summary": "Compositeur autrichien né à Salzbourg, enfant prodige qui parcourt l'Europe dès son plus jeune âge. Mort à 35 ans, il a abordé tous les genres de son temps : opéras, symphonies, concertos, musique de chambre et musique religieuse.",
+      "summary": "Compositeur autrichien né à Salzbourg, enfant prodige qui parcourt l'Europe dès son plus jeune âge. Mort à 35 ans, il a abordé tous les genres de son temps : opéras, symphonies, concertos, musique de chambre et musique religieuse.",
       "mediaIds": [
         "mozart-image"
       ]
@@ -191,7 +191,7 @@
       "wikidataId": "Q1268",
       "yearStart": 1810,
       "yearEnd": 1849,
-      "summary": "Compositeur et pianiste polonais installé à Paris à partir de 1831. Presque toute son œuvre est consacrée au piano : nocturnes, études, valses, polonaises et mazurkas.",
+      "summary": "Compositeur et pianiste polonais installé à Paris à partir de 1831. Presque toute son œuvre est consacrée au piano : nocturnes, études, valses, polonaises et mazurkas.",
       "mediaIds": [
         "chopin-image"
       ]
@@ -239,7 +239,7 @@
       "wikidataId": "Q8361",
       "yearStart": 1600,
       "yearEnd": 1750,
-      "summary": "Période qui s'étend environ de 1600 à 1750. La musique baroque aime les contrastes, l'ornementation et la basse continue ; elle voit naître l'opéra et s'épanouir le concerto et la fugue.",
+      "summary": "Période qui s'étend environ de 1600 à 1750. La musique baroque aime les contrastes, l'ornementation et la basse continue ; elle voit naître l'opéra et s'épanouir le concerto et la fugue.",
       "mediaIds": []
     },
     {
@@ -249,7 +249,7 @@
       "wikidataId": "Q17723",
       "yearStart": 1750,
       "yearEnd": 1820,
-      "summary": "Période qui s'étend environ de 1750 à 1820, autour de Haydn, Mozart et Beethoven. Elle recherche la clarté et l'équilibre : la symphonie, la sonate et le quatuor à cordes y prennent leur forme classique.",
+      "summary": "Période qui s'étend environ de 1750 à 1820, autour de Haydn, Mozart et Beethoven. Elle recherche la clarté et l'équilibre : la symphonie, la sonate et le quatuor à cordes y prennent leur forme classique.",
       "mediaIds": []
     },
     {
@@ -259,7 +259,7 @@
       "wikidataId": "Q207591",
       "yearStart": 1820,
       "yearEnd": 1900,
-      "summary": "Période qui couvre l'essentiel du XIXe siècle. La musique romantique privilégie l'expression des sentiments, la virtuosité et l'imaginaire ; l'orchestre s'agrandit et le piano occupe une place centrale.",
+      "summary": "Période qui couvre l'essentiel du XIXe siècle. La musique romantique privilégie l'expression des sentiments, la virtuosité et l'imaginaire ; l'orchestre s'agrandit et le piano occupe une place centrale.",
       "mediaIds": []
     },
     {
@@ -288,7 +288,7 @@
     {
       "id": "bach-brandebourgeois-3",
       "type": "work",
-      "name": "Concerto brandebourgeois n° 3",
+      "name": "Concerto brandebourgeois n° 3",
       "wikidataId": "Q223147",
       "year": 1721,
       "summary": "L'un des six concertos que Bach dédie en 1721 au margrave de Brandebourg. Il est écrit pour trois violons, trois altos, trois violoncelles et basse continue.",
@@ -303,10 +303,10 @@
     {
       "id": "bach-suite-orchestre-3",
       "type": "work",
-      "name": "Air de la Suite pour orchestre n° 3",
+      "name": "Air de la Suite pour orchestre n° 3",
       "wikidataId": "Q31180976",
       "year": 1730,
-      "summary": "Deuxième mouvement de la Suite pour orchestre n° 3 en ré majeur (BWV 1068). Arrangé au XIXe siècle par le violoniste August Wilhelmj, il est aussi connu sous le nom d'« Air sur la corde de sol ».",
+      "summary": "Deuxième mouvement de la Suite pour orchestre n° 3 en ré majeur (BWV 1068). Arrangé au XIXe siècle par le violoniste August Wilhelmj, il est aussi connu sous le nom d'« Air sur la corde de sol ».",
       "mediaIds": [
         "bach-suite-orchestre-3-audio"
       ],
@@ -378,10 +378,10 @@
     {
       "id": "mozart-symphonie-40",
       "type": "work",
-      "name": "Symphonie n° 40",
+      "name": "Symphonie n° 40",
       "wikidataId": "Q231390",
       "year": 1788,
-      "summary": "Symphonie en sol mineur (K. 550) composée à l'été 1788, en quelques semaines, avec les symphonies n° 39 et n° 41. C'est l'une des deux seules symphonies de Mozart en mode mineur.",
+      "summary": "Symphonie en sol mineur (K. 550) composée à l'été 1788, en quelques semaines, avec les symphonies n° 39 et n° 41. C'est l'une des deux seules symphonies de Mozart en mode mineur.",
       "mediaIds": [
         "mozart-symphonie-40-audio"
       ],
@@ -407,7 +407,7 @@
     {
       "id": "beethoven-symphonie-5",
       "type": "work",
-      "name": "Symphonie n° 5",
+      "name": "Symphonie n° 5",
       "wikidataId": "Q188709",
       "year": 1808,
       "summary": "Symphonie en ut mineur (op. 67), créée à Vienne en 1808. Son motif initial de quatre notes est l'un des plus reconnaissables de toute la musique.",
@@ -424,7 +424,7 @@
       "name": "Lettre à Élise",
       "wikidataId": "Q11980",
       "year": 1810,
-      "summary": "Bagatelle pour piano en la mineur (WoO 59), datée de 1810 mais publiée seulement en 1867, après la mort du compositeur. L'identité de la dédicataire, « Élise », reste discutée.",
+      "summary": "Bagatelle pour piano en la mineur (WoO 59), datée de 1810 mais publiée seulement en 1867, après la mort du compositeur. L'identité de la dédicataire, « Élise », reste discutée.",
       "mediaIds": [
         "beethoven-lettre-a-elise-audio"
       ],
@@ -435,10 +435,10 @@
     {
       "id": "beethoven-sonate-clair-de-lune",
       "type": "work",
-      "name": "Sonate « Clair de lune »",
+      "name": "Sonate « Clair de lune »",
       "wikidataId": "Q12008",
       "year": 1801,
-      "summary": "Sonate pour piano n° 14 (op. 27 n° 2), composée en 1801. Son surnom, qui ne vient pas de Beethoven, lui a été donné après sa mort à cause de son premier mouvement, lent et rêveur.",
+      "summary": "Sonate pour piano n° 14 (op. 27 n° 2), composée en 1801. Son surnom, qui ne vient pas de Beethoven, lui a été donné après sa mort à cause de son premier mouvement, lent et rêveur.",
       "mediaIds": [
         "beethoven-sonate-clair-de-lune-audio"
       ],
@@ -450,7 +450,7 @@
     {
       "id": "chopin-nocturne-op9-2",
       "type": "work",
-      "name": "Nocturne op. 9 n° 2",
+      "name": "Nocturne op. 9 n° 2",
       "wikidataId": "Q16739831",
       "year": 1830,
       "summary": "Nocturne en mi bémol majeur publié en 1832, le plus célèbre des nocturnes de Chopin. Sa mélodie ornée, chantée au-dessus d'un accompagnement régulier, s'inspire du bel canto de l'opéra italien.",
@@ -465,7 +465,7 @@
     {
       "id": "chopin-polonaise-heroique",
       "type": "work",
-      "name": "Polonaise « héroïque »",
+      "name": "Polonaise « héroïque »",
       "wikidataId": "Q3178652",
       "year": 1842,
       "summary": "Polonaise en la bémol majeur (op. 53) composée en 1842. Danse nationale polonaise, la polonaise devient chez Chopin, exilé à Paris, une grande pièce de concert.",
@@ -480,10 +480,10 @@
     {
       "id": "chopin-etude-revolutionnaire",
       "type": "work",
-      "name": "Étude « Révolutionnaire »",
+      "name": "Étude « Révolutionnaire »",
       "wikidataId": "Q147265",
       "year": 1831,
-      "summary": "Étude en ut mineur (op. 10 n° 12) écrite vers 1831, au moment où l'insurrection polonaise contre la Russie est écrasée. Sa main gauche déchaînée travaille la vélocité du pianiste.",
+      "summary": "Étude en ut mineur (op. 10 n° 12) écrite vers 1831, au moment où l'insurrection polonaise contre la Russie est écrasée. Sa main gauche déchaînée travaille la vélocité du pianiste.",
       "mediaIds": [
         "chopin-etude-revolutionnaire-audio"
       ],
@@ -525,7 +525,7 @@
     {
       "id": "tchaikovski-concerto-piano-1",
       "type": "work",
-      "name": "Concerto pour piano n° 1",
+      "name": "Concerto pour piano n° 1",
       "wikidataId": "Q162935",
       "year": 1875,
       "summary": "Concerto en si bémol mineur (op. 23) achevé en 1875. Son introduction, où le piano martèle de puissants accords sous le thème des cordes, est l'une des plus célèbres du répertoire.",

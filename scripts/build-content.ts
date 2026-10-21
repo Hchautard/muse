@@ -23,6 +23,7 @@ import {
   validate,
   writeJson,
 } from './lib/content-files'
+import { frenchSpacing } from './lib/typography'
 import { validateCourseBundle } from './lib/validate-content'
 
 const asList = (value: string | string[] | undefined) =>
@@ -65,12 +66,12 @@ runScript(async () => {
       entities.push({
         id: entity.id,
         type: entity.type,
-        name: entity.name ?? '',
+        name: frenchSpacing(entity.name ?? ''),
         wikidataId: entity.wikidataId,
         year: entity.year,
         yearStart: entity.yearStart,
         yearEnd: entity.yearEnd,
-        summary: entity.summary ?? '',
+        summary: frenchSpacing(entity.summary ?? ''),
         mediaIds: assets.filter((a) => a.entityId === entity.id).map((a) => a.id),
         tags: entity.tags,
         collection: entity.collection,
