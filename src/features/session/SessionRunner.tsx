@@ -2,11 +2,13 @@ import { useEffect, useReducer, useState } from 'react'
 import { Link, useNavigate } from 'react-router'
 import { largestSrc, type CourseIndex } from '../../content/course-index'
 import { mediaUrl } from '../../content/loader'
+import { useSettings } from '../../db/hooks'
 import { saveSession } from '../../db/progress'
 import { exerciseMediaIds, type Exercise, type ExerciseResult } from '../../engine/exercises'
 import {
   advance,
   currentExercise,
+  introducedEntityIds,
   isAnswered,
   isFinished,
   recordAnswer,
@@ -20,6 +22,7 @@ import type { CourseId } from '../../schemas/content'
 import { preloadMedia } from '../../ui/audio'
 import { BottomSheet } from '../../ui/BottomSheet'
 import { CloseIcon } from '../../ui/icons'
+import { playSound } from '../../ui/sounds'
 import { AnswerFeedback } from '../exercises/AnswerFeedback'
 import { ExerciseView } from '../exercises/ExerciseView'
 import { feedbackFor } from './feedback'
@@ -76,6 +79,7 @@ export function SessionRunner({
   const [save, setSave] = useState<SaveState | null>(null)
   const [confirmingQuit, setConfirmingQuit] = useState(false)
   const navigate = useNavigate()
+  const sound = useSettings()?.sound ?? true
   const exercise = currentExercise(run)
   const answered = isAnswered(run)
   const lastResult = answered ? run.answers[run.position]?.result : undefined
@@ -106,12 +110,16 @@ export function SessionRunner({
   }
 
   function onAnswer(result: ExerciseResult) {
+    if (sound) playSound(result.correct ? 'correct' : 'wrong')
     dispatch({ type: 'answer', result, at: new Date() })
   }
 
   function onContinue() {
     const next = advance(run)
-    if (isFinished(next)) persist(next)
+    if (isFinished(next)) {
+      if (sound) playSound('complete')
+      persist(next)
+    }
     dispatch({ type: 'continue' })
   }
 
@@ -120,6 +128,8 @@ export function SessionRunner({
       <SessionEnd
         mode={mode}
         summary={summarizeRun(run, { lessonCompleted: mode.type === 'lesson' })}
+        content={content}
+        introducedIds={introducedEntityIds(run)}
         saving={save?.status === 'saving'}
         onRetrySave={save?.status === 'failed' ? save.retry : undefined}
       />
