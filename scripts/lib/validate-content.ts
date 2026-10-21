@@ -1,5 +1,6 @@
 // Cross-file checks that zod schemas alone cannot express.
-import type { CourseBundle, EntityType, RelationType, Skill } from '../../src/schemas/content'
+import { SKILL_SPECS } from '../../src/engine/skills'
+import type { CourseBundle, EntityType, RelationType } from '../../src/schemas/content'
 
 /** Which entity types each relation may point to. */
 const RELATION_TARGETS: Record<RelationType, EntityType[]> = {
@@ -8,17 +9,6 @@ const RELATION_TARGETS: Record<RelationType, EntityType[]> = {
   inPeriod: ['period'],
   influencedBy: ['person', 'movement', 'work'],
   features: ['instrument', 'concept', 'person'],
-}
-
-/** What an introduced work needs for a skill to be exercisable. */
-const SKILL_REQUIREMENTS: Partial<
-  Record<Skill, { media?: 'audio' | 'image'; relation?: RelationType; year?: true }>
-> = {
-  'audio-to-composer': { media: 'audio', relation: 'createdBy' },
-  'audio-to-period': { media: 'audio', relation: 'inPeriod' },
-  'image-to-artist': { media: 'image', relation: 'createdBy' },
-  'image-to-movement': { media: 'image', relation: 'belongsTo' },
-  'work-to-date': { year: true },
 }
 
 function duplicates(values: string[]): string[] {
@@ -99,16 +89,16 @@ export function validateCourseBundle(bundle: CourseBundle, options: ValidationOp
 
       if (entity.type !== 'work') continue
       for (const skill of lesson.skills) {
-        const needs = SKILL_REQUIREMENTS[skill]
+        const needs = SKILL_SPECS[skill]
         if (!needs) continue
         const where = `Leçon « ${lesson.id} », œuvre « ${entityId} » (${skill})`
         if (needs.media && !entity.mediaIds.some((id) => media.get(id)?.kind === needs.media))
           errors.push(`${where} : média ${needs.media} manquant`)
         if (
-          needs.relation &&
-          !bundle.relations.some((r) => r.from === entityId && r.type === needs.relation)
+          needs.answer &&
+          !bundle.relations.some((r) => r.from === entityId && r.type === needs.answer)
         )
-          errors.push(`${where} : relation ${needs.relation} manquante`)
+          errors.push(`${where} : relation ${needs.answer} manquante`)
         if (needs.year && entity.year === undefined) errors.push(`${where} : année manquante`)
       }
     }
