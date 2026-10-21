@@ -23,13 +23,16 @@ const MAX_LOUDNESS_GAP_LU = 2
 const DOWNLOAD_TIMEOUT_MS = 10 * 60_000
 
 /** Downloads a URL once into .cache/media/sources and returns the local path. */
-export async function downloadCached(url: string): Promise<string> {
+export async function downloadCached(
+  url: string,
+  headers: Record<string, string> = {},
+): Promise<string> {
   const ext = extname(new URL(url).pathname).toLowerCase() || '.bin'
   const file = join(PATHS.cache, 'sources', `${createHash('sha1').update(url).digest('hex')}${ext}`)
   if (existsSync(file)) return file
 
   await mkdir(dirname(file), { recursive: true })
-  const response = await politeFetch(url, {}, DOWNLOAD_TIMEOUT_MS)
+  const response = await politeFetch(url, headers, DOWNLOAD_TIMEOUT_MS)
   if (!response.body) throw new Error(`réponse vide pour ${url}`)
   const partial = `${file}.part`
   await pipeline(Readable.fromWeb(response.body), createWriteStream(partial))

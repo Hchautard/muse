@@ -234,7 +234,8 @@ export function planIngest(
     const collection = facts.collections[0]?.label
     if (collection && !entity.collection) fill(['collection'], collection)
     // Music works on Commons rarely have a meaningful P18 (scores, posters): only art works use it.
-    if (course === 'art' && facts.images[0] && !entity.image) fill(['image'], facts.images[0])
+    if (course === 'art' && facts.images[0] && !entity.image && !entity.museumImage)
+      fill(['image'], facts.images[0])
     if (facts.audio[0] && !entity.audio) fill(['audio'], facts.audio[0])
   }
 
@@ -243,7 +244,7 @@ export function planIngest(
     fillYear('yearEnd', facts.death, 'date de mort')
     fillRelation('belongsTo', movementIds)
     fillRelation('inPeriod', periodIds)
-    if (facts.images[0] && !entity.image) fill(['image'], facts.images[0])
+    if (facts.images[0] && !entity.image && !entity.museumImage) fill(['image'], facts.images[0])
   }
 
   return plan

@@ -17,6 +17,7 @@ import {
   writeJson,
 } from './lib/content-files'
 import { convertImage, cutAudioExcerpt, downloadCached } from './lib/media'
+import { fetchMuseumImage, parseMuseumRef } from './lib/museums'
 import { parseTimecode, type RegistryAsset } from './lib/source-schemas'
 import { cleanUrl, commonsApi, commonsTitle, stripHtml } from './lib/wikimedia'
 
@@ -168,13 +169,14 @@ async function collectDesiredAssets(): Promise<DesiredAsset[]> {
   }
 
   for (const { entity, course } of entities.values()) {
-    if (entity.image)
+    const image = entity.museumImage ?? entity.image
+    if (image)
       desired.push({
         id: `${entity.id}-image`,
         kind: 'image',
         course,
         entityId: entity.id,
-        origin: { source: entity.image },
+        origin: { source: image },
         overrides: { credit: entity.imageCredit },
       })
     // Wikidata P51 recording, used from the start when no excerpt was chosen by hand.
@@ -224,6 +226,23 @@ async function processAsset(
   asset: DesiredAsset,
   commons: Map<string, CommonsFile>,
 ): Promise<RegistryAsset> {
+  const museumRef = parseMuseumRef(asset.origin.source)
+  if (museumRef) {
+    const image = await fetchMuseumImage(museumRef)
+    const input = await downloadCached(image.url, image.headers)
+    return {
+      id: asset.id,
+      kind: 'image',
+      course: asset.course,
+      entityId: asset.entityId,
+      origin: asset.origin,
+      credit: truncate(asset.overrides.credit ?? image.credit, MAX_CREDIT_LENGTH),
+      license: image.license,
+      sourceUrl: image.sourceUrl,
+      ...(await convertImage(input, `${asset.course}/images`, asset.id)),
+    }
+  }
+
   const title = commonsTitle(asset.origin.source)
   const file = title ? commons.get(title) : undefined
   if (title && !file) throw new Error(`fichier introuvable sur Commons : ${title}`)

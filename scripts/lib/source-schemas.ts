@@ -7,6 +7,7 @@ import {
   idSchema,
   mediaAssetSchema,
 } from '../../src/schemas/content'
+import { MUSEUM_REF } from './museums'
 
 /** A Commons file title, e.g. "File:Johann Sebastian Bach.png". */
 export const commonsFileSchema = z
@@ -33,12 +34,23 @@ export const entitySourceSchema = entitySchema
       .optional(),
     /** Commons image (Wikidata P18), downloaded by fetch-media. */
     image: commonsFileSchema.optional(),
-    /** Replaces the Commons author of `image` when it is unusable (e.g. « Unknown author »). */
+    /**
+     * Open access image from a museum API instead of Commons: "aic:<id>" (Art Institute of
+     * Chicago) or "met:<id>" (The Metropolitan Museum of Art).
+     */
+    museumImage: z
+      .string()
+      .regex(MUSEUM_REF, 'référence attendue « aic:<numéro> » ou « met:<numéro> »')
+      .optional(),
+    /** Replaces the author of the image when it is unusable (e.g. « Unknown author »). */
     imageCredit: z.string().min(1).optional(),
     /** Commons recording (Wikidata P51); a manifest excerpt takes precedence. */
     audio: commonsFileSchema.optional(),
   })
   .strict()
+  .refine((entity) => !(entity.image && entity.museumImage), {
+    message: 'image et museumImage : choisir l’un des deux',
+  })
 
 export const entityFileSchema = z
   .object({

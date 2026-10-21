@@ -124,6 +124,20 @@ describe('planIngest', () => {
     expect(music.set.some((s) => s.path[0] === 'image')).toBe(false)
     expect(art.set).toContainEqual({ path: ['image'], value: 'File:Score.jpg' })
   })
+
+  it('leaves the Commons image out when a museum image is chosen', () => {
+    const withImage = parseFacts([
+      ...rows,
+      { item: `${WD}Q1`, pid: 'P18', value: `${FILE_PATH}Painting.jpg` },
+    ]).get('Q1')!
+    const plan = planIngest(
+      { id: 'painting', type: 'work', wikidataId: 'Q1', museumImage: 'aic:16568' },
+      withImage,
+      'art',
+      known,
+    )
+    expect(plan.set.some((s) => s.path[0] === 'image')).toBe(false)
+  })
 })
 
 describe('YAML round trip', () => {
