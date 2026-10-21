@@ -5,9 +5,11 @@ import { dueCards, type CardRecord } from '../engine/cards'
 import { applyAnswers } from '../engine/review'
 import { summarizeRun, type SessionRun, type SessionSummary } from '../engine/run'
 import type { SessionMode } from '../engine/session'
-import { addSession, currentStreak, DEFAULT_DAILY_GOAL, type DayStats } from '../engine/streak'
+import { addSession, currentStreak, type DayStats } from '../engine/streak'
 import type { CourseId } from '../schemas/content'
+import type { ProgressData } from './backup'
 import { db } from './db'
+import { loadSettings } from './settings'
 
 /** Longer sessions were most likely left open: they count for this many minutes at most. */
 const MAX_SESSION_MINUTES = 30
@@ -24,10 +26,7 @@ export async function dueCount(courseId: CourseId, now = new Date()): Promise<nu
   return dueCards(await loadCourseCards(courseId), now).length
 }
 
-export async function dailyGoal(): Promise<number> {
-  const setting = await db.settings.get('dailyGoal')
-  return typeof setting?.value === 'number' ? setting.value : DEFAULT_DAILY_GOAL
-}
+const dailyGoal = async () => (await loadSettings()).dailyGoal
 
 export interface TodayStats {
   today: DayStats | undefined
@@ -102,4 +101,46 @@ export async function saveSession(session: FinishedSession): Promise<SessionSumm
     },
   )
   return summary
+}
+
+const progressTables = () => [db.cards, db.reviewLog, db.lessons, db.daily]
+
+/** Every table, read in one transaction so that the copy is consistent. */
+export function exportProgress(): Promise<ProgressData> {
+  return db.transaction('r', [...progressTables(), db.settings], async () => ({
+    cards: await db.cards.toArray(),
+    reviewLog: await db.reviewLog.toArray(),
+    lessons: await db.lessons.toArray(),
+    daily: await db.daily.toArray(),
+    settings: await db.settings.toArray(),
+  }))
+}
+
+/** Replaces everything (settings included) with the content of a backup. */
+export async function importProgress(data: ProgressData): Promise<void> {
+  await db.transaction('rw', [...progressTables(), db.settings], async () => {
+    await Promise.all([...progressTables(), db.settings].map((table) => table.clear()))
+    await db.cards.bulkAdd(data.cards)
+    await db.reviewLog.bulkAdd(data.reviewLog)
+    await db.lessons.bulkAdd(data.lessons)
+    await db.daily.bulkAdd(data.daily)
+    await db.settings.bulkAdd(data.settings)
+  })
+}
+
+/** Erases the progress (cards, history, lessons, days); settings are kept. */
+export async function resetProgress(): Promise<void> {
+  await db.transaction('rw', progressTables(), async () => {
+    await Promise.all(progressTables().map((table) => table.clear()))
+  })
+}
+
+/** Everything the statistics screen needs; the review log only from `since` on. */
+export async function statsData(since: Date) {
+  const [days, cards, logs] = await Promise.all([
+    db.daily.toArray(),
+    db.cards.toArray(),
+    db.reviewLog.where('answeredAt').aboveOrEqual(since).toArray(),
+  ])
+  return { days, cards, logs }
 }
