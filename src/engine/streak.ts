@@ -33,6 +33,17 @@ export function addSession(
   }
 }
 
+/** Adds XP earned outside a session (the daily challenge): the session count is unchanged. */
+export function addXp(day: DayStats | undefined, date: string, xp: number, goal: number): DayStats {
+  return {
+    date,
+    xp: (day?.xp ?? 0) + xp,
+    minutes: day?.minutes ?? 0,
+    sessions: day?.sessions ?? 0,
+    goal: day?.goal ?? goal,
+  }
+}
+
 /**
  * Consecutive days with the goal reached, ending today, or yesterday while today is still in
  * progress: the streak only breaks once a whole day has passed without reaching the goal.
