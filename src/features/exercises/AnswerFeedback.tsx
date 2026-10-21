@@ -8,6 +8,8 @@ interface AnswerFeedbackProps {
   title: string
   summary: string
   credit?: MediaCredit
+  /** "Bonne réponse :" before the answer after a miss; off when the exercise shows it already. */
+  prefixAnswer?: boolean
   onContinue: () => void
 }
 
@@ -18,6 +20,7 @@ export function AnswerFeedback({
   title,
   summary,
   credit,
+  prefixAnswer = true,
   onContinue,
 }: AnswerFeedbackProps) {
   return (
@@ -37,7 +40,7 @@ export function AnswerFeedback({
 
         <div className="flex flex-col gap-1.5">
           <p>
-            {!correct && <span className="text-muted">Bonne réponse : </span>}
+            {!correct && prefixAnswer && <span className="text-muted">Bonne réponse : </span>}
             <strong className="font-semibold">{answerLabel}</strong>
             <span className="text-muted"> — </span>
             <em className="font-serif">{title}</em>

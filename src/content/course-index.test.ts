@@ -12,6 +12,8 @@ describe('createCourseIndex', () => {
     expect(course.related('toccata', 'belongsTo')).toBeUndefined()
     expect(course.media(toccata, 'audio')?.id).toBe('toccata-audio')
     expect(course.media(toccata, 'image')).toBeUndefined()
+    expect(course.asset('bach-image')?.kind).toBe('image')
+    expect(course.asset('nope')).toBeUndefined()
   })
 
   it('lists lessons in course order with their unit', () => {

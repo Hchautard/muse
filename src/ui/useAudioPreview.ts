@@ -1,19 +1,12 @@
 import { useCallback, useEffect, useState } from 'react'
+import { getSharedAudio } from './audio'
 
-// A single <audio> element shared by every preview: starting an excerpt stops the previous one.
-let sharedAudio: HTMLAudioElement | null = null
-
-function getAudio(): HTMLAudioElement {
-  sharedAudio ??= Object.assign(new Audio(), { preload: 'none' })
-  return sharedAudio
-}
-
-/** Plays short previews; playback only ever starts from a tap, as iOS requires. */
+/** Plays short previews from a list; playback only ever starts from a tap, as iOS requires. */
 export function useAudioPreview() {
   const [playingId, setPlayingId] = useState<string | null>(null)
 
   useEffect(() => {
-    const audio = getAudio()
+    const audio = getSharedAudio()
     const onEnded = () => setPlayingId(null)
     audio.addEventListener('ended', onEnded)
     return () => {
@@ -24,7 +17,7 @@ export function useAudioPreview() {
 
   const toggle = useCallback(
     (id: string, src: string) => {
-      const audio = getAudio()
+      const audio = getSharedAudio()
       if (playingId === id) {
         audio.pause()
         setPlayingId(null)

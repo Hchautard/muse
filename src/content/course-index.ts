@@ -21,6 +21,7 @@ export interface CourseIndex {
   /** First entity reached from `fromId` through a relation of the given type. */
   related(fromId: string, type: RelationType): Entity | undefined
   media(entity: Entity, kind: MediaAsset['kind']): MediaAsset | undefined
+  asset(id: string): MediaAsset | undefined
   /** All lessons in course order. */
   lessons: LessonRef[]
   lesson(id: string): LessonRef | undefined
@@ -55,6 +56,7 @@ export function createCourseIndex(bundle: CourseBundle): CourseIndex {
       }
       return undefined
     },
+    asset: (id) => media.get(id),
     lessons,
     lesson: (id) => lessonsById.get(id),
   }
