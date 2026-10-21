@@ -1,7 +1,7 @@
 // Turns a session's answers into updated cards and review log entries.
 import type { CourseId } from '../schemas/content'
 import type { CardRecord } from './cards'
-import { expectedAnswerId, type ExerciseKind } from './exercises'
+import { expectedAnswerId, type ExerciseKind, type Mismatch } from './exercises'
 import {
   DEFAULT_EASY_THRESHOLDS_MS,
   gradeAnswer,
@@ -22,6 +22,8 @@ export interface ReviewEntry {
   /** For confusion statistics: what was expected and what the learner chose. */
   expectedId?: string
   chosenId?: string
+  /** Association: the wrong pairings tried. */
+  mismatches?: Mismatch[]
 }
 
 export interface ReviewOutcome {
@@ -64,6 +66,7 @@ export function applyAnswers(
       kind: exercise.kind,
       expectedId: expectedAnswerId(exercise),
       chosenId: result.chosenId,
+      ...(result.mismatches?.length ? { mismatches: result.mismatches } : {}),
     })
   }
   return { cards: [...updated.values()], reviews }

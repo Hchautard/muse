@@ -1,9 +1,9 @@
 import { useEffect, useReducer, useState } from 'react'
 import { Link, useNavigate } from 'react-router'
-import type { CourseIndex } from '../../content/course-index'
+import { largestSrc, type CourseIndex } from '../../content/course-index'
 import { mediaUrl } from '../../content/loader'
 import { saveSession } from '../../db/progress'
-import type { Exercise, ExerciseResult } from '../../engine/exercises'
+import { exerciseMediaIds, type Exercise, type ExerciseResult } from '../../engine/exercises'
 import {
   advance,
   currentExercise,
@@ -83,9 +83,15 @@ export function SessionRunner({
   // Fetch the next exercises' media while the learner works on this one.
   useEffect(() => {
     for (const next of run.queue.slice(run.position, run.position + 3)) {
-      const media = next.kind === 'chronology' ? undefined : content.asset(next.mediaId)
-      const src = media?.variants?.find((v) => v.width >= 960)?.src ?? media?.src
-      if (src) preloadMedia(mediaUrl(src))
+      for (const id of exerciseMediaIds(next, content)) {
+        const media = content.asset(id)
+        if (!media) continue
+        const src =
+          next.kind === 'detail'
+            ? largestSrc(media)
+            : (media.variants?.find((v) => v.width >= 960)?.src ?? media.src)
+        preloadMedia(mediaUrl(src))
+      }
     }
   }, [run.position, run.queue, content])
 
@@ -97,6 +103,10 @@ export function SessionRunner({
         console.error('Saving the session failed', error)
         setSave({ status: 'failed', retry: () => persist(finished) })
       })
+  }
+
+  function onAnswer(result: ExerciseResult) {
+    dispatch({ type: 'answer', result, at: new Date() })
   }
 
   function onContinue() {
@@ -165,7 +175,7 @@ export function SessionRunner({
             key={exercise.id}
             exercise={exercise}
             content={content}
-            onAnswer={(result) => dispatch({ type: 'answer', result, at: new Date() })}
+            onAnswer={onAnswer}
           />
         )}
       </main>
@@ -173,11 +183,8 @@ export function SessionRunner({
       {feedback && lastResult && (
         <AnswerFeedback
           correct={lastResult.correct}
-          answerLabel={feedback.answerLabel}
-          title={feedback.title}
-          summary={feedback.summary}
-          credit={feedback.credit}
-          prefixAnswer={feedback.prefixAnswer}
+          feedback={feedback}
+          note={mismatchNote(lastResult)}
           onContinue={onContinue}
         />
       )}
@@ -206,4 +213,10 @@ export function SessionRunner({
       )}
     </div>
   )
+}
+
+function mismatchNote({ mismatches }: ExerciseResult): string | undefined {
+  const count = mismatches?.length ?? 0
+  if (count === 0) return undefined
+  return `${count} erreur${count > 1 ? 's' : ''} avant de trouver toutes les paires`
 }

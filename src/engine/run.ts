@@ -1,5 +1,10 @@
 // Progress through a session: answers, retries of missed cards, and the final tally.
-import { shuffleOutOfOrder, type Exercise, type ExerciseResult } from './exercises'
+import {
+  shuffleAssociation,
+  shuffleOutOfOrder,
+  type Exercise,
+  type ExerciseResult,
+} from './exercises'
 import { createRng, hashSeed, shuffle } from './random'
 import { sessionXp, type XpBreakdown } from './xp'
 
@@ -62,10 +67,16 @@ function retryOf(exercise: Exercise): Exercise {
     intro: false,
     retry: true,
   }
-  if (retry.kind === 'chronology')
-    return { ...retry, itemIds: shuffleOutOfOrder(retry.answerIds, rng) }
-  if (retry.kind === 'true-false') return retry
-  return { ...retry, optionIds: shuffle(retry.optionIds, rng) }
+  switch (retry.kind) {
+    case 'chronology':
+      return { ...retry, itemIds: shuffleOutOfOrder(retry.answerIds, rng) }
+    case 'association':
+      return { ...retry, ...shuffleAssociation(retry.pairs, rng) }
+    case 'true-false':
+      return retry
+    default:
+      return { ...retry, optionIds: shuffle(retry.optionIds, rng) }
+  }
 }
 
 /** Appends the retry, or slots it in just before the end to avoid repeating a work. */
@@ -75,6 +86,11 @@ function insertRetry(queue: Exercise[], position: number, retry: Exercise): Exer
       return [...queue.slice(0, at), retry, ...queue.slice(at)]
   }
   return [...queue, retry]
+}
+
+/** Works (or concepts) met for the first time in the session, in order. */
+export function introducedEntityIds(run: SessionRun): string[] {
+  return [...new Set(run.answers.filter((a) => a.exercise.intro).map((a) => a.exercise.entityId))]
 }
 
 export interface SessionSummary {

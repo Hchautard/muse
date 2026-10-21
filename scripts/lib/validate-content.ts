@@ -87,11 +87,10 @@ export function validateCourseBundle(bundle: CourseBundle, options: ValidationOp
         )
       introducedIn.set(entityId, lesson.id)
 
-      if (entity.type !== 'work') continue
       for (const skill of lesson.skills) {
         const needs = SKILL_SPECS[skill]
-        if (!needs) continue
-        const where = `Leçon « ${lesson.id} », œuvre « ${entityId} » (${skill})`
+        if (entity.type !== needs.subject) continue
+        const where = `Leçon « ${lesson.id} », ${entity.type === 'work' ? 'œuvre' : 'concept'} « ${entityId} » (${skill})`
         if (needs.media && !entity.mediaIds.some((id) => media.get(id)?.kind === needs.media))
           errors.push(`${where} : média ${needs.media} manquant`)
         if (
@@ -103,6 +102,13 @@ export function validateCourseBundle(bundle: CourseBundle, options: ValidationOp
       }
     }
   }
+
+  // Definitions are matched four at a time.
+  const conceptCount = bundle.entities.filter((e) => e.type === 'concept').length
+  if (lessons.some((l) => l.skills.includes('concept-definition')) && conceptCount < 4)
+    errors.push(
+      `La compétence concept-definition demande au moins 4 concepts dans le parcours (${conceptCount})`,
+    )
 
   return errors
 }

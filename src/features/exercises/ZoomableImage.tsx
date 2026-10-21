@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { largestSrc } from '../../content/course-index'
 import { mediaUrl } from '../../content/loader'
 import type { MediaAsset } from '../../schemas/content'
 import { ExpandIcon } from '../../ui/icons'
@@ -16,7 +17,7 @@ export function ZoomableImage({ image, alt, compact = false }: ZoomableImageProp
   const [open, setOpen] = useState(false)
   const variants = image.variants ?? []
   const srcSet = variants.map((v) => `${mediaUrl(v.src)} ${v.width}w`).join(', ')
-  const largest = [...variants].sort((a, b) => b.width - a.width)[0]?.src ?? image.src
+  const largest = largestSrc(image)
 
   return (
     <>

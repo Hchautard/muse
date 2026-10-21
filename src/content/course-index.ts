@@ -70,3 +70,8 @@ export function formatDates(entity: Entity): string | undefined {
   if (entity.yearStart !== undefined) return `né en ${entity.yearStart}`
   return undefined
 }
+
+/** Path of the largest version of an image (for zoom and close-ups). */
+export function largestSrc(image: MediaAsset): string {
+  return [...(image.variants ?? [])].sort((a, b) => b.width - a.width)[0]?.src ?? image.src
+}

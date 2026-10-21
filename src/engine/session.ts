@@ -167,7 +167,7 @@ function reworkKeys(keys: CardKey[], count: number): CardKey[] {
   if (count <= 0) return []
   const byEntity = new Map<string, CardKey[]>()
   const sensoryFirst = [...keys].sort(
-    (a, b) => Number(!SKILL_SPECS[a.skill]?.media) - Number(!SKILL_SPECS[b.skill]?.media),
+    (a, b) => Number(!SKILL_SPECS[a.skill].media) - Number(!SKILL_SPECS[b.skill].media),
   )
   for (const key of sensoryFirst)
     byEntity.set(key.entityId, [...(byEntity.get(key.entityId) ?? []), key])

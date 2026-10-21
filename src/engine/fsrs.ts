@@ -24,8 +24,11 @@ export const DEFAULT_EASY_THRESHOLDS_MS: EasyThresholds = {
   // Includes the tap on the play button.
   'audio-choice': 6000,
   'image-choice': 4000,
+  // A close-up takes a longer look.
+  detail: 6000,
   'true-false': 4000,
   chronology: 0,
+  association: 0,
 }
 
 export interface GradedAnswer {

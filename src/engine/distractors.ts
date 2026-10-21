@@ -51,7 +51,7 @@ export function closeness(answer: Entity, candidate: Entity, content: CourseInde
 
 /** Entities that could stand in for the answer: same type and same role (composers, periods…). */
 function candidatePool(answer: Entity, skill: Skill, content: CourseIndex): Entity[] {
-  const relation = SKILL_SPECS[skill]?.answer
+  const relation = SKILL_SPECS[skill].answer
   const roleHolders = relation
     ? new Set(content.bundle.relations.filter((r) => r.type === relation).map((r) => r.to))
     : undefined

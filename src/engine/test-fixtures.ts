@@ -138,6 +138,41 @@ export function makeArtCourse(): CourseIndex {
   return createCourseIndex(bundle)
 }
 
+/** Five concepts, each summary naming its concept, and one lesson matching them. */
+export function makeConceptCourse(): CourseIndex {
+  const concepts: [id: string, name: string, summary: string][] = [
+    ['fugue', 'Fugue', 'La fugue fait entrer un thème voix après voix. Elle est très savante.'],
+    ['sonate', 'Sonate', 'Une sonate est une pièce pour un ou deux instruments.'],
+    ['symphonie', 'Symphonie', 'Grande œuvre pour orchestre, la symphonie a plusieurs mouvements.'],
+    ['concerto', 'Concerto', 'Le concerto oppose un soliste et l’orchestre.'],
+    ['opera', 'Opéra', 'Les opéras sont des drames chantés, mis en scène.'],
+  ]
+  const bundle: CourseBundle = {
+    id: 'music',
+    title: 'Formes',
+    version: 'test',
+    units: [
+      {
+        id: 'forms',
+        title: 'Formes',
+        description: 'Test',
+        lessons: [
+          {
+            id: 'forms-lesson',
+            title: 'Formes',
+            introduces: concepts.map(([id]) => id),
+            skills: ['concept-definition'],
+          },
+        ],
+      },
+    ],
+    entities: concepts.map(([id, name, summary]) => entity({ id, type: 'concept', name, summary })),
+    relations: [],
+    media: [],
+  }
+  return createCourseIndex(bundle)
+}
+
 export const MUSIC_LESSON_IDS = COMPOSERS.map(([id]) => `lesson-${id}`)
 
 /** A card answered once (Good by default) at `reviewedAt`. */

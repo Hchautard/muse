@@ -1,9 +1,10 @@
 import { describe, expect, it } from 'vitest'
-import type { Exercise } from './exercises'
+import type { AssociationExercise, Exercise } from './exercises'
 import { applyAnswers } from './review'
 import {
   advance,
   currentExercise,
+  introducedEntityIds,
   isAnswered,
   isFinished,
   recordAnswer,
@@ -81,6 +82,34 @@ describe('session run', () => {
     expect(advance(run).position).toBe(1)
   })
 
+  it('reshuffles both columns of a missed association', () => {
+    const association: AssociationExercise = {
+      id: '1-bach-1:audio-to-composer',
+      cardId: 'bach-1:audio-to-composer',
+      entityId: 'bach-1',
+      skill: 'audio-to-composer',
+      graded: true,
+      intro: false,
+      retry: false,
+      kind: 'association',
+      leftIds: ['bach-1', 'mozart-1', 'chopin-1', 'ravel-1'],
+      rightIds: ['ravel', 'bach', 'mozart', 'chopin'],
+      pairs: { 'bach-1': 'bach', 'mozart-1': 'mozart', 'chopin-1': 'chopin', 'ravel-1': 'ravel' },
+    }
+    const run = recordAnswer(startRun([association]), { correct: false, durationMs: 20_000 }, now)
+    const retry = run.queue[1]
+    if (retry?.kind !== 'association') throw new Error('Expected a retried association')
+    expect(retry.pairs).toEqual(association.pairs)
+    expect([...retry.leftIds].sort()).toEqual([...association.leftIds].sort())
+    expect([...retry.rightIds].sort()).toEqual([...association.rightIds].sort())
+    expect(retry.graded).toBe(false)
+  })
+
+  it('lists the works met for the first time', () => {
+    // Introductions come in the lesson's order.
+    expect(introducedEntityIds(play())).toEqual(['bach-1', 'bach-2', 'bach-3'])
+  })
+
   it('tallies first attempts and XP', () => {
     const summary = summarizeRun(play([1, 4]), { lessonCompleted: true })
     expect(summary.answered).toBe(session.length)
@@ -124,6 +153,17 @@ describe('applyAnswers', () => {
       expectedId: exercise.answerId,
       chosenId: wrongId,
     })
+  })
+
+  it('logs the wrong pairings of an association', () => {
+    const exercise = session.find((e) => e.graded)!
+    const mismatches = [{ expectedId: 'bach', chosenId: 'vivaldi' }]
+    const run = recordAnswer(
+      startRun([exercise]),
+      { correct: false, durationMs: 9000, mismatches },
+      now,
+    )
+    expect(applyAnswers('music', new Map(), run.answers).reviews[0]?.mismatches).toEqual(mismatches)
   })
 
   it('updates existing cards instead of creating new ones', () => {

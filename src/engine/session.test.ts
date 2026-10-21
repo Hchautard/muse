@@ -175,6 +175,21 @@ describe('buildSession — review mode', () => {
     expect(session.map((e) => e.cardId)).toEqual(expect.arrayContaining(fragile.map((f) => f.id)))
   })
 
+  it('varies the kinds of exercise for well-known cards, still keeping works apart', () => {
+    const known = learnedMusicCards(8, learnedAt).map((card) => ({
+      ...card,
+      fsrs: { ...card.fsrs, stability: 15 },
+    }))
+    const kinds = new Set<string>()
+    for (const seed of [1, 2, 3, 4, 5, 6]) {
+      const session = review(known, later(30), seed)
+      for (const exercise of session) kinds.add(exercise.kind)
+      expectNoConsecutiveRepeat(session)
+      expectMostlySensory(session)
+    }
+    expect(kinds).toEqual(new Set(['audio-choice', 'true-false', 'association', 'chronology']))
+  })
+
   it('is empty without any card of the course', () => {
     expect(review([])).toEqual([])
     const other = learnedMusicCards(1, learnedAt).map((c) => ({ ...c, courseId: 'art' as const }))

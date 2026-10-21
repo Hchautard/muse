@@ -15,6 +15,19 @@ interface IntroCardProps {
 export function IntroCard({ exercise, content, onContinue }: IntroCardProps) {
   const work = content.entity(exercise.entityId)
   if (!work) return null
+  if (work.type === 'concept')
+    return (
+      <div className="flex flex-1 animate-fade-in flex-col gap-6">
+        <header className="flex flex-col gap-1">
+          <p className="text-xs font-medium tracking-[0.14em] text-gold uppercase">
+            Nouvelle notion
+          </p>
+          <h2 className="text-3xl leading-tight">{work.name}</h2>
+        </header>
+        <p className="text-lg leading-relaxed">{work.summary}</p>
+        <ContinueButton onContinue={onContinue} />
+      </div>
+    )
   const creator = content.related(work.id, 'createdBy')
   const portrait = creator && content.media(creator, 'image')
   const thumb = portrait?.variants?.[0] ?? portrait
@@ -64,13 +77,19 @@ export function IntroCard({ exercise, content, onContinue }: IntroCardProps) {
         </p>
       )}
 
-      <button
-        type="button"
-        onClick={onContinue}
-        className="min-h-13 w-full rounded-xl bg-accent text-lg font-semibold text-accent-ink transition-transform active:scale-[0.98]"
-      >
-        J’ai compris
-      </button>
+      <ContinueButton onContinue={onContinue} />
     </div>
+  )
+}
+
+function ContinueButton({ onContinue }: { onContinue: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onContinue}
+      className="mt-auto min-h-13 w-full rounded-xl bg-accent text-lg font-semibold text-accent-ink transition-transform active:scale-[0.98]"
+    >
+      J’ai compris
+    </button>
   )
 }
