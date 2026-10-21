@@ -43,3 +43,39 @@ units:
         title: Juan Gris et le cubisme
         introduces: [cubisme, juan-gris, portrait-picasso, bouteille-anis, petit-dejeuner]
         skills: [image-to-artist, image-to-movement, work-to-date]
+  - id: art-2
+    title: Du romantisme à l'abstraction
+    description: Huit peintres et six mouvements, du XIXe siècle aux débuts de l'art abstrait.
+    lessons:
+      - id: art-2-1
+        title: Delacroix et le romantisme
+        introduces: [romantisme, delacroix, barque-dante, liberte-guidant-peuple, femmes-alger]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-2-2
+        title: Turner
+        introduces: [turner, hannibal-alpes, temeraire, pluie-vapeur-vitesse]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-2-3
+        title: Courbet et le réalisme
+        introduces: [realisme, courbet, enterrement-ornans, demoiselles-village, atelier-peintre]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-2-4
+        title: Millet
+        introduces: [millet, semeur, glaneuses, angelus]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-2-5
+        title: Seurat et le néo-impressionnisme
+        introduces: [neo-impressionnisme, seurat, baignade-asnieres, grande-jatte, cirque]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-2-6
+        title: Klimt et l'Art nouveau
+        introduces: [art-nouveau, klimt, judith, adele-bloch-bauer, baiser]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-2-7
+        title: Munch et l'expressionnisme
+        introduces: [expressionnisme, munch, soiree-karl-johan, cri, danse-vie]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-2-8
+        title: Kandinsky et l'art abstrait
+        introduces: [art-abstrait, kandinsky, composition-vii, composition-viii, jaune-rouge-bleu]
+        skills: [image-to-artist, image-to-movement, work-to-date]

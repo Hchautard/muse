@@ -39,3 +39,39 @@ units:
         title: Ravel
         introduces: [ravel, ravel-bolero, ravel-pavane, ravel-jeux-d-eau]
         skills: [audio-to-composer, audio-to-period, work-to-date]
+  - id: music-2
+    title: Élargir le répertoire
+    description: Huit compositeurs de plus, deux par période, du baroque au début du XXe siècle.
+    lessons:
+      - id: music-2-1
+        title: Rameau et le clavecin
+        introduces: [rameau, rameau-tourbillons, rameau-niais-sologne, rameau-poule]
+        skills: [audio-to-composer, audio-to-period, work-to-date]
+      - id: music-2-2
+        title: Haendel
+        introduces: [haendel, haendel-water-music, haendel-messie, haendel-reine-saba]
+        skills: [audio-to-composer, audio-to-period, work-to-date]
+      - id: music-2-3
+        title: Gluck et l'opéra
+        introduces: [gluck, gluck-orphee, gluck-paride-elena, gluck-iphigenie-aulide]
+        skills: [audio-to-composer, audio-to-period, work-to-date]
+      - id: music-2-4
+        title: Haydn
+        introduces: [haydn, haydn-surprise, haydn-trompette, haydn-creation]
+        skills: [audio-to-composer, audio-to-period, work-to-date]
+      - id: music-2-5
+        title: Schubert et le lied
+        introduces: [schubert, schubert-roi-aulnes, schubert-inachevee, schubert-ave-maria]
+        skills: [audio-to-composer, audio-to-period, work-to-date]
+      - id: music-2-6
+        title: Dvořák
+        introduces: [dvorak, dvorak-nouveau-monde, dvorak-humoresque, dvorak-concerto-violoncelle]
+        skills: [audio-to-composer, audio-to-period, work-to-date]
+      - id: music-2-7
+        title: Satie
+        introduces: [satie, satie-gymnopedie, satie-gnossienne, satie-je-te-veux]
+        skills: [audio-to-composer, audio-to-period, work-to-date]
+      - id: music-2-8
+        title: Holst
+        introduces: [holst, holst-premiere-suite, holst-deuxieme-suite, holst-planetes]
+        skills: [audio-to-composer, audio-to-period, work-to-date]

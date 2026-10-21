@@ -4,22 +4,22 @@
     {
       "id": "music",
       "title": "Musique classique",
-      "version": "75831c6f564c",
+      "version": "3ed5d1addf05",
       "file": "music.json",
-      "unitCount": 1,
-      "lessonCount": 8,
-      "entityCount": 36,
-      "mediaBytes": 11231910
+      "unitCount": 2,
+      "lessonCount": 16,
+      "entityCount": 68,
+      "mediaBytes": 22834396
     },
     {
       "id": "art",
       "title": "Peinture occidentale",
-      "version": "db1ad945f730",
+      "version": "317fdc0ddb42",
       "file": "art.json",
-      "unitCount": 1,
-      "lessonCount": 9,
-      "entityCount": 41,
-      "mediaBytes": 22393020
+      "unitCount": 2,
+      "lessonCount": 17,
+      "entityCount": 79,
+      "mediaBytes": 38742250
     }
   ]
 }

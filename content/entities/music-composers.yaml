@@ -112,3 +112,114 @@ entities:
     yearEnd: 1937
     image: File:Maurice Ravel 1925.jpg
     imageCredit: "Photographe inconnu, Bibliothèque nationale de France (1925)"
+
+  # — Unité 2 —
+  - id: rameau
+    type: person
+    name: Jean-Philippe Rameau
+    wikidataId: Q1145
+    relations:
+      inPeriod: musique-baroque
+    summary: >-
+      Compositeur et théoricien français, figure majeure du baroque. Connu d'abord pour ses pièces
+      de clavecin et son Traité de l'harmonie (1722), il ne s'impose à l'opéra qu'à cinquante ans.
+    yearStart: 1683
+    yearEnd: 1764
+    image: "File:Attribué à Joseph Aved, Portrait de Jean-Philippe Rameau (vers 1728) - 001.jpg"
+    imageCredit: Attribué à Joseph Aved
+
+  - id: haendel
+    type: person
+    name: Georg Friedrich Haendel
+    wikidataId: Q7302
+    relations:
+      inPeriod: musique-baroque
+    summary: >-
+      Compositeur d'origine allemande, installé à Londres. Il brille dans l'opéra italien, puis dans
+      l'oratorio anglais, dont Le Messie est le plus célèbre.
+    yearStart: 1685
+    yearEnd: 1759
+    image: File:George Frideric Handel by Balthasar Denner.jpg
+    imageCredit: Attribué à Balthasar Denner
+
+  - id: gluck
+    type: person
+    name: Christoph Willibald Gluck
+    wikidataId: Q130759
+    relations:
+      inPeriod: musique-classique
+    summary: >-
+      Compositeur allemand qui a travaillé à Vienne et à Paris. Avec Orphée et Eurydice, il réforme
+      l'opéra : plus de naturel, une musique au service du drame plutôt que de la virtuosité.
+    yearStart: 1714
+    yearEnd: 1787
+    image: "File:Joseph Siffred Duplessis - Christoph Willibald Gluck - Google Art Project.jpg"
+
+  - id: haydn
+    type: person
+    name: Joseph Haydn
+    wikidataId: Q7349
+    relations:
+      inPeriod: musique-classique
+    summary: >-
+      Compositeur autrichien, longtemps au service des princes Esterházy. Surnommé le « père de la
+      symphonie », il en a écrit plus de cent et a fixé la forme du quatuor à cordes.
+    yearStart: 1732
+    yearEnd: 1809
+    image: File:Joseph Haydn, målning av Thomas Hardy från 1792.jpg
+
+  - id: schubert
+    type: person
+    name: Franz Schubert
+    wikidataId: Q7312
+    relations:
+      inPeriod: musique-romantique
+    summary: >-
+      Compositeur autrichien, mort à 31 ans. Il a écrit plus de six cents lieder, des chants pour
+      voix et piano sur des poèmes de son temps, ainsi que des symphonies et de la musique de
+      chambre.
+    yearStart: 1797
+    yearEnd: 1828
+    image: "File:Franz Schubert by Wilhelm August Rieder 1875 larger version.png"
+
+  - id: dvorak
+    type: person
+    name: Antonín Dvořák
+    wikidataId: Q7298
+    relations:
+      inPeriod: musique-romantique
+    summary: >-
+      Compositeur tchèque, grand représentant de la musique romantique d'Europe centrale. Il nourrit
+      ses œuvres de mélodies et de rythmes populaires, de Bohême comme d'Amérique, où il séjourne de
+      1892 à 1895.
+    yearStart: 1841
+    yearEnd: 1904
+    image: File:Dvorak.jpg
+    imageCredit: Photographie anonyme
+
+  - id: satie
+    type: person
+    name: Erik Satie
+    wikidataId: Q187192
+    relations:
+      inPeriod: musique-debut-xxe
+    summary: >-
+      Compositeur et pianiste français, excentrique et pince-sans-rire. Ses pièces pour piano,
+      lentes et dépouillées, rompent avec le romantisme et ont inspiré des générations de musiciens.
+    yearStart: 1866
+    yearEnd: 1925
+    # Portrait par Suzanne Valadon (1893) ; la photo de Wikidata est sous une licence douteuse.
+    image: "File:Suzanne Valadon - Portrait d'Erik Satie.jpg"
+
+  - id: holst
+    type: person
+    name: Gustav Holst
+    wikidataId: Q200867
+    relations:
+      inPeriod: musique-debut-xxe
+    summary: >-
+      Compositeur et professeur anglais. Il est surtout connu pour Les Planètes, grande suite pour
+      orchestre, et pour ses œuvres écrites pour orchestre d'harmonie.
+    yearStart: 1874
+    yearEnd: 1934
+    image: File:Gustav Holst.jpg

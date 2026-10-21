@@ -410,3 +410,360 @@ entities:
       plusieurs angles à la fois, se découpent en plans de couleur.
     year: 1915
     image: "File:Juan Gris - The Breakfast (Le Petit Déjeuner) (1915).jpg"
+
+  # ——— Unité 2 ———
+
+  # — Eugène Delacroix —
+  - id: barque-dante
+    type: work
+    name: La Barque de Dante
+    wikidataId: Q2354251
+    relations:
+      createdBy: delacroix
+      belongsTo: romantisme
+    collection: Musée du Louvre, Paris
+    summary: >-
+      Premier grand tableau de Delacroix, présenté au Salon de 1822. Dante et le poète Virgile
+      traversent le fleuve des Enfers, cernés par les damnés qui s'accrochent à la barque.
+    year: 1822
+    image: File:Eugène Delacroix - The Barque of Dante.jpg
+
+  - id: liberte-guidant-peuple
+    type: work
+    name: La Liberté guidant le peuple
+    wikidataId: Q29530
+    relations:
+      createdBy: delacroix
+      belongsTo: romantisme
+    collection: Musée du Louvre, Paris
+    summary: >-
+      Peinte en 1830 en hommage aux Trois Glorieuses, les journées révolutionnaires de juillet à
+      Paris. Une femme coiffée du bonnet phrygien, allégorie de la Liberté, entraîne le peuple sur
+      une barricade.
+    year: 1830
+    image: "File:La Liberté guidant le peuple - Eugène Delacroix - Musée du Louvre Peintures RF 129 - après restauration 2024.jpg"
+
+  - id: femmes-alger
+    type: work
+    name: Femmes d'Alger dans leur appartement
+    wikidataId: Q1212737
+    relations:
+      createdBy: delacroix
+      belongsTo: romantisme
+    collection: Musée du Louvre, Paris
+    summary: >-
+      Peint en 1834, après le voyage de Delacroix en Afrique du Nord. Trois femmes et une servante
+      dans un intérieur aux couleurs chaudes, un tableau qui a fasciné de nombreux peintres.
+    year: 1834
+    image: "File:Femmes d'Alger dans leur appartement, Eugène Delacroix - Musée du Louvre Peintures INV 3824.jpg"
+
+  # — William Turner —
+  - id: hannibal-alpes
+    type: work
+    name: Tempête de neige, Hannibal et son armée traversant les Alpes
+    wikidataId: Q3646554
+    relations:
+      createdBy: turner
+      belongsTo: romantisme
+    collection: Tate Britain, Londres
+    summary: >-
+      Exposé en 1812. Un immense tourbillon de neige et de nuages écrase la minuscule armée
+      d'Hannibal : la nature y domine l'histoire.
+    year: 1812
+    image: File:Joseph Mallord William Turner 081.jpg
+    imageCredit: William Turner
+
+  - id: temeraire
+    type: work
+    name: Le Dernier Voyage du Téméraire
+    wikidataId: Q257580
+    relations:
+      createdBy: turner
+      belongsTo: romantisme
+    collection: National Gallery, Londres
+    summary: >-
+      Un vieux navire de guerre, vétéran de la bataille de Trafalgar, remorqué par un bateau à
+      vapeur vers sa démolition, sous un coucher de soleil flamboyant. Peint en 1839.
+    year: 1839
+    image: "File:Turner, J. M. W. - The Fighting Téméraire tugged to her last Berth to be broken.jpg"
+    imageCredit: William Turner
+
+  - id: pluie-vapeur-vitesse
+    type: work
+    name: Pluie, vapeur et vitesse
+    wikidataId: Q2339059
+    relations:
+      createdBy: turner
+      belongsTo: romantisme
+    collection: National Gallery, Londres
+    summary: >-
+      Un train lancé à toute allure sur un pont de la Tamise, sous la pluie. Peint en 1844, le
+      tableau célèbre la vitesse de la machine moderne.
+    year: 1844
+    image: "File:J. M. W. Turner - Rain, Steam and Speed – The Great Western Railway.jpg"
+    imageCredit: William Turner
+
+  # — Gustave Courbet —
+  - id: enterrement-ornans
+    type: work
+    name: Un enterrement à Ornans
+    wikidataId: Q540488
+    relations:
+      createdBy: courbet
+      belongsTo: realisme
+    collection: Musée d'Orsay, Paris
+    summary: >-
+      Immense toile peinte en 1849-1850 : l'enterrement d'un villageois d'Ornans, la ville natale de
+      Courbet, avec ses habitants grandeur nature. Le tableau fit scandale au Salon.
+    # Wikidata donne 1840 ; peint en 1849-1850.
+    year: 1849
+    image: "File:Gustave Courbet - A Burial at Ornans - Google Art Project.jpg"
+
+  - id: demoiselles-village
+    type: work
+    name: Les Demoiselles de village
+    wikidataId: Q19911495
+    relations:
+      createdBy: courbet
+      belongsTo: realisme
+    collection: Metropolitan Museum of Art, New York
+    museumImage: met:438820
+    summary: >-
+      Les trois sœurs du peintre offrent une aumône à une petite vachère, dans la campagne des
+      environs d'Ornans. Peint en 1851-1852.
+    year: 1851
+
+  - id: atelier-peintre
+    type: work
+    name: L'Atelier du peintre
+    wikidataId: Q1167178
+    relations:
+      createdBy: courbet
+      belongsTo: realisme
+    collection: Musée d'Orsay, Paris
+    summary: >-
+      Vaste « allégorie réelle » de 1855 : Courbet se peint au travail, entre ses amis et la société
+      de son temps. Refusé à l'Exposition universelle, le tableau fut montré dans le pavillon que le
+      peintre fit construire.
+    # Wikidata donne 1850 ; peint en 1854-1855.
+    year: 1855
+    image: File:Courbet LAtelier du peintre.jpg
+
+  # — Jean-François Millet —
+  - id: semeur
+    type: work
+    name: Le Semeur
+    wikidataId: Q20540661
+    relations:
+      createdBy: millet
+      belongsTo: realisme
+    collection: Museum of Fine Arts, Boston
+    summary: >-
+      Un paysan sème le grain à grands gestes sur une pente, au crépuscule. Exposé au Salon de 1850,
+      ce héros anonyme du travail des champs frappa le public.
+    year: 1850
+    image: "File:Jean-François Millet - The Sower - Google Art Project.jpg"
+
+  - id: glaneuses
+    type: work
+    name: Des glaneuses
+    wikidataId: Q1368055
+    relations:
+      createdBy: millet
+      belongsTo: realisme
+    collection: Musée d'Orsay, Paris
+    summary: >-
+      Trois paysannes ramassent les épis oubliés après la moisson, tandis qu'au loin s'élèvent les
+      meules. Peint en 1857.
+    year: 1857
+    image: File:Jean-François Millet - Des glaneuses.jpg
+
+  - id: angelus
+    type: work
+    name: L'Angélus
+    wikidataId: Q2571560
+    relations:
+      createdBy: millet
+      belongsTo: realisme
+    collection: Musée d'Orsay, Paris
+    summary: >-
+      Au crépuscule, un couple de paysans interrompt son travail pour la prière de l'angélus. Peint
+      en 1857-1859, le tableau est devenu l'une des images les plus reproduites du XIXe siècle.
+    year: 1858
+    image: "File:JEAN-FRANÇOIS MILLET - El Ángelus (Museo de Orsay, 1857-1859. Óleo sobre lienzo, 55.5 x 66 cm).jpg"
+
+  # — Georges Seurat —
+  - id: baignade-asnieres
+    type: work
+    name: Une baignade à Asnières
+    wikidataId: Q1090837
+    relations:
+      createdBy: seurat
+      belongsTo: neo-impressionnisme
+    collection: National Gallery, Londres
+    summary: >-
+      Premier grand tableau de Seurat, refusé au Salon de 1884 : des ouvriers se reposent au bord de
+      la Seine, face aux usines de Clichy.
+    year: 1884
+    image: File:Baigneurs a Asnieres.jpg
+
+  - id: grande-jatte
+    type: work
+    name: Un dimanche après-midi à l'île de la Grande Jatte
+    wikidataId: Q1044742
+    relations:
+      createdBy: seurat
+      belongsTo: neo-impressionnisme
+    collection: Art Institute of Chicago
+    museumImage: aic:27992
+    summary: >-
+      Peint entre 1884 et 1886 et montré à la dernière exposition impressionniste : des Parisiens se
+      promènent sur une île de la Seine, peints en petits points de couleur pure.
+    # Achevé en 1886 (Wikidata : 1884, début des travaux).
+    year: 1886
+
+  - id: cirque
+    type: work
+    name: Le Cirque
+    wikidataId: Q2275610
+    relations:
+      createdBy: seurat
+      belongsTo: neo-impressionnisme
+    collection: Musée d'Orsay, Paris
+    summary: >-
+      Dernier tableau de Seurat, resté inachevé à sa mort en 1891. Une écuyère, un clown et des
+      acrobates sont construits sur des lignes montantes, censées exprimer la gaieté.
+    year: 1891
+    image: File:Georges Seurat - The Circus - Google Art Project.jpg
+
+  # — Gustav Klimt —
+  - id: judith
+    type: work
+    name: Judith I
+    wikidataId: Q2324643
+    relations:
+      createdBy: klimt
+      belongsTo: art-nouveau
+    collection: Österreichische Galerie Belvedere, Vienne
+    summary: >-
+      Klimt fait de l'héroïne biblique une femme fatale parée d'or, la tête d'Holopherne à peine
+      visible au bord du tableau. Peint en 1901.
+    year: 1901
+    image: File:Judith 1 (cropped).jpg
+
+  - id: adele-bloch-bauer
+    type: work
+    name: Portrait d'Adele Bloch-Bauer I
+    wikidataId: Q354396
+    relations:
+      createdBy: klimt
+      belongsTo: art-nouveau
+    collection: Neue Galerie, New York
+    summary: >-
+      Portrait d'une Viennoise de la haute société, achevé en 1907, où le corps disparaît presque
+      dans un décor d'or et de motifs. Spolié par les nazis, il a été rendu aux héritiers en 2006.
+    year: 1907
+    image: "File:Gustav Klimt, 1907, Adele Bloch-Bauer I, Neue Galerie New York.jpg"
+
+  - id: baiser
+    type: work
+    name: Le Baiser
+    wikidataId: Q698487
+    relations:
+      createdBy: klimt
+      belongsTo: art-nouveau
+    collection: Österreichische Galerie Belvedere, Vienne
+    summary: >-
+      Un couple enlacé, enveloppé d'un manteau d'or, au bord d'un pré fleuri. Peint en 1907-1908,
+      c'est le tableau le plus célèbre de la période dorée de Klimt.
+    # Achevé en 1908 (Wikidata : 1907).
+    year: 1908
+    image: File:The Kiss - Gustav Klimt - Google Cultural Institute.jpg
+
+  # — Edvard Munch —
+  - id: soiree-karl-johan
+    type: work
+    name: Soirée sur l'avenue Karl Johan
+    wikidataId: Q3955717
+    relations:
+      createdBy: munch
+      belongsTo: expressionnisme
+    collection: KODE, Bergen
+    summary: >-
+      Sur la grande avenue d'Oslo, des passants aux visages livides avancent comme des fantômes vers
+      le spectateur. Peint en 1892.
+    year: 1892
+    image: File:Edvard Munch - Evening on Karl Johan Street (1892).jpg
+
+  - id: cri
+    type: work
+    name: Le Cri
+    wikidataId: Q471379
+    relations:
+      createdBy: munch
+      belongsTo: expressionnisme
+    collection: Musée national, Oslo
+    summary: >-
+      Une figure se prend la tête dans les mains sous un ciel rouge sang. Munch en a réalisé
+      plusieurs versions ; celle-ci, de 1893, est devenue une icône de l'angoisse moderne.
+    year: 1893
+    image: "File:Edvard Munch, 1893, The Scream, oil, tempera and pastel on cardboard, 91 x 73 cm, National Gallery of Norway.jpg"
+
+  - id: danse-vie
+    type: work
+    name: La Danse de la vie
+    wikidataId: Q3208135
+    relations:
+      createdBy: munch
+      belongsTo: expressionnisme
+    collection: Musée national, Oslo
+    summary: >-
+      Des couples dansent au bord de la mer par une nuit d'été ; de part et d'autre, deux femmes, en
+      blanc et en noir, semblent incarner l'innocence et le deuil. Peint en 1899-1900.
+    # Wikidata donne 2000 (erreur manifeste).
+    year: 1899
+    image: "File:Edvard Munch - The Dance of Life - NG.M.00941 - National Museum of Art, Architecture and Design.jpg"
+
+  # — Vassily Kandinsky —
+  - id: composition-vii
+    type: work
+    name: Composition VII
+    wikidataId: Q2990634
+    relations:
+      createdBy: kandinsky
+      belongsTo: art-abstrait
+    collection: Galerie Tretiakov, Moscou
+    summary: >-
+      L'une des toiles les plus complexes de Kandinsky, peinte en 1913 : un tourbillon de couleurs
+      et de formes, sans objet reconnaissable.
+    year: 1913
+    image: File:Composition VII - Wassily Kandinsky, GAC.jpg
+
+  - id: composition-viii
+    type: work
+    name: Composition VIII
+    wikidataId: Q19609199
+    relations:
+      createdBy: kandinsky
+      belongsTo: art-abstrait
+    collection: Musée Solomon R. Guggenheim, New York
+    summary: >-
+      Peinte en 1923, quand Kandinsky enseigne au Bauhaus. Cercles, triangles et lignes nettes y
+      remplacent les grandes taches de couleur de ses débuts.
+    year: 1923
+    image: File:Kandinsky - Composition 8, July 1923.jpg
+    imageCredit: Vassily Kandinsky, photo Xyxyzyz (Wikimedia Commons)
+
+  - id: jaune-rouge-bleu
+    type: work
+    name: Jaune-rouge-bleu
+    wikidataId: Q18705525
+    relations:
+      createdBy: kandinsky
+      belongsTo: art-abstrait
+    collection: Centre Pompidou, Paris
+    summary: >-
+      Grande toile de 1925 qui oppose une moitié claire, dominée par le jaune, à une moitié sombre,
+      dominée par le bleu.
+    year: 1925
+    image: File:Kandinsky - Jaune Rouge Bleu.jpg

@@ -53,3 +53,65 @@ entities:
     summary: >-
       Mouvement lancé à Paris vers 1907 par Picasso et Braque. Les cubistes décomposent les objets
       en facettes géométriques et les montrent sous plusieurs angles à la fois.
+
+  # — Unité 2 —
+  - id: romantisme
+    type: movement
+    name: Romantisme
+    wikidataId: Q37068
+    yearStart: 1800
+    yearEnd: 1850
+    summary: >-
+      Mouvement de la première moitié du XIXe siècle qui privilégie l'émotion, l'imagination et le
+      sublime. Les peintres romantiques aiment les sujets dramatiques, l'exotisme et la nature
+      déchaînée.
+
+  - id: realisme
+    type: movement
+    name: Réalisme
+    wikidataId: Q10857409
+    yearStart: 1848
+    yearEnd: 1880
+    summary: >-
+      Mouvement né en France vers 1850. Les réalistes peignent la vie quotidienne et le monde du
+      travail, sans les idéaliser.
+
+  - id: neo-impressionnisme
+    type: movement
+    name: Néo-impressionnisme
+    wikidataId: Q150091
+    yearStart: 1886
+    yearEnd: 1906
+    summary: >-
+      Mouvement lancé par Seurat au milieu des années 1880. Au lieu de mélanger les couleurs sur la
+      palette, les peintres juxtaposent de petites touches de couleur pure : c'est le pointillisme.
+
+  - id: art-nouveau
+    type: movement
+    name: Art nouveau
+    wikidataId: Q34636
+    yearStart: 1890
+    yearEnd: 1914
+    summary: >-
+      Style décoratif international de la fin du XIXe siècle, inspiré des formes de la nature. À
+      Vienne, il prend le nom de Sécession, avec Klimt pour figure principale.
+
+  - id: expressionnisme
+    type: movement
+    name: Expressionnisme
+    wikidataId: Q80113
+    yearStart: 1905
+    yearEnd: 1925
+    summary: >-
+      Mouvement du début du XXe siècle, surtout allemand, qui déforme les formes et les couleurs pour
+      exprimer les émotions plutôt que décrire le monde. Munch en est un précurseur.
+
+  - id: art-abstrait
+    type: movement
+    name: Art abstrait
+    wikidataId: Q128115
+    yearStart: 1910
+    yearEnd: 1950
+    summary: >-
+      Peinture qui ne représente plus d'objets reconnaissables : seuls comptent les formes, les
+      lignes et les couleurs. Kandinsky en est l'un des pionniers, vers 1910.

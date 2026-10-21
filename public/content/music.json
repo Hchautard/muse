@@ -132,9 +132,136 @@
           ]
         }
       ]
+    },
+    {
+      "id": "music-2",
+      "title": "Élargir le répertoire",
+      "description": "Huit compositeurs de plus, deux par période, du baroque au début du XXe siècle.",
+      "lessons": [
+        {
+          "id": "music-2-1",
+          "title": "Rameau et le clavecin",
+          "introduces": [
+            "rameau",
+            "rameau-tourbillons",
+            "rameau-niais-sologne",
+            "rameau-poule"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "music-2-2",
+          "title": "Haendel",
+          "introduces": [
+            "haendel",
+            "haendel-water-music",
+            "haendel-messie",
+            "haendel-reine-saba"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "music-2-3",
+          "title": "Gluck et l'opéra",
+          "introduces": [
+            "gluck",
+            "gluck-orphee",
+            "gluck-paride-elena",
+            "gluck-iphigenie-aulide"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "music-2-4",
+          "title": "Haydn",
+          "introduces": [
+            "haydn",
+            "haydn-surprise",
+            "haydn-trompette",
+            "haydn-creation"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "music-2-5",
+          "title": "Schubert et le lied",
+          "introduces": [
+            "schubert",
+            "schubert-roi-aulnes",
+            "schubert-inachevee",
+            "schubert-ave-maria"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "music-2-6",
+          "title": "Dvořák",
+          "introduces": [
+            "dvorak",
+            "dvorak-nouveau-monde",
+            "dvorak-humoresque",
+            "dvorak-concerto-violoncelle"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "music-2-7",
+          "title": "Satie",
+          "introduces": [
+            "satie",
+            "satie-gymnopedie",
+            "satie-gnossienne",
+            "satie-je-te-veux"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "music-2-8",
+          "title": "Holst",
+          "introduces": [
+            "holst",
+            "holst-premiere-suite",
+            "holst-deuxieme-suite",
+            "holst-planetes"
+          ],
+          "skills": [
+            "audio-to-composer",
+            "audio-to-period",
+            "work-to-date"
+          ]
+        }
+      ]
     }
   ],
-  "version": "75831c6f564c",
+  "version": "3ed5d1addf05",
   "entities": [
     {
       "id": "bach",
@@ -230,6 +357,102 @@
       "summary": "Compositeur français, maître de l'orchestration, souvent associé à Debussy et à l'impressionnisme. Son Boléro, créé en 1928, est l'une des œuvres les plus célèbres du répertoire.",
       "mediaIds": [
         "ravel-image"
+      ]
+    },
+    {
+      "id": "rameau",
+      "type": "person",
+      "name": "Jean-Philippe Rameau",
+      "wikidataId": "Q1145",
+      "yearStart": 1683,
+      "yearEnd": 1764,
+      "summary": "Compositeur et théoricien français, figure majeure du baroque. Connu d'abord pour ses pièces de clavecin et son Traité de l'harmonie (1722), il ne s'impose à l'opéra qu'à cinquante ans.",
+      "mediaIds": [
+        "rameau-image"
+      ]
+    },
+    {
+      "id": "haendel",
+      "type": "person",
+      "name": "Georg Friedrich Haendel",
+      "wikidataId": "Q7302",
+      "yearStart": 1685,
+      "yearEnd": 1759,
+      "summary": "Compositeur d'origine allemande, installé à Londres. Il brille dans l'opéra italien, puis dans l'oratorio anglais, dont Le Messie est le plus célèbre.",
+      "mediaIds": [
+        "haendel-image"
+      ]
+    },
+    {
+      "id": "gluck",
+      "type": "person",
+      "name": "Christoph Willibald Gluck",
+      "wikidataId": "Q130759",
+      "yearStart": 1714,
+      "yearEnd": 1787,
+      "summary": "Compositeur allemand qui a travaillé à Vienne et à Paris. Avec Orphée et Eurydice, il réforme l'opéra : plus de naturel, une musique au service du drame plutôt que de la virtuosité.",
+      "mediaIds": [
+        "gluck-image"
+      ]
+    },
+    {
+      "id": "haydn",
+      "type": "person",
+      "name": "Joseph Haydn",
+      "wikidataId": "Q7349",
+      "yearStart": 1732,
+      "yearEnd": 1809,
+      "summary": "Compositeur autrichien, longtemps au service des princes Esterházy. Surnommé le « père de la symphonie », il en a écrit plus de cent et a fixé la forme du quatuor à cordes.",
+      "mediaIds": [
+        "haydn-image"
+      ]
+    },
+    {
+      "id": "schubert",
+      "type": "person",
+      "name": "Franz Schubert",
+      "wikidataId": "Q7312",
+      "yearStart": 1797,
+      "yearEnd": 1828,
+      "summary": "Compositeur autrichien, mort à 31 ans. Il a écrit plus de six cents lieder, des chants pour voix et piano sur des poèmes de son temps, ainsi que des symphonies et de la musique de chambre.",
+      "mediaIds": [
+        "schubert-image"
+      ]
+    },
+    {
+      "id": "dvorak",
+      "type": "person",
+      "name": "Antonín Dvořák",
+      "wikidataId": "Q7298",
+      "yearStart": 1841,
+      "yearEnd": 1904,
+      "summary": "Compositeur tchèque, grand représentant de la musique romantique d'Europe centrale. Il nourrit ses œuvres de mélodies et de rythmes populaires, de Bohême comme d'Amérique, où il séjourne de 1892 à 1895.",
+      "mediaIds": [
+        "dvorak-image"
+      ]
+    },
+    {
+      "id": "satie",
+      "type": "person",
+      "name": "Erik Satie",
+      "wikidataId": "Q187192",
+      "yearStart": 1866,
+      "yearEnd": 1925,
+      "summary": "Compositeur et pianiste français, excentrique et pince-sans-rire. Ses pièces pour piano, lentes et dépouillées, rompent avec le romantisme et ont inspiré des générations de musiciens.",
+      "mediaIds": [
+        "satie-image"
+      ]
+    },
+    {
+      "id": "holst",
+      "type": "person",
+      "name": "Gustav Holst",
+      "wikidataId": "Q200867",
+      "yearStart": 1874,
+      "yearEnd": 1934,
+      "summary": "Compositeur et professeur anglais. Il est surtout connu pour Les Planètes, grande suite pour orchestre, et pour ses œuvres écrites pour orchestre d'harmonie.",
+      "mediaIds": [
+        "holst-image"
       ]
     },
     {
@@ -622,6 +845,346 @@
       "tags": [
         "piano"
       ]
+    },
+    {
+      "id": "rameau-tourbillons",
+      "type": "work",
+      "name": "Les Tourbillons",
+      "year": 1724,
+      "summary": "Pièce pour clavecin publiée en 1724 dans le deuxième livre de Rameau. Ses traits rapides évoquent des tourbillons de poussière soulevés par le vent.",
+      "mediaIds": [
+        "rameau-tourbillons-audio"
+      ],
+      "tags": [
+        "clavecin"
+      ]
+    },
+    {
+      "id": "rameau-niais-sologne",
+      "type": "work",
+      "name": "Les Niais de Sologne",
+      "year": 1724,
+      "summary": "Pièce pour clavecin du même recueil de 1724, suivie de variations, les « doubles », de plus en plus virtuoses. Les niais de Sologne sont des paysans qui jouent les naïfs.",
+      "mediaIds": [
+        "rameau-niais-sologne-audio"
+      ],
+      "tags": [
+        "clavecin"
+      ]
+    },
+    {
+      "id": "rameau-poule",
+      "type": "work",
+      "name": "La Poule",
+      "year": 1728,
+      "summary": "Pièce pour clavecin où des notes répétées imitent le caquètement d'une poule. Elle figure dans les Nouvelles Suites de pièces de clavecin, publiées vers 1728.",
+      "mediaIds": [
+        "rameau-poule-audio"
+      ],
+      "tags": [
+        "clavecin"
+      ]
+    },
+    {
+      "id": "haendel-water-music",
+      "type": "work",
+      "name": "Water Music",
+      "wikidataId": "Q278596",
+      "year": 1717,
+      "summary": "Suites pour orchestre jouées en 1717 lors d'une promenade du roi George Ier sur la Tamise, à bord de barques. L'extrait est un hornpipe, une danse anglaise.",
+      "mediaIds": [
+        "haendel-water-music-audio"
+      ],
+      "tags": [
+        "orchestre"
+      ]
+    },
+    {
+      "id": "haendel-messie",
+      "type": "work",
+      "name": "Le Messie",
+      "wikidataId": "Q207732",
+      "year": 1741,
+      "summary": "Oratorio composé en 1741 en quelques semaines et créé à Dublin en 1742. Son chœur « Hallelujah » est l'un des plus célèbres de la musique.",
+      "mediaIds": [
+        "haendel-messie-audio"
+      ],
+      "tags": [
+        "oratorio",
+        "chœur"
+      ]
+    },
+    {
+      "id": "haendel-reine-saba",
+      "type": "work",
+      "name": "L'Arrivée de la reine de Saba",
+      "wikidataId": "Q1123627",
+      "year": 1749,
+      "summary": "Page instrumentale de l'oratorio Salomon, créé en 1749 : deux hautbois dialoguent avec les cordes dans un tempo vif. Elle est souvent jouée seule.",
+      "mediaIds": [
+        "haendel-reine-saba-audio"
+      ],
+      "tags": [
+        "orchestre"
+      ]
+    },
+    {
+      "id": "gluck-orphee",
+      "type": "work",
+      "name": "Orphée et Eurydice",
+      "wikidataId": "Q723776",
+      "year": 1762,
+      "summary": "Opéra créé à Vienne en 1762, puis remanié pour Paris en 1774. L'extrait est la « Danse des esprits bienheureux », célèbre pour son solo de flûte.",
+      "mediaIds": [
+        "gluck-orphee-audio"
+      ],
+      "tags": [
+        "opéra"
+      ]
+    },
+    {
+      "id": "gluck-paride-elena",
+      "type": "work",
+      "name": "Pâris et Hélène",
+      "wikidataId": "Q3810521",
+      "year": 1770,
+      "summary": "Opéra créé à Vienne en 1770, le troisième de ses opéras « réformés ». Son air « O del mio dolce ardor » est devenu un classique du chant.",
+      "mediaIds": [
+        "gluck-paride-elena-audio"
+      ],
+      "tags": [
+        "opéra",
+        "voix"
+      ]
+    },
+    {
+      "id": "gluck-iphigenie-aulide",
+      "type": "work",
+      "name": "Iphigénie en Aulide",
+      "wikidataId": "Q248892",
+      "year": 1774,
+      "summary": "Premier opéra de Gluck créé à Paris, en 1774, d'après la tragédie de Racine. L'extrait vient d'une suite tirée de ses ballets.",
+      "mediaIds": [
+        "gluck-iphigenie-aulide-audio"
+      ],
+      "tags": [
+        "opéra"
+      ]
+    },
+    {
+      "id": "haydn-surprise",
+      "type": "work",
+      "name": "Symphonie n° 94 « La Surprise »",
+      "wikidataId": "Q276768",
+      "year": 1791,
+      "summary": "Écrite pour Londres en 1791. Son mouvement lent commence tout doucement, puis un accord fortissimo vient réveiller l'auditoire : d'où son surnom.",
+      "mediaIds": [
+        "haydn-surprise-audio"
+      ],
+      "tags": [
+        "symphonie"
+      ]
+    },
+    {
+      "id": "haydn-trompette",
+      "type": "work",
+      "name": "Concerto pour trompette",
+      "wikidataId": "Q1585960",
+      "year": 1796,
+      "summary": "Composé en 1796 pour une trompette à clés, alors nouvelle, capable de jouer toutes les notes de la gamme. C'est aujourd'hui l'un des concertos les plus joués de l'instrument.",
+      "mediaIds": [
+        "haydn-trompette-audio"
+      ],
+      "tags": [
+        "concerto",
+        "trompette"
+      ]
+    },
+    {
+      "id": "haydn-creation",
+      "type": "work",
+      "name": "La Création",
+      "wikidataId": "Q163138",
+      "year": 1798,
+      "summary": "Oratorio créé à Vienne en 1798, qui raconte la création du monde d'après la Genèse. Il s'ouvre sur une « Représentation du chaos » d'une étonnante audace.",
+      "mediaIds": [
+        "haydn-creation-audio"
+      ],
+      "tags": [
+        "oratorio"
+      ]
+    },
+    {
+      "id": "schubert-roi-aulnes",
+      "type": "work",
+      "name": "Le Roi des aulnes",
+      "wikidataId": "Q1134417",
+      "year": 1815,
+      "summary": "Lied composé en 1815 sur un poème de Goethe, quand Schubert avait 18 ans : un père galope dans la nuit avec son enfant, que le Roi des aulnes veut emporter. Le piano imite le galop.",
+      "mediaIds": [
+        "schubert-roi-aulnes-audio"
+      ],
+      "tags": [
+        "lied",
+        "voix"
+      ]
+    },
+    {
+      "id": "schubert-inachevee",
+      "type": "work",
+      "name": "Symphonie « Inachevée »",
+      "wikidataId": "Q651383",
+      "year": 1822,
+      "summary": "Commencée en 1822, elle ne compte que deux mouvements achevés. Elle n'a été jouée qu'en 1865, longtemps après la mort de Schubert.",
+      "mediaIds": [
+        "schubert-inachevee-audio"
+      ],
+      "tags": [
+        "symphonie"
+      ]
+    },
+    {
+      "id": "schubert-ave-maria",
+      "type": "work",
+      "name": "Ave Maria",
+      "wikidataId": "Q1331995",
+      "year": 1825,
+      "summary": "Lied de 1825 tiré de La Dame du lac de Walter Scott (« Troisième chant d'Ellen »), devenu célèbre sous le titre d'Ave Maria.",
+      "mediaIds": [
+        "schubert-ave-maria-audio"
+      ],
+      "tags": [
+        "lied",
+        "voix"
+      ]
+    },
+    {
+      "id": "dvorak-nouveau-monde",
+      "type": "work",
+      "name": "Symphonie « Du Nouveau Monde »",
+      "wikidataId": "Q11985",
+      "year": 1893,
+      "summary": "Neuvième symphonie de Dvořák, composée à New York en 1893. L'extrait ouvre son finale ; le mouvement lent, chanté par le cor anglais, est tout aussi célèbre.",
+      "mediaIds": [
+        "dvorak-nouveau-monde-audio"
+      ],
+      "tags": [
+        "symphonie"
+      ]
+    },
+    {
+      "id": "dvorak-humoresque",
+      "type": "work",
+      "name": "Humoresque n° 7",
+      "wikidataId": "Q2622524",
+      "year": 1894,
+      "summary": "Septième d'un recueil de huit pièces pour piano écrites en 1894. Sa mélodie sautillante a été arrangée pour toutes sortes d'instruments ; ici l'alto et le piano.",
+      "mediaIds": [
+        "dvorak-humoresque-audio"
+      ],
+      "tags": [
+        "piano"
+      ]
+    },
+    {
+      "id": "dvorak-concerto-violoncelle",
+      "type": "work",
+      "name": "Concerto pour violoncelle",
+      "wikidataId": "Q1053081",
+      "year": 1895,
+      "summary": "Écrit à New York en 1894-1895, juste avant le retour de Dvořák en Bohême. C'est l'un des concertos pour violoncelle les plus joués.",
+      "mediaIds": [
+        "dvorak-concerto-violoncelle-audio"
+      ],
+      "tags": [
+        "concerto",
+        "violoncelle"
+      ]
+    },
+    {
+      "id": "satie-gymnopedie",
+      "type": "work",
+      "name": "Gymnopédie n° 1",
+      "wikidataId": "Q66457334",
+      "year": 1888,
+      "summary": "Première de trois pièces pour piano composées en 1888. Lente et dépouillée, sur un accompagnement régulier, c'est l'œuvre la plus connue de Satie.",
+      "mediaIds": [
+        "satie-gymnopedie-audio"
+      ],
+      "tags": [
+        "piano"
+      ]
+    },
+    {
+      "id": "satie-gnossienne",
+      "type": "work",
+      "name": "Gnossienne n° 1",
+      "wikidataId": "Q110184793",
+      "year": 1890,
+      "summary": "Pièce pour piano écrite vers 1890, sans barres de mesure, avec des indications insolites adressées au pianiste.",
+      "mediaIds": [
+        "satie-gnossienne-audio"
+      ],
+      "tags": [
+        "piano"
+      ]
+    },
+    {
+      "id": "satie-je-te-veux",
+      "type": "work",
+      "name": "Je te veux",
+      "wikidataId": "Q3163591",
+      "year": 1897,
+      "summary": "Valse chantée composée vers 1897 pour le café-concert, où Satie gagnait sa vie comme pianiste. Elle fut popularisée par la chanteuse Paulette Darty.",
+      "mediaIds": [
+        "satie-je-te-veux-audio"
+      ],
+      "tags": [
+        "chanson",
+        "voix"
+      ]
+    },
+    {
+      "id": "holst-premiere-suite",
+      "type": "work",
+      "name": "Première suite en mi bémol",
+      "wikidataId": "Q4324726",
+      "year": 1909,
+      "summary": "Écrite en 1909 pour orchestre d'harmonie (vents et percussions), elle est devenue un pilier du répertoire de ces formations. Elle s'ouvre sur une chaconne.",
+      "mediaIds": [
+        "holst-premiere-suite-audio"
+      ],
+      "tags": [
+        "orchestre d'harmonie"
+      ]
+    },
+    {
+      "id": "holst-deuxieme-suite",
+      "type": "work",
+      "name": "Deuxième suite en fa",
+      "wikidataId": "Q2641380",
+      "year": 1911,
+      "summary": "Suite pour orchestre d'harmonie de 1911, bâtie sur des chansons et des danses populaires anglaises.",
+      "mediaIds": [
+        "holst-deuxieme-suite-audio"
+      ],
+      "tags": [
+        "orchestre d'harmonie"
+      ]
+    },
+    {
+      "id": "holst-planetes",
+      "type": "work",
+      "name": "Les Planètes",
+      "wikidataId": "Q303508",
+      "year": 1916,
+      "summary": "Suite pour grand orchestre en sept mouvements, un par planète, achevée en 1916. L'extrait vient de « Jupiter, celui qui apporte la gaieté », ici dans une version pour orchestre d'harmonie.",
+      "mediaIds": [
+        "holst-planetes-audio"
+      ],
+      "tags": [
+        "orchestre"
+      ]
     }
   ],
   "relations": [
@@ -666,6 +1229,46 @@
       "to": "musique-debut-xxe"
     },
     {
+      "from": "rameau",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "haendel",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "gluck",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "haydn",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "schubert",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "dvorak",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "satie",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
+      "from": "holst",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
       "from": "bach-toccata-fugue-re-mineur",
       "type": "createdBy",
       "to": "bach"
@@ -902,6 +1505,246 @@
     },
     {
       "from": "ravel-jeux-d-eau",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
+      "from": "rameau-tourbillons",
+      "type": "createdBy",
+      "to": "rameau"
+    },
+    {
+      "from": "rameau-tourbillons",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "rameau-niais-sologne",
+      "type": "createdBy",
+      "to": "rameau"
+    },
+    {
+      "from": "rameau-niais-sologne",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "rameau-poule",
+      "type": "createdBy",
+      "to": "rameau"
+    },
+    {
+      "from": "rameau-poule",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "haendel-water-music",
+      "type": "createdBy",
+      "to": "haendel"
+    },
+    {
+      "from": "haendel-water-music",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "haendel-messie",
+      "type": "createdBy",
+      "to": "haendel"
+    },
+    {
+      "from": "haendel-messie",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "haendel-reine-saba",
+      "type": "createdBy",
+      "to": "haendel"
+    },
+    {
+      "from": "haendel-reine-saba",
+      "type": "inPeriod",
+      "to": "musique-baroque"
+    },
+    {
+      "from": "gluck-orphee",
+      "type": "createdBy",
+      "to": "gluck"
+    },
+    {
+      "from": "gluck-orphee",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "gluck-paride-elena",
+      "type": "createdBy",
+      "to": "gluck"
+    },
+    {
+      "from": "gluck-paride-elena",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "gluck-iphigenie-aulide",
+      "type": "createdBy",
+      "to": "gluck"
+    },
+    {
+      "from": "gluck-iphigenie-aulide",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "haydn-surprise",
+      "type": "createdBy",
+      "to": "haydn"
+    },
+    {
+      "from": "haydn-surprise",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "haydn-trompette",
+      "type": "createdBy",
+      "to": "haydn"
+    },
+    {
+      "from": "haydn-trompette",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "haydn-creation",
+      "type": "createdBy",
+      "to": "haydn"
+    },
+    {
+      "from": "haydn-creation",
+      "type": "inPeriod",
+      "to": "musique-classique"
+    },
+    {
+      "from": "schubert-roi-aulnes",
+      "type": "createdBy",
+      "to": "schubert"
+    },
+    {
+      "from": "schubert-roi-aulnes",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "schubert-inachevee",
+      "type": "createdBy",
+      "to": "schubert"
+    },
+    {
+      "from": "schubert-inachevee",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "schubert-ave-maria",
+      "type": "createdBy",
+      "to": "schubert"
+    },
+    {
+      "from": "schubert-ave-maria",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "dvorak-nouveau-monde",
+      "type": "createdBy",
+      "to": "dvorak"
+    },
+    {
+      "from": "dvorak-nouveau-monde",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "dvorak-humoresque",
+      "type": "createdBy",
+      "to": "dvorak"
+    },
+    {
+      "from": "dvorak-humoresque",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "dvorak-concerto-violoncelle",
+      "type": "createdBy",
+      "to": "dvorak"
+    },
+    {
+      "from": "dvorak-concerto-violoncelle",
+      "type": "inPeriod",
+      "to": "musique-romantique"
+    },
+    {
+      "from": "satie-gymnopedie",
+      "type": "createdBy",
+      "to": "satie"
+    },
+    {
+      "from": "satie-gymnopedie",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
+      "from": "satie-gnossienne",
+      "type": "createdBy",
+      "to": "satie"
+    },
+    {
+      "from": "satie-gnossienne",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
+      "from": "satie-je-te-veux",
+      "type": "createdBy",
+      "to": "satie"
+    },
+    {
+      "from": "satie-je-te-veux",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
+      "from": "holst-premiere-suite",
+      "type": "createdBy",
+      "to": "holst"
+    },
+    {
+      "from": "holst-premiere-suite",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
+      "from": "holst-deuxieme-suite",
+      "type": "createdBy",
+      "to": "holst"
+    },
+    {
+      "from": "holst-deuxieme-suite",
+      "type": "inPeriod",
+      "to": "musique-debut-xxe"
+    },
+    {
+      "from": "holst-planetes",
+      "type": "createdBy",
+      "to": "holst"
+    },
+    {
+      "from": "holst-planetes",
       "type": "inPeriod",
       "to": "musique-debut-xxe"
     }
@@ -1125,6 +1968,276 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Columbia-dwx1550ix-c-wlx1289.ogg"
     },
     {
+      "id": "dvorak-concerto-violoncelle-audio",
+      "kind": "audio",
+      "src": "music/audio/dvorak-concerto-violoncelle-audio.m4a",
+      "bytes": 325310,
+      "durationSec": 20,
+      "credit": "Hans Goldstein (violoncelle), Milwaukee Youth Orchestra",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dvorak_-_Cello_Concerto_-_1._Allegro.ogg"
+    },
+    {
+      "id": "dvorak-humoresque-audio",
+      "kind": "audio",
+      "src": "music/audio/dvorak-humoresque-audio.m4a",
+      "bytes": 324664,
+      "durationSec": 20,
+      "credit": "Duo Goldstein, arrangement d'Elias Goldstein pour alto et piano",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dvo%C5%99%C3%A1k_-_Humoresque_Op._101_No._7.ogg"
+    },
+    {
+      "id": "dvorak-image",
+      "kind": "image",
+      "src": "music/images/dvorak-image-960.webp",
+      "bytes": 294444,
+      "width": 960,
+      "height": 1189,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/dvorak-image-480.webp",
+          "bytes": 35308
+        },
+        {
+          "width": 960,
+          "src": "music/images/dvorak-image-960.webp",
+          "bytes": 294444
+        },
+        {
+          "width": 1600,
+          "src": "music/images/dvorak-image-1600.webp",
+          "bytes": 868338
+        }
+      ],
+      "credit": "Photographie anonyme",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dvorak.jpg"
+    },
+    {
+      "id": "dvorak-nouveau-monde-audio",
+      "kind": "audio",
+      "src": "music/audio/dvorak-nouveau-monde-audio.m4a",
+      "bytes": 324661,
+      "durationSec": 20,
+      "credit": "Enregistrement Musopen",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antonin_Dvorak_-_symphony_no._9_in_e_minor_%27from_the_new_world%27,_op._95_-_iv._allegro_con_fuoco.ogg"
+    },
+    {
+      "id": "gluck-image",
+      "kind": "image",
+      "src": "music/images/gluck-image-960.webp",
+      "bytes": 150836,
+      "width": 960,
+      "height": 1191,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/gluck-image-480.webp",
+          "bytes": 23958
+        },
+        {
+          "width": 960,
+          "src": "music/images/gluck-image-960.webp",
+          "bytes": 150836
+        },
+        {
+          "width": 1600,
+          "src": "music/images/gluck-image-1600.webp",
+          "bytes": 723720
+        }
+      ],
+      "credit": "Joseph-Siffred Duplessis",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joseph_Siffred_Duplessis_-_Christoph_Willibald_Gluck_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "gluck-iphigenie-aulide-audio",
+      "kind": "audio",
+      "src": "music/audio/gluck-iphigenie-aulide-audio.m4a",
+      "bytes": 329280,
+      "durationSec": 20,
+      "credit": "Staatskapelle de Berlin, dir. Leo Blech (1927), arr. Felix Mottl",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:PDP-CH_-_Berliner_Staatskapelle_-_Leo_Blech_-_Iphig%C3%A9nie_en_Aulide_-_Ballet_Suite_No._1_-_Part_1_-_Gluck_-_Mottl_-_Electrola-ej196-4-040602.flac"
+    },
+    {
+      "id": "gluck-orphee-audio",
+      "kind": "audio",
+      "src": "music/audio/gluck-orphee-audio.m4a",
+      "bytes": 411894,
+      "durationSec": 25,
+      "credit": "New York Philharmonic, dir. Arturo Toscanini",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:PDP-CH_-_New_York_Philharmonic_-_Arturo_Toscanini_-_Orfeo_ed_Euridice_-_Dance_of_the_Blessed_Spirits_-_Christoph_Willibald_Gluck_-_Hmv-d1784-42-664.flac"
+    },
+    {
+      "id": "gluck-paride-elena-audio",
+      "kind": "audio",
+      "src": "music/audio/gluck-paride-elena-audio.m4a",
+      "bytes": 412549,
+      "durationSec": 25,
+      "credit": "Beniamino Gigli (ténor), orchestre de la Scala, dir. Dino Olivieri (1935)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hmv-db2531-2ba567.ogg"
+    },
+    {
+      "id": "haendel-image",
+      "kind": "image",
+      "src": "music/images/haendel-image-960.webp",
+      "bytes": 59174,
+      "width": 960,
+      "height": 1161,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/haendel-image-480.webp",
+          "bytes": 10792
+        },
+        {
+          "width": 960,
+          "src": "music/images/haendel-image-960.webp",
+          "bytes": 59174
+        },
+        {
+          "width": 1600,
+          "src": "music/images/haendel-image-1600.webp",
+          "bytes": 252870
+        }
+      ],
+      "credit": "Attribué à Balthasar Denner",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:George_Frideric_Handel_by_Balthasar_Denner.jpg"
+    },
+    {
+      "id": "haendel-messie-audio",
+      "kind": "audio",
+      "src": "music/audio/haendel-messie-audio.m4a",
+      "bytes": 405488,
+      "durationSec": 25,
+      "credit": "MIT Concert Choir, dir. William C. Cutter",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Handel_-_messiah_-_44_hallelujah.ogg"
+    },
+    {
+      "id": "haendel-reine-saba-audio",
+      "kind": "audio",
+      "src": "music/audio/haendel-reine-saba-audio.m4a",
+      "bytes": 324631,
+      "durationSec": 20,
+      "credit": "Advent Chamber Orchestra, dir. Roxanna Pavel Goldstein (2006)",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Handel_-_Arrival_of_the_Queen_of_Sheba.ogg"
+    },
+    {
+      "id": "haendel-water-music-audio",
+      "kind": "audio",
+      "src": "music/audio/haendel-water-music-audio.m4a",
+      "bytes": 331004,
+      "durationSec": 20,
+      "credit": "The Hallé, dir. Malcolm Sargent (1942), arr. Hamilton Harty",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:PDP-CH_-_The_Hall%C3%A9_-_Malcolm_Sargent_-_Water_Music,_HWV_348-350_-_Suite_in_F_major,_HWV_348_-_Hornpipe,_Andante_espressivo_-_Handel_-_Harty_-_Hmv-c3307-2er624.flac"
+    },
+    {
+      "id": "haydn-creation-audio",
+      "kind": "audio",
+      "src": "music/audio/haydn-creation-audio.m4a",
+      "bytes": 405426,
+      "durationSec": 25,
+      "credit": "St Matthew's Choir, dir. Phiroz Dalal (2010)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haydn_-_The_Creation_(Dalal)_-_1_The_Representation_of_Chaos.oga"
+    },
+    {
+      "id": "haydn-image",
+      "kind": "image",
+      "src": "music/images/haydn-image-480.webp",
+      "bytes": 20184,
+      "width": 480,
+      "height": 607,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/haydn-image-480.webp",
+          "bytes": 20184
+        }
+      ],
+      "credit": "Thomas Hardy",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joseph_Haydn,_m%C3%A5lning_av_Thomas_Hardy_fr%C3%A5n_1792.jpg"
+    },
+    {
+      "id": "haydn-surprise-audio",
+      "kind": "audio",
+      "src": "music/audio/haydn-surprise-audio.m4a",
+      "bytes": 405824,
+      "durationSec": 25,
+      "credit": "Boston Symphony Orchestra, dir. Serge Koussevitzky (1929)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haydn;_Symphony_No._94_%22Surprise%22,_2._Andante.ogg"
+    },
+    {
+      "id": "haydn-trompette-audio",
+      "kind": "audio",
+      "src": "music/audio/haydn-trompette-audio.m4a",
+      "bytes": 324667,
+      "durationSec": 20,
+      "credit": "Real Filharmonía de Galicia",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Real_Filharmon%C3%ADa_de_Galicia_-_Haydn%27s_Trumpet_Concerto_in_E-flat_major,_Hob.VIIe-1_-_III._Finale_allegro.ogg"
+    },
+    {
+      "id": "holst-deuxieme-suite-audio",
+      "kind": "audio",
+      "src": "music/audio/holst-deuxieme-suite-audio.m4a",
+      "bytes": 325321,
+      "durationSec": 20,
+      "credit": "Heritage of America Band, US Air Force (1992)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustav_Holst_-_Second_Suite_in_F_-_I._March._Allegro.ogg"
+    },
+    {
+      "id": "holst-image",
+      "kind": "image",
+      "src": "music/images/holst-image-480.webp",
+      "bytes": 15716,
+      "width": 480,
+      "height": 673,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/holst-image-480.webp",
+          "bytes": 15716
+        }
+      ],
+      "credit": "Herbert Lambert",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustav_Holst.jpg"
+    },
+    {
+      "id": "holst-planetes-audio",
+      "kind": "audio",
+      "src": "music/audio/holst-planetes-audio.m4a",
+      "bytes": 324653,
+      "durationSec": 20,
+      "credit": "Heritage of America Band, US Air Force (1998), transcription de Merlin Patterson",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Holst_The_Planets_Jupiter.ogg"
+    },
+    {
+      "id": "holst-premiere-suite-audio",
+      "kind": "audio",
+      "src": "music/audio/holst-premiere-suite-audio.m4a",
+      "bytes": 325879,
+      "durationSec": 20,
+      "credit": "United States Marine Band",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Holst_First_Suite_Chaconne.ogg"
+    },
+    {
       "id": "mozart-image",
       "kind": "image",
       "src": "music/images/mozart-image-960.webp",
@@ -1183,6 +2296,54 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mozart_Symphony_40_G_minor_-_1_Molto_allegro.oga"
     },
     {
+      "id": "rameau-image",
+      "kind": "image",
+      "src": "music/images/rameau-image-480.webp",
+      "bytes": 68406,
+      "width": 480,
+      "height": 654,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/rameau-image-480.webp",
+          "bytes": 68406
+        }
+      ],
+      "credit": "Attribué à Joseph Aved",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Attribu%C3%A9_%C3%A0_Joseph_Aved,_Portrait_de_Jean-Philippe_Rameau_(vers_1728)_-_001.jpg"
+    },
+    {
+      "id": "rameau-niais-sologne-audio",
+      "kind": "audio",
+      "src": "music/audio/rameau-niais-sologne-audio.m4a",
+      "bytes": 324850,
+      "durationSec": 20,
+      "credit": "Marcelle Meyer (piano), 1953",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Philippe_Rameau_-_Les_Niais_de_Sologne_(Marcelle_Meyer,_1953).flac"
+    },
+    {
+      "id": "rameau-poule-audio",
+      "kind": "audio",
+      "src": "music/audio/rameau-poule-audio.m4a",
+      "bytes": 324575,
+      "durationSec": 20,
+      "credit": "Marcelle Meyer (piano), 1953",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Philippe_Rameau_-_La_Poule_(Marcelle_Meyer,_1953).flac"
+    },
+    {
+      "id": "rameau-tourbillons-audio",
+      "kind": "audio",
+      "src": "music/audio/rameau-tourbillons-audio.m4a",
+      "bytes": 324674,
+      "durationSec": 20,
+      "credit": "Marcelle Meyer (piano), 1953",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Philippe_Rameau_-_Les_Tourbillons_(Marcelle_Meyer,_1953).flac"
+    },
+    {
       "id": "ravel-bolero-audio",
       "kind": "audio",
       "src": "music/audio/ravel-bolero-audio.m4a",
@@ -1239,6 +2400,107 @@
       "credit": "Thérèse Dussaut (piano)",
       "license": "CC BY-SA 2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maurice_Ravel_-_Th%C3%A9r%C3%A8se_Dussaut_-_Pavane_pour_une_infante_d%C3%A9funte.ogg"
+    },
+    {
+      "id": "satie-gnossienne-audio",
+      "kind": "audio",
+      "src": "music/audio/satie-gnossienne-audio.m4a",
+      "bytes": 406240,
+      "durationSec": 25,
+      "credit": "La Pianista (piano), 2010",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Satie_-_Gnossienne_1.ogg"
+    },
+    {
+      "id": "satie-gymnopedie-audio",
+      "kind": "audio",
+      "src": "music/audio/satie-gymnopedie-audio.m4a",
+      "bytes": 405470,
+      "durationSec": 25,
+      "credit": "Robin Alciatore (piano), Musopen",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erik_Satie_-_gymnopedies_-_la_1_ere._lent_et_douloureux.ogg"
+    },
+    {
+      "id": "satie-image",
+      "kind": "image",
+      "src": "music/images/satie-image-960.webp",
+      "bytes": 350414,
+      "width": 960,
+      "height": 1748,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/satie-image-480.webp",
+          "bytes": 69892
+        },
+        {
+          "width": 960,
+          "src": "music/images/satie-image-960.webp",
+          "bytes": 350414
+        }
+      ],
+      "credit": "Suzanne Valadon",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suzanne_Valadon_-_Portrait_d%27Erik_Satie.jpg"
+    },
+    {
+      "id": "satie-je-te-veux-audio",
+      "kind": "audio",
+      "src": "music/audio/satie-je-te-veux-audio.m4a",
+      "bytes": 409100,
+      "durationSec": 25,
+      "credit": "Yvonne George (chant)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Je_te_Veux.ogg"
+    },
+    {
+      "id": "schubert-ave-maria-audio",
+      "kind": "audio",
+      "src": "music/audio/schubert-ave-maria-audio.m4a",
+      "bytes": 406374,
+      "durationSec": 25,
+      "credit": "Dorothea Fayne (chant), Uwe Streibel (piano)",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Franz_Schubert_-_Ellens_dritter_Gesang.oga"
+    },
+    {
+      "id": "schubert-image",
+      "kind": "image",
+      "src": "music/images/schubert-image-480.webp",
+      "bytes": 13664,
+      "width": 480,
+      "height": 585,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/schubert-image-480.webp",
+          "bytes": 13664
+        }
+      ],
+      "credit": "Wilhelm August Rieder",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Franz_Schubert_by_Wilhelm_August_Rieder_1875_larger_version.png"
+    },
+    {
+      "id": "schubert-inachevee-audio",
+      "kind": "audio",
+      "src": "music/audio/schubert-inachevee-audio.m4a",
+      "bytes": 417576,
+      "durationSec": 25,
+      "credit": "Orchestre philharmonique de Dresde, dir. Paul van Kempen (1940)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Polydor-67575a-859ge9.ogg"
+    },
+    {
+      "id": "schubert-roi-aulnes-audio",
+      "kind": "audio",
+      "src": "music/audio/schubert-roi-aulnes-audio.m4a",
+      "bytes": 324660,
+      "durationSec": 20,
+      "credit": "Beal et Campbell, Concert Films Corporation (1948)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schubert_-_Erlk%C3%B6nig_(Beal,_Campbell).flac"
     },
     {
       "id": "tchaikovski-casse-noisette-audio",

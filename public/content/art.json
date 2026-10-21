@@ -148,9 +148,142 @@
           ]
         }
       ]
+    },
+    {
+      "id": "art-2",
+      "title": "Du romantisme à l'abstraction",
+      "description": "Huit peintres et six mouvements, du XIXe siècle aux débuts de l'art abstrait.",
+      "lessons": [
+        {
+          "id": "art-2-1",
+          "title": "Delacroix et le romantisme",
+          "introduces": [
+            "romantisme",
+            "delacroix",
+            "barque-dante",
+            "liberte-guidant-peuple",
+            "femmes-alger"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-2-2",
+          "title": "Turner",
+          "introduces": [
+            "turner",
+            "hannibal-alpes",
+            "temeraire",
+            "pluie-vapeur-vitesse"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-2-3",
+          "title": "Courbet et le réalisme",
+          "introduces": [
+            "realisme",
+            "courbet",
+            "enterrement-ornans",
+            "demoiselles-village",
+            "atelier-peintre"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-2-4",
+          "title": "Millet",
+          "introduces": [
+            "millet",
+            "semeur",
+            "glaneuses",
+            "angelus"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-2-5",
+          "title": "Seurat et le néo-impressionnisme",
+          "introduces": [
+            "neo-impressionnisme",
+            "seurat",
+            "baignade-asnieres",
+            "grande-jatte",
+            "cirque"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-2-6",
+          "title": "Klimt et l'Art nouveau",
+          "introduces": [
+            "art-nouveau",
+            "klimt",
+            "judith",
+            "adele-bloch-bauer",
+            "baiser"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-2-7",
+          "title": "Munch et l'expressionnisme",
+          "introduces": [
+            "expressionnisme",
+            "munch",
+            "soiree-karl-johan",
+            "cri",
+            "danse-vie"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-2-8",
+          "title": "Kandinsky et l'art abstrait",
+          "introduces": [
+            "art-abstrait",
+            "kandinsky",
+            "composition-vii",
+            "composition-viii",
+            "jaune-rouge-bleu"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        }
+      ]
     }
   ],
-  "version": "db1ad945f730",
+  "version": "317fdc0ddb42",
   "entities": [
     {
       "id": "renaissance",
@@ -200,6 +333,66 @@
       "yearStart": 1907,
       "yearEnd": 1920,
       "summary": "Mouvement lancé à Paris vers 1907 par Picasso et Braque. Les cubistes décomposent les objets en facettes géométriques et les montrent sous plusieurs angles à la fois.",
+      "mediaIds": []
+    },
+    {
+      "id": "romantisme",
+      "type": "movement",
+      "name": "Romantisme",
+      "wikidataId": "Q37068",
+      "yearStart": 1800,
+      "yearEnd": 1850,
+      "summary": "Mouvement de la première moitié du XIXe siècle qui privilégie l'émotion, l'imagination et le sublime. Les peintres romantiques aiment les sujets dramatiques, l'exotisme et la nature déchaînée.",
+      "mediaIds": []
+    },
+    {
+      "id": "realisme",
+      "type": "movement",
+      "name": "Réalisme",
+      "wikidataId": "Q10857409",
+      "yearStart": 1848,
+      "yearEnd": 1880,
+      "summary": "Mouvement né en France vers 1850. Les réalistes peignent la vie quotidienne et le monde du travail, sans les idéaliser.",
+      "mediaIds": []
+    },
+    {
+      "id": "neo-impressionnisme",
+      "type": "movement",
+      "name": "Néo-impressionnisme",
+      "wikidataId": "Q150091",
+      "yearStart": 1886,
+      "yearEnd": 1906,
+      "summary": "Mouvement lancé par Seurat au milieu des années 1880. Au lieu de mélanger les couleurs sur la palette, les peintres juxtaposent de petites touches de couleur pure : c'est le pointillisme.",
+      "mediaIds": []
+    },
+    {
+      "id": "art-nouveau",
+      "type": "movement",
+      "name": "Art nouveau",
+      "wikidataId": "Q34636",
+      "yearStart": 1890,
+      "yearEnd": 1914,
+      "summary": "Style décoratif international de la fin du XIXe siècle, inspiré des formes de la nature. À Vienne, il prend le nom de Sécession, avec Klimt pour figure principale.",
+      "mediaIds": []
+    },
+    {
+      "id": "expressionnisme",
+      "type": "movement",
+      "name": "Expressionnisme",
+      "wikidataId": "Q80113",
+      "yearStart": 1905,
+      "yearEnd": 1925,
+      "summary": "Mouvement du début du XXe siècle, surtout allemand, qui déforme les formes et les couleurs pour exprimer les émotions plutôt que décrire le monde. Munch en est un précurseur.",
+      "mediaIds": []
+    },
+    {
+      "id": "art-abstrait",
+      "type": "movement",
+      "name": "Art abstrait",
+      "wikidataId": "Q128115",
+      "yearStart": 1910,
+      "yearEnd": 1950,
+      "summary": "Peinture qui ne représente plus d'objets reconnaissables : seuls comptent les formes, les lignes et les couleurs. Kandinsky en est l'un des pionniers, vers 1910.",
       "mediaIds": []
     },
     {
@@ -308,6 +501,102 @@
       "summary": "Peintre espagnol installé à Paris, proche de Picasso. Il est l'un des principaux représentants du cubisme, aux compositions claires et construites.",
       "mediaIds": [
         "juan-gris-image"
+      ]
+    },
+    {
+      "id": "delacroix",
+      "type": "person",
+      "name": "Eugène Delacroix",
+      "wikidataId": "Q33477",
+      "yearStart": 1798,
+      "yearEnd": 1863,
+      "summary": "Peintre français, chef de file du romantisme. Ses grandes toiles aux couleurs vives et au mouvement intense mettent en scène l'histoire, la littérature et l'Orient.",
+      "mediaIds": [
+        "delacroix-image"
+      ]
+    },
+    {
+      "id": "turner",
+      "type": "person",
+      "name": "William Turner",
+      "wikidataId": "Q159758",
+      "yearStart": 1775,
+      "yearEnd": 1851,
+      "summary": "Peintre anglais, maître du paysage. Ses formes se dissolvent peu à peu dans la lumière, la vapeur et la tempête.",
+      "mediaIds": [
+        "turner-image"
+      ]
+    },
+    {
+      "id": "courbet",
+      "type": "person",
+      "name": "Gustave Courbet",
+      "wikidataId": "Q34618",
+      "yearStart": 1819,
+      "yearEnd": 1877,
+      "summary": "Peintre français, figure du réalisme. Il peint le monde tel qu'il le voit, gens ordinaires compris, sur des toiles aussi grandes que celles réservées jusque-là à l'histoire.",
+      "mediaIds": [
+        "courbet-image"
+      ]
+    },
+    {
+      "id": "millet",
+      "type": "person",
+      "name": "Jean-François Millet",
+      "wikidataId": "Q148458",
+      "yearStart": 1814,
+      "yearEnd": 1875,
+      "summary": "Peintre français installé à Barbizon, près de la forêt de Fontainebleau. Il consacre son œuvre à la vie et au travail des paysans, avec gravité et simplicité.",
+      "mediaIds": [
+        "millet-image"
+      ]
+    },
+    {
+      "id": "seurat",
+      "type": "person",
+      "name": "Georges Seurat",
+      "wikidataId": "Q34013",
+      "yearStart": 1859,
+      "yearEnd": 1891,
+      "summary": "Peintre français mort à 31 ans, à l'origine du néo-impressionnisme : il juxtapose de petits points de couleur pure que l'œil du spectateur mélange.",
+      "mediaIds": [
+        "seurat-image"
+      ]
+    },
+    {
+      "id": "klimt",
+      "type": "person",
+      "name": "Gustav Klimt",
+      "wikidataId": "Q34661",
+      "yearStart": 1862,
+      "yearEnd": 1918,
+      "summary": "Peintre autrichien, figure de la Sécession viennoise. Ses portraits et ses allégories mêlent figures sensuelles, motifs décoratifs et feuilles d'or.",
+      "mediaIds": [
+        "klimt-image"
+      ]
+    },
+    {
+      "id": "munch",
+      "type": "person",
+      "name": "Edvard Munch",
+      "wikidataId": "Q41406",
+      "yearStart": 1863,
+      "yearEnd": 1944,
+      "summary": "Peintre norvégien, précurseur de l'expressionnisme. Ses tableaux disent l'angoisse, l'amour et la mort par des formes ondulantes et des couleurs violentes.",
+      "mediaIds": [
+        "munch-image"
+      ]
+    },
+    {
+      "id": "kandinsky",
+      "type": "person",
+      "name": "Vassily Kandinsky",
+      "wikidataId": "Q61064",
+      "yearStart": 1866,
+      "yearEnd": 1944,
+      "summary": "Peintre russe, installé ensuite en Allemagne puis en France, pionnier de l'art abstrait. Il voulait que la peinture touche, comme la musique, par les seules couleurs et formes.",
+      "mediaIds": [
+        "kandinsky-image"
       ]
     },
     {
@@ -633,6 +922,294 @@
         "petit-dejeuner-image"
       ],
       "collection": "Centre Pompidou, Paris"
+    },
+    {
+      "id": "barque-dante",
+      "type": "work",
+      "name": "La Barque de Dante",
+      "wikidataId": "Q2354251",
+      "year": 1822,
+      "summary": "Premier grand tableau de Delacroix, présenté au Salon de 1822. Dante et le poète Virgile traversent le fleuve des Enfers, cernés par les damnés qui s'accrochent à la barque.",
+      "mediaIds": [
+        "barque-dante-image"
+      ],
+      "collection": "Musée du Louvre, Paris"
+    },
+    {
+      "id": "liberte-guidant-peuple",
+      "type": "work",
+      "name": "La Liberté guidant le peuple",
+      "wikidataId": "Q29530",
+      "year": 1830,
+      "summary": "Peinte en 1830 en hommage aux Trois Glorieuses, les journées révolutionnaires de juillet à Paris. Une femme coiffée du bonnet phrygien, allégorie de la Liberté, entraîne le peuple sur une barricade.",
+      "mediaIds": [
+        "liberte-guidant-peuple-image"
+      ],
+      "collection": "Musée du Louvre, Paris"
+    },
+    {
+      "id": "femmes-alger",
+      "type": "work",
+      "name": "Femmes d'Alger dans leur appartement",
+      "wikidataId": "Q1212737",
+      "year": 1834,
+      "summary": "Peint en 1834, après le voyage de Delacroix en Afrique du Nord. Trois femmes et une servante dans un intérieur aux couleurs chaudes, un tableau qui a fasciné de nombreux peintres.",
+      "mediaIds": [
+        "femmes-alger-image"
+      ],
+      "collection": "Musée du Louvre, Paris"
+    },
+    {
+      "id": "hannibal-alpes",
+      "type": "work",
+      "name": "Tempête de neige, Hannibal et son armée traversant les Alpes",
+      "wikidataId": "Q3646554",
+      "year": 1812,
+      "summary": "Exposé en 1812. Un immense tourbillon de neige et de nuages écrase la minuscule armée d'Hannibal : la nature y domine l'histoire.",
+      "mediaIds": [
+        "hannibal-alpes-image"
+      ],
+      "collection": "Tate Britain, Londres"
+    },
+    {
+      "id": "temeraire",
+      "type": "work",
+      "name": "Le Dernier Voyage du Téméraire",
+      "wikidataId": "Q257580",
+      "year": 1839,
+      "summary": "Un vieux navire de guerre, vétéran de la bataille de Trafalgar, remorqué par un bateau à vapeur vers sa démolition, sous un coucher de soleil flamboyant. Peint en 1839.",
+      "mediaIds": [
+        "temeraire-image"
+      ],
+      "collection": "National Gallery, Londres"
+    },
+    {
+      "id": "pluie-vapeur-vitesse",
+      "type": "work",
+      "name": "Pluie, vapeur et vitesse",
+      "wikidataId": "Q2339059",
+      "year": 1844,
+      "summary": "Un train lancé à toute allure sur un pont de la Tamise, sous la pluie. Peint en 1844, le tableau célèbre la vitesse de la machine moderne.",
+      "mediaIds": [
+        "pluie-vapeur-vitesse-image"
+      ],
+      "collection": "National Gallery, Londres"
+    },
+    {
+      "id": "enterrement-ornans",
+      "type": "work",
+      "name": "Un enterrement à Ornans",
+      "wikidataId": "Q540488",
+      "year": 1849,
+      "summary": "Immense toile peinte en 1849-1850 : l'enterrement d'un villageois d'Ornans, la ville natale de Courbet, avec ses habitants grandeur nature. Le tableau fit scandale au Salon.",
+      "mediaIds": [
+        "enterrement-ornans-image"
+      ],
+      "collection": "Musée d'Orsay, Paris"
+    },
+    {
+      "id": "demoiselles-village",
+      "type": "work",
+      "name": "Les Demoiselles de village",
+      "wikidataId": "Q19911495",
+      "year": 1851,
+      "summary": "Les trois sœurs du peintre offrent une aumône à une petite vachère, dans la campagne des environs d'Ornans. Peint en 1851-1852.",
+      "mediaIds": [
+        "demoiselles-village-image"
+      ],
+      "collection": "Metropolitan Museum of Art, New York"
+    },
+    {
+      "id": "atelier-peintre",
+      "type": "work",
+      "name": "L'Atelier du peintre",
+      "wikidataId": "Q1167178",
+      "year": 1855,
+      "summary": "Vaste « allégorie réelle » de 1855 : Courbet se peint au travail, entre ses amis et la société de son temps. Refusé à l'Exposition universelle, le tableau fut montré dans le pavillon que le peintre fit construire.",
+      "mediaIds": [
+        "atelier-peintre-image"
+      ],
+      "collection": "Musée d'Orsay, Paris"
+    },
+    {
+      "id": "semeur",
+      "type": "work",
+      "name": "Le Semeur",
+      "wikidataId": "Q20540661",
+      "year": 1850,
+      "summary": "Un paysan sème le grain à grands gestes sur une pente, au crépuscule. Exposé au Salon de 1850, ce héros anonyme du travail des champs frappa le public.",
+      "mediaIds": [
+        "semeur-image"
+      ],
+      "collection": "Museum of Fine Arts, Boston"
+    },
+    {
+      "id": "glaneuses",
+      "type": "work",
+      "name": "Des glaneuses",
+      "wikidataId": "Q1368055",
+      "year": 1857,
+      "summary": "Trois paysannes ramassent les épis oubliés après la moisson, tandis qu'au loin s'élèvent les meules. Peint en 1857.",
+      "mediaIds": [
+        "glaneuses-image"
+      ],
+      "collection": "Musée d'Orsay, Paris"
+    },
+    {
+      "id": "angelus",
+      "type": "work",
+      "name": "L'Angélus",
+      "wikidataId": "Q2571560",
+      "year": 1858,
+      "summary": "Au crépuscule, un couple de paysans interrompt son travail pour la prière de l'angélus. Peint en 1857-1859, le tableau est devenu l'une des images les plus reproduites du XIXe siècle.",
+      "mediaIds": [
+        "angelus-image"
+      ],
+      "collection": "Musée d'Orsay, Paris"
+    },
+    {
+      "id": "baignade-asnieres",
+      "type": "work",
+      "name": "Une baignade à Asnières",
+      "wikidataId": "Q1090837",
+      "year": 1884,
+      "summary": "Premier grand tableau de Seurat, refusé au Salon de 1884 : des ouvriers se reposent au bord de la Seine, face aux usines de Clichy.",
+      "mediaIds": [
+        "baignade-asnieres-image"
+      ],
+      "collection": "National Gallery, Londres"
+    },
+    {
+      "id": "grande-jatte",
+      "type": "work",
+      "name": "Un dimanche après-midi à l'île de la Grande Jatte",
+      "wikidataId": "Q1044742",
+      "year": 1886,
+      "summary": "Peint entre 1884 et 1886 et montré à la dernière exposition impressionniste : des Parisiens se promènent sur une île de la Seine, peints en petits points de couleur pure.",
+      "mediaIds": [
+        "grande-jatte-image"
+      ],
+      "collection": "Art Institute of Chicago"
+    },
+    {
+      "id": "cirque",
+      "type": "work",
+      "name": "Le Cirque",
+      "wikidataId": "Q2275610",
+      "year": 1891,
+      "summary": "Dernier tableau de Seurat, resté inachevé à sa mort en 1891. Une écuyère, un clown et des acrobates sont construits sur des lignes montantes, censées exprimer la gaieté.",
+      "mediaIds": [
+        "cirque-image"
+      ],
+      "collection": "Musée d'Orsay, Paris"
+    },
+    {
+      "id": "judith",
+      "type": "work",
+      "name": "Judith I",
+      "wikidataId": "Q2324643",
+      "year": 1901,
+      "summary": "Klimt fait de l'héroïne biblique une femme fatale parée d'or, la tête d'Holopherne à peine visible au bord du tableau. Peint en 1901.",
+      "mediaIds": [
+        "judith-image"
+      ],
+      "collection": "Österreichische Galerie Belvedere, Vienne"
+    },
+    {
+      "id": "adele-bloch-bauer",
+      "type": "work",
+      "name": "Portrait d'Adele Bloch-Bauer I",
+      "wikidataId": "Q354396",
+      "year": 1907,
+      "summary": "Portrait d'une Viennoise de la haute société, achevé en 1907, où le corps disparaît presque dans un décor d'or et de motifs. Spolié par les nazis, il a été rendu aux héritiers en 2006.",
+      "mediaIds": [
+        "adele-bloch-bauer-image"
+      ],
+      "collection": "Neue Galerie, New York"
+    },
+    {
+      "id": "baiser",
+      "type": "work",
+      "name": "Le Baiser",
+      "wikidataId": "Q698487",
+      "year": 1908,
+      "summary": "Un couple enlacé, enveloppé d'un manteau d'or, au bord d'un pré fleuri. Peint en 1907-1908, c'est le tableau le plus célèbre de la période dorée de Klimt.",
+      "mediaIds": [
+        "baiser-image"
+      ],
+      "collection": "Österreichische Galerie Belvedere, Vienne"
+    },
+    {
+      "id": "soiree-karl-johan",
+      "type": "work",
+      "name": "Soirée sur l'avenue Karl Johan",
+      "wikidataId": "Q3955717",
+      "year": 1892,
+      "summary": "Sur la grande avenue d'Oslo, des passants aux visages livides avancent comme des fantômes vers le spectateur. Peint en 1892.",
+      "mediaIds": [
+        "soiree-karl-johan-image"
+      ],
+      "collection": "KODE, Bergen"
+    },
+    {
+      "id": "cri",
+      "type": "work",
+      "name": "Le Cri",
+      "wikidataId": "Q471379",
+      "year": 1893,
+      "summary": "Une figure se prend la tête dans les mains sous un ciel rouge sang. Munch en a réalisé plusieurs versions ; celle-ci, de 1893, est devenue une icône de l'angoisse moderne.",
+      "mediaIds": [
+        "cri-image"
+      ],
+      "collection": "Musée national, Oslo"
+    },
+    {
+      "id": "danse-vie",
+      "type": "work",
+      "name": "La Danse de la vie",
+      "wikidataId": "Q3208135",
+      "year": 1899,
+      "summary": "Des couples dansent au bord de la mer par une nuit d'été ; de part et d'autre, deux femmes, en blanc et en noir, semblent incarner l'innocence et le deuil. Peint en 1899-1900.",
+      "mediaIds": [
+        "danse-vie-image"
+      ],
+      "collection": "Musée national, Oslo"
+    },
+    {
+      "id": "composition-vii",
+      "type": "work",
+      "name": "Composition VII",
+      "wikidataId": "Q2990634",
+      "year": 1913,
+      "summary": "L'une des toiles les plus complexes de Kandinsky, peinte en 1913 : un tourbillon de couleurs et de formes, sans objet reconnaissable.",
+      "mediaIds": [
+        "composition-vii-image"
+      ],
+      "collection": "Galerie Tretiakov, Moscou"
+    },
+    {
+      "id": "composition-viii",
+      "type": "work",
+      "name": "Composition VIII",
+      "wikidataId": "Q19609199",
+      "year": 1923,
+      "summary": "Peinte en 1923, quand Kandinsky enseigne au Bauhaus. Cercles, triangles et lignes nettes y remplacent les grandes taches de couleur de ses débuts.",
+      "mediaIds": [
+        "composition-viii-image"
+      ],
+      "collection": "Musée Solomon R. Guggenheim, New York"
+    },
+    {
+      "id": "jaune-rouge-bleu",
+      "type": "work",
+      "name": "Jaune-rouge-bleu",
+      "wikidataId": "Q18705525",
+      "year": 1925,
+      "summary": "Grande toile de 1925 qui oppose une moitié claire, dominée par le jaune, à une moitié sombre, dominée par le bleu.",
+      "mediaIds": [
+        "jaune-rouge-bleu-image"
+      ],
+      "collection": "Centre Pompidou, Paris"
     }
   ],
   "relations": [
@@ -682,6 +1259,46 @@
       "to": "cubisme"
     },
     {
+      "from": "delacroix",
+      "type": "belongsTo",
+      "to": "romantisme"
+    },
+    {
+      "from": "turner",
+      "type": "belongsTo",
+      "to": "romantisme"
+    },
+    {
+      "from": "courbet",
+      "type": "belongsTo",
+      "to": "realisme"
+    },
+    {
+      "from": "millet",
+      "type": "belongsTo",
+      "to": "realisme"
+    },
+    {
+      "from": "seurat",
+      "type": "belongsTo",
+      "to": "neo-impressionnisme"
+    },
+    {
+      "from": "klimt",
+      "type": "belongsTo",
+      "to": "art-nouveau"
+    },
+    {
+      "from": "munch",
+      "type": "belongsTo",
+      "to": "expressionnisme"
+    },
+    {
+      "from": "kandinsky",
+      "type": "belongsTo",
+      "to": "art-abstrait"
+    },
+    {
       "from": "joconde",
       "type": "createdBy",
       "to": "leonard-de-vinci"
@@ -950,9 +1567,305 @@
       "from": "petit-dejeuner",
       "type": "belongsTo",
       "to": "cubisme"
+    },
+    {
+      "from": "barque-dante",
+      "type": "createdBy",
+      "to": "delacroix"
+    },
+    {
+      "from": "barque-dante",
+      "type": "belongsTo",
+      "to": "romantisme"
+    },
+    {
+      "from": "liberte-guidant-peuple",
+      "type": "createdBy",
+      "to": "delacroix"
+    },
+    {
+      "from": "liberte-guidant-peuple",
+      "type": "belongsTo",
+      "to": "romantisme"
+    },
+    {
+      "from": "femmes-alger",
+      "type": "createdBy",
+      "to": "delacroix"
+    },
+    {
+      "from": "femmes-alger",
+      "type": "belongsTo",
+      "to": "romantisme"
+    },
+    {
+      "from": "hannibal-alpes",
+      "type": "createdBy",
+      "to": "turner"
+    },
+    {
+      "from": "hannibal-alpes",
+      "type": "belongsTo",
+      "to": "romantisme"
+    },
+    {
+      "from": "temeraire",
+      "type": "createdBy",
+      "to": "turner"
+    },
+    {
+      "from": "temeraire",
+      "type": "belongsTo",
+      "to": "romantisme"
+    },
+    {
+      "from": "pluie-vapeur-vitesse",
+      "type": "createdBy",
+      "to": "turner"
+    },
+    {
+      "from": "pluie-vapeur-vitesse",
+      "type": "belongsTo",
+      "to": "romantisme"
+    },
+    {
+      "from": "enterrement-ornans",
+      "type": "createdBy",
+      "to": "courbet"
+    },
+    {
+      "from": "enterrement-ornans",
+      "type": "belongsTo",
+      "to": "realisme"
+    },
+    {
+      "from": "demoiselles-village",
+      "type": "createdBy",
+      "to": "courbet"
+    },
+    {
+      "from": "demoiselles-village",
+      "type": "belongsTo",
+      "to": "realisme"
+    },
+    {
+      "from": "atelier-peintre",
+      "type": "createdBy",
+      "to": "courbet"
+    },
+    {
+      "from": "atelier-peintre",
+      "type": "belongsTo",
+      "to": "realisme"
+    },
+    {
+      "from": "semeur",
+      "type": "createdBy",
+      "to": "millet"
+    },
+    {
+      "from": "semeur",
+      "type": "belongsTo",
+      "to": "realisme"
+    },
+    {
+      "from": "glaneuses",
+      "type": "createdBy",
+      "to": "millet"
+    },
+    {
+      "from": "glaneuses",
+      "type": "belongsTo",
+      "to": "realisme"
+    },
+    {
+      "from": "angelus",
+      "type": "createdBy",
+      "to": "millet"
+    },
+    {
+      "from": "angelus",
+      "type": "belongsTo",
+      "to": "realisme"
+    },
+    {
+      "from": "baignade-asnieres",
+      "type": "createdBy",
+      "to": "seurat"
+    },
+    {
+      "from": "baignade-asnieres",
+      "type": "belongsTo",
+      "to": "neo-impressionnisme"
+    },
+    {
+      "from": "grande-jatte",
+      "type": "createdBy",
+      "to": "seurat"
+    },
+    {
+      "from": "grande-jatte",
+      "type": "belongsTo",
+      "to": "neo-impressionnisme"
+    },
+    {
+      "from": "cirque",
+      "type": "createdBy",
+      "to": "seurat"
+    },
+    {
+      "from": "cirque",
+      "type": "belongsTo",
+      "to": "neo-impressionnisme"
+    },
+    {
+      "from": "judith",
+      "type": "createdBy",
+      "to": "klimt"
+    },
+    {
+      "from": "judith",
+      "type": "belongsTo",
+      "to": "art-nouveau"
+    },
+    {
+      "from": "adele-bloch-bauer",
+      "type": "createdBy",
+      "to": "klimt"
+    },
+    {
+      "from": "adele-bloch-bauer",
+      "type": "belongsTo",
+      "to": "art-nouveau"
+    },
+    {
+      "from": "baiser",
+      "type": "createdBy",
+      "to": "klimt"
+    },
+    {
+      "from": "baiser",
+      "type": "belongsTo",
+      "to": "art-nouveau"
+    },
+    {
+      "from": "soiree-karl-johan",
+      "type": "createdBy",
+      "to": "munch"
+    },
+    {
+      "from": "soiree-karl-johan",
+      "type": "belongsTo",
+      "to": "expressionnisme"
+    },
+    {
+      "from": "cri",
+      "type": "createdBy",
+      "to": "munch"
+    },
+    {
+      "from": "cri",
+      "type": "belongsTo",
+      "to": "expressionnisme"
+    },
+    {
+      "from": "danse-vie",
+      "type": "createdBy",
+      "to": "munch"
+    },
+    {
+      "from": "danse-vie",
+      "type": "belongsTo",
+      "to": "expressionnisme"
+    },
+    {
+      "from": "composition-vii",
+      "type": "createdBy",
+      "to": "kandinsky"
+    },
+    {
+      "from": "composition-vii",
+      "type": "belongsTo",
+      "to": "art-abstrait"
+    },
+    {
+      "from": "composition-viii",
+      "type": "createdBy",
+      "to": "kandinsky"
+    },
+    {
+      "from": "composition-viii",
+      "type": "belongsTo",
+      "to": "art-abstrait"
+    },
+    {
+      "from": "jaune-rouge-bleu",
+      "type": "createdBy",
+      "to": "kandinsky"
+    },
+    {
+      "from": "jaune-rouge-bleu",
+      "type": "belongsTo",
+      "to": "art-abstrait"
     }
   ],
   "media": [
+    {
+      "id": "adele-bloch-bauer-image",
+      "kind": "image",
+      "src": "art/images/adele-bloch-bauer-image-960.webp",
+      "bytes": 300482,
+      "width": 960,
+      "height": 960,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/adele-bloch-bauer-image-480.webp",
+          "bytes": 69666
+        },
+        {
+          "width": 960,
+          "src": "art/images/adele-bloch-bauer-image-960.webp",
+          "bytes": 300482
+        },
+        {
+          "width": 1600,
+          "src": "art/images/adele-bloch-bauer-image-1600.webp",
+          "bytes": 826242
+        }
+      ],
+      "credit": "Gustav Klimt",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustav_Klimt,_1907,_Adele_Bloch-Bauer_I,_Neue_Galerie_New_York.jpg"
+    },
+    {
+      "id": "angelus-image",
+      "kind": "image",
+      "src": "art/images/angelus-image-960.webp",
+      "bytes": 107954,
+      "width": 960,
+      "height": 798,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/angelus-image-480.webp",
+          "bytes": 22522
+        },
+        {
+          "width": 960,
+          "src": "art/images/angelus-image-960.webp",
+          "bytes": 107954
+        },
+        {
+          "width": 1600,
+          "src": "art/images/angelus-image-1600.webp",
+          "bytes": 420494
+        }
+      ],
+      "credit": "Jean-François Millet",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:JEAN-FRAN%C3%87OIS_MILLET_-_El_%C3%81ngelus_(Museo_de_Orsay,_1857-1859._%C3%93leo_sobre_lienzo,_55.5_x_66_cm).jpg"
+    },
     {
       "id": "aristote-homere-image",
       "kind": "image",
@@ -982,6 +1895,90 @@
       "sourceUrl": "https://www.metmuseum.org/art/collection/search/437394"
     },
     {
+      "id": "atelier-peintre-image",
+      "kind": "image",
+      "src": "art/images/atelier-peintre-image-960.webp",
+      "bytes": 86460,
+      "width": 960,
+      "height": 566,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/atelier-peintre-image-480.webp",
+          "bytes": 21456
+        },
+        {
+          "width": 960,
+          "src": "art/images/atelier-peintre-image-960.webp",
+          "bytes": 86460
+        },
+        {
+          "width": 1600,
+          "src": "art/images/atelier-peintre-image-1600.webp",
+          "bytes": 279648
+        }
+      ],
+      "credit": "Gustave Courbet",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Courbet_LAtelier_du_peintre.jpg"
+    },
+    {
+      "id": "baignade-asnieres-image",
+      "kind": "image",
+      "src": "art/images/baignade-asnieres-image-960.webp",
+      "bytes": 95224,
+      "width": 960,
+      "height": 637,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/baignade-asnieres-image-480.webp",
+          "bytes": 20800
+        },
+        {
+          "width": 960,
+          "src": "art/images/baignade-asnieres-image-960.webp",
+          "bytes": 95224
+        },
+        {
+          "width": 1600,
+          "src": "art/images/baignade-asnieres-image-1600.webp",
+          "bytes": 378468
+        }
+      ],
+      "credit": "Georges Seurat",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baigneurs_a_Asnieres.jpg"
+    },
+    {
+      "id": "baiser-image",
+      "kind": "image",
+      "src": "art/images/baiser-image-960.webp",
+      "bytes": 260974,
+      "width": 960,
+      "height": 964,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/baiser-image-480.webp",
+          "bytes": 58354
+        },
+        {
+          "width": 960,
+          "src": "art/images/baiser-image-960.webp",
+          "bytes": 260974
+        },
+        {
+          "width": 1600,
+          "src": "art/images/baiser-image-1600.webp",
+          "bytes": 803684
+        }
+      ],
+      "credit": "Gustav Klimt",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg"
+    },
+    {
       "id": "bal-moulin-galette-image",
       "kind": "image",
       "src": "art/images/bal-moulin-galette-image-960.webp",
@@ -1008,6 +2005,34 @@
       "credit": "Pierre-Auguste Renoir",
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renoir,_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette,_1876.jpg"
+    },
+    {
+      "id": "barque-dante-image",
+      "kind": "image",
+      "src": "art/images/barque-dante-image-960.webp",
+      "bytes": 78412,
+      "width": 960,
+      "height": 719,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/barque-dante-image-480.webp",
+          "bytes": 21218
+        },
+        {
+          "width": 960,
+          "src": "art/images/barque-dante-image-960.webp",
+          "bytes": 78412
+        },
+        {
+          "width": 1600,
+          "src": "art/images/barque-dante-image-1600.webp",
+          "bytes": 246854
+        }
+      ],
+      "credit": "Eugène Delacroix",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_The_Barque_of_Dante.jpg"
     },
     {
       "id": "bouteille-anis-image",
@@ -1145,6 +2170,90 @@
       "sourceUrl": "https://www.artic.edu/artworks/28560"
     },
     {
+      "id": "cirque-image",
+      "kind": "image",
+      "src": "art/images/cirque-image-960.webp",
+      "bytes": 441308,
+      "width": 960,
+      "height": 1190,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/cirque-image-480.webp",
+          "bytes": 84526
+        },
+        {
+          "width": 960,
+          "src": "art/images/cirque-image-960.webp",
+          "bytes": 441308
+        },
+        {
+          "width": 1600,
+          "src": "art/images/cirque-image-1600.webp",
+          "bytes": 1256350
+        }
+      ],
+      "credit": "Georges Seurat",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Georges_Seurat_-_The_Circus_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "composition-vii-image",
+      "kind": "image",
+      "src": "art/images/composition-vii-image-960.webp",
+      "bytes": 150810,
+      "width": 960,
+      "height": 638,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/composition-vii-image-480.webp",
+          "bytes": 44028
+        },
+        {
+          "width": 960,
+          "src": "art/images/composition-vii-image-960.webp",
+          "bytes": 150810
+        },
+        {
+          "width": 1600,
+          "src": "art/images/composition-vii-image-1600.webp",
+          "bytes": 455096
+        }
+      ],
+      "credit": "Wassily Kandinsky",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Composition_VII_-_Wassily_Kandinsky,_GAC.jpg"
+    },
+    {
+      "id": "composition-viii-image",
+      "kind": "image",
+      "src": "art/images/composition-viii-image-960.webp",
+      "bytes": 98954,
+      "width": 960,
+      "height": 700,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/composition-viii-image-480.webp",
+          "bytes": 29860
+        },
+        {
+          "width": 960,
+          "src": "art/images/composition-viii-image-960.webp",
+          "bytes": 98954
+        },
+        {
+          "width": 1600,
+          "src": "art/images/composition-viii-image-1600.webp",
+          "bytes": 271500
+        }
+      ],
+      "credit": "Vassily Kandinsky, photo Xyxyzyz (Wikimedia Commons)",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kandinsky_-_Composition_8,_July_1923.jpg"
+    },
+    {
       "id": "corbeille-pommes-image",
       "kind": "image",
       "src": "art/images/corbeille-pommes-image-960.webp",
@@ -1171,6 +2280,57 @@
       "credit": "Paul Cézanne",
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_The_Basket_of_Apples_-_1926.252_-_Art_Institute_of_Chicago.jpg"
+    },
+    {
+      "id": "courbet-image",
+      "kind": "image",
+      "src": "art/images/courbet-image-960.webp",
+      "bytes": 146546,
+      "width": 960,
+      "height": 1421,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/courbet-image-480.webp",
+          "bytes": 33594
+        },
+        {
+          "width": 960,
+          "src": "art/images/courbet-image-960.webp",
+          "bytes": 146546
+        }
+      ],
+      "credit": "Nadar",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustave_Courbet,_photograph_Atelier_Nadar,_c._1860s.jpg"
+    },
+    {
+      "id": "cri-image",
+      "kind": "image",
+      "src": "art/images/cri-image-960.webp",
+      "bytes": 170406,
+      "width": 960,
+      "height": 1192,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/cri-image-480.webp",
+          "bytes": 34364
+        },
+        {
+          "width": 960,
+          "src": "art/images/cri-image-960.webp",
+          "bytes": 170406
+        },
+        {
+          "width": 1600,
+          "src": "art/images/cri-image-1600.webp",
+          "bytes": 713022
+        }
+      ],
+      "credit": "Edvard Munch",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg"
     },
     {
       "id": "dame-hermine-image",
@@ -1201,6 +2361,34 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg"
     },
     {
+      "id": "danse-vie-image",
+      "kind": "image",
+      "src": "art/images/danse-vie-image-960.webp",
+      "bytes": 59026,
+      "width": 960,
+      "height": 626,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/danse-vie-image-480.webp",
+          "bytes": 16000
+        },
+        {
+          "width": 960,
+          "src": "art/images/danse-vie-image-960.webp",
+          "bytes": 59026
+        },
+        {
+          "width": 1600,
+          "src": "art/images/danse-vie-image-1600.webp",
+          "bytes": 204348
+        }
+      ],
+      "credit": "Edvard Munch",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_The_Dance_of_Life_-_NG.M.00941_-_National_Museum_of_Art,_Architecture_and_Design.jpg"
+    },
+    {
       "id": "dejeuner-canotiers-image",
       "kind": "image",
       "src": "art/images/dejeuner-canotiers-image-960.webp",
@@ -1227,6 +2415,62 @@
       "credit": "Pierre-Auguste Renoir",
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "delacroix-image",
+      "kind": "image",
+      "src": "art/images/delacroix-image-960.webp",
+      "bytes": 177700,
+      "width": 960,
+      "height": 1171,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/delacroix-image-480.webp",
+          "bytes": 28048
+        },
+        {
+          "width": 960,
+          "src": "art/images/delacroix-image-960.webp",
+          "bytes": 177700
+        },
+        {
+          "width": 1600,
+          "src": "art/images/delacroix-image-1600.webp",
+          "bytes": 688144
+        }
+      ],
+      "credit": "Eugène Delacroix",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Autoportrait_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_25.jpg"
+    },
+    {
+      "id": "demoiselles-village-image",
+      "kind": "image",
+      "src": "art/images/demoiselles-village-image-960.webp",
+      "bytes": 102806,
+      "width": 960,
+      "height": 717,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/demoiselles-village-image-480.webp",
+          "bytes": 28878
+        },
+        {
+          "width": 960,
+          "src": "art/images/demoiselles-village-image-960.webp",
+          "bytes": 102806
+        },
+        {
+          "width": 1600,
+          "src": "art/images/demoiselles-village-image-1600.webp",
+          "bytes": 279174
+        }
+      ],
+      "credit": "The Metropolitan Museum of Art",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/438820"
     },
     {
       "id": "deux-soeurs-image",
@@ -1285,6 +2529,34 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
     },
     {
+      "id": "enterrement-ornans-image",
+      "kind": "image",
+      "src": "art/images/enterrement-ornans-image-960.webp",
+      "bytes": 59968,
+      "width": 960,
+      "height": 442,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/enterrement-ornans-image-480.webp",
+          "bytes": 15162
+        },
+        {
+          "width": 960,
+          "src": "art/images/enterrement-ornans-image-960.webp",
+          "bytes": 59968
+        },
+        {
+          "width": 1600,
+          "src": "art/images/enterrement-ornans-image-1600.webp",
+          "bytes": 241958
+        }
+      ],
+      "credit": "Gustave Courbet",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project.jpg"
+    },
+    {
       "id": "femme-ombrelle-image",
       "kind": "image",
       "src": "art/images/femme-ombrelle-image-960.webp",
@@ -1313,6 +2585,113 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Woman_with_a_Parasol_-_Madame_Monet_and_Her_Son_-_Google_Art_Project.jpg"
     },
     {
+      "id": "femmes-alger-image",
+      "kind": "image",
+      "src": "art/images/femmes-alger-image-960.webp",
+      "bytes": 107916,
+      "width": 960,
+      "height": 746,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/femmes-alger-image-480.webp",
+          "bytes": 33512
+        },
+        {
+          "width": 960,
+          "src": "art/images/femmes-alger-image-960.webp",
+          "bytes": 107916
+        },
+        {
+          "width": 1600,
+          "src": "art/images/femmes-alger-image-1600.webp",
+          "bytes": 280218
+        }
+      ],
+      "credit": "Eugène Delacroix",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Femmes_d%27Alger_dans_leur_appartement,_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3824.jpg"
+    },
+    {
+      "id": "glaneuses-image",
+      "kind": "image",
+      "src": "art/images/glaneuses-image-960.webp",
+      "bytes": 91750,
+      "width": 960,
+      "height": 719,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/glaneuses-image-480.webp",
+          "bytes": 20528
+        },
+        {
+          "width": 960,
+          "src": "art/images/glaneuses-image-960.webp",
+          "bytes": 91750
+        },
+        {
+          "width": 1600,
+          "src": "art/images/glaneuses-image-1600.webp",
+          "bytes": 366376
+        }
+      ],
+      "credit": "Jean-François Millet",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Des_glaneuses.jpg"
+    },
+    {
+      "id": "grande-jatte-image",
+      "kind": "image",
+      "src": "art/images/grande-jatte-image-960.webp",
+      "bytes": 97760,
+      "width": 960,
+      "height": 643,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/grande-jatte-image-480.webp",
+          "bytes": 22018
+        },
+        {
+          "width": 960,
+          "src": "art/images/grande-jatte-image-960.webp",
+          "bytes": 97760
+        },
+        {
+          "width": 1600,
+          "src": "art/images/grande-jatte-image-1600.webp",
+          "bytes": 259646
+        }
+      ],
+      "credit": "Art Institute of Chicago",
+      "license": "CC0",
+      "sourceUrl": "https://www.artic.edu/artworks/27992"
+    },
+    {
+      "id": "hannibal-alpes-image",
+      "kind": "image",
+      "src": "art/images/hannibal-alpes-image-960.webp",
+      "bytes": 50626,
+      "width": 960,
+      "height": 589,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/hannibal-alpes-image-480.webp",
+          "bytes": 13564
+        },
+        {
+          "width": 960,
+          "src": "art/images/hannibal-alpes-image-960.webp",
+          "bytes": 50626
+        }
+      ],
+      "credit": "William Turner",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joseph_Mallord_William_Turner_081.jpg"
+    },
+    {
       "id": "impression-soleil-levant-image",
       "kind": "image",
       "src": "art/images/impression-soleil-levant-image-960.webp",
@@ -1339,6 +2718,34 @@
       "credit": "Claude Monet",
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg"
+    },
+    {
+      "id": "jaune-rouge-bleu-image",
+      "kind": "image",
+      "src": "art/images/jaune-rouge-bleu-image-960.webp",
+      "bytes": 69102,
+      "width": 960,
+      "height": 618,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/jaune-rouge-bleu-image-480.webp",
+          "bytes": 23664
+        },
+        {
+          "width": 960,
+          "src": "art/images/jaune-rouge-bleu-image-960.webp",
+          "bytes": 69102
+        },
+        {
+          "width": 1600,
+          "src": "art/images/jaune-rouge-bleu-image-1600.webp",
+          "bytes": 166740
+        }
+      ],
+      "credit": "Wassily Kandinsky",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kandinsky_-_Jaune_Rouge_Bleu.jpg"
     },
     {
       "id": "joconde-image",
@@ -1453,6 +2860,70 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caravaggio_-_Giuditta_e_Oloferne_(ca._1599).jpg"
     },
     {
+      "id": "judith-image",
+      "kind": "image",
+      "src": "art/images/judith-image-960.webp",
+      "bytes": 414052,
+      "width": 960,
+      "height": 1955,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/judith-image-480.webp",
+          "bytes": 90792
+        },
+        {
+          "width": 960,
+          "src": "art/images/judith-image-960.webp",
+          "bytes": 414052
+        },
+        {
+          "width": 1600,
+          "src": "art/images/judith-image-1600.webp",
+          "bytes": 1123288
+        }
+      ],
+      "credit": "Gustav Klimt",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Judith_1_(cropped).jpg"
+    },
+    {
+      "id": "kandinsky-image",
+      "kind": "image",
+      "src": "art/images/kandinsky-image-480.webp",
+      "bytes": 37750,
+      "width": 480,
+      "height": 694,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/kandinsky-image-480.webp",
+          "bytes": 37750
+        }
+      ],
+      "credit": "Photographie anonyme",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wassily_kandinsky.jpg"
+    },
+    {
+      "id": "klimt-image",
+      "kind": "image",
+      "src": "art/images/klimt-image-480.webp",
+      "bytes": 53658,
+      "width": 480,
+      "height": 609,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/klimt-image-480.webp",
+          "bytes": 53658
+        }
+      ],
+      "credit": "Photographie anonyme, 1912",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustav_Klimt_1912.jpg"
+    },
+    {
       "id": "lecon-anatomie-image",
       "kind": "image",
       "src": "art/images/lecon-anatomie-image-960.webp",
@@ -1504,6 +2975,34 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Francesco_Melzi_-_Portrait_of_Leonardo.png"
     },
     {
+      "id": "liberte-guidant-peuple-image",
+      "kind": "image",
+      "src": "art/images/liberte-guidant-peuple-image-960.webp",
+      "bytes": 97950,
+      "width": 960,
+      "height": 768,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/liberte-guidant-peuple-image-480.webp",
+          "bytes": 31586
+        },
+        {
+          "width": 960,
+          "src": "art/images/liberte-guidant-peuple-image-960.webp",
+          "bytes": 97950
+        },
+        {
+          "width": 1600,
+          "src": "art/images/liberte-guidant-peuple-image-1600.webp",
+          "bytes": 239540
+        }
+      ],
+      "credit": "Eugène Delacroix",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg"
+    },
+    {
       "id": "madone-sixtine-image",
       "kind": "image",
       "src": "art/images/madone-sixtine-image-960.webp",
@@ -1532,6 +3031,29 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raphael_-_The_Sistine_Madonna_-_Google_Arts_%26_Culture.jpg"
     },
     {
+      "id": "millet-image",
+      "kind": "image",
+      "src": "art/images/millet-image-960.webp",
+      "bytes": 89842,
+      "width": 960,
+      "height": 1218,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/millet-image-480.webp",
+          "bytes": 16552
+        },
+        {
+          "width": 960,
+          "src": "art/images/millet-image-960.webp",
+          "bytes": 89842
+        }
+      ],
+      "credit": "Nadar",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-FrancoisMillet(Nadar).jpg"
+    },
+    {
       "id": "monet-image",
       "kind": "image",
       "src": "art/images/monet-image-960.webp",
@@ -1558,6 +3080,34 @@
       "credit": "Nadar",
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claude_Monet_1899_Nadar_crop.jpg"
+    },
+    {
+      "id": "munch-image",
+      "kind": "image",
+      "src": "art/images/munch-image-960.webp",
+      "bytes": 58332,
+      "width": 960,
+      "height": 1374,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/munch-image-480.webp",
+          "bytes": 14896
+        },
+        {
+          "width": 960,
+          "src": "art/images/munch-image-960.webp",
+          "bytes": 58332
+        },
+        {
+          "width": 1600,
+          "src": "art/images/munch-image-1600.webp",
+          "bytes": 204958
+        }
+      ],
+      "credit": "Anders Beer Wilse",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_1933-2.jpg"
     },
     {
       "id": "musiciens-image",
@@ -1670,6 +3220,34 @@
       "credit": "Juan Gris",
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Juan_Gris_-_The_Breakfast_(Le_Petit_D%C3%A9jeuner)_(1915).jpg"
+    },
+    {
+      "id": "pluie-vapeur-vitesse-image",
+      "kind": "image",
+      "src": "art/images/pluie-vapeur-vitesse-image-960.webp",
+      "bytes": 86854,
+      "width": 960,
+      "height": 721,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/pluie-vapeur-vitesse-image-480.webp",
+          "bytes": 16600
+        },
+        {
+          "width": 960,
+          "src": "art/images/pluie-vapeur-vitesse-image-960.webp",
+          "bytes": 86854
+        },
+        {
+          "width": 1600,
+          "src": "art/images/pluie-vapeur-vitesse-image-1600.webp",
+          "bytes": 316346
+        }
+      ],
+      "credit": "William Turner",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:J._M._W._Turner_-_Rain,_Steam_and_Speed_%E2%80%93_The_Great_Western_Railway.jpg"
     },
     {
       "id": "portrait-picasso-image",
@@ -1830,6 +3408,113 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont_Sainte-Victoire_with_Large_Pine,_by_Paul_C%C3%A9zanne.jpg"
     },
     {
+      "id": "semeur-image",
+      "kind": "image",
+      "src": "art/images/semeur-image-960.webp",
+      "bytes": 169956,
+      "width": 960,
+      "height": 1182,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/semeur-image-480.webp",
+          "bytes": 23430
+        },
+        {
+          "width": 960,
+          "src": "art/images/semeur-image-960.webp",
+          "bytes": 169956
+        },
+        {
+          "width": 1600,
+          "src": "art/images/semeur-image-1600.webp",
+          "bytes": 706780
+        }
+      ],
+      "credit": "Jean-François Millet",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_The_Sower_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "seurat-image",
+      "kind": "image",
+      "src": "art/images/seurat-image-960.webp",
+      "bytes": 69810,
+      "width": 960,
+      "height": 1414,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/seurat-image-480.webp",
+          "bytes": 26312
+        },
+        {
+          "width": 960,
+          "src": "art/images/seurat-image-960.webp",
+          "bytes": 69810
+        }
+      ],
+      "credit": "Photographe non identifié",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Georges_Seurat_1888_(cropped).jpg"
+    },
+    {
+      "id": "soiree-karl-johan-image",
+      "kind": "image",
+      "src": "art/images/soiree-karl-johan-image-960.webp",
+      "bytes": 107986,
+      "width": 960,
+      "height": 667,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/soiree-karl-johan-image-480.webp",
+          "bytes": 23490
+        },
+        {
+          "width": 960,
+          "src": "art/images/soiree-karl-johan-image-960.webp",
+          "bytes": 107986
+        },
+        {
+          "width": 1600,
+          "src": "art/images/soiree-karl-johan-image-1600.webp",
+          "bytes": 417410
+        }
+      ],
+      "credit": "Edvard Munch",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Evening_on_Karl_Johan_Street_(1892).jpg"
+    },
+    {
+      "id": "temeraire-image",
+      "kind": "image",
+      "src": "art/images/temeraire-image-960.webp",
+      "bytes": 60396,
+      "width": 960,
+      "height": 713,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/temeraire-image-480.webp",
+          "bytes": 12590
+        },
+        {
+          "width": 960,
+          "src": "art/images/temeraire-image-960.webp",
+          "bytes": 60396
+        },
+        {
+          "width": 1600,
+          "src": "art/images/temeraire-image-1600.webp",
+          "bytes": 250428
+        }
+      ],
+      "credit": "William Turner",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turner,_J._M._W._-_The_Fighting_T%C3%A9m%C3%A9raire_tugged_to_her_last_Berth_to_be_broken.jpg"
+    },
+    {
       "id": "terrasse-cafe-image",
       "kind": "image",
       "src": "art/images/terrasse-cafe-image-960.webp",
@@ -1856,6 +3541,29 @@
       "credit": "Vincent van Gogh",
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Terrace_of_a_Caf%C3%A9_at_Night_(Place_du_Forum)_1888.jpg"
+    },
+    {
+      "id": "turner-image",
+      "kind": "image",
+      "src": "art/images/turner-image-960.webp",
+      "bytes": 42594,
+      "width": 960,
+      "height": 1248,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/turner-image-480.webp",
+          "bytes": 11144
+        },
+        {
+          "width": 960,
+          "src": "art/images/turner-image-960.webp",
+          "bytes": 42594
+        }
+      ],
+      "credit": "William Turner",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joseph_Mallord_William_Turner_auto-retrato.jpg"
     },
     {
       "id": "van-gogh-image",

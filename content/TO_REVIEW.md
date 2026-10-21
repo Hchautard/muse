@@ -130,3 +130,111 @@ de la description de chaque fichier (`credit` dans le manifeste, `imageCredit` d
 - [ ] La Vocation de saint Matthieu : photographie de Gleb Simonov (CC0).
 - [ ] Portrait photographique de Renoir : anonyme, vers 1875 (musée d'Orsay), « domaine public »
       sur Commons.
+
+## Peinture, unité 2 « Du romantisme à l'abstraction »
+
+### Dates
+
+- [ ] **Un enterrement à Ornans** : 1849, saisi à la main (Wikidata : 1840) ; peint en 1849-1850.
+- [ ] **L'Atelier du peintre** : 1855 (Wikidata donne aussi 1850) ; peint en 1854-1855.
+- [ ] **Un dimanche après-midi à l'île de la Grande Jatte** : 1886, année d'achèvement (Wikidata :
+      1884, début des travaux), ce qui la distingue d'Une baignade à Asnières (1884).
+- [ ] **Le Baiser** : 1908, achèvement (Wikidata : 1907).
+- [ ] **La Danse de la vie** : 1899, saisi à la main ; Wikidata donne 2000.
+- [ ] Dates reprises de Wikidata : Les Demoiselles de village (1851, peint en 1851-1852),
+      L'Angélus (1858, peint en 1857-1859).
+
+### Mouvements
+
+- [ ] Bornes conventionnelles : romantisme 1800-1850, réalisme 1848-1880, néo-impressionnisme
+      1886-1906, Art nouveau 1890-1914, expressionnisme 1905-1925, art abstrait 1910-1950.
+- [ ] **Turner** est rangé dans le romantisme ; Wikidata rattache Pluie, vapeur et vitesse à
+      l'impressionnisme.
+- [ ] **Klimt** est rangé dans l'Art nouveau (on parle aussi de Sécession viennoise ou de
+      symbolisme).
+- [ ] **Munch** est rangé dans l'expressionnisme, dont il est plutôt un précurseur : ses trois
+      tableaux (1892-1899) précèdent le mouvement (on le dit aussi symboliste).
+- [ ] **Kandinsky** : Wikidata le rattache à l'expressionnisme (Der Blaue Reiter) ; ses trois
+      tableaux sont classés dans l'art abstrait.
+- [ ] **Seurat** : Wikidata le rattache aussi au postimpressionnisme.
+
+### Affirmations des résumés
+
+- [ ] Barque de Dante : premier grand tableau de Delacroix, au Salon de 1822.
+- [ ] Femmes d'Alger : peint après le voyage en Afrique du Nord (1832).
+- [ ] Hannibal : exposé en 1812.
+- [ ] Le Téméraire : vétéran de Trafalgar, remorqué vers sa démolition.
+- [ ] Pluie, vapeur et vitesse : un pont de la Tamise (Maidenhead).
+- [ ] Un enterrement à Ornans : « fit scandale au Salon ».
+- [ ] Les Demoiselles de village : les modèles seraient les trois sœurs de Courbet.
+- [ ] L'Atelier du peintre : refusé à l'Exposition universelle de 1855, montré dans le pavillon du
+      Réalisme construit par Courbet.
+- [ ] Le Semeur : exposé au Salon de 1850.
+- [ ] Une baignade à Asnières : refusée au Salon de 1884 ; usines de Clichy à l'arrière-plan.
+- [ ] Grande Jatte : montrée à la dernière exposition impressionniste (1886).
+- [ ] Le Cirque : lignes montantes « censées exprimer la gaieté » (théorie de Charles Henry).
+- [ ] Adele Bloch-Bauer I : spoliée par les nazis, restituée aux héritiers en 2006.
+- [ ] La Danse de la vie : lecture des deux femmes (innocence, deuil).
+- [ ] Composition VIII : peinte pendant l'enseignement de Kandinsky au Bauhaus.
+
+### Images et licences
+
+- [ ] Kandinsky (mort en 1944) et Munch (mort en 1944) sont dans le domaine public en Europe
+      depuis 2015 ; aux États-Unis, seules les œuvres publiées avant 1930 le sont. Les images
+      viennent de Commons (« domaine public »), sauf Composition VIII : photographie sous CC0 de
+      l'utilisateur Xyxyzyz.
+- [ ] Portraits photographiques anonymes de Klimt (1912), Seurat et Kandinsky, « domaine public »
+      sur Commons.
+
+## Musique, unité 2 « Élargir le répertoire »
+
+### Dates
+
+- [ ] **Rameau** : Les Tourbillons et Les Niais de Sologne (1724, Pièces de clavecin) ; La Poule
+      (1728, saisi à la main : les Nouvelles Suites sont datées vers 1726-1728). Ces trois pièces
+      n'ont pas de fiche Wikidata.
+- [ ] **La Création** : 1798, année de la création (Wikidata : 1796).
+- [ ] **Concerto pour violoncelle de Dvořák** : 1895, achèvement (composé en 1894-1895).
+- [ ] Années saisies à la main (Wikidata n'en donne pas d'autre) : Water Music (1717), Pâris et Hélène
+      (1770), Iphigénie en Aulide (1774), La Surprise (1791), Ave Maria (1825), Humoresque (1894),
+      Gymnopédie n° 1 (1888), Gnossienne n° 1 (1890), Je te veux (1897), suites de Holst (1909,
+      1911), Les Planètes (1916).
+- [ ] **L'Arrivée de la reine de Saba** porte l'identifiant Wikidata de l'oratorio Salomon (1749).
+
+### Périodes
+
+- [ ] **Gluck** est rangé dans la période classique (ses opéras réformés datent de 1762-1779).
+- [ ] **Satie** est rangé dans le « Début du XXe siècle », comme Debussy, y compris ses pièces de
+      1888-1897.
+- [ ] **Schubert** est rangé dans la période romantique, y compris Le Roi des aulnes (1815).
+
+### Affirmations des résumés
+
+- [ ] Rameau : ne s'impose à l'opéra qu'à cinquante ans (Hippolyte et Aricie, 1733).
+- [ ] Les Tourbillons : « tourbillons de poussière soulevés par le vent » (d'après la préface de
+      Rameau).
+- [ ] Les Niais de Sologne : sens de l'expression (paysans qui jouent les naïfs).
+- [ ] Le Messie : composé en quelques semaines (1741), créé à Dublin en 1742.
+- [ ] Pâris et Hélène : « le troisième de ses opéras réformés ».
+- [ ] Concerto pour trompette : écrit pour la trompette à clés d'Anton Weidinger.
+- [ ] Symphonie « Inachevée » : créée en 1865.
+- [ ] Gnossienne n° 1 : écrite vers 1890 (publiée en 1893).
+- [ ] Je te veux : popularisée par Paulette Darty.
+- [ ] Haydn : « a fixé la forme du quatuor à cordes ».
+
+### Extraits audio
+
+- [ ] Aucun point de départ n'a été écouté : tous les extraits commencent au début de
+      l'enregistrement. À vérifier en particulier : La Surprise (l'accord fortissimo tombe-t-il dans
+      l'extrait ?), Symphonie « Inachevée » (début du premier mouvement, sans le célèbre thème des
+      violoncelles), Je te veux (introduction au piano).
+- [ ] Enregistrements historiques marqués « domaine public » sur Commons, à confirmer : Water Music
+      (Sargent, 1942), Orphée (Toscanini), Pâris et Hélène (Gigli, 1935), Iphigénie (Blech, 1927),
+      La Surprise (Koussevitzky, 1929), Inachevée (van Kempen, 1940), Le Roi des aulnes (1948), Je
+      te veux (Yvonne George), Rameau (Marcelle Meyer, 1953).
+- [ ] Le Roi des aulnes : interprètes « Beal et Campbell » (Concert Films Corporation), sans plus
+      de précision sur Commons.
+- [ ] Symphonie « Du Nouveau Monde » et Gymnopédie : enregistrements Musopen sans interprète
+      précis.
+- [ ] Les Planètes et la Deuxième suite : versions pour orchestre d'harmonie (orchestre de l'US Air
+      Force, domaine public en tant qu'œuvre du gouvernement américain).

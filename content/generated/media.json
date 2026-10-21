@@ -1,6 +1,72 @@
 {
   "assets": [
     {
+      "id": "adele-bloch-bauer-image",
+      "kind": "image",
+      "src": "art/images/adele-bloch-bauer-image-960.webp",
+      "bytes": 300482,
+      "width": 960,
+      "height": 960,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/adele-bloch-bauer-image-480.webp",
+          "bytes": 69666
+        },
+        {
+          "width": 960,
+          "src": "art/images/adele-bloch-bauer-image-960.webp",
+          "bytes": 300482
+        },
+        {
+          "width": 1600,
+          "src": "art/images/adele-bloch-bauer-image-1600.webp",
+          "bytes": 826242
+        }
+      ],
+      "credit": "Gustav Klimt",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustav_Klimt,_1907,_Adele_Bloch-Bauer_I,_Neue_Galerie_New_York.jpg",
+      "course": "art",
+      "entityId": "adele-bloch-bauer",
+      "origin": {
+        "source": "File:Gustav Klimt, 1907, Adele Bloch-Bauer I, Neue Galerie New York.jpg"
+      }
+    },
+    {
+      "id": "angelus-image",
+      "kind": "image",
+      "src": "art/images/angelus-image-960.webp",
+      "bytes": 107954,
+      "width": 960,
+      "height": 798,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/angelus-image-480.webp",
+          "bytes": 22522
+        },
+        {
+          "width": 960,
+          "src": "art/images/angelus-image-960.webp",
+          "bytes": 107954
+        },
+        {
+          "width": 1600,
+          "src": "art/images/angelus-image-1600.webp",
+          "bytes": 420494
+        }
+      ],
+      "credit": "Jean-François Millet",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:JEAN-FRAN%C3%87OIS_MILLET_-_El_%C3%81ngelus_(Museo_de_Orsay,_1857-1859._%C3%93leo_sobre_lienzo,_55.5_x_66_cm).jpg",
+      "course": "art",
+      "entityId": "angelus",
+      "origin": {
+        "source": "File:JEAN-FRANÇOIS MILLET - El Ángelus (Museo de Orsay, 1857-1859. Óleo sobre lienzo, 55.5 x 66 cm).jpg"
+      }
+    },
+    {
       "id": "aristote-homere-image",
       "kind": "image",
       "src": "art/images/aristote-homere-image-960.webp",
@@ -31,6 +97,39 @@
       "entityId": "aristote-homere",
       "origin": {
         "source": "met:437394"
+      }
+    },
+    {
+      "id": "atelier-peintre-image",
+      "kind": "image",
+      "src": "art/images/atelier-peintre-image-960.webp",
+      "bytes": 86460,
+      "width": 960,
+      "height": 566,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/atelier-peintre-image-480.webp",
+          "bytes": 21456
+        },
+        {
+          "width": 960,
+          "src": "art/images/atelier-peintre-image-960.webp",
+          "bytes": 86460
+        },
+        {
+          "width": 1600,
+          "src": "art/images/atelier-peintre-image-1600.webp",
+          "bytes": 279648
+        }
+      ],
+      "credit": "Gustave Courbet",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Courbet_LAtelier_du_peintre.jpg",
+      "course": "art",
+      "entityId": "atelier-peintre",
+      "origin": {
+        "source": "File:Courbet LAtelier du peintre.jpg"
       }
     },
     {
@@ -113,6 +212,72 @@
       }
     },
     {
+      "id": "baignade-asnieres-image",
+      "kind": "image",
+      "src": "art/images/baignade-asnieres-image-960.webp",
+      "bytes": 95224,
+      "width": 960,
+      "height": 637,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/baignade-asnieres-image-480.webp",
+          "bytes": 20800
+        },
+        {
+          "width": 960,
+          "src": "art/images/baignade-asnieres-image-960.webp",
+          "bytes": 95224
+        },
+        {
+          "width": 1600,
+          "src": "art/images/baignade-asnieres-image-1600.webp",
+          "bytes": 378468
+        }
+      ],
+      "credit": "Georges Seurat",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baigneurs_a_Asnieres.jpg",
+      "course": "art",
+      "entityId": "baignade-asnieres",
+      "origin": {
+        "source": "File:Baigneurs a Asnieres.jpg"
+      }
+    },
+    {
+      "id": "baiser-image",
+      "kind": "image",
+      "src": "art/images/baiser-image-960.webp",
+      "bytes": 260974,
+      "width": 960,
+      "height": 964,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/baiser-image-480.webp",
+          "bytes": 58354
+        },
+        {
+          "width": 960,
+          "src": "art/images/baiser-image-960.webp",
+          "bytes": 260974
+        },
+        {
+          "width": 1600,
+          "src": "art/images/baiser-image-1600.webp",
+          "bytes": 803684
+        }
+      ],
+      "credit": "Gustav Klimt",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
+      "course": "art",
+      "entityId": "baiser",
+      "origin": {
+        "source": "File:The Kiss - Gustav Klimt - Google Cultural Institute.jpg"
+      }
+    },
+    {
       "id": "bal-moulin-galette-image",
       "kind": "image",
       "src": "art/images/bal-moulin-galette-image-960.webp",
@@ -143,6 +308,39 @@
       "entityId": "bal-moulin-galette",
       "origin": {
         "source": "File:Renoir, Pierre-Auguste - Dance at Le Moulin de la Galette, 1876.jpg"
+      }
+    },
+    {
+      "id": "barque-dante-image",
+      "kind": "image",
+      "src": "art/images/barque-dante-image-960.webp",
+      "bytes": 78412,
+      "width": 960,
+      "height": 719,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/barque-dante-image-480.webp",
+          "bytes": 21218
+        },
+        {
+          "width": 960,
+          "src": "art/images/barque-dante-image-960.webp",
+          "bytes": 78412
+        },
+        {
+          "width": 1600,
+          "src": "art/images/barque-dante-image-1600.webp",
+          "bytes": 246854
+        }
+      ],
+      "credit": "Eugène Delacroix",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_The_Barque_of_Dante.jpg",
+      "course": "art",
+      "entityId": "barque-dante",
+      "origin": {
+        "source": "File:Eugène Delacroix - The Barque of Dante.jpg"
       }
     },
     {
@@ -464,6 +662,105 @@
       }
     },
     {
+      "id": "cirque-image",
+      "kind": "image",
+      "src": "art/images/cirque-image-960.webp",
+      "bytes": 441308,
+      "width": 960,
+      "height": 1190,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/cirque-image-480.webp",
+          "bytes": 84526
+        },
+        {
+          "width": 960,
+          "src": "art/images/cirque-image-960.webp",
+          "bytes": 441308
+        },
+        {
+          "width": 1600,
+          "src": "art/images/cirque-image-1600.webp",
+          "bytes": 1256350
+        }
+      ],
+      "credit": "Georges Seurat",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Georges_Seurat_-_The_Circus_-_Google_Art_Project.jpg",
+      "course": "art",
+      "entityId": "cirque",
+      "origin": {
+        "source": "File:Georges Seurat - The Circus - Google Art Project.jpg"
+      }
+    },
+    {
+      "id": "composition-vii-image",
+      "kind": "image",
+      "src": "art/images/composition-vii-image-960.webp",
+      "bytes": 150810,
+      "width": 960,
+      "height": 638,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/composition-vii-image-480.webp",
+          "bytes": 44028
+        },
+        {
+          "width": 960,
+          "src": "art/images/composition-vii-image-960.webp",
+          "bytes": 150810
+        },
+        {
+          "width": 1600,
+          "src": "art/images/composition-vii-image-1600.webp",
+          "bytes": 455096
+        }
+      ],
+      "credit": "Wassily Kandinsky",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Composition_VII_-_Wassily_Kandinsky,_GAC.jpg",
+      "course": "art",
+      "entityId": "composition-vii",
+      "origin": {
+        "source": "File:Composition VII - Wassily Kandinsky, GAC.jpg"
+      }
+    },
+    {
+      "id": "composition-viii-image",
+      "kind": "image",
+      "src": "art/images/composition-viii-image-960.webp",
+      "bytes": 98954,
+      "width": 960,
+      "height": 700,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/composition-viii-image-480.webp",
+          "bytes": 29860
+        },
+        {
+          "width": 960,
+          "src": "art/images/composition-viii-image-960.webp",
+          "bytes": 98954
+        },
+        {
+          "width": 1600,
+          "src": "art/images/composition-viii-image-1600.webp",
+          "bytes": 271500
+        }
+      ],
+      "credit": "Vassily Kandinsky, photo Xyxyzyz (Wikimedia Commons)",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kandinsky_-_Composition_8,_July_1923.jpg",
+      "course": "art",
+      "entityId": "composition-viii",
+      "origin": {
+        "source": "File:Kandinsky - Composition 8, July 1923.jpg"
+      }
+    },
+    {
       "id": "corbeille-pommes-image",
       "kind": "image",
       "src": "art/images/corbeille-pommes-image-960.webp",
@@ -497,6 +794,67 @@
       }
     },
     {
+      "id": "courbet-image",
+      "kind": "image",
+      "src": "art/images/courbet-image-960.webp",
+      "bytes": 146546,
+      "width": 960,
+      "height": 1421,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/courbet-image-480.webp",
+          "bytes": 33594
+        },
+        {
+          "width": 960,
+          "src": "art/images/courbet-image-960.webp",
+          "bytes": 146546
+        }
+      ],
+      "credit": "Nadar",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustave_Courbet,_photograph_Atelier_Nadar,_c._1860s.jpg",
+      "course": "art",
+      "entityId": "courbet",
+      "origin": {
+        "source": "File:Gustave Courbet, photograph Atelier Nadar, c. 1860s.jpg"
+      }
+    },
+    {
+      "id": "cri-image",
+      "kind": "image",
+      "src": "art/images/cri-image-960.webp",
+      "bytes": 170406,
+      "width": 960,
+      "height": 1192,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/cri-image-480.webp",
+          "bytes": 34364
+        },
+        {
+          "width": 960,
+          "src": "art/images/cri-image-960.webp",
+          "bytes": 170406
+        },
+        {
+          "width": 1600,
+          "src": "art/images/cri-image-1600.webp",
+          "bytes": 713022
+        }
+      ],
+      "credit": "Edvard Munch",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg",
+      "course": "art",
+      "entityId": "cri",
+      "origin": {
+        "source": "File:Edvard Munch, 1893, The Scream, oil, tempera and pastel on cardboard, 91 x 73 cm, National Gallery of Norway.jpg"
+      }
+    },
+    {
       "id": "dame-hermine-image",
       "kind": "image",
       "src": "art/images/dame-hermine-image-960.webp",
@@ -527,6 +885,39 @@
       "entityId": "dame-hermine",
       "origin": {
         "source": "File:Lady with an Ermine - Leonardo da Vinci - Google Art Project.jpg"
+      }
+    },
+    {
+      "id": "danse-vie-image",
+      "kind": "image",
+      "src": "art/images/danse-vie-image-960.webp",
+      "bytes": 59026,
+      "width": 960,
+      "height": 626,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/danse-vie-image-480.webp",
+          "bytes": 16000
+        },
+        {
+          "width": 960,
+          "src": "art/images/danse-vie-image-960.webp",
+          "bytes": 59026
+        },
+        {
+          "width": 1600,
+          "src": "art/images/danse-vie-image-1600.webp",
+          "bytes": 204348
+        }
+      ],
+      "credit": "Edvard Munch",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_The_Dance_of_Life_-_NG.M.00941_-_National_Museum_of_Art,_Architecture_and_Design.jpg",
+      "course": "art",
+      "entityId": "danse-vie",
+      "origin": {
+        "source": "File:Edvard Munch - The Dance of Life - NG.M.00941 - National Museum of Art, Architecture and Design.jpg"
       }
     },
     {
@@ -647,6 +1038,72 @@
       }
     },
     {
+      "id": "delacroix-image",
+      "kind": "image",
+      "src": "art/images/delacroix-image-960.webp",
+      "bytes": 177700,
+      "width": 960,
+      "height": 1171,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/delacroix-image-480.webp",
+          "bytes": 28048
+        },
+        {
+          "width": 960,
+          "src": "art/images/delacroix-image-960.webp",
+          "bytes": 177700
+        },
+        {
+          "width": 1600,
+          "src": "art/images/delacroix-image-1600.webp",
+          "bytes": 688144
+        }
+      ],
+      "credit": "Eugène Delacroix",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Autoportrait_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_25.jpg",
+      "course": "art",
+      "entityId": "delacroix",
+      "origin": {
+        "source": "File:Autoportrait - Eugène Delacroix - Musée du Louvre Peintures RF 25.jpg"
+      }
+    },
+    {
+      "id": "demoiselles-village-image",
+      "kind": "image",
+      "src": "art/images/demoiselles-village-image-960.webp",
+      "bytes": 102806,
+      "width": 960,
+      "height": 717,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/demoiselles-village-image-480.webp",
+          "bytes": 28878
+        },
+        {
+          "width": 960,
+          "src": "art/images/demoiselles-village-image-960.webp",
+          "bytes": 102806
+        },
+        {
+          "width": 1600,
+          "src": "art/images/demoiselles-village-image-1600.webp",
+          "bytes": 279174
+        }
+      ],
+      "credit": "The Metropolitan Museum of Art",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/438820",
+      "course": "art",
+      "entityId": "demoiselles-village",
+      "origin": {
+        "source": "met:438820"
+      }
+    },
+    {
       "id": "deux-soeurs-image",
       "kind": "image",
       "src": "art/images/deux-soeurs-image-960.webp",
@@ -677,6 +1134,90 @@
       "entityId": "deux-soeurs",
       "origin": {
         "source": "aic:14655"
+      }
+    },
+    {
+      "id": "dvorak-concerto-violoncelle-audio",
+      "kind": "audio",
+      "src": "music/audio/dvorak-concerto-violoncelle-audio.m4a",
+      "bytes": 325310,
+      "durationSec": 20,
+      "credit": "Hans Goldstein (violoncelle), Milwaukee Youth Orchestra",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dvorak_-_Cello_Concerto_-_1._Allegro.ogg",
+      "course": "music",
+      "entityId": "dvorak-concerto-violoncelle",
+      "origin": {
+        "source": "File:Dvorak - Cello Concerto - 1. Allegro.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "dvorak-humoresque-audio",
+      "kind": "audio",
+      "src": "music/audio/dvorak-humoresque-audio.m4a",
+      "bytes": 324664,
+      "durationSec": 20,
+      "credit": "Duo Goldstein, arrangement d'Elias Goldstein pour alto et piano",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dvo%C5%99%C3%A1k_-_Humoresque_Op._101_No._7.ogg",
+      "course": "music",
+      "entityId": "dvorak-humoresque",
+      "origin": {
+        "source": "File:Dvořák - Humoresque Op. 101 No. 7.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "dvorak-image",
+      "kind": "image",
+      "src": "music/images/dvorak-image-960.webp",
+      "bytes": 294444,
+      "width": 960,
+      "height": 1189,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/dvorak-image-480.webp",
+          "bytes": 35308
+        },
+        {
+          "width": 960,
+          "src": "music/images/dvorak-image-960.webp",
+          "bytes": 294444
+        },
+        {
+          "width": 1600,
+          "src": "music/images/dvorak-image-1600.webp",
+          "bytes": 868338
+        }
+      ],
+      "credit": "Photographie anonyme",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dvorak.jpg",
+      "course": "music",
+      "entityId": "dvorak",
+      "origin": {
+        "source": "File:Dvorak.jpg"
+      }
+    },
+    {
+      "id": "dvorak-nouveau-monde-audio",
+      "kind": "audio",
+      "src": "music/audio/dvorak-nouveau-monde-audio.m4a",
+      "bytes": 324661,
+      "durationSec": 20,
+      "credit": "Enregistrement Musopen",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antonin_Dvorak_-_symphony_no._9_in_e_minor_%27from_the_new_world%27,_op._95_-_iv._allegro_con_fuoco.ogg",
+      "course": "music",
+      "entityId": "dvorak-nouveau-monde",
+      "origin": {
+        "source": "File:Antonin Dvorak - symphony no. 9 in e minor 'from the new world', op. 95 - iv. allegro con fuoco.ogg",
+        "start": 0,
+        "duration": 20
       }
     },
     {
@@ -713,6 +1254,39 @@
       }
     },
     {
+      "id": "enterrement-ornans-image",
+      "kind": "image",
+      "src": "art/images/enterrement-ornans-image-960.webp",
+      "bytes": 59968,
+      "width": 960,
+      "height": 442,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/enterrement-ornans-image-480.webp",
+          "bytes": 15162
+        },
+        {
+          "width": 960,
+          "src": "art/images/enterrement-ornans-image-960.webp",
+          "bytes": 59968
+        },
+        {
+          "width": 1600,
+          "src": "art/images/enterrement-ornans-image-1600.webp",
+          "bytes": 241958
+        }
+      ],
+      "credit": "Gustave Courbet",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project.jpg",
+      "course": "art",
+      "entityId": "enterrement-ornans",
+      "origin": {
+        "source": "File:Gustave Courbet - A Burial at Ornans - Google Art Project.jpg"
+      }
+    },
+    {
       "id": "femme-ombrelle-image",
       "kind": "image",
       "src": "art/images/femme-ombrelle-image-960.webp",
@@ -746,6 +1320,449 @@
       }
     },
     {
+      "id": "femmes-alger-image",
+      "kind": "image",
+      "src": "art/images/femmes-alger-image-960.webp",
+      "bytes": 107916,
+      "width": 960,
+      "height": 746,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/femmes-alger-image-480.webp",
+          "bytes": 33512
+        },
+        {
+          "width": 960,
+          "src": "art/images/femmes-alger-image-960.webp",
+          "bytes": 107916
+        },
+        {
+          "width": 1600,
+          "src": "art/images/femmes-alger-image-1600.webp",
+          "bytes": 280218
+        }
+      ],
+      "credit": "Eugène Delacroix",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Femmes_d%27Alger_dans_leur_appartement,_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3824.jpg",
+      "course": "art",
+      "entityId": "femmes-alger",
+      "origin": {
+        "source": "File:Femmes d'Alger dans leur appartement, Eugène Delacroix - Musée du Louvre Peintures INV 3824.jpg"
+      }
+    },
+    {
+      "id": "glaneuses-image",
+      "kind": "image",
+      "src": "art/images/glaneuses-image-960.webp",
+      "bytes": 91750,
+      "width": 960,
+      "height": 719,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/glaneuses-image-480.webp",
+          "bytes": 20528
+        },
+        {
+          "width": 960,
+          "src": "art/images/glaneuses-image-960.webp",
+          "bytes": 91750
+        },
+        {
+          "width": 1600,
+          "src": "art/images/glaneuses-image-1600.webp",
+          "bytes": 366376
+        }
+      ],
+      "credit": "Jean-François Millet",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Des_glaneuses.jpg",
+      "course": "art",
+      "entityId": "glaneuses",
+      "origin": {
+        "source": "File:Jean-François Millet - Des glaneuses.jpg"
+      }
+    },
+    {
+      "id": "gluck-image",
+      "kind": "image",
+      "src": "music/images/gluck-image-960.webp",
+      "bytes": 150836,
+      "width": 960,
+      "height": 1191,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/gluck-image-480.webp",
+          "bytes": 23958
+        },
+        {
+          "width": 960,
+          "src": "music/images/gluck-image-960.webp",
+          "bytes": 150836
+        },
+        {
+          "width": 1600,
+          "src": "music/images/gluck-image-1600.webp",
+          "bytes": 723720
+        }
+      ],
+      "credit": "Joseph-Siffred Duplessis",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joseph_Siffred_Duplessis_-_Christoph_Willibald_Gluck_-_Google_Art_Project.jpg",
+      "course": "music",
+      "entityId": "gluck",
+      "origin": {
+        "source": "File:Joseph Siffred Duplessis - Christoph Willibald Gluck - Google Art Project.jpg"
+      }
+    },
+    {
+      "id": "gluck-iphigenie-aulide-audio",
+      "kind": "audio",
+      "src": "music/audio/gluck-iphigenie-aulide-audio.m4a",
+      "bytes": 329280,
+      "durationSec": 20,
+      "credit": "Staatskapelle de Berlin, dir. Leo Blech (1927), arr. Felix Mottl",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:PDP-CH_-_Berliner_Staatskapelle_-_Leo_Blech_-_Iphig%C3%A9nie_en_Aulide_-_Ballet_Suite_No._1_-_Part_1_-_Gluck_-_Mottl_-_Electrola-ej196-4-040602.flac",
+      "course": "music",
+      "entityId": "gluck-iphigenie-aulide",
+      "origin": {
+        "source": "File:PDP-CH - Berliner Staatskapelle - Leo Blech - Iphigénie en Aulide - Ballet Suite No. 1 - Part 1 - Gluck - Mottl - Electrola-ej196-4-040602.flac",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "gluck-orphee-audio",
+      "kind": "audio",
+      "src": "music/audio/gluck-orphee-audio.m4a",
+      "bytes": 411894,
+      "durationSec": 25,
+      "credit": "New York Philharmonic, dir. Arturo Toscanini",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:PDP-CH_-_New_York_Philharmonic_-_Arturo_Toscanini_-_Orfeo_ed_Euridice_-_Dance_of_the_Blessed_Spirits_-_Christoph_Willibald_Gluck_-_Hmv-d1784-42-664.flac",
+      "course": "music",
+      "entityId": "gluck-orphee",
+      "origin": {
+        "source": "File:PDP-CH - New York Philharmonic - Arturo Toscanini - Orfeo ed Euridice - Dance of the Blessed Spirits - Christoph Willibald Gluck - Hmv-d1784-42-664.flac",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "gluck-paride-elena-audio",
+      "kind": "audio",
+      "src": "music/audio/gluck-paride-elena-audio.m4a",
+      "bytes": 412549,
+      "durationSec": 25,
+      "credit": "Beniamino Gigli (ténor), orchestre de la Scala, dir. Dino Olivieri (1935)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hmv-db2531-2ba567.ogg",
+      "course": "music",
+      "entityId": "gluck-paride-elena",
+      "origin": {
+        "source": "File:Hmv-db2531-2ba567.ogg",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "grande-jatte-image",
+      "kind": "image",
+      "src": "art/images/grande-jatte-image-960.webp",
+      "bytes": 97760,
+      "width": 960,
+      "height": 643,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/grande-jatte-image-480.webp",
+          "bytes": 22018
+        },
+        {
+          "width": 960,
+          "src": "art/images/grande-jatte-image-960.webp",
+          "bytes": 97760
+        },
+        {
+          "width": 1600,
+          "src": "art/images/grande-jatte-image-1600.webp",
+          "bytes": 259646
+        }
+      ],
+      "credit": "Art Institute of Chicago",
+      "license": "CC0",
+      "sourceUrl": "https://www.artic.edu/artworks/27992",
+      "course": "art",
+      "entityId": "grande-jatte",
+      "origin": {
+        "source": "aic:27992"
+      }
+    },
+    {
+      "id": "haendel-image",
+      "kind": "image",
+      "src": "music/images/haendel-image-960.webp",
+      "bytes": 59174,
+      "width": 960,
+      "height": 1161,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/haendel-image-480.webp",
+          "bytes": 10792
+        },
+        {
+          "width": 960,
+          "src": "music/images/haendel-image-960.webp",
+          "bytes": 59174
+        },
+        {
+          "width": 1600,
+          "src": "music/images/haendel-image-1600.webp",
+          "bytes": 252870
+        }
+      ],
+      "credit": "Attribué à Balthasar Denner",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:George_Frideric_Handel_by_Balthasar_Denner.jpg",
+      "course": "music",
+      "entityId": "haendel",
+      "origin": {
+        "source": "File:George Frideric Handel by Balthasar Denner.jpg"
+      }
+    },
+    {
+      "id": "haendel-messie-audio",
+      "kind": "audio",
+      "src": "music/audio/haendel-messie-audio.m4a",
+      "bytes": 405488,
+      "durationSec": 25,
+      "credit": "MIT Concert Choir, dir. William C. Cutter",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Handel_-_messiah_-_44_hallelujah.ogg",
+      "course": "music",
+      "entityId": "haendel-messie",
+      "origin": {
+        "source": "File:Handel - messiah - 44 hallelujah.ogg",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "haendel-reine-saba-audio",
+      "kind": "audio",
+      "src": "music/audio/haendel-reine-saba-audio.m4a",
+      "bytes": 324631,
+      "durationSec": 20,
+      "credit": "Advent Chamber Orchestra, dir. Roxanna Pavel Goldstein (2006)",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Handel_-_Arrival_of_the_Queen_of_Sheba.ogg",
+      "course": "music",
+      "entityId": "haendel-reine-saba",
+      "origin": {
+        "source": "File:Handel - Arrival of the Queen of Sheba.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "haendel-water-music-audio",
+      "kind": "audio",
+      "src": "music/audio/haendel-water-music-audio.m4a",
+      "bytes": 331004,
+      "durationSec": 20,
+      "credit": "The Hallé, dir. Malcolm Sargent (1942), arr. Hamilton Harty",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:PDP-CH_-_The_Hall%C3%A9_-_Malcolm_Sargent_-_Water_Music,_HWV_348-350_-_Suite_in_F_major,_HWV_348_-_Hornpipe,_Andante_espressivo_-_Handel_-_Harty_-_Hmv-c3307-2er624.flac",
+      "course": "music",
+      "entityId": "haendel-water-music",
+      "origin": {
+        "source": "File:PDP-CH - The Hallé - Malcolm Sargent - Water Music, HWV 348-350 - Suite in F major, HWV 348 - Hornpipe, Andante espressivo - Handel - Harty - Hmv-c3307-2er624.flac",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "hannibal-alpes-image",
+      "kind": "image",
+      "src": "art/images/hannibal-alpes-image-960.webp",
+      "bytes": 50626,
+      "width": 960,
+      "height": 589,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/hannibal-alpes-image-480.webp",
+          "bytes": 13564
+        },
+        {
+          "width": 960,
+          "src": "art/images/hannibal-alpes-image-960.webp",
+          "bytes": 50626
+        }
+      ],
+      "credit": "William Turner",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joseph_Mallord_William_Turner_081.jpg",
+      "course": "art",
+      "entityId": "hannibal-alpes",
+      "origin": {
+        "source": "File:Joseph Mallord William Turner 081.jpg"
+      }
+    },
+    {
+      "id": "haydn-creation-audio",
+      "kind": "audio",
+      "src": "music/audio/haydn-creation-audio.m4a",
+      "bytes": 405426,
+      "durationSec": 25,
+      "credit": "St Matthew's Choir, dir. Phiroz Dalal (2010)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haydn_-_The_Creation_(Dalal)_-_1_The_Representation_of_Chaos.oga",
+      "course": "music",
+      "entityId": "haydn-creation",
+      "origin": {
+        "source": "File:Haydn - The Creation (Dalal) - 1 The Representation of Chaos.oga",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "haydn-image",
+      "kind": "image",
+      "src": "music/images/haydn-image-480.webp",
+      "bytes": 20184,
+      "width": 480,
+      "height": 607,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/haydn-image-480.webp",
+          "bytes": 20184
+        }
+      ],
+      "credit": "Thomas Hardy",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joseph_Haydn,_m%C3%A5lning_av_Thomas_Hardy_fr%C3%A5n_1792.jpg",
+      "course": "music",
+      "entityId": "haydn",
+      "origin": {
+        "source": "File:Joseph Haydn, målning av Thomas Hardy från 1792.jpg"
+      }
+    },
+    {
+      "id": "haydn-surprise-audio",
+      "kind": "audio",
+      "src": "music/audio/haydn-surprise-audio.m4a",
+      "bytes": 405824,
+      "durationSec": 25,
+      "credit": "Boston Symphony Orchestra, dir. Serge Koussevitzky (1929)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haydn;_Symphony_No._94_%22Surprise%22,_2._Andante.ogg",
+      "course": "music",
+      "entityId": "haydn-surprise",
+      "origin": {
+        "source": "File:Haydn; Symphony No. 94 \"Surprise\", 2. Andante.ogg",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "haydn-trompette-audio",
+      "kind": "audio",
+      "src": "music/audio/haydn-trompette-audio.m4a",
+      "bytes": 324667,
+      "durationSec": 20,
+      "credit": "Real Filharmonía de Galicia",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Real_Filharmon%C3%ADa_de_Galicia_-_Haydn%27s_Trumpet_Concerto_in_E-flat_major,_Hob.VIIe-1_-_III._Finale_allegro.ogg",
+      "course": "music",
+      "entityId": "haydn-trompette",
+      "origin": {
+        "source": "File:Real Filharmonía de Galicia - Haydn's Trumpet Concerto in E-flat major, Hob.VIIe-1 - III. Finale allegro.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "holst-deuxieme-suite-audio",
+      "kind": "audio",
+      "src": "music/audio/holst-deuxieme-suite-audio.m4a",
+      "bytes": 325321,
+      "durationSec": 20,
+      "credit": "Heritage of America Band, US Air Force (1992)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustav_Holst_-_Second_Suite_in_F_-_I._March._Allegro.ogg",
+      "course": "music",
+      "entityId": "holst-deuxieme-suite",
+      "origin": {
+        "source": "File:Gustav Holst - Second Suite in F - I. March. Allegro.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "holst-image",
+      "kind": "image",
+      "src": "music/images/holst-image-480.webp",
+      "bytes": 15716,
+      "width": 480,
+      "height": 673,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/holst-image-480.webp",
+          "bytes": 15716
+        }
+      ],
+      "credit": "Herbert Lambert",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustav_Holst.jpg",
+      "course": "music",
+      "entityId": "holst",
+      "origin": {
+        "source": "File:Gustav Holst.jpg"
+      }
+    },
+    {
+      "id": "holst-planetes-audio",
+      "kind": "audio",
+      "src": "music/audio/holst-planetes-audio.m4a",
+      "bytes": 324653,
+      "durationSec": 20,
+      "credit": "Heritage of America Band, US Air Force (1998), transcription de Merlin Patterson",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Holst_The_Planets_Jupiter.ogg",
+      "course": "music",
+      "entityId": "holst-planetes",
+      "origin": {
+        "source": "File:Holst The Planets Jupiter.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "holst-premiere-suite-audio",
+      "kind": "audio",
+      "src": "music/audio/holst-premiere-suite-audio.m4a",
+      "bytes": 325879,
+      "durationSec": 20,
+      "credit": "United States Marine Band",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Holst_First_Suite_Chaconne.ogg",
+      "course": "music",
+      "entityId": "holst-premiere-suite",
+      "origin": {
+        "source": "File:Holst First Suite Chaconne.ogg",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
       "id": "impression-soleil-levant-image",
       "kind": "image",
       "src": "art/images/impression-soleil-levant-image-960.webp",
@@ -776,6 +1793,39 @@
       "entityId": "impression-soleil-levant",
       "origin": {
         "source": "File:Monet - Impression, Sunrise.jpg"
+      }
+    },
+    {
+      "id": "jaune-rouge-bleu-image",
+      "kind": "image",
+      "src": "art/images/jaune-rouge-bleu-image-960.webp",
+      "bytes": 69102,
+      "width": 960,
+      "height": 618,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/jaune-rouge-bleu-image-480.webp",
+          "bytes": 23664
+        },
+        {
+          "width": 960,
+          "src": "art/images/jaune-rouge-bleu-image-960.webp",
+          "bytes": 69102
+        },
+        {
+          "width": 1600,
+          "src": "art/images/jaune-rouge-bleu-image-1600.webp",
+          "bytes": 166740
+        }
+      ],
+      "credit": "Wassily Kandinsky",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kandinsky_-_Jaune_Rouge_Bleu.jpg",
+      "course": "art",
+      "entityId": "jaune-rouge-bleu",
+      "origin": {
+        "source": "File:Kandinsky - Jaune Rouge Bleu.jpg"
       }
     },
     {
@@ -911,6 +1961,85 @@
       }
     },
     {
+      "id": "judith-image",
+      "kind": "image",
+      "src": "art/images/judith-image-960.webp",
+      "bytes": 414052,
+      "width": 960,
+      "height": 1955,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/judith-image-480.webp",
+          "bytes": 90792
+        },
+        {
+          "width": 960,
+          "src": "art/images/judith-image-960.webp",
+          "bytes": 414052
+        },
+        {
+          "width": 1600,
+          "src": "art/images/judith-image-1600.webp",
+          "bytes": 1123288
+        }
+      ],
+      "credit": "Gustav Klimt",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Judith_1_(cropped).jpg",
+      "course": "art",
+      "entityId": "judith",
+      "origin": {
+        "source": "File:Judith 1 (cropped).jpg"
+      }
+    },
+    {
+      "id": "kandinsky-image",
+      "kind": "image",
+      "src": "art/images/kandinsky-image-480.webp",
+      "bytes": 37750,
+      "width": 480,
+      "height": 694,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/kandinsky-image-480.webp",
+          "bytes": 37750
+        }
+      ],
+      "credit": "Photographie anonyme",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wassily_kandinsky.jpg",
+      "course": "art",
+      "entityId": "kandinsky",
+      "origin": {
+        "source": "File:Wassily kandinsky.jpg"
+      }
+    },
+    {
+      "id": "klimt-image",
+      "kind": "image",
+      "src": "art/images/klimt-image-480.webp",
+      "bytes": 53658,
+      "width": 480,
+      "height": 609,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/klimt-image-480.webp",
+          "bytes": 53658
+        }
+      ],
+      "credit": "Photographie anonyme, 1912",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustav_Klimt_1912.jpg",
+      "course": "art",
+      "entityId": "klimt",
+      "origin": {
+        "source": "File:Gustav Klimt 1912.jpg"
+      }
+    },
+    {
       "id": "lecon-anatomie-image",
       "kind": "image",
       "src": "art/images/lecon-anatomie-image-960.webp",
@@ -972,6 +2101,39 @@
       }
     },
     {
+      "id": "liberte-guidant-peuple-image",
+      "kind": "image",
+      "src": "art/images/liberte-guidant-peuple-image-960.webp",
+      "bytes": 97950,
+      "width": 960,
+      "height": 768,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/liberte-guidant-peuple-image-480.webp",
+          "bytes": 31586
+        },
+        {
+          "width": 960,
+          "src": "art/images/liberte-guidant-peuple-image-960.webp",
+          "bytes": 97950
+        },
+        {
+          "width": 1600,
+          "src": "art/images/liberte-guidant-peuple-image-1600.webp",
+          "bytes": 239540
+        }
+      ],
+      "credit": "Eugène Delacroix",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
+      "course": "art",
+      "entityId": "liberte-guidant-peuple",
+      "origin": {
+        "source": "File:La Liberté guidant le peuple - Eugène Delacroix - Musée du Louvre Peintures RF 129 - après restauration 2024.jpg"
+      }
+    },
+    {
       "id": "madone-sixtine-image",
       "kind": "image",
       "src": "art/images/madone-sixtine-image-960.webp",
@@ -1002,6 +2164,34 @@
       "entityId": "madone-sixtine",
       "origin": {
         "source": "File:Raphael - The Sistine Madonna - Google Arts & Culture.jpg"
+      }
+    },
+    {
+      "id": "millet-image",
+      "kind": "image",
+      "src": "art/images/millet-image-960.webp",
+      "bytes": 89842,
+      "width": 960,
+      "height": 1218,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/millet-image-480.webp",
+          "bytes": 16552
+        },
+        {
+          "width": 960,
+          "src": "art/images/millet-image-960.webp",
+          "bytes": 89842
+        }
+      ],
+      "credit": "Nadar",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-FrancoisMillet(Nadar).jpg",
+      "course": "art",
+      "entityId": "millet",
+      "origin": {
+        "source": "File:Jean-FrancoisMillet(Nadar).jpg"
       }
     },
     {
@@ -1119,6 +2309,39 @@
         "source": "File:Mozart Symphony 40 G minor - 1 Molto allegro.oga",
         "start": 0,
         "duration": 20
+      }
+    },
+    {
+      "id": "munch-image",
+      "kind": "image",
+      "src": "art/images/munch-image-960.webp",
+      "bytes": 58332,
+      "width": 960,
+      "height": 1374,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/munch-image-480.webp",
+          "bytes": 14896
+        },
+        {
+          "width": 960,
+          "src": "art/images/munch-image-960.webp",
+          "bytes": 58332
+        },
+        {
+          "width": 1600,
+          "src": "art/images/munch-image-1600.webp",
+          "bytes": 204958
+        }
+      ],
+      "credit": "Anders Beer Wilse",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_1933-2.jpg",
+      "course": "art",
+      "entityId": "munch",
+      "origin": {
+        "source": "File:Edvard Munch 1933-2.jpg"
       }
     },
     {
@@ -1254,6 +2477,39 @@
       }
     },
     {
+      "id": "pluie-vapeur-vitesse-image",
+      "kind": "image",
+      "src": "art/images/pluie-vapeur-vitesse-image-960.webp",
+      "bytes": 86854,
+      "width": 960,
+      "height": 721,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/pluie-vapeur-vitesse-image-480.webp",
+          "bytes": 16600
+        },
+        {
+          "width": 960,
+          "src": "art/images/pluie-vapeur-vitesse-image-960.webp",
+          "bytes": 86854
+        },
+        {
+          "width": 1600,
+          "src": "art/images/pluie-vapeur-vitesse-image-1600.webp",
+          "bytes": 316346
+        }
+      ],
+      "credit": "William Turner",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:J._M._W._Turner_-_Rain,_Steam_and_Speed_%E2%80%93_The_Great_Western_Railway.jpg",
+      "course": "art",
+      "entityId": "pluie-vapeur-vitesse",
+      "origin": {
+        "source": "File:J. M. W. Turner - Rain, Steam and Speed – The Great Western Railway.jpg"
+      }
+    },
+    {
       "id": "portrait-picasso-image",
       "kind": "image",
       "src": "art/images/portrait-picasso-image-960.webp",
@@ -1284,6 +2540,80 @@
       "entityId": "portrait-picasso",
       "origin": {
         "source": "File:Juan Gris - Portrait of Pablo Picasso - Google Art Project.jpg"
+      }
+    },
+    {
+      "id": "rameau-image",
+      "kind": "image",
+      "src": "music/images/rameau-image-480.webp",
+      "bytes": 68406,
+      "width": 480,
+      "height": 654,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/rameau-image-480.webp",
+          "bytes": 68406
+        }
+      ],
+      "credit": "Attribué à Joseph Aved",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Attribu%C3%A9_%C3%A0_Joseph_Aved,_Portrait_de_Jean-Philippe_Rameau_(vers_1728)_-_001.jpg",
+      "course": "music",
+      "entityId": "rameau",
+      "origin": {
+        "source": "File:Attribué à Joseph Aved, Portrait de Jean-Philippe Rameau (vers 1728) - 001.jpg"
+      }
+    },
+    {
+      "id": "rameau-niais-sologne-audio",
+      "kind": "audio",
+      "src": "music/audio/rameau-niais-sologne-audio.m4a",
+      "bytes": 324850,
+      "durationSec": 20,
+      "credit": "Marcelle Meyer (piano), 1953",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Philippe_Rameau_-_Les_Niais_de_Sologne_(Marcelle_Meyer,_1953).flac",
+      "course": "music",
+      "entityId": "rameau-niais-sologne",
+      "origin": {
+        "source": "File:Jean-Philippe Rameau - Les Niais de Sologne (Marcelle Meyer, 1953).flac",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "rameau-poule-audio",
+      "kind": "audio",
+      "src": "music/audio/rameau-poule-audio.m4a",
+      "bytes": 324575,
+      "durationSec": 20,
+      "credit": "Marcelle Meyer (piano), 1953",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Philippe_Rameau_-_La_Poule_(Marcelle_Meyer,_1953).flac",
+      "course": "music",
+      "entityId": "rameau-poule",
+      "origin": {
+        "source": "File:Jean-Philippe Rameau - La Poule (Marcelle Meyer, 1953).flac",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "rameau-tourbillons-audio",
+      "kind": "audio",
+      "src": "music/audio/rameau-tourbillons-audio.m4a",
+      "bytes": 324674,
+      "durationSec": 20,
+      "credit": "Marcelle Meyer (piano), 1953",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Philippe_Rameau_-_Les_Tourbillons_(Marcelle_Meyer,_1953).flac",
+      "course": "music",
+      "entityId": "rameau-tourbillons",
+      "origin": {
+        "source": "File:Jean-Philippe Rameau - Les Tourbillons (Marcelle Meyer, 1953).flac",
+        "start": 0,
+        "duration": 20
       }
     },
     {
@@ -1526,6 +2856,253 @@
       }
     },
     {
+      "id": "satie-gnossienne-audio",
+      "kind": "audio",
+      "src": "music/audio/satie-gnossienne-audio.m4a",
+      "bytes": 406240,
+      "durationSec": 25,
+      "credit": "La Pianista (piano), 2010",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Satie_-_Gnossienne_1.ogg",
+      "course": "music",
+      "entityId": "satie-gnossienne",
+      "origin": {
+        "source": "File:Satie - Gnossienne 1.ogg",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "satie-gymnopedie-audio",
+      "kind": "audio",
+      "src": "music/audio/satie-gymnopedie-audio.m4a",
+      "bytes": 405470,
+      "durationSec": 25,
+      "credit": "Robin Alciatore (piano), Musopen",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erik_Satie_-_gymnopedies_-_la_1_ere._lent_et_douloureux.ogg",
+      "course": "music",
+      "entityId": "satie-gymnopedie",
+      "origin": {
+        "source": "File:Erik Satie - gymnopedies - la 1 ere. lent et douloureux.ogg",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "satie-image",
+      "kind": "image",
+      "src": "music/images/satie-image-960.webp",
+      "bytes": 350414,
+      "width": 960,
+      "height": 1748,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/satie-image-480.webp",
+          "bytes": 69892
+        },
+        {
+          "width": 960,
+          "src": "music/images/satie-image-960.webp",
+          "bytes": 350414
+        }
+      ],
+      "credit": "Suzanne Valadon",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suzanne_Valadon_-_Portrait_d%27Erik_Satie.jpg",
+      "course": "music",
+      "entityId": "satie",
+      "origin": {
+        "source": "File:Suzanne Valadon - Portrait d'Erik Satie.jpg"
+      }
+    },
+    {
+      "id": "satie-je-te-veux-audio",
+      "kind": "audio",
+      "src": "music/audio/satie-je-te-veux-audio.m4a",
+      "bytes": 409100,
+      "durationSec": 25,
+      "credit": "Yvonne George (chant)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Je_te_Veux.ogg",
+      "course": "music",
+      "entityId": "satie-je-te-veux",
+      "origin": {
+        "source": "File:Je te Veux.ogg",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "schubert-ave-maria-audio",
+      "kind": "audio",
+      "src": "music/audio/schubert-ave-maria-audio.m4a",
+      "bytes": 406374,
+      "durationSec": 25,
+      "credit": "Dorothea Fayne (chant), Uwe Streibel (piano)",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Franz_Schubert_-_Ellens_dritter_Gesang.oga",
+      "course": "music",
+      "entityId": "schubert-ave-maria",
+      "origin": {
+        "source": "File:Franz Schubert - Ellens dritter Gesang.oga",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "schubert-image",
+      "kind": "image",
+      "src": "music/images/schubert-image-480.webp",
+      "bytes": 13664,
+      "width": 480,
+      "height": 585,
+      "variants": [
+        {
+          "width": 480,
+          "src": "music/images/schubert-image-480.webp",
+          "bytes": 13664
+        }
+      ],
+      "credit": "Wilhelm August Rieder",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Franz_Schubert_by_Wilhelm_August_Rieder_1875_larger_version.png",
+      "course": "music",
+      "entityId": "schubert",
+      "origin": {
+        "source": "File:Franz Schubert by Wilhelm August Rieder 1875 larger version.png"
+      }
+    },
+    {
+      "id": "schubert-inachevee-audio",
+      "kind": "audio",
+      "src": "music/audio/schubert-inachevee-audio.m4a",
+      "bytes": 417576,
+      "durationSec": 25,
+      "credit": "Orchestre philharmonique de Dresde, dir. Paul van Kempen (1940)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Polydor-67575a-859ge9.ogg",
+      "course": "music",
+      "entityId": "schubert-inachevee",
+      "origin": {
+        "source": "File:Polydor-67575a-859ge9.ogg",
+        "start": 0,
+        "duration": 25
+      }
+    },
+    {
+      "id": "schubert-roi-aulnes-audio",
+      "kind": "audio",
+      "src": "music/audio/schubert-roi-aulnes-audio.m4a",
+      "bytes": 324660,
+      "durationSec": 20,
+      "credit": "Beal et Campbell, Concert Films Corporation (1948)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schubert_-_Erlk%C3%B6nig_(Beal,_Campbell).flac",
+      "course": "music",
+      "entityId": "schubert-roi-aulnes",
+      "origin": {
+        "source": "File:Schubert - Erlkönig (Beal, Campbell).flac",
+        "start": 0,
+        "duration": 20
+      }
+    },
+    {
+      "id": "semeur-image",
+      "kind": "image",
+      "src": "art/images/semeur-image-960.webp",
+      "bytes": 169956,
+      "width": 960,
+      "height": 1182,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/semeur-image-480.webp",
+          "bytes": 23430
+        },
+        {
+          "width": 960,
+          "src": "art/images/semeur-image-960.webp",
+          "bytes": 169956
+        },
+        {
+          "width": 1600,
+          "src": "art/images/semeur-image-1600.webp",
+          "bytes": 706780
+        }
+      ],
+      "credit": "Jean-François Millet",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_The_Sower_-_Google_Art_Project.jpg",
+      "course": "art",
+      "entityId": "semeur",
+      "origin": {
+        "source": "File:Jean-François Millet - The Sower - Google Art Project.jpg"
+      }
+    },
+    {
+      "id": "seurat-image",
+      "kind": "image",
+      "src": "art/images/seurat-image-960.webp",
+      "bytes": 69810,
+      "width": 960,
+      "height": 1414,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/seurat-image-480.webp",
+          "bytes": 26312
+        },
+        {
+          "width": 960,
+          "src": "art/images/seurat-image-960.webp",
+          "bytes": 69810
+        }
+      ],
+      "credit": "Photographe non identifié",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Georges_Seurat_1888_(cropped).jpg",
+      "course": "art",
+      "entityId": "seurat",
+      "origin": {
+        "source": "File:Georges Seurat 1888 (cropped).jpg"
+      }
+    },
+    {
+      "id": "soiree-karl-johan-image",
+      "kind": "image",
+      "src": "art/images/soiree-karl-johan-image-960.webp",
+      "bytes": 107986,
+      "width": 960,
+      "height": 667,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/soiree-karl-johan-image-480.webp",
+          "bytes": 23490
+        },
+        {
+          "width": 960,
+          "src": "art/images/soiree-karl-johan-image-960.webp",
+          "bytes": 107986
+        },
+        {
+          "width": 1600,
+          "src": "art/images/soiree-karl-johan-image-1600.webp",
+          "bytes": 417410
+        }
+      ],
+      "credit": "Edvard Munch",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Evening_on_Karl_Johan_Street_(1892).jpg",
+      "course": "art",
+      "entityId": "soiree-karl-johan",
+      "origin": {
+        "source": "File:Edvard Munch - Evening on Karl Johan Street (1892).jpg"
+      }
+    },
+    {
       "id": "tchaikovski-casse-noisette-audio",
       "kind": "audio",
       "src": "music/audio/tchaikovski-casse-noisette-audio.m4a",
@@ -1610,6 +3187,39 @@
       }
     },
     {
+      "id": "temeraire-image",
+      "kind": "image",
+      "src": "art/images/temeraire-image-960.webp",
+      "bytes": 60396,
+      "width": 960,
+      "height": 713,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/temeraire-image-480.webp",
+          "bytes": 12590
+        },
+        {
+          "width": 960,
+          "src": "art/images/temeraire-image-960.webp",
+          "bytes": 60396
+        },
+        {
+          "width": 1600,
+          "src": "art/images/temeraire-image-1600.webp",
+          "bytes": 250428
+        }
+      ],
+      "credit": "William Turner",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turner,_J._M._W._-_The_Fighting_T%C3%A9m%C3%A9raire_tugged_to_her_last_Berth_to_be_broken.jpg",
+      "course": "art",
+      "entityId": "temeraire",
+      "origin": {
+        "source": "File:Turner, J. M. W. - The Fighting Téméraire tugged to her last Berth to be broken.jpg"
+      }
+    },
+    {
       "id": "terrasse-cafe-image",
       "kind": "image",
       "src": "art/images/terrasse-cafe-image-960.webp",
@@ -1640,6 +3250,34 @@
       "entityId": "terrasse-cafe",
       "origin": {
         "source": "File:Van Gogh - Terrace of a Café at Night (Place du Forum) 1888.jpg"
+      }
+    },
+    {
+      "id": "turner-image",
+      "kind": "image",
+      "src": "art/images/turner-image-960.webp",
+      "bytes": 42594,
+      "width": 960,
+      "height": 1248,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/turner-image-480.webp",
+          "bytes": 11144
+        },
+        {
+          "width": 960,
+          "src": "art/images/turner-image-960.webp",
+          "bytes": 42594
+        }
+      ],
+      "credit": "William Turner",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joseph_Mallord_William_Turner_auto-retrato.jpg",
+      "course": "art",
+      "entityId": "turner",
+      "origin": {
+        "source": "File:Joseph Mallord William Turner auto-retrato.jpg"
       }
     },
     {

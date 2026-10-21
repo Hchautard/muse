@@ -124,3 +124,125 @@ excerpts:
     source: File:Ravel's Jeux d'eau, M. 30 - Anna Sutyagina.ogg
     credit: Anna Sutyagina (piano)
     duration: 20
+
+  # ——— Unité 2 ———
+
+  # — Rameau —
+  - entity: rameau-tourbillons
+    source: File:Jean-Philippe Rameau - Les Tourbillons (Marcelle Meyer, 1953).flac
+    credit: Marcelle Meyer (piano), 1953
+    duration: 20
+  - entity: rameau-niais-sologne
+    source: File:Jean-Philippe Rameau - Les Niais de Sologne (Marcelle Meyer, 1953).flac
+    credit: Marcelle Meyer (piano), 1953
+    duration: 20
+  - entity: rameau-poule
+    source: File:Jean-Philippe Rameau - La Poule (Marcelle Meyer, 1953).flac
+    credit: Marcelle Meyer (piano), 1953
+    duration: 20
+
+  # — Haendel —
+  - entity: haendel-water-music
+    source: "File:PDP-CH - The Hallé - Malcolm Sargent - Water Music, HWV 348-350 - Suite in F major, HWV 348 - Hornpipe, Andante espressivo - Handel - Harty - Hmv-c3307-2er624.flac"
+    credit: The Hallé, dir. Malcolm Sargent (1942), arr. Hamilton Harty
+    duration: 20
+    note: Hornpipe
+  - entity: haendel-messie
+    source: File:Handel - messiah - 44 hallelujah.ogg
+    credit: MIT Concert Choir, dir. William C. Cutter
+    duration: 25
+    note: Hallelujah
+  - entity: haendel-reine-saba
+    source: File:Handel - Arrival of the Queen of Sheba.ogg
+    credit: Advent Chamber Orchestra, dir. Roxanna Pavel Goldstein (2006)
+    duration: 20
+
+  # — Gluck —
+  - entity: gluck-orphee
+    source: "File:PDP-CH - New York Philharmonic - Arturo Toscanini - Orfeo ed Euridice - Dance of the Blessed Spirits - Christoph Willibald Gluck - Hmv-d1784-42-664.flac"
+    credit: New York Philharmonic, dir. Arturo Toscanini
+    duration: 25
+    note: Danse des esprits bienheureux
+  - entity: gluck-paride-elena
+    source: File:Hmv-db2531-2ba567.ogg
+    credit: Beniamino Gigli (ténor), orchestre de la Scala, dir. Dino Olivieri (1935)
+    duration: 25
+    note: O del mio dolce ardor
+  - entity: gluck-iphigenie-aulide
+    source: "File:PDP-CH - Berliner Staatskapelle - Leo Blech - Iphigénie en Aulide - Ballet Suite No. 1 - Part 1 - Gluck - Mottl - Electrola-ej196-4-040602.flac"
+    credit: Staatskapelle de Berlin, dir. Leo Blech (1927), arr. Felix Mottl
+    duration: 20
+
+  # — Haydn —
+  - entity: haydn-surprise
+    source: 'File:Haydn; Symphony No. 94 "Surprise", 2. Andante.ogg'
+    credit: Boston Symphony Orchestra, dir. Serge Koussevitzky (1929)
+    duration: 25
+  - entity: haydn-trompette
+    source: "File:Real Filharmonía de Galicia - Haydn's Trumpet Concerto in E-flat major, Hob.VIIe-1 - III. Finale allegro.ogg"
+    credit: Real Filharmonía de Galicia
+    duration: 20
+  - entity: haydn-creation
+    source: File:Haydn - The Creation (Dalal) - 1 The Representation of Chaos.oga
+    credit: St Matthew's Choir, dir. Phiroz Dalal (2010)
+    duration: 25
+    note: Représentation du chaos
+
+  # — Schubert —
+  - entity: schubert-roi-aulnes
+    source: File:Schubert - Erlkönig (Beal, Campbell).flac
+    credit: Beal et Campbell, Concert Films Corporation (1948)
+    duration: 20
+  - entity: schubert-inachevee
+    source: File:Polydor-67575a-859ge9.ogg
+    credit: Orchestre philharmonique de Dresde, dir. Paul van Kempen (1940)
+    duration: 25
+  - entity: schubert-ave-maria
+    source: File:Franz Schubert - Ellens dritter Gesang.oga
+    credit: Dorothea Fayne (chant), Uwe Streibel (piano)
+    duration: 25
+
+  # — Dvořák —
+  - entity: dvorak-nouveau-monde
+    source: "File:Antonin Dvorak - symphony no. 9 in e minor 'from the new world', op. 95 - iv. allegro con fuoco.ogg"
+    credit: Enregistrement Musopen
+    duration: 20
+    note: Finale
+  - entity: dvorak-humoresque
+    source: File:Dvořák - Humoresque Op. 101 No. 7.ogg
+    credit: Duo Goldstein, arrangement d'Elias Goldstein pour alto et piano
+    duration: 20
+  - entity: dvorak-concerto-violoncelle
+    source: File:Dvorak - Cello Concerto - 1. Allegro.ogg
+    credit: Hans Goldstein (violoncelle), Milwaukee Youth Orchestra
+    duration: 20
+
+  # — Satie —
+  - entity: satie-gymnopedie
+    source: File:Erik Satie - gymnopedies - la 1 ere. lent et douloureux.ogg
+    credit: Robin Alciatore (piano), Musopen
+    duration: 25
+  - entity: satie-gnossienne
+    source: File:Satie - Gnossienne 1.ogg
+    credit: La Pianista (piano), 2010
+    duration: 25
+  - entity: satie-je-te-veux
+    source: File:Je te Veux.ogg
+    credit: Yvonne George (chant)
+    duration: 25
+
+  # — Holst —
+  - entity: holst-premiere-suite
+    source: File:Holst First Suite Chaconne.ogg
+    credit: United States Marine Band
+    duration: 20
+    note: Chaconne
+  - entity: holst-deuxieme-suite
+    source: File:Gustav Holst - Second Suite in F - I. March. Allegro.ogg
+    credit: Heritage of America Band, US Air Force (1992)
+    duration: 20
+  - entity: holst-planetes
+    source: File:Holst The Planets Jupiter.ogg
+    credit: Heritage of America Band, US Air Force (1998), transcription de Merlin Patterson
+    duration: 20
+    note: Jupiter

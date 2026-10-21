@@ -344,3 +344,331 @@ entities:
       scintillants évoquent le jaillissement de l'eau et annoncent un nouveau style pianistique.
     year: 1901
     audio: File:Ravel's Jeux d'eau, M. 30 - Anna Sutyagina.ogg
+
+  # ——— Unité 2 ———
+
+  # — Rameau (pièces sans fiche Wikidata : dates et relations écrites à la main) —
+  - id: rameau-tourbillons
+    type: work
+    name: Les Tourbillons
+    relations:
+      inPeriod: musique-baroque
+      createdBy: rameau
+    tags: [clavecin]
+    summary: >-
+      Pièce pour clavecin publiée en 1724 dans le deuxième livre de Rameau. Ses traits rapides
+      évoquent des tourbillons de poussière soulevés par le vent.
+    year: 1724
+
+  - id: rameau-niais-sologne
+    type: work
+    name: Les Niais de Sologne
+    relations:
+      inPeriod: musique-baroque
+      createdBy: rameau
+    tags: [clavecin]
+    summary: >-
+      Pièce pour clavecin du même recueil de 1724, suivie de variations, les « doubles », de plus en
+      plus virtuoses. Les niais de Sologne sont des paysans qui jouent les naïfs.
+    year: 1724
+
+  - id: rameau-poule
+    type: work
+    name: La Poule
+    relations:
+      inPeriod: musique-baroque
+      createdBy: rameau
+    tags: [clavecin]
+    summary: >-
+      Pièce pour clavecin où des notes répétées imitent le caquètement d'une poule. Elle figure dans
+      les Nouvelles Suites de pièces de clavecin, publiées vers 1728.
+    year: 1728
+
+  # — Haendel —
+  - id: haendel-water-music
+    type: work
+    name: Water Music
+    wikidataId: Q278596
+    relations:
+      inPeriod: musique-baroque
+      createdBy: haendel
+    tags: [orchestre]
+    summary: >-
+      Suites pour orchestre jouées en 1717 lors d'une promenade du roi George Ier sur la Tamise, à
+      bord de barques. L'extrait est un hornpipe, une danse anglaise.
+    year: 1717
+
+  - id: haendel-messie
+    type: work
+    name: Le Messie
+    wikidataId: Q207732
+    relations:
+      inPeriod: musique-baroque
+      createdBy: haendel
+    tags: [oratorio, chœur]
+    summary: >-
+      Oratorio composé en 1741 en quelques semaines et créé à Dublin en 1742. Son chœur « Hallelujah
+      » est l'un des plus célèbres de la musique.
+    year: 1741
+
+  - id: haendel-reine-saba
+    type: work
+    name: L'Arrivée de la reine de Saba
+    wikidataId: Q1123627
+    relations:
+      inPeriod: musique-baroque
+      createdBy: haendel
+    tags: [orchestre]
+    summary: >-
+      Page instrumentale de l'oratorio Salomon, créé en 1749 : deux hautbois dialoguent avec les
+      cordes dans un tempo vif. Elle est souvent jouée seule.
+    year: 1749
+
+  # — Gluck —
+  - id: gluck-orphee
+    type: work
+    name: Orphée et Eurydice
+    wikidataId: Q723776
+    relations:
+      inPeriod: musique-classique
+      createdBy: gluck
+    tags: [opéra]
+    summary: >-
+      Opéra créé à Vienne en 1762, puis remanié pour Paris en 1774. L'extrait est la « Danse des
+      esprits bienheureux », célèbre pour son solo de flûte.
+    year: 1762
+
+  - id: gluck-paride-elena
+    type: work
+    name: Pâris et Hélène
+    wikidataId: Q3810521
+    relations:
+      inPeriod: musique-classique
+      createdBy: gluck
+    tags: [opéra, voix]
+    summary: >-
+      Opéra créé à Vienne en 1770, le troisième de ses opéras « réformés ». Son air « O del mio
+      dolce ardor » est devenu un classique du chant.
+    year: 1770
+
+  - id: gluck-iphigenie-aulide
+    type: work
+    name: Iphigénie en Aulide
+    wikidataId: Q248892
+    relations:
+      inPeriod: musique-classique
+      createdBy: gluck
+    tags: [opéra]
+    summary: >-
+      Premier opéra de Gluck créé à Paris, en 1774, d'après la tragédie de Racine. L'extrait vient
+      d'une suite tirée de ses ballets.
+    year: 1774
+
+  # — Haydn —
+  - id: haydn-surprise
+    type: work
+    name: Symphonie n° 94 « La Surprise »
+    wikidataId: Q276768
+    relations:
+      inPeriod: musique-classique
+      createdBy: haydn
+    tags: [symphonie]
+    summary: >-
+      Écrite pour Londres en 1791. Son mouvement lent commence tout doucement, puis un accord
+      fortissimo vient réveiller l'auditoire : d'où son surnom.
+    year: 1791
+
+  - id: haydn-trompette
+    type: work
+    name: Concerto pour trompette
+    wikidataId: Q1585960
+    relations:
+      inPeriod: musique-classique
+      createdBy: haydn
+    tags: [concerto, trompette]
+    summary: >-
+      Composé en 1796 pour une trompette à clés, alors nouvelle, capable de jouer toutes les notes
+      de la gamme. C'est aujourd'hui l'un des concertos les plus joués de l'instrument.
+    year: 1796
+
+  - id: haydn-creation
+    type: work
+    name: La Création
+    wikidataId: Q163138
+    relations:
+      inPeriod: musique-classique
+      createdBy: haydn
+    tags: [oratorio]
+    summary: >-
+      Oratorio créé à Vienne en 1798, qui raconte la création du monde d'après la Genèse. Il s'ouvre
+      sur une « Représentation du chaos » d'une étonnante audace.
+    # Année de la création (Wikidata : 1796, début de la composition).
+    year: 1798
+
+  # — Schubert —
+  - id: schubert-roi-aulnes
+    type: work
+    name: Le Roi des aulnes
+    wikidataId: Q1134417
+    relations:
+      inPeriod: musique-romantique
+      createdBy: schubert
+    tags: [lied, voix]
+    summary: >-
+      Lied composé en 1815 sur un poème de Goethe, quand Schubert avait 18 ans : un père galope dans
+      la nuit avec son enfant, que le Roi des aulnes veut emporter. Le piano imite le galop.
+    year: 1815
+
+  - id: schubert-inachevee
+    type: work
+    name: Symphonie « Inachevée »
+    wikidataId: Q651383
+    relations:
+      inPeriod: musique-romantique
+      createdBy: schubert
+    tags: [symphonie]
+    summary: >-
+      Commencée en 1822, elle ne compte que deux mouvements achevés. Elle n'a été jouée qu'en 1865,
+      longtemps après la mort de Schubert.
+    year: 1822
+
+  - id: schubert-ave-maria
+    type: work
+    name: Ave Maria
+    wikidataId: Q1331995
+    relations:
+      inPeriod: musique-romantique
+      createdBy: schubert
+    tags: [lied, voix]
+    summary: >-
+      Lied de 1825 tiré de La Dame du lac de Walter Scott (« Troisième chant d'Ellen »), devenu
+      célèbre sous le titre d'Ave Maria.
+    year: 1825
+    audio: File:Franz Schubert - Ellens dritter Gesang.oga
+
+  # — Dvořák —
+  - id: dvorak-nouveau-monde
+    type: work
+    name: Symphonie « Du Nouveau Monde »
+    wikidataId: Q11985
+    relations:
+      inPeriod: musique-romantique
+      createdBy: dvorak
+    tags: [symphonie]
+    summary: >-
+      Neuvième symphonie de Dvořák, composée à New York en 1893. L'extrait ouvre son finale ; le
+      mouvement lent, chanté par le cor anglais, est tout aussi célèbre.
+    year: 1893
+    audio: "File:Antonin Dvorak - symphony no. 9 in e minor 'from the new world', op. 95 - ii. largo.ogg"
+
+  - id: dvorak-humoresque
+    type: work
+    name: Humoresque n° 7
+    wikidataId: Q2622524
+    relations:
+      inPeriod: musique-romantique
+      createdBy: dvorak
+    tags: [piano]
+    summary: >-
+      Septième d'un recueil de huit pièces pour piano écrites en 1894. Sa mélodie sautillante a été
+      arrangée pour toutes sortes d'instruments ; ici l'alto et le piano.
+    year: 1894
+
+  - id: dvorak-concerto-violoncelle
+    type: work
+    name: Concerto pour violoncelle
+    wikidataId: Q1053081
+    relations:
+      inPeriod: musique-romantique
+      createdBy: dvorak
+    tags: [concerto, violoncelle]
+    summary: >-
+      Écrit à New York en 1894-1895, juste avant le retour de Dvořák en Bohême. C'est l'un des
+      concertos pour violoncelle les plus joués.
+    # Achevé en 1895.
+    year: 1895
+    audio: File:Dvorak - Cello Concerto - 1. Allegro.ogg
+
+  # — Satie —
+  - id: satie-gymnopedie
+    type: work
+    name: Gymnopédie n° 1
+    wikidataId: Q66457334
+    relations:
+      inPeriod: musique-debut-xxe
+      createdBy: satie
+    tags: [piano]
+    summary: >-
+      Première de trois pièces pour piano composées en 1888. Lente et dépouillée, sur un
+      accompagnement régulier, c'est l'œuvre la plus connue de Satie.
+    year: 1888
+    audio: File:Gymnopedie No. 1 (ISRC USUAN1100787).mp3
+
+  - id: satie-gnossienne
+    type: work
+    name: Gnossienne n° 1
+    wikidataId: Q110184793
+    relations:
+      inPeriod: musique-debut-xxe
+      createdBy: satie
+    tags: [piano]
+    summary: >-
+      Pièce pour piano écrite vers 1890, sans barres de mesure, avec des indications insolites
+      adressées au pianiste.
+    year: 1890
+    audio: File:Erik Satie - Gnossienne no 1.ogg
+
+  - id: satie-je-te-veux
+    type: work
+    name: Je te veux
+    wikidataId: Q3163591
+    relations:
+      inPeriod: musique-debut-xxe
+      createdBy: satie
+    tags: [chanson, voix]
+    summary: >-
+      Valse chantée composée vers 1897 pour le café-concert, où Satie gagnait sa vie comme pianiste.
+      Elle fut popularisée par la chanteuse Paulette Darty.
+    year: 1897
+
+  # — Holst —
+  - id: holst-premiere-suite
+    type: work
+    name: Première suite en mi bémol
+    wikidataId: Q4324726
+    relations:
+      inPeriod: musique-debut-xxe
+      createdBy: holst
+    tags: [orchestre d'harmonie]
+    summary: >-
+      Écrite en 1909 pour orchestre d'harmonie (vents et percussions), elle est devenue un pilier du
+      répertoire de ces formations. Elle s'ouvre sur une chaconne.
+    year: 1909
+
+  - id: holst-deuxieme-suite
+    type: work
+    name: Deuxième suite en fa
+    wikidataId: Q2641380
+    relations:
+      inPeriod: musique-debut-xxe
+      createdBy: holst
+    tags: [orchestre d'harmonie]
+    summary: >-
+      Suite pour orchestre d'harmonie de 1911, bâtie sur des chansons et des danses populaires
+      anglaises.
+    year: 1911
+
+  - id: holst-planetes
+    type: work
+    name: Les Planètes
+    wikidataId: Q303508
+    relations:
+      inPeriod: musique-debut-xxe
+      createdBy: holst
+    tags: [orchestre]
+    summary: >-
+      Suite pour grand orchestre en sept mouvements, un par planète, achevée en 1916. L'extrait
+      vient de « Jupiter, celui qui apporte la gaieté », ici dans une version pour orchestre
+      d'harmonie.
+    year: 1916
+    audio: "File:Gustav Holst - the planets, op. 32 - i. mars, the bringer of war.ogg"

@@ -127,3 +127,112 @@ entities:
     yearStart: 1887
     yearEnd: 1927
     image: File:Juan Gris (1887–1927) MET DT2533.jpg
+
+  # — Unité 2 —
+  - id: delacroix
+    type: person
+    name: Eugène Delacroix
+    wikidataId: Q33477
+    relations:
+      belongsTo: romantisme
+    summary: >-
+      Peintre français, chef de file du romantisme. Ses grandes toiles aux couleurs vives et au
+      mouvement intense mettent en scène l'histoire, la littérature et l'Orient.
+    yearStart: 1798
+    yearEnd: 1863
+    image: "File:Autoportrait - Eugène Delacroix - Musée du Louvre Peintures RF 25.jpg"
+
+  - id: turner
+    type: person
+    name: William Turner
+    wikidataId: Q159758
+    relations:
+      belongsTo: romantisme
+    summary: >-
+      Peintre anglais, maître du paysage. Ses formes se dissolvent peu à peu dans la lumière, la
+      vapeur et la tempête.
+    yearStart: 1775
+    yearEnd: 1851
+    image: File:Joseph Mallord William Turner auto-retrato.jpg
+    imageCredit: William Turner
+
+  - id: courbet
+    type: person
+    name: Gustave Courbet
+    wikidataId: Q34618
+    relations:
+      belongsTo: realisme
+    summary: >-
+      Peintre français, figure du réalisme. Il peint le monde tel qu'il le voit, gens ordinaires
+      compris, sur des toiles aussi grandes que celles réservées jusque-là à l'histoire.
+    yearStart: 1819
+    yearEnd: 1877
+    image: File:Gustave Courbet, photograph Atelier Nadar, c. 1860s.jpg
+
+  - id: millet
+    type: person
+    name: Jean-François Millet
+    wikidataId: Q148458
+    relations:
+      belongsTo: realisme
+    summary: >-
+      Peintre français installé à Barbizon, près de la forêt de Fontainebleau. Il consacre son œuvre
+      à la vie et au travail des paysans, avec gravité et simplicité.
+    yearStart: 1814
+    yearEnd: 1875
+    image: File:Jean-FrancoisMillet(Nadar).jpg
+
+  - id: seurat
+    type: person
+    name: Georges Seurat
+    wikidataId: Q34013
+    relations:
+      belongsTo: neo-impressionnisme
+    summary: >-
+      Peintre français mort à 31 ans, à l'origine du néo-impressionnisme : il juxtapose de petits
+      points de couleur pure que l'œil du spectateur mélange.
+    yearStart: 1859
+    yearEnd: 1891
+    image: File:Georges Seurat 1888 (cropped).jpg
+    imageCredit: Photographe non identifié
+
+  - id: klimt
+    type: person
+    name: Gustav Klimt
+    wikidataId: Q34661
+    relations:
+      belongsTo: art-nouveau
+    summary: >-
+      Peintre autrichien, figure de la Sécession viennoise. Ses portraits et ses allégories mêlent
+      figures sensuelles, motifs décoratifs et feuilles d'or.
+    yearStart: 1862
+    yearEnd: 1918
+    image: File:Gustav Klimt 1912.jpg
+    imageCredit: Photographie anonyme, 1912
+
+  - id: munch
+    type: person
+    name: Edvard Munch
+    wikidataId: Q41406
+    relations:
+      belongsTo: expressionnisme
+    summary: >-
+      Peintre norvégien, précurseur de l'expressionnisme. Ses tableaux disent l'angoisse, l'amour et
+      la mort par des formes ondulantes et des couleurs violentes.
+    yearStart: 1863
+    yearEnd: 1944
+    image: File:Edvard Munch 1933-2.jpg
+
+  - id: kandinsky
+    type: person
+    name: Vassily Kandinsky
+    wikidataId: Q61064
+    relations:
+      belongsTo: art-abstrait
+    summary: >-
+      Peintre russe, installé ensuite en Allemagne puis en France, pionnier de l'art abstrait. Il
+      voulait que la peinture touche, comme la musique, par les seules couleurs et formes.
+    yearStart: 1866
+    yearEnd: 1944
+    image: File:Wassily kandinsky.jpg
+    imageCredit: Photographie anonyme
