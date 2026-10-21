@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router'
+import { ChallengePage } from '../features/challenge/ChallengePage'
 import { CollectionPage } from '../features/collection/CollectionPage'
 import { CoursePage } from '../features/course/CoursePage'
 import { HomePage } from '../features/home/HomePage'
@@ -21,6 +22,7 @@ export const router = createBrowserRouter(
         { path: 'collection', element: <CollectionPage /> },
         { path: 'statistiques', element: <StatsPage /> },
         { path: 'reglages', element: <SettingsPage /> },
+        { path: 'defi', element: <ChallengePage /> },
         { path: 'session/:courseId/lecon/:lessonId', element: <LessonSessionPage /> },
         { path: 'session/:courseId/revision', element: <ReviewSessionPage /> },
         { path: '*', element: <NotFoundPage /> },

@@ -1,6 +1,7 @@
 import { use, useState } from 'react'
 import { Link } from 'react-router'
 import { AsyncBoundary } from '../../app/AsyncBoundary'
+import { ChallengeCard } from '../challenge/ChallengeCard'
 import { useChosenCourse } from '../../app/useChosenCourse'
 import { loadContentIndex, loadCourse } from '../../content/loader'
 import { useCompletedLessons, useDueCount, useTodayStats } from '../../db/hooks'
@@ -44,6 +45,7 @@ export function HomePage() {
       </header>
 
       <DailyGoal week={week} stats={stats} />
+      <ChallengeCard today={week.today} />
 
       <AsyncBoundary fallback={<CourseSkeleton />}>
         <HomeContent />
