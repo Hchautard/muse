@@ -1,0 +1,55 @@
+# Grands mouvements de la peinture occidentale.
+# Les bornes sont conventionnelles (voir content/TO_REVIEW.md).
+course: art
+entities:
+  - id: renaissance
+    type: movement
+    name: Renaissance
+    wikidataId: Q4692
+    yearStart: 1400
+    yearEnd: 1600
+    summary: >-
+      Mouvement né en Italie au XVe siècle, qui renoue avec l'Antiquité. Les peintres maîtrisent la
+      perspective, étudient l'anatomie et recherchent l'harmonie des proportions.
+
+  - id: baroque
+    type: movement
+    name: Baroque
+    wikidataId: Q37853
+    yearStart: 1600
+    yearEnd: 1750
+    summary: >-
+      Style qui domine l'Europe au XVIIe siècle. La peinture baroque cherche l'émotion et le
+      mouvement, avec de forts contrastes d'ombre et de lumière.
+
+  - id: impressionnisme
+    type: movement
+    name: Impressionnisme
+    wikidataId: Q40415
+    yearStart: 1860
+    yearEnd: 1890
+    summary: >-
+      Mouvement né en France dans les années 1860. Les impressionnistes peignent souvent en plein
+      air, par touches de couleur visibles, pour saisir la lumière et l'instant ; leur nom vient
+      d'un tableau de Monet exposé en 1874.
+
+  - id: postimpressionnisme
+    type: movement
+    name: Postimpressionnisme
+    wikidataId: Q166713
+    yearStart: 1886
+    yearEnd: 1905
+    summary: >-
+      Terme qui regroupe des peintres venus après l'impressionnisme, à partir des années 1880.
+      Chacun à sa façon, ils dépassent la seule impression visuelle : couleur expressive chez Van
+      Gogh, construction des formes chez Cézanne.
+
+  - id: cubisme
+    type: movement
+    name: Cubisme
+    wikidataId: Q42934
+    yearStart: 1907
+    yearEnd: 1920
+    summary: >-
+      Mouvement lancé à Paris vers 1907 par Picasso et Braque. Les cubistes décomposent les objets
+      en facettes géométriques et les montrent sous plusieurs angles à la fois.

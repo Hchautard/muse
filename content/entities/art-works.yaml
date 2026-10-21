@@ -1,0 +1,412 @@
+# Tableaux de l'unité 1. Années et images complétées par `npm run content:ingest` ;
+# une valeur écrite ici n'est jamais écrasée (les désaccords figurent dans reports/ingest.md).
+# `museumImage` prend l'image en accès libre d'un musée (aic : Art Institute of Chicago,
+# met : Metropolitan Museum of Art) au lieu de celle de Commons.
+course: art
+entities:
+  # — Léonard de Vinci —
+  - id: joconde
+    type: work
+    name: La Joconde
+    wikidataId: Q12418
+    relations:
+      createdBy: leonard-de-vinci
+      belongsTo: renaissance
+    collection: Musée du Louvre, Paris
+    summary: >-
+      Portrait de Lisa Gherardini, épouse d'un marchand florentin, commencé vers 1503. Son sourire,
+      son paysage lointain et son modelé tout en nuances en ont fait l'un des tableaux les plus
+      célèbres au monde.
+    year: 1503
+    image: "File:Mona Lisa, by Leonardo da Vinci, from C2RMF retouched.jpg"
+    imageCredit: Léonard de Vinci
+
+  - id: dame-hermine
+    type: work
+    name: La Dame à l'hermine
+    wikidataId: Q474338
+    relations:
+      createdBy: leonard-de-vinci
+      belongsTo: renaissance
+    collection: Musée Czartoryski, Cracovie
+    summary: >-
+      Portrait de Cecilia Gallerani, une jeune femme de la cour de Milan, qui tient une hermine dans
+      ses bras. Peint vers 1489-1490, c'est l'un des rares portraits de femme de Léonard.
+    year: 1490
+    image: "File:Lady with an Ermine - Leonardo da Vinci - Google Art Project.jpg"
+    imageCredit: Léonard de Vinci
+
+  - id: cene
+    type: work
+    name: La Cène
+    wikidataId: Q128910
+    relations:
+      createdBy: leonard-de-vinci
+      belongsTo: renaissance
+    collection: Couvent de Santa Maria delle Grazie, Milan
+    summary: >-
+      Peinture murale du réfectoire d'un couvent de Milan, réalisée vers 1495-1498. Elle saisit
+      l'instant où le Christ annonce que l'un des apôtres va le trahir. Peinte avec une technique
+      expérimentale, elle s'est dégradée très tôt.
+    # Wikidata donne 1490 ; date usuelle du début des travaux.
+    year: 1495
+    image: "File:Leonardo da Vinci (1452-1519) - The Last Supper (1495-1498).jpg"
+    imageCredit: Léonard de Vinci
+
+  # — Raphaël —
+  - id: vierge-chardonneret
+    type: work
+    name: La Vierge au chardonneret
+    wikidataId: Q2344505
+    relations:
+      createdBy: raphael
+      belongsTo: renaissance
+    collection: Galerie des Offices, Florence
+    summary: >-
+      Peinte vers 1505-1506 à Florence, elle montre la Vierge avec l'Enfant Jésus et le petit saint
+      Jean-Baptiste, qui lui tend un chardonneret, oiseau symbole de la Passion.
+    year: 1505
+    image: "File:Madonna of the Goldfinch (by Raffaello Sanzio) – Galleria degli Uffizi, Florence.jpg"
+    imageCredit: Raphaël
+
+  - id: ecole-athenes
+    type: work
+    name: L'École d'Athènes
+    wikidataId: Q186953
+    relations:
+      createdBy: raphael
+      belongsTo: renaissance
+    collection: Palais du Vatican, Rome
+    summary: >-
+      Fresque d'une salle du palais du Vatican, peinte entre 1509 et 1511. Elle réunit les grands
+      philosophes de l'Antiquité autour de Platon et d'Aristote, dans une architecture en
+      perspective.
+    # Début de la fresque (achevée en 1511).
+    year: 1509
+    image: "File:\"The School of Athens\" by Raffaello Sanzio da Urbino.jpg"
+    imageCredit: Raphaël
+
+  - id: madone-sixtine
+    type: work
+    name: La Madone Sixtine
+    wikidataId: Q328079
+    relations:
+      createdBy: raphael
+      belongsTo: renaissance
+    collection: Gemäldegalerie Alte Meister, Dresde
+    summary: >-
+      Tableau d'autel peint vers 1512 pour l'église San Sisto de Plaisance. La Vierge et l'Enfant y
+      apparaissent entre deux rideaux ; les deux petits anges accoudés au bas de la toile sont
+      devenus célèbres à eux seuls.
+    year: 1512
+    image: "File:Raphael - The Sistine Madonna - Google Arts & Culture.jpg"
+    imageCredit: Raphaël
+
+  # — Le Caravage —
+  - id: musiciens
+    type: work
+    name: Les Musiciens
+    wikidataId: Q655705
+    relations:
+      createdBy: caravage
+      belongsTo: baroque
+    collection: Metropolitan Museum of Art, New York
+    museumImage: met:435844
+    summary: >-
+      Peint vers 1597 pour le cardinal Del Monte, son protecteur à Rome. Quatre jeunes gens costumés
+      se préparent à jouer ; l'un d'eux serait un autoportrait du peintre.
+    # Date du Met (Wikidata : 1595).
+    year: 1597
+
+  - id: judith-holopherne
+    type: work
+    name: Judith décapitant Holopherne
+    wikidataId: Q2470123
+    relations:
+      createdBy: caravage
+      belongsTo: baroque
+    collection: Galerie nationale d'art ancien, Rome
+    summary: >-
+      Scène biblique où l'héroïne Judith tue le général Holopherne pour sauver son peuple. Peinte
+      vers 1598-1599, elle frappe par sa violence et par le contraste entre la lumière et l'ombre.
+    year: 1598
+    # Reproduction du musée (celle de Wikidata est une photo sous CC BY-SA).
+    image: "File:Caravaggio - Giuditta e Oloferne (ca. 1599).jpg"
+    imageCredit: Le Caravage
+
+  - id: vocation-saint-matthieu
+    type: work
+    name: La Vocation de saint Matthieu
+    wikidataId: Q969377
+    relations:
+      createdBy: caravage
+      belongsTo: baroque
+    collection: Église Saint-Louis-des-Français, Rome
+    summary: >-
+      Peinte en 1599-1600 pour l'église Saint-Louis-des-Français de Rome. Un rayon de lumière
+      accompagne le geste du Christ qui désigne Matthieu, collecteur d'impôts attablé avec ses
+      compagnons.
+    # Date d'achèvement usuelle.
+    year: 1600
+    image: File:Caravaggio — The Calling of Saint Matthew.jpg
+
+  # — Rembrandt —
+  - id: lecon-anatomie
+    type: work
+    name: La Leçon d'anatomie du docteur Tulp
+    wikidataId: Q661378
+    relations:
+      createdBy: rembrandt
+      belongsTo: baroque
+    collection: Mauritshuis, La Haye
+    summary: >-
+      Portrait de groupe peint en 1632 pour la guilde des chirurgiens d'Amsterdam : le docteur Tulp
+      y dissèque un bras devant d'autres chirurgiens. Ce tableau a fait la réputation de Rembrandt à
+      Amsterdam.
+    year: 1632
+    image: File:Rembrandt - The Anatomy Lesson of Dr Nicolaes Tulp.jpg
+
+  - id: ronde-de-nuit
+    type: work
+    name: La Ronde de nuit
+    wikidataId: Q219831
+    relations:
+      createdBy: rembrandt
+      belongsTo: baroque
+    collection: Rijksmuseum, Amsterdam
+    summary: >-
+      Portrait d'une compagnie de la milice d'Amsterdam, achevé en 1642, dont Rembrandt fait une
+      scène pleine de mouvement. Son titre vient d'un vernis assombri qui faisait croire à une scène
+      de nuit.
+    year: 1642
+    image: File:La ronda de noche, por Rembrandt van Rijn.jpg
+
+  - id: aristote-homere
+    type: work
+    name: Aristote contemplant le buste d'Homère
+    wikidataId: Q2404992
+    relations:
+      createdBy: rembrandt
+      belongsTo: baroque
+    collection: Metropolitan Museum of Art, New York
+    museumImage: met:437394
+    summary: >-
+      Peint en 1653 pour un collectionneur de Messine, en Sicile. Le philosophe Aristote, vêtu
+      richement, pose la main sur un buste du poète Homère.
+    year: 1653
+
+  # — Claude Monet —
+  - id: impression-soleil-levant
+    type: work
+    name: Impression, soleil levant
+    wikidataId: Q328523
+    relations:
+      createdBy: monet
+      belongsTo: impressionnisme
+    collection: Musée Marmottan Monet, Paris
+    summary: >-
+      Vue du port du Havre dans la brume du matin, peinte en 1872. Exposé en 1874, le tableau a
+      inspiré à un critique le nom, d'abord moqueur, d'« impressionnistes ».
+    year: 1872
+    image: File:Monet - Impression, Sunrise.jpg
+
+  - id: femme-ombrelle
+    type: work
+    name: La Femme à l'ombrelle
+    wikidataId: Q2395218
+    relations:
+      createdBy: monet
+      belongsTo: impressionnisme
+    collection: National Gallery of Art, Washington
+    summary: >-
+      Camille, l'épouse de Monet, et leur fils Jean, saisis en 1875 sur une colline, à contre-jour.
+      Le vent et la lumière semblent emporter les touches de couleur.
+    year: 1875
+    image: "File:Claude Monet - Woman with a Parasol - Madame Monet and Her Son - Google Art Project.jpg"
+
+  - id: nympheas
+    type: work
+    name: Nymphéas
+    wikidataId: Q20267671
+    relations:
+      createdBy: monet
+      belongsTo: impressionnisme
+    collection: Art Institute of Chicago
+    museumImage: aic:16568
+    summary: >-
+      L'une des quelque 250 toiles que Monet a consacrées au bassin de son jardin de Giverny. Le
+      ciel n'y apparaît plus que dans les reflets de l'eau.
+    year: 1906
+
+  # — Pierre-Auguste Renoir —
+  - id: bal-moulin-galette
+    type: work
+    name: Bal du moulin de la Galette
+    wikidataId: Q683274
+    relations:
+      createdBy: renoir
+      belongsTo: impressionnisme
+    collection: Musée d'Orsay, Paris
+    summary: >-
+      Un dimanche après-midi dans un bal populaire de Montmartre, peint en 1876. La lumière filtrée
+      par les arbres tombe en taches claires sur les danseurs.
+    year: 1876
+    image: "File:Renoir, Pierre-Auguste - Dance at Le Moulin de la Galette, 1876.jpg"
+
+  - id: dejeuner-canotiers
+    type: work
+    name: Le Déjeuner des canotiers
+    wikidataId: Q1167907
+    relations:
+      createdBy: renoir
+      belongsTo: impressionnisme
+    collection: Phillips Collection, Washington
+    summary: >-
+      Des amis de Renoir déjeunent sur la terrasse d'un restaurant des bords de Seine, à Chatou.
+      Peint en 1880-1881, c'est l'une de ses scènes de loisir les plus célèbres.
+    year: 1880
+    image: "File:Pierre-Auguste Renoir - Luncheon of the Boating Party - Google Art Project.jpg"
+
+  - id: deux-soeurs
+    type: work
+    name: Les Deux Sœurs (Sur la terrasse)
+    wikidataId: Q630121
+    relations:
+      createdBy: renoir
+      belongsTo: impressionnisme
+    collection: Art Institute of Chicago
+    museumImage: aic:14655
+    summary: >-
+      Une jeune femme et une fillette sur une terrasse au bord de la Seine, à Chatou, peintes en
+      1881. Les couleurs vives du premier plan contrastent avec le paysage à peine esquissé du fond.
+    year: 1881
+
+  # — Vincent van Gogh —
+  - id: terrasse-cafe
+    type: work
+    name: Terrasse du café le soir
+    wikidataId: Q1025704
+    relations:
+      createdBy: van-gogh
+      belongsTo: postimpressionnisme
+    collection: Musée Kröller-Müller, Otterlo
+    summary: >-
+      Une terrasse de café d'Arles, place du Forum, peinte sur le motif un soir de septembre 1888.
+      Le jaune de l'éclairage s'oppose au bleu profond du ciel étoilé.
+    year: 1888
+    image: "File:Van Gogh - Terrace of a Café at Night (Place du Forum) 1888.jpg"
+
+  - id: nuit-etoilee
+    type: work
+    name: La Nuit étoilée
+    wikidataId: Q45585
+    relations:
+      createdBy: van-gogh
+      belongsTo: postimpressionnisme
+    collection: Museum of Modern Art, New York
+    summary: >-
+      Peinte en juin 1889 à l'asile de Saint-Rémy-de-Provence, où Van Gogh se faisait soigner. Un
+      ciel tourbillonnant domine le village, derrière un cyprès en forme de flamme.
+    year: 1889
+    image: File:Van Gogh - Starry Night - Google Art Project.jpg
+
+  - id: chambre
+    type: work
+    name: La Chambre
+    wikidataId: Q18713076
+    relations:
+      createdBy: van-gogh
+      belongsTo: postimpressionnisme
+    collection: Art Institute of Chicago
+    museumImage: aic:28560
+    summary: >-
+      La chambre de Van Gogh dans la « maison jaune » d'Arles. Il en a peint trois versions ;
+      celle-ci, de 1889, reprend la première, abîmée par une inondation.
+    year: 1889
+
+  # — Paul Cézanne —
+  - id: sainte-victoire
+    type: work
+    name: La Montagne Sainte-Victoire au grand pin
+    wikidataId: Q6903108
+    relations:
+      createdBy: cezanne
+      belongsTo: postimpressionnisme
+    collection: Courtauld Gallery, Londres
+    summary: >-
+      Cézanne a peint à de nombreuses reprises cette montagne qui domine la campagne
+      d'Aix-en-Provence. Dans cette version de 1887, un grand pin encadre la vallée et la montagne.
+    year: 1887
+    image: "File:Mont Sainte-Victoire with Large Pine, by Paul Cézanne.jpg"
+
+  - id: joueurs-cartes
+    type: work
+    name: Les Joueurs de cartes
+    wikidataId: Q19911459
+    relations:
+      createdBy: cezanne
+      belongsTo: postimpressionnisme
+    collection: Metropolitan Museum of Art, New York
+    museumImage: met:435868
+    summary: >-
+      L'une des cinq toiles de Cézanne sur ce thème, peintes au début des années 1890. Des paysans
+      des environs d'Aix y jouent aux cartes, absorbés et immobiles.
+    # Le Met date le tableau de 1890-1892 (Wikidata : 1891).
+    year: 1890
+
+  - id: corbeille-pommes
+    type: work
+    name: La Corbeille de pommes
+    wikidataId: Q3956440
+    relations:
+      createdBy: cezanne
+      belongsTo: postimpressionnisme
+    collection: Art Institute of Chicago
+    summary: >-
+      Nature morte peinte vers 1893. La table penche, la bouteille s'incline : Cézanne assemble
+      plusieurs points de vue, une liberté que reprendront les cubistes.
+    year: 1893
+    image: "File:Paul Cézanne - The Basket of Apples - 1926.252 - Art Institute of Chicago.jpg"
+
+  # — Juan Gris —
+  - id: portrait-picasso
+    type: work
+    name: Portrait de Pablo Picasso
+    wikidataId: Q3399451
+    relations:
+      createdBy: juan-gris
+      belongsTo: cubisme
+    collection: Art Institute of Chicago
+    summary: >-
+      Hommage de Juan Gris à Picasso, peint en 1912 et exposé la même année à Paris. Le visage et le
+      buste sont découpés en facettes, dans une gamme de bleus et de gris.
+    year: 1912
+    image: "File:Juan Gris - Portrait of Pablo Picasso - Google Art Project.jpg"
+
+  - id: bouteille-anis
+    type: work
+    name: La Bouteille d'anis
+    wikidataId: Q6461080
+    relations:
+      createdBy: juan-gris
+      belongsTo: cubisme
+    collection: Musée Reina Sofía, Madrid
+    summary: >-
+      Nature morte peinte en 1914 autour d'une bouteille d'anis espagnol, dont l'étiquette est
+      reproduite. Les objets et la table sont découpés en plans qui s'imbriquent.
+    year: 1914
+    image: "File:Juan Gris - La bouteille d'anis - Google Art Project.jpg"
+
+  - id: petit-dejeuner
+    type: work
+    name: Le Petit Déjeuner
+    wikidataId: Q60329141
+    relations:
+      createdBy: juan-gris
+      belongsTo: cubisme
+    collection: Centre Pompidou, Paris
+    summary: >-
+      Nature morte de 1915 où l'on reconnaît un journal posé sur une table. Les objets, vus sous
+      plusieurs angles à la fois, se découpent en plans de couleur.
+    year: 1915
+    image: "File:Juan Gris - The Breakfast (Le Petit Déjeuner) (1915).jpg"

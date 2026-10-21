@@ -10,6 +10,16 @@
       "lessonCount": 8,
       "entityCount": 36,
       "mediaBytes": 11231910
+    },
+    {
+      "id": "art",
+      "title": "Peinture occidentale",
+      "version": "db1ad945f730",
+      "file": "art.json",
+      "unitCount": 1,
+      "lessonCount": 9,
+      "entityCount": 41,
+      "mediaBytes": 22393020
     }
   ]
 }

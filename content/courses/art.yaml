@@ -1,0 +1,45 @@
+# Parcours « Peinture occidentale » : unités et leçons, dans l'ordre de progression.
+# Chaque leçon introduit au moins 3 entités (identifiants de content/entities/).
+id: art
+title: Peinture occidentale
+units:
+  - id: art-1
+    title: Grands mouvements de la peinture
+    description: Neuf peintres et cinq mouvements, de la Renaissance au cubisme.
+    lessons:
+      - id: art-1-1
+        title: Léonard de Vinci et la Renaissance
+        introduces: [renaissance, leonard-de-vinci, joconde, dame-hermine, cene]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-1-2
+        title: Raphaël
+        introduces: [raphael, vierge-chardonneret, ecole-athenes, madone-sixtine]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-1-3
+        title: Le Caravage et le baroque
+        introduces: [baroque, caravage, musiciens, judith-holopherne, vocation-saint-matthieu]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-1-4
+        title: Rembrandt
+        introduces: [rembrandt, lecon-anatomie, ronde-de-nuit, aristote-homere]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-1-5
+        title: Monet et l'impressionnisme
+        introduces: [impressionnisme, monet, impression-soleil-levant, femme-ombrelle, nympheas]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-1-6
+        title: Renoir
+        introduces: [renoir, bal-moulin-galette, dejeuner-canotiers, deux-soeurs]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-1-7
+        title: Van Gogh et le postimpressionnisme
+        introduces: [postimpressionnisme, van-gogh, terrasse-cafe, nuit-etoilee, chambre]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-1-8
+        title: Cézanne
+        introduces: [cezanne, sainte-victoire, joueurs-cartes, corbeille-pommes]
+        skills: [image-to-artist, image-to-movement, work-to-date]
+      - id: art-1-9
+        title: Juan Gris et le cubisme
+        introduces: [cubisme, juan-gris, portrait-picasso, bouteille-anis, petit-dejeuner]
+        skills: [image-to-artist, image-to-movement, work-to-date]

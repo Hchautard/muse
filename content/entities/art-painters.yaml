@@ -1,0 +1,129 @@
+# Peintres de l'unité 1. Dates et portraits complétés par `npm run content:ingest`.
+# Picasso et Braque ne sont pas dans le domaine public : Juan Gris représente le cubisme.
+course: art
+entities:
+  - id: leonard-de-vinci
+    type: person
+    name: Léonard de Vinci
+    wikidataId: Q762
+    relations:
+      belongsTo: renaissance
+    summary: >-
+      Peintre, ingénieur et savant italien, figure emblématique de la Renaissance. Il a laissé peu
+      de tableaux, mais ils ont marqué l'histoire de la peinture, notamment par le sfumato, un
+      modelé tout en douceur.
+    yearStart: 1452
+    yearEnd: 1519
+    image: File:Francesco Melzi - Portrait of Leonardo.png
+    imageCredit: Attribué à Francesco Melzi
+
+  - id: raphael
+    type: person
+    name: Raphaël
+    wikidataId: Q5597
+    relations:
+      belongsTo: renaissance
+    summary: >-
+      Peintre et architecte italien de la Renaissance, mort à 37 ans. Ses madones et ses grandes
+      fresques du Vatican sont célèbres pour leur harmonie et leur clarté.
+    yearStart: 1483
+    yearEnd: 1520
+    image: File:Raffaello Sanzio.jpg
+    imageCredit: Raphaël
+
+  - id: caravage
+    type: person
+    name: Le Caravage
+    wikidataId: Q42207
+    relations:
+      belongsTo: baroque
+    summary: >-
+      Peintre italien, actif surtout à Rome. Ses tableaux au réalisme saisissant opposent des
+      figures vivement éclairées à des fonds très sombres : ce clair-obscur a influencé toute la
+      peinture baroque.
+    yearStart: 1571
+    yearEnd: 1610
+    image: File:Bild-Ottavio Leoni, Caravaggio.jpg
+
+  - id: rembrandt
+    type: person
+    name: Rembrandt
+    wikidataId: Q5598
+    relations:
+      belongsTo: baroque
+    summary: >-
+      Peintre et graveur néerlandais du Siècle d'or, installé à Amsterdam. Maître de la lumière et
+      du portrait, il a peint de nombreux autoportraits.
+    yearStart: 1606
+    yearEnd: 1669
+    image: "File:Rembrandt van Rijn - Self-Portrait - Google Art Project.jpg"
+
+  - id: monet
+    type: person
+    name: Claude Monet
+    wikidataId: Q296
+    relations:
+      belongsTo: impressionnisme
+    summary: >-
+      Peintre français, figure centrale de l'impressionnisme. Il a souvent peint un même motif à
+      différentes heures et saisons, et consacré ses dernières années aux nymphéas de son jardin de
+      Giverny.
+    yearStart: 1840
+    yearEnd: 1926
+    image: File:Claude Monet 1899 Nadar crop.jpg
+
+  - id: renoir
+    type: person
+    name: Pierre-Auguste Renoir
+    wikidataId: Q39931
+    relations:
+      belongsTo: impressionnisme
+    summary: >-
+      Peintre français de l'impressionnisme. Il aime peindre les visages, les loisirs et les scènes
+      de la vie parisienne, dans une lumière chaude et vibrante.
+    yearStart: 1841
+    yearEnd: 1919
+    image: File:Pierre Auguste Renoir, uncropped image.jpg
+    imageCredit: Photographie anonyme, musée d'Orsay
+
+  - id: van-gogh
+    type: person
+    name: Vincent van Gogh
+    wikidataId: Q5582
+    relations:
+      belongsTo: postimpressionnisme
+    summary: >-
+      Peintre néerlandais, actif surtout en France à la fin de sa vie. Ses couleurs intenses et sa
+      touche épaisse et tourbillonnante ont fait de lui l'une des grandes figures du
+      postimpressionnisme.
+    yearStart: 1853
+    yearEnd: 1890
+    # Autoportrait de 1887 (la photo Commons de Wikidata est sous CC BY-SA, sans crédit utilisable).
+    museumImage: aic:80607
+
+  - id: cezanne
+    type: person
+    name: Paul Cézanne
+    wikidataId: Q35548
+    relations:
+      belongsTo: postimpressionnisme
+    summary: >-
+      Peintre français, longtemps installé à Aix-en-Provence. En construisant ses tableaux par plans
+      et par touches de couleur, il a ouvert la voie au cubisme.
+    yearStart: 1839
+    yearEnd: 1906
+    # Autoportrait dessiné vers 1880 (la photo de Wikidata est minuscule et de source douteuse).
+    museumImage: met:334305
+
+  - id: juan-gris
+    type: person
+    name: Juan Gris
+    wikidataId: Q151152
+    relations:
+      belongsTo: cubisme
+    summary: >-
+      Peintre espagnol installé à Paris, proche de Picasso. Il est l'un des principaux représentants
+      du cubisme, aux compositions claires et construites.
+    yearStart: 1887
+    yearEnd: 1927
+    image: File:Juan Gris (1887–1927) MET DT2533.jpg

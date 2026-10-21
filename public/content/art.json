@@ -1,0 +1,1945 @@
+{
+  "id": "art",
+  "title": "Peinture occidentale",
+  "units": [
+    {
+      "id": "art-1",
+      "title": "Grands mouvements de la peinture",
+      "description": "Neuf peintres et cinq mouvements, de la Renaissance au cubisme.",
+      "lessons": [
+        {
+          "id": "art-1-1",
+          "title": "Léonard de Vinci et la Renaissance",
+          "introduces": [
+            "renaissance",
+            "leonard-de-vinci",
+            "joconde",
+            "dame-hermine",
+            "cene"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-1-2",
+          "title": "Raphaël",
+          "introduces": [
+            "raphael",
+            "vierge-chardonneret",
+            "ecole-athenes",
+            "madone-sixtine"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-1-3",
+          "title": "Le Caravage et le baroque",
+          "introduces": [
+            "baroque",
+            "caravage",
+            "musiciens",
+            "judith-holopherne",
+            "vocation-saint-matthieu"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-1-4",
+          "title": "Rembrandt",
+          "introduces": [
+            "rembrandt",
+            "lecon-anatomie",
+            "ronde-de-nuit",
+            "aristote-homere"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-1-5",
+          "title": "Monet et l'impressionnisme",
+          "introduces": [
+            "impressionnisme",
+            "monet",
+            "impression-soleil-levant",
+            "femme-ombrelle",
+            "nympheas"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-1-6",
+          "title": "Renoir",
+          "introduces": [
+            "renoir",
+            "bal-moulin-galette",
+            "dejeuner-canotiers",
+            "deux-soeurs"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-1-7",
+          "title": "Van Gogh et le postimpressionnisme",
+          "introduces": [
+            "postimpressionnisme",
+            "van-gogh",
+            "terrasse-cafe",
+            "nuit-etoilee",
+            "chambre"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-1-8",
+          "title": "Cézanne",
+          "introduces": [
+            "cezanne",
+            "sainte-victoire",
+            "joueurs-cartes",
+            "corbeille-pommes"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        },
+        {
+          "id": "art-1-9",
+          "title": "Juan Gris et le cubisme",
+          "introduces": [
+            "cubisme",
+            "juan-gris",
+            "portrait-picasso",
+            "bouteille-anis",
+            "petit-dejeuner"
+          ],
+          "skills": [
+            "image-to-artist",
+            "image-to-movement",
+            "work-to-date"
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "db1ad945f730",
+  "entities": [
+    {
+      "id": "renaissance",
+      "type": "movement",
+      "name": "Renaissance",
+      "wikidataId": "Q4692",
+      "yearStart": 1400,
+      "yearEnd": 1600,
+      "summary": "Mouvement né en Italie au XVe siècle, qui renoue avec l'Antiquité. Les peintres maîtrisent la perspective, étudient l'anatomie et recherchent l'harmonie des proportions.",
+      "mediaIds": []
+    },
+    {
+      "id": "baroque",
+      "type": "movement",
+      "name": "Baroque",
+      "wikidataId": "Q37853",
+      "yearStart": 1600,
+      "yearEnd": 1750,
+      "summary": "Style qui domine l'Europe au XVIIe siècle. La peinture baroque cherche l'émotion et le mouvement, avec de forts contrastes d'ombre et de lumière.",
+      "mediaIds": []
+    },
+    {
+      "id": "impressionnisme",
+      "type": "movement",
+      "name": "Impressionnisme",
+      "wikidataId": "Q40415",
+      "yearStart": 1860,
+      "yearEnd": 1890,
+      "summary": "Mouvement né en France dans les années 1860. Les impressionnistes peignent souvent en plein air, par touches de couleur visibles, pour saisir la lumière et l'instant ; leur nom vient d'un tableau de Monet exposé en 1874.",
+      "mediaIds": []
+    },
+    {
+      "id": "postimpressionnisme",
+      "type": "movement",
+      "name": "Postimpressionnisme",
+      "wikidataId": "Q166713",
+      "yearStart": 1886,
+      "yearEnd": 1905,
+      "summary": "Terme qui regroupe des peintres venus après l'impressionnisme, à partir des années 1880. Chacun à sa façon, ils dépassent la seule impression visuelle : couleur expressive chez Van Gogh, construction des formes chez Cézanne.",
+      "mediaIds": []
+    },
+    {
+      "id": "cubisme",
+      "type": "movement",
+      "name": "Cubisme",
+      "wikidataId": "Q42934",
+      "yearStart": 1907,
+      "yearEnd": 1920,
+      "summary": "Mouvement lancé à Paris vers 1907 par Picasso et Braque. Les cubistes décomposent les objets en facettes géométriques et les montrent sous plusieurs angles à la fois.",
+      "mediaIds": []
+    },
+    {
+      "id": "leonard-de-vinci",
+      "type": "person",
+      "name": "Léonard de Vinci",
+      "wikidataId": "Q762",
+      "yearStart": 1452,
+      "yearEnd": 1519,
+      "summary": "Peintre, ingénieur et savant italien, figure emblématique de la Renaissance. Il a laissé peu de tableaux, mais ils ont marqué l'histoire de la peinture, notamment par le sfumato, un modelé tout en douceur.",
+      "mediaIds": [
+        "leonard-de-vinci-image"
+      ]
+    },
+    {
+      "id": "raphael",
+      "type": "person",
+      "name": "Raphaël",
+      "wikidataId": "Q5597",
+      "yearStart": 1483,
+      "yearEnd": 1520,
+      "summary": "Peintre et architecte italien de la Renaissance, mort à 37 ans. Ses madones et ses grandes fresques du Vatican sont célèbres pour leur harmonie et leur clarté.",
+      "mediaIds": [
+        "raphael-image"
+      ]
+    },
+    {
+      "id": "caravage",
+      "type": "person",
+      "name": "Le Caravage",
+      "wikidataId": "Q42207",
+      "yearStart": 1571,
+      "yearEnd": 1610,
+      "summary": "Peintre italien, actif surtout à Rome. Ses tableaux au réalisme saisissant opposent des figures vivement éclairées à des fonds très sombres : ce clair-obscur a influencé toute la peinture baroque.",
+      "mediaIds": [
+        "caravage-image"
+      ]
+    },
+    {
+      "id": "rembrandt",
+      "type": "person",
+      "name": "Rembrandt",
+      "wikidataId": "Q5598",
+      "yearStart": 1606,
+      "yearEnd": 1669,
+      "summary": "Peintre et graveur néerlandais du Siècle d'or, installé à Amsterdam. Maître de la lumière et du portrait, il a peint de nombreux autoportraits.",
+      "mediaIds": [
+        "rembrandt-image"
+      ]
+    },
+    {
+      "id": "monet",
+      "type": "person",
+      "name": "Claude Monet",
+      "wikidataId": "Q296",
+      "yearStart": 1840,
+      "yearEnd": 1926,
+      "summary": "Peintre français, figure centrale de l'impressionnisme. Il a souvent peint un même motif à différentes heures et saisons, et consacré ses dernières années aux nymphéas de son jardin de Giverny.",
+      "mediaIds": [
+        "monet-image"
+      ]
+    },
+    {
+      "id": "renoir",
+      "type": "person",
+      "name": "Pierre-Auguste Renoir",
+      "wikidataId": "Q39931",
+      "yearStart": 1841,
+      "yearEnd": 1919,
+      "summary": "Peintre français de l'impressionnisme. Il aime peindre les visages, les loisirs et les scènes de la vie parisienne, dans une lumière chaude et vibrante.",
+      "mediaIds": [
+        "renoir-image"
+      ]
+    },
+    {
+      "id": "van-gogh",
+      "type": "person",
+      "name": "Vincent van Gogh",
+      "wikidataId": "Q5582",
+      "yearStart": 1853,
+      "yearEnd": 1890,
+      "summary": "Peintre néerlandais, actif surtout en France à la fin de sa vie. Ses couleurs intenses et sa touche épaisse et tourbillonnante ont fait de lui l'une des grandes figures du postimpressionnisme.",
+      "mediaIds": [
+        "van-gogh-image"
+      ]
+    },
+    {
+      "id": "cezanne",
+      "type": "person",
+      "name": "Paul Cézanne",
+      "wikidataId": "Q35548",
+      "yearStart": 1839,
+      "yearEnd": 1906,
+      "summary": "Peintre français, longtemps installé à Aix-en-Provence. En construisant ses tableaux par plans et par touches de couleur, il a ouvert la voie au cubisme.",
+      "mediaIds": [
+        "cezanne-image"
+      ]
+    },
+    {
+      "id": "juan-gris",
+      "type": "person",
+      "name": "Juan Gris",
+      "wikidataId": "Q151152",
+      "yearStart": 1887,
+      "yearEnd": 1927,
+      "summary": "Peintre espagnol installé à Paris, proche de Picasso. Il est l'un des principaux représentants du cubisme, aux compositions claires et construites.",
+      "mediaIds": [
+        "juan-gris-image"
+      ]
+    },
+    {
+      "id": "joconde",
+      "type": "work",
+      "name": "La Joconde",
+      "wikidataId": "Q12418",
+      "year": 1503,
+      "summary": "Portrait de Lisa Gherardini, épouse d'un marchand florentin, commencé vers 1503. Son sourire, son paysage lointain et son modelé tout en nuances en ont fait l'un des tableaux les plus célèbres au monde.",
+      "mediaIds": [
+        "joconde-image"
+      ],
+      "collection": "Musée du Louvre, Paris"
+    },
+    {
+      "id": "dame-hermine",
+      "type": "work",
+      "name": "La Dame à l'hermine",
+      "wikidataId": "Q474338",
+      "year": 1490,
+      "summary": "Portrait de Cecilia Gallerani, une jeune femme de la cour de Milan, qui tient une hermine dans ses bras. Peint vers 1489-1490, c'est l'un des rares portraits de femme de Léonard.",
+      "mediaIds": [
+        "dame-hermine-image"
+      ],
+      "collection": "Musée Czartoryski, Cracovie"
+    },
+    {
+      "id": "cene",
+      "type": "work",
+      "name": "La Cène",
+      "wikidataId": "Q128910",
+      "year": 1495,
+      "summary": "Peinture murale du réfectoire d'un couvent de Milan, réalisée vers 1495-1498. Elle saisit l'instant où le Christ annonce que l'un des apôtres va le trahir. Peinte avec une technique expérimentale, elle s'est dégradée très tôt.",
+      "mediaIds": [
+        "cene-image"
+      ],
+      "collection": "Couvent de Santa Maria delle Grazie, Milan"
+    },
+    {
+      "id": "vierge-chardonneret",
+      "type": "work",
+      "name": "La Vierge au chardonneret",
+      "wikidataId": "Q2344505",
+      "year": 1505,
+      "summary": "Peinte vers 1505-1506 à Florence, elle montre la Vierge avec l'Enfant Jésus et le petit saint Jean-Baptiste, qui lui tend un chardonneret, oiseau symbole de la Passion.",
+      "mediaIds": [
+        "vierge-chardonneret-image"
+      ],
+      "collection": "Galerie des Offices, Florence"
+    },
+    {
+      "id": "ecole-athenes",
+      "type": "work",
+      "name": "L'École d'Athènes",
+      "wikidataId": "Q186953",
+      "year": 1509,
+      "summary": "Fresque d'une salle du palais du Vatican, peinte entre 1509 et 1511. Elle réunit les grands philosophes de l'Antiquité autour de Platon et d'Aristote, dans une architecture en perspective.",
+      "mediaIds": [
+        "ecole-athenes-image"
+      ],
+      "collection": "Palais du Vatican, Rome"
+    },
+    {
+      "id": "madone-sixtine",
+      "type": "work",
+      "name": "La Madone Sixtine",
+      "wikidataId": "Q328079",
+      "year": 1512,
+      "summary": "Tableau d'autel peint vers 1512 pour l'église San Sisto de Plaisance. La Vierge et l'Enfant y apparaissent entre deux rideaux ; les deux petits anges accoudés au bas de la toile sont devenus célèbres à eux seuls.",
+      "mediaIds": [
+        "madone-sixtine-image"
+      ],
+      "collection": "Gemäldegalerie Alte Meister, Dresde"
+    },
+    {
+      "id": "musiciens",
+      "type": "work",
+      "name": "Les Musiciens",
+      "wikidataId": "Q655705",
+      "year": 1597,
+      "summary": "Peint vers 1597 pour le cardinal Del Monte, son protecteur à Rome. Quatre jeunes gens costumés se préparent à jouer ; l'un d'eux serait un autoportrait du peintre.",
+      "mediaIds": [
+        "musiciens-image"
+      ],
+      "collection": "Metropolitan Museum of Art, New York"
+    },
+    {
+      "id": "judith-holopherne",
+      "type": "work",
+      "name": "Judith décapitant Holopherne",
+      "wikidataId": "Q2470123",
+      "year": 1598,
+      "summary": "Scène biblique où l'héroïne Judith tue le général Holopherne pour sauver son peuple. Peinte vers 1598-1599, elle frappe par sa violence et par le contraste entre la lumière et l'ombre.",
+      "mediaIds": [
+        "judith-holopherne-image"
+      ],
+      "collection": "Galerie nationale d'art ancien, Rome"
+    },
+    {
+      "id": "vocation-saint-matthieu",
+      "type": "work",
+      "name": "La Vocation de saint Matthieu",
+      "wikidataId": "Q969377",
+      "year": 1600,
+      "summary": "Peinte en 1599-1600 pour l'église Saint-Louis-des-Français de Rome. Un rayon de lumière accompagne le geste du Christ qui désigne Matthieu, collecteur d'impôts attablé avec ses compagnons.",
+      "mediaIds": [
+        "vocation-saint-matthieu-image"
+      ],
+      "collection": "Église Saint-Louis-des-Français, Rome"
+    },
+    {
+      "id": "lecon-anatomie",
+      "type": "work",
+      "name": "La Leçon d'anatomie du docteur Tulp",
+      "wikidataId": "Q661378",
+      "year": 1632,
+      "summary": "Portrait de groupe peint en 1632 pour la guilde des chirurgiens d'Amsterdam : le docteur Tulp y dissèque un bras devant d'autres chirurgiens. Ce tableau a fait la réputation de Rembrandt à Amsterdam.",
+      "mediaIds": [
+        "lecon-anatomie-image"
+      ],
+      "collection": "Mauritshuis, La Haye"
+    },
+    {
+      "id": "ronde-de-nuit",
+      "type": "work",
+      "name": "La Ronde de nuit",
+      "wikidataId": "Q219831",
+      "year": 1642,
+      "summary": "Portrait d'une compagnie de la milice d'Amsterdam, achevé en 1642, dont Rembrandt fait une scène pleine de mouvement. Son titre vient d'un vernis assombri qui faisait croire à une scène de nuit.",
+      "mediaIds": [
+        "ronde-de-nuit-image"
+      ],
+      "collection": "Rijksmuseum, Amsterdam"
+    },
+    {
+      "id": "aristote-homere",
+      "type": "work",
+      "name": "Aristote contemplant le buste d'Homère",
+      "wikidataId": "Q2404992",
+      "year": 1653,
+      "summary": "Peint en 1653 pour un collectionneur de Messine, en Sicile. Le philosophe Aristote, vêtu richement, pose la main sur un buste du poète Homère.",
+      "mediaIds": [
+        "aristote-homere-image"
+      ],
+      "collection": "Metropolitan Museum of Art, New York"
+    },
+    {
+      "id": "impression-soleil-levant",
+      "type": "work",
+      "name": "Impression, soleil levant",
+      "wikidataId": "Q328523",
+      "year": 1872,
+      "summary": "Vue du port du Havre dans la brume du matin, peinte en 1872. Exposé en 1874, le tableau a inspiré à un critique le nom, d'abord moqueur, d'« impressionnistes ».",
+      "mediaIds": [
+        "impression-soleil-levant-image"
+      ],
+      "collection": "Musée Marmottan Monet, Paris"
+    },
+    {
+      "id": "femme-ombrelle",
+      "type": "work",
+      "name": "La Femme à l'ombrelle",
+      "wikidataId": "Q2395218",
+      "year": 1875,
+      "summary": "Camille, l'épouse de Monet, et leur fils Jean, saisis en 1875 sur une colline, à contre-jour. Le vent et la lumière semblent emporter les touches de couleur.",
+      "mediaIds": [
+        "femme-ombrelle-image"
+      ],
+      "collection": "National Gallery of Art, Washington"
+    },
+    {
+      "id": "nympheas",
+      "type": "work",
+      "name": "Nymphéas",
+      "wikidataId": "Q20267671",
+      "year": 1906,
+      "summary": "L'une des quelque 250 toiles que Monet a consacrées au bassin de son jardin de Giverny. Le ciel n'y apparaît plus que dans les reflets de l'eau.",
+      "mediaIds": [
+        "nympheas-image"
+      ],
+      "collection": "Art Institute of Chicago"
+    },
+    {
+      "id": "bal-moulin-galette",
+      "type": "work",
+      "name": "Bal du moulin de la Galette",
+      "wikidataId": "Q683274",
+      "year": 1876,
+      "summary": "Un dimanche après-midi dans un bal populaire de Montmartre, peint en 1876. La lumière filtrée par les arbres tombe en taches claires sur les danseurs.",
+      "mediaIds": [
+        "bal-moulin-galette-image"
+      ],
+      "collection": "Musée d'Orsay, Paris"
+    },
+    {
+      "id": "dejeuner-canotiers",
+      "type": "work",
+      "name": "Le Déjeuner des canotiers",
+      "wikidataId": "Q1167907",
+      "year": 1880,
+      "summary": "Des amis de Renoir déjeunent sur la terrasse d'un restaurant des bords de Seine, à Chatou. Peint en 1880-1881, c'est l'une de ses scènes de loisir les plus célèbres.",
+      "mediaIds": [
+        "dejeuner-canotiers-image"
+      ],
+      "collection": "Phillips Collection, Washington"
+    },
+    {
+      "id": "deux-soeurs",
+      "type": "work",
+      "name": "Les Deux Sœurs (Sur la terrasse)",
+      "wikidataId": "Q630121",
+      "year": 1881,
+      "summary": "Une jeune femme et une fillette sur une terrasse au bord de la Seine, à Chatou, peintes en 1881. Les couleurs vives du premier plan contrastent avec le paysage à peine esquissé du fond.",
+      "mediaIds": [
+        "deux-soeurs-image"
+      ],
+      "collection": "Art Institute of Chicago"
+    },
+    {
+      "id": "terrasse-cafe",
+      "type": "work",
+      "name": "Terrasse du café le soir",
+      "wikidataId": "Q1025704",
+      "year": 1888,
+      "summary": "Une terrasse de café d'Arles, place du Forum, peinte sur le motif un soir de septembre 1888. Le jaune de l'éclairage s'oppose au bleu profond du ciel étoilé.",
+      "mediaIds": [
+        "terrasse-cafe-image"
+      ],
+      "collection": "Musée Kröller-Müller, Otterlo"
+    },
+    {
+      "id": "nuit-etoilee",
+      "type": "work",
+      "name": "La Nuit étoilée",
+      "wikidataId": "Q45585",
+      "year": 1889,
+      "summary": "Peinte en juin 1889 à l'asile de Saint-Rémy-de-Provence, où Van Gogh se faisait soigner. Un ciel tourbillonnant domine le village, derrière un cyprès en forme de flamme.",
+      "mediaIds": [
+        "nuit-etoilee-image"
+      ],
+      "collection": "Museum of Modern Art, New York"
+    },
+    {
+      "id": "chambre",
+      "type": "work",
+      "name": "La Chambre",
+      "wikidataId": "Q18713076",
+      "year": 1889,
+      "summary": "La chambre de Van Gogh dans la « maison jaune » d'Arles. Il en a peint trois versions ; celle-ci, de 1889, reprend la première, abîmée par une inondation.",
+      "mediaIds": [
+        "chambre-image"
+      ],
+      "collection": "Art Institute of Chicago"
+    },
+    {
+      "id": "sainte-victoire",
+      "type": "work",
+      "name": "La Montagne Sainte-Victoire au grand pin",
+      "wikidataId": "Q6903108",
+      "year": 1887,
+      "summary": "Cézanne a peint à de nombreuses reprises cette montagne qui domine la campagne d'Aix-en-Provence. Dans cette version de 1887, un grand pin encadre la vallée et la montagne.",
+      "mediaIds": [
+        "sainte-victoire-image"
+      ],
+      "collection": "Courtauld Gallery, Londres"
+    },
+    {
+      "id": "joueurs-cartes",
+      "type": "work",
+      "name": "Les Joueurs de cartes",
+      "wikidataId": "Q19911459",
+      "year": 1890,
+      "summary": "L'une des cinq toiles de Cézanne sur ce thème, peintes au début des années 1890. Des paysans des environs d'Aix y jouent aux cartes, absorbés et immobiles.",
+      "mediaIds": [
+        "joueurs-cartes-image"
+      ],
+      "collection": "Metropolitan Museum of Art, New York"
+    },
+    {
+      "id": "corbeille-pommes",
+      "type": "work",
+      "name": "La Corbeille de pommes",
+      "wikidataId": "Q3956440",
+      "year": 1893,
+      "summary": "Nature morte peinte vers 1893. La table penche, la bouteille s'incline : Cézanne assemble plusieurs points de vue, une liberté que reprendront les cubistes.",
+      "mediaIds": [
+        "corbeille-pommes-image"
+      ],
+      "collection": "Art Institute of Chicago"
+    },
+    {
+      "id": "portrait-picasso",
+      "type": "work",
+      "name": "Portrait de Pablo Picasso",
+      "wikidataId": "Q3399451",
+      "year": 1912,
+      "summary": "Hommage de Juan Gris à Picasso, peint en 1912 et exposé la même année à Paris. Le visage et le buste sont découpés en facettes, dans une gamme de bleus et de gris.",
+      "mediaIds": [
+        "portrait-picasso-image"
+      ],
+      "collection": "Art Institute of Chicago"
+    },
+    {
+      "id": "bouteille-anis",
+      "type": "work",
+      "name": "La Bouteille d'anis",
+      "wikidataId": "Q6461080",
+      "year": 1914,
+      "summary": "Nature morte peinte en 1914 autour d'une bouteille d'anis espagnol, dont l'étiquette est reproduite. Les objets et la table sont découpés en plans qui s'imbriquent.",
+      "mediaIds": [
+        "bouteille-anis-image"
+      ],
+      "collection": "Musée Reina Sofía, Madrid"
+    },
+    {
+      "id": "petit-dejeuner",
+      "type": "work",
+      "name": "Le Petit Déjeuner",
+      "wikidataId": "Q60329141",
+      "year": 1915,
+      "summary": "Nature morte de 1915 où l'on reconnaît un journal posé sur une table. Les objets, vus sous plusieurs angles à la fois, se découpent en plans de couleur.",
+      "mediaIds": [
+        "petit-dejeuner-image"
+      ],
+      "collection": "Centre Pompidou, Paris"
+    }
+  ],
+  "relations": [
+    {
+      "from": "leonard-de-vinci",
+      "type": "belongsTo",
+      "to": "renaissance"
+    },
+    {
+      "from": "raphael",
+      "type": "belongsTo",
+      "to": "renaissance"
+    },
+    {
+      "from": "caravage",
+      "type": "belongsTo",
+      "to": "baroque"
+    },
+    {
+      "from": "rembrandt",
+      "type": "belongsTo",
+      "to": "baroque"
+    },
+    {
+      "from": "monet",
+      "type": "belongsTo",
+      "to": "impressionnisme"
+    },
+    {
+      "from": "renoir",
+      "type": "belongsTo",
+      "to": "impressionnisme"
+    },
+    {
+      "from": "van-gogh",
+      "type": "belongsTo",
+      "to": "postimpressionnisme"
+    },
+    {
+      "from": "cezanne",
+      "type": "belongsTo",
+      "to": "postimpressionnisme"
+    },
+    {
+      "from": "juan-gris",
+      "type": "belongsTo",
+      "to": "cubisme"
+    },
+    {
+      "from": "joconde",
+      "type": "createdBy",
+      "to": "leonard-de-vinci"
+    },
+    {
+      "from": "joconde",
+      "type": "belongsTo",
+      "to": "renaissance"
+    },
+    {
+      "from": "dame-hermine",
+      "type": "createdBy",
+      "to": "leonard-de-vinci"
+    },
+    {
+      "from": "dame-hermine",
+      "type": "belongsTo",
+      "to": "renaissance"
+    },
+    {
+      "from": "cene",
+      "type": "createdBy",
+      "to": "leonard-de-vinci"
+    },
+    {
+      "from": "cene",
+      "type": "belongsTo",
+      "to": "renaissance"
+    },
+    {
+      "from": "vierge-chardonneret",
+      "type": "createdBy",
+      "to": "raphael"
+    },
+    {
+      "from": "vierge-chardonneret",
+      "type": "belongsTo",
+      "to": "renaissance"
+    },
+    {
+      "from": "ecole-athenes",
+      "type": "createdBy",
+      "to": "raphael"
+    },
+    {
+      "from": "ecole-athenes",
+      "type": "belongsTo",
+      "to": "renaissance"
+    },
+    {
+      "from": "madone-sixtine",
+      "type": "createdBy",
+      "to": "raphael"
+    },
+    {
+      "from": "madone-sixtine",
+      "type": "belongsTo",
+      "to": "renaissance"
+    },
+    {
+      "from": "musiciens",
+      "type": "createdBy",
+      "to": "caravage"
+    },
+    {
+      "from": "musiciens",
+      "type": "belongsTo",
+      "to": "baroque"
+    },
+    {
+      "from": "judith-holopherne",
+      "type": "createdBy",
+      "to": "caravage"
+    },
+    {
+      "from": "judith-holopherne",
+      "type": "belongsTo",
+      "to": "baroque"
+    },
+    {
+      "from": "vocation-saint-matthieu",
+      "type": "createdBy",
+      "to": "caravage"
+    },
+    {
+      "from": "vocation-saint-matthieu",
+      "type": "belongsTo",
+      "to": "baroque"
+    },
+    {
+      "from": "lecon-anatomie",
+      "type": "createdBy",
+      "to": "rembrandt"
+    },
+    {
+      "from": "lecon-anatomie",
+      "type": "belongsTo",
+      "to": "baroque"
+    },
+    {
+      "from": "ronde-de-nuit",
+      "type": "createdBy",
+      "to": "rembrandt"
+    },
+    {
+      "from": "ronde-de-nuit",
+      "type": "belongsTo",
+      "to": "baroque"
+    },
+    {
+      "from": "aristote-homere",
+      "type": "createdBy",
+      "to": "rembrandt"
+    },
+    {
+      "from": "aristote-homere",
+      "type": "belongsTo",
+      "to": "baroque"
+    },
+    {
+      "from": "impression-soleil-levant",
+      "type": "createdBy",
+      "to": "monet"
+    },
+    {
+      "from": "impression-soleil-levant",
+      "type": "belongsTo",
+      "to": "impressionnisme"
+    },
+    {
+      "from": "femme-ombrelle",
+      "type": "createdBy",
+      "to": "monet"
+    },
+    {
+      "from": "femme-ombrelle",
+      "type": "belongsTo",
+      "to": "impressionnisme"
+    },
+    {
+      "from": "nympheas",
+      "type": "createdBy",
+      "to": "monet"
+    },
+    {
+      "from": "nympheas",
+      "type": "belongsTo",
+      "to": "impressionnisme"
+    },
+    {
+      "from": "bal-moulin-galette",
+      "type": "createdBy",
+      "to": "renoir"
+    },
+    {
+      "from": "bal-moulin-galette",
+      "type": "belongsTo",
+      "to": "impressionnisme"
+    },
+    {
+      "from": "dejeuner-canotiers",
+      "type": "createdBy",
+      "to": "renoir"
+    },
+    {
+      "from": "dejeuner-canotiers",
+      "type": "belongsTo",
+      "to": "impressionnisme"
+    },
+    {
+      "from": "deux-soeurs",
+      "type": "createdBy",
+      "to": "renoir"
+    },
+    {
+      "from": "deux-soeurs",
+      "type": "belongsTo",
+      "to": "impressionnisme"
+    },
+    {
+      "from": "terrasse-cafe",
+      "type": "createdBy",
+      "to": "van-gogh"
+    },
+    {
+      "from": "terrasse-cafe",
+      "type": "belongsTo",
+      "to": "postimpressionnisme"
+    },
+    {
+      "from": "nuit-etoilee",
+      "type": "createdBy",
+      "to": "van-gogh"
+    },
+    {
+      "from": "nuit-etoilee",
+      "type": "belongsTo",
+      "to": "postimpressionnisme"
+    },
+    {
+      "from": "chambre",
+      "type": "createdBy",
+      "to": "van-gogh"
+    },
+    {
+      "from": "chambre",
+      "type": "belongsTo",
+      "to": "postimpressionnisme"
+    },
+    {
+      "from": "sainte-victoire",
+      "type": "createdBy",
+      "to": "cezanne"
+    },
+    {
+      "from": "sainte-victoire",
+      "type": "belongsTo",
+      "to": "postimpressionnisme"
+    },
+    {
+      "from": "joueurs-cartes",
+      "type": "createdBy",
+      "to": "cezanne"
+    },
+    {
+      "from": "joueurs-cartes",
+      "type": "belongsTo",
+      "to": "postimpressionnisme"
+    },
+    {
+      "from": "corbeille-pommes",
+      "type": "createdBy",
+      "to": "cezanne"
+    },
+    {
+      "from": "corbeille-pommes",
+      "type": "belongsTo",
+      "to": "postimpressionnisme"
+    },
+    {
+      "from": "portrait-picasso",
+      "type": "createdBy",
+      "to": "juan-gris"
+    },
+    {
+      "from": "portrait-picasso",
+      "type": "belongsTo",
+      "to": "cubisme"
+    },
+    {
+      "from": "bouteille-anis",
+      "type": "createdBy",
+      "to": "juan-gris"
+    },
+    {
+      "from": "bouteille-anis",
+      "type": "belongsTo",
+      "to": "cubisme"
+    },
+    {
+      "from": "petit-dejeuner",
+      "type": "createdBy",
+      "to": "juan-gris"
+    },
+    {
+      "from": "petit-dejeuner",
+      "type": "belongsTo",
+      "to": "cubisme"
+    }
+  ],
+  "media": [
+    {
+      "id": "aristote-homere-image",
+      "kind": "image",
+      "src": "art/images/aristote-homere-image-960.webp",
+      "bytes": 29174,
+      "width": 960,
+      "height": 1013,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/aristote-homere-image-480.webp",
+          "bytes": 8482
+        },
+        {
+          "width": 960,
+          "src": "art/images/aristote-homere-image-960.webp",
+          "bytes": 29174
+        },
+        {
+          "width": 1600,
+          "src": "art/images/aristote-homere-image-1600.webp",
+          "bytes": 89542
+        }
+      ],
+      "credit": "The Metropolitan Museum of Art",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437394"
+    },
+    {
+      "id": "bal-moulin-galette-image",
+      "kind": "image",
+      "src": "art/images/bal-moulin-galette-image-960.webp",
+      "bytes": 154650,
+      "width": 960,
+      "height": 714,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/bal-moulin-galette-image-480.webp",
+          "bytes": 44956
+        },
+        {
+          "width": 960,
+          "src": "art/images/bal-moulin-galette-image-960.webp",
+          "bytes": 154650
+        },
+        {
+          "width": 1600,
+          "src": "art/images/bal-moulin-galette-image-1600.webp",
+          "bytes": 417684
+        }
+      ],
+      "credit": "Pierre-Auguste Renoir",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renoir,_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette,_1876.jpg"
+    },
+    {
+      "id": "bouteille-anis-image",
+      "kind": "image",
+      "src": "art/images/bouteille-anis-image-960.webp",
+      "bytes": 456118,
+      "width": 960,
+      "height": 1685,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/bouteille-anis-image-480.webp",
+          "bytes": 97100
+        },
+        {
+          "width": 960,
+          "src": "art/images/bouteille-anis-image-960.webp",
+          "bytes": 456118
+        },
+        {
+          "width": 1600,
+          "src": "art/images/bouteille-anis-image-1600.webp",
+          "bytes": 1360082
+        }
+      ],
+      "credit": "Juan Gris",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Juan_Gris_-_La_bouteille_d%27anis_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "caravage-image",
+      "kind": "image",
+      "src": "art/images/caravage-image-960.webp",
+      "bytes": 403704,
+      "width": 960,
+      "height": 1342,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/caravage-image-480.webp",
+          "bytes": 88624
+        },
+        {
+          "width": 960,
+          "src": "art/images/caravage-image-960.webp",
+          "bytes": 403704
+        }
+      ],
+      "credit": "Ottavio Leoni",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bild-Ottavio_Leoni,_Caravaggio.jpg"
+    },
+    {
+      "id": "cene-image",
+      "kind": "image",
+      "src": "art/images/cene-image-960.webp",
+      "bytes": 105074,
+      "width": 960,
+      "height": 500,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/cene-image-480.webp",
+          "bytes": 21358
+        },
+        {
+          "width": 960,
+          "src": "art/images/cene-image-960.webp",
+          "bytes": 105074
+        },
+        {
+          "width": 1600,
+          "src": "art/images/cene-image-1600.webp",
+          "bytes": 353522
+        }
+      ],
+      "credit": "Léonard de Vinci",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_(1452-1519)_-_The_Last_Supper_(1495-1498).jpg"
+    },
+    {
+      "id": "cezanne-image",
+      "kind": "image",
+      "src": "art/images/cezanne-image-960.webp",
+      "bytes": 52372,
+      "width": 960,
+      "height": 1139,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/cezanne-image-480.webp",
+          "bytes": 13702
+        },
+        {
+          "width": 960,
+          "src": "art/images/cezanne-image-960.webp",
+          "bytes": 52372
+        },
+        {
+          "width": 1600,
+          "src": "art/images/cezanne-image-1600.webp",
+          "bytes": 157638
+        }
+      ],
+      "credit": "The Metropolitan Museum of Art",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334305"
+    },
+    {
+      "id": "chambre-image",
+      "kind": "image",
+      "src": "art/images/chambre-image-960.webp",
+      "bytes": 104802,
+      "width": 960,
+      "height": 752,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/chambre-image-480.webp",
+          "bytes": 29898
+        },
+        {
+          "width": 960,
+          "src": "art/images/chambre-image-960.webp",
+          "bytes": 104802
+        },
+        {
+          "width": 1600,
+          "src": "art/images/chambre-image-1600.webp",
+          "bytes": 262422
+        }
+      ],
+      "credit": "Art Institute of Chicago",
+      "license": "CC0",
+      "sourceUrl": "https://www.artic.edu/artworks/28560"
+    },
+    {
+      "id": "corbeille-pommes-image",
+      "kind": "image",
+      "src": "art/images/corbeille-pommes-image-960.webp",
+      "bytes": 154862,
+      "width": 960,
+      "height": 769,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/corbeille-pommes-image-480.webp",
+          "bytes": 31610
+        },
+        {
+          "width": 960,
+          "src": "art/images/corbeille-pommes-image-960.webp",
+          "bytes": 154862
+        },
+        {
+          "width": 1600,
+          "src": "art/images/corbeille-pommes-image-1600.webp",
+          "bytes": 613878
+        }
+      ],
+      "credit": "Paul Cézanne",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_The_Basket_of_Apples_-_1926.252_-_Art_Institute_of_Chicago.jpg"
+    },
+    {
+      "id": "dame-hermine-image",
+      "kind": "image",
+      "src": "art/images/dame-hermine-image-960.webp",
+      "bytes": 61548,
+      "width": 960,
+      "height": 1291,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/dame-hermine-image-480.webp",
+          "bytes": 14020
+        },
+        {
+          "width": 960,
+          "src": "art/images/dame-hermine-image-960.webp",
+          "bytes": 61548
+        },
+        {
+          "width": 1600,
+          "src": "art/images/dame-hermine-image-1600.webp",
+          "bytes": 214570
+        }
+      ],
+      "credit": "Léonard de Vinci",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "dejeuner-canotiers-image",
+      "kind": "image",
+      "src": "art/images/dejeuner-canotiers-image-960.webp",
+      "bytes": 121784,
+      "width": 960,
+      "height": 711,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/dejeuner-canotiers-image-480.webp",
+          "bytes": 36520
+        },
+        {
+          "width": 960,
+          "src": "art/images/dejeuner-canotiers-image-960.webp",
+          "bytes": 121784
+        },
+        {
+          "width": 1600,
+          "src": "art/images/dejeuner-canotiers-image-1600.webp",
+          "bytes": 345552
+        }
+      ],
+      "credit": "Pierre-Auguste Renoir",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "deux-soeurs-image",
+      "kind": "image",
+      "src": "art/images/deux-soeurs-image-960.webp",
+      "bytes": 180490,
+      "width": 960,
+      "height": 1191,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/deux-soeurs-image-480.webp",
+          "bytes": 52080
+        },
+        {
+          "width": 960,
+          "src": "art/images/deux-soeurs-image-960.webp",
+          "bytes": 180490
+        },
+        {
+          "width": 1600,
+          "src": "art/images/deux-soeurs-image-1600.webp",
+          "bytes": 479850
+        }
+      ],
+      "credit": "Art Institute of Chicago",
+      "license": "CC0",
+      "sourceUrl": "https://www.artic.edu/artworks/14655"
+    },
+    {
+      "id": "ecole-athenes-image",
+      "kind": "image",
+      "src": "art/images/ecole-athenes-image-960.webp",
+      "bytes": 169146,
+      "width": 960,
+      "height": 745,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/ecole-athenes-image-480.webp",
+          "bytes": 42104
+        },
+        {
+          "width": 960,
+          "src": "art/images/ecole-athenes-image-960.webp",
+          "bytes": 169146
+        },
+        {
+          "width": 1600,
+          "src": "art/images/ecole-athenes-image-1600.webp",
+          "bytes": 523722
+        }
+      ],
+      "credit": "Raphaël",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
+    },
+    {
+      "id": "femme-ombrelle-image",
+      "kind": "image",
+      "src": "art/images/femme-ombrelle-image-960.webp",
+      "bytes": 242136,
+      "width": 960,
+      "height": 1193,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/femme-ombrelle-image-480.webp",
+          "bytes": 52736
+        },
+        {
+          "width": 960,
+          "src": "art/images/femme-ombrelle-image-960.webp",
+          "bytes": 242136
+        },
+        {
+          "width": 1600,
+          "src": "art/images/femme-ombrelle-image-1600.webp",
+          "bytes": 826172
+        }
+      ],
+      "credit": "Claude Monet",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Woman_with_a_Parasol_-_Madame_Monet_and_Her_Son_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "impression-soleil-levant-image",
+      "kind": "image",
+      "src": "art/images/impression-soleil-levant-image-960.webp",
+      "bytes": 67282,
+      "width": 960,
+      "height": 745,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/impression-soleil-levant-image-480.webp",
+          "bytes": 14314
+        },
+        {
+          "width": 960,
+          "src": "art/images/impression-soleil-levant-image-960.webp",
+          "bytes": 67282
+        },
+        {
+          "width": 1600,
+          "src": "art/images/impression-soleil-levant-image-1600.webp",
+          "bytes": 307326
+        }
+      ],
+      "credit": "Claude Monet",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg"
+    },
+    {
+      "id": "joconde-image",
+      "kind": "image",
+      "src": "art/images/joconde-image-960.webp",
+      "bytes": 339186,
+      "width": 960,
+      "height": 1431,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/joconde-image-480.webp",
+          "bytes": 50186
+        },
+        {
+          "width": 960,
+          "src": "art/images/joconde-image-960.webp",
+          "bytes": 339186
+        },
+        {
+          "width": 1600,
+          "src": "art/images/joconde-image-1600.webp",
+          "bytes": 1188508
+        }
+      ],
+      "credit": "Léonard de Vinci",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg"
+    },
+    {
+      "id": "joueurs-cartes-image",
+      "kind": "image",
+      "src": "art/images/joueurs-cartes-image-960.webp",
+      "bytes": 74194,
+      "width": 960,
+      "height": 764,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/joueurs-cartes-image-480.webp",
+          "bytes": 23688
+        },
+        {
+          "width": 960,
+          "src": "art/images/joueurs-cartes-image-960.webp",
+          "bytes": 74194
+        },
+        {
+          "width": 1600,
+          "src": "art/images/joueurs-cartes-image-1600.webp",
+          "bytes": 207170
+        }
+      ],
+      "credit": "The Metropolitan Museum of Art",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435868"
+    },
+    {
+      "id": "juan-gris-image",
+      "kind": "image",
+      "src": "art/images/juan-gris-image-960.webp",
+      "bytes": 261594,
+      "width": 960,
+      "height": 1380,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/juan-gris-image-480.webp",
+          "bytes": 50634
+        },
+        {
+          "width": 960,
+          "src": "art/images/juan-gris-image-960.webp",
+          "bytes": 261594
+        },
+        {
+          "width": 1600,
+          "src": "art/images/juan-gris-image-1600.webp",
+          "bytes": 818294
+        }
+      ],
+      "credit": "Amedeo Modigliani",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Juan_Gris_(1887%E2%80%931927)_MET_DT2533.jpg"
+    },
+    {
+      "id": "judith-holopherne-image",
+      "kind": "image",
+      "src": "art/images/judith-holopherne-image-960.webp",
+      "bytes": 68494,
+      "width": 960,
+      "height": 716,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/judith-holopherne-image-480.webp",
+          "bytes": 20614
+        },
+        {
+          "width": 960,
+          "src": "art/images/judith-holopherne-image-960.webp",
+          "bytes": 68494
+        },
+        {
+          "width": 1600,
+          "src": "art/images/judith-holopherne-image-1600.webp",
+          "bytes": 241240
+        }
+      ],
+      "credit": "Le Caravage",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caravaggio_-_Giuditta_e_Oloferne_(ca._1599).jpg"
+    },
+    {
+      "id": "lecon-anatomie-image",
+      "kind": "image",
+      "src": "art/images/lecon-anatomie-image-960.webp",
+      "bytes": 45908,
+      "width": 960,
+      "height": 723,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/lecon-anatomie-image-480.webp",
+          "bytes": 12750
+        },
+        {
+          "width": 960,
+          "src": "art/images/lecon-anatomie-image-960.webp",
+          "bytes": 45908
+        },
+        {
+          "width": 1600,
+          "src": "art/images/lecon-anatomie-image-1600.webp",
+          "bytes": 172500
+        }
+      ],
+      "credit": "Rembrandt",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_The_Anatomy_Lesson_of_Dr_Nicolaes_Tulp.jpg"
+    },
+    {
+      "id": "leonard-de-vinci-image",
+      "kind": "image",
+      "src": "art/images/leonard-de-vinci-image-960.webp",
+      "bytes": 264218,
+      "width": 960,
+      "height": 1375,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/leonard-de-vinci-image-480.webp",
+          "bytes": 65834
+        },
+        {
+          "width": 960,
+          "src": "art/images/leonard-de-vinci-image-960.webp",
+          "bytes": 264218
+        }
+      ],
+      "credit": "Attribué à Francesco Melzi",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Francesco_Melzi_-_Portrait_of_Leonardo.png"
+    },
+    {
+      "id": "madone-sixtine-image",
+      "kind": "image",
+      "src": "art/images/madone-sixtine-image-960.webp",
+      "bytes": 165242,
+      "width": 960,
+      "height": 1304,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/madone-sixtine-image-480.webp",
+          "bytes": 35354
+        },
+        {
+          "width": 960,
+          "src": "art/images/madone-sixtine-image-960.webp",
+          "bytes": 165242
+        },
+        {
+          "width": 1600,
+          "src": "art/images/madone-sixtine-image-1600.webp",
+          "bytes": 655306
+        }
+      ],
+      "credit": "Raphaël",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raphael_-_The_Sistine_Madonna_-_Google_Arts_%26_Culture.jpg"
+    },
+    {
+      "id": "monet-image",
+      "kind": "image",
+      "src": "art/images/monet-image-960.webp",
+      "bytes": 62934,
+      "width": 960,
+      "height": 1280,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/monet-image-480.webp",
+          "bytes": 22012
+        },
+        {
+          "width": 960,
+          "src": "art/images/monet-image-960.webp",
+          "bytes": 62934
+        },
+        {
+          "width": 1600,
+          "src": "art/images/monet-image-1600.webp",
+          "bytes": 124138
+        }
+      ],
+      "credit": "Nadar",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claude_Monet_1899_Nadar_crop.jpg"
+    },
+    {
+      "id": "musiciens-image",
+      "kind": "image",
+      "src": "art/images/musiciens-image-960.webp",
+      "bytes": 66190,
+      "width": 960,
+      "height": 745,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/musiciens-image-480.webp",
+          "bytes": 20326
+        },
+        {
+          "width": 960,
+          "src": "art/images/musiciens-image-960.webp",
+          "bytes": 66190
+        },
+        {
+          "width": 1600,
+          "src": "art/images/musiciens-image-1600.webp",
+          "bytes": 206576
+        }
+      ],
+      "credit": "The Metropolitan Museum of Art",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435844"
+    },
+    {
+      "id": "nuit-etoilee-image",
+      "kind": "image",
+      "src": "art/images/nuit-etoilee-image-960.webp",
+      "bytes": 227504,
+      "width": 960,
+      "height": 760,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/nuit-etoilee-image-480.webp",
+          "bytes": 53986
+        },
+        {
+          "width": 960,
+          "src": "art/images/nuit-etoilee-image-960.webp",
+          "bytes": 227504
+        },
+        {
+          "width": 1600,
+          "src": "art/images/nuit-etoilee-image-1600.webp",
+          "bytes": 693228
+        }
+      ],
+      "credit": "Vincent van Gogh",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "nympheas-image",
+      "kind": "image",
+      "src": "art/images/nympheas-image-960.webp",
+      "bytes": 142362,
+      "width": 960,
+      "height": 922,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/nympheas-image-480.webp",
+          "bytes": 35430
+        },
+        {
+          "width": 960,
+          "src": "art/images/nympheas-image-960.webp",
+          "bytes": 142362
+        },
+        {
+          "width": 1600,
+          "src": "art/images/nympheas-image-1600.webp",
+          "bytes": 367024
+        }
+      ],
+      "credit": "Art Institute of Chicago",
+      "license": "CC0",
+      "sourceUrl": "https://www.artic.edu/artworks/16568"
+    },
+    {
+      "id": "petit-dejeuner-image",
+      "kind": "image",
+      "src": "art/images/petit-dejeuner-image-960.webp",
+      "bytes": 182744,
+      "width": 960,
+      "height": 1203,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/petit-dejeuner-image-480.webp",
+          "bytes": 41360
+        },
+        {
+          "width": 960,
+          "src": "art/images/petit-dejeuner-image-960.webp",
+          "bytes": 182744
+        },
+        {
+          "width": 1600,
+          "src": "art/images/petit-dejeuner-image-1600.webp",
+          "bytes": 628354
+        }
+      ],
+      "credit": "Juan Gris",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Juan_Gris_-_The_Breakfast_(Le_Petit_D%C3%A9jeuner)_(1915).jpg"
+    },
+    {
+      "id": "portrait-picasso-image",
+      "kind": "image",
+      "src": "art/images/portrait-picasso-image-960.webp",
+      "bytes": 211918,
+      "width": 960,
+      "height": 1221,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/portrait-picasso-image-480.webp",
+          "bytes": 52556
+        },
+        {
+          "width": 960,
+          "src": "art/images/portrait-picasso-image-960.webp",
+          "bytes": 211918
+        },
+        {
+          "width": 1600,
+          "src": "art/images/portrait-picasso-image-1600.webp",
+          "bytes": 612502
+        }
+      ],
+      "credit": "Juan Gris",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Juan_Gris_-_Portrait_of_Pablo_Picasso_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "raphael-image",
+      "kind": "image",
+      "src": "art/images/raphael-image-960.webp",
+      "bytes": 99320,
+      "width": 960,
+      "height": 1309,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/raphael-image-480.webp",
+          "bytes": 15508
+        },
+        {
+          "width": 960,
+          "src": "art/images/raphael-image-960.webp",
+          "bytes": 99320
+        },
+        {
+          "width": 1600,
+          "src": "art/images/raphael-image-1600.webp",
+          "bytes": 446992
+        }
+      ],
+      "credit": "Raphaël",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raffaello_Sanzio.jpg"
+    },
+    {
+      "id": "rembrandt-image",
+      "kind": "image",
+      "src": "art/images/rembrandt-image-960.webp",
+      "bytes": 53296,
+      "width": 960,
+      "height": 1244,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/rembrandt-image-480.webp",
+          "bytes": 9692
+        },
+        {
+          "width": 960,
+          "src": "art/images/rembrandt-image-960.webp",
+          "bytes": 53296
+        },
+        {
+          "width": 1600,
+          "src": "art/images/rembrandt-image-1600.webp",
+          "bytes": 289908
+        }
+      ],
+      "credit": "Rembrandt",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "renoir-image",
+      "kind": "image",
+      "src": "art/images/renoir-image-480.webp",
+      "bytes": 16704,
+      "width": 480,
+      "height": 594,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/renoir-image-480.webp",
+          "bytes": 16704
+        }
+      ],
+      "credit": "Photographie anonyme, musée d'Orsay",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pierre_Auguste_Renoir,_uncropped_image.jpg"
+    },
+    {
+      "id": "ronde-de-nuit-image",
+      "kind": "image",
+      "src": "art/images/ronde-de-nuit-image-960.webp",
+      "bytes": 82980,
+      "width": 960,
+      "height": 781,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/ronde-de-nuit-image-480.webp",
+          "bytes": 23670
+        },
+        {
+          "width": 960,
+          "src": "art/images/ronde-de-nuit-image-960.webp",
+          "bytes": 82980
+        },
+        {
+          "width": 1600,
+          "src": "art/images/ronde-de-nuit-image-1600.webp",
+          "bytes": 258864
+        }
+      ],
+      "credit": "Rembrandt",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_ronda_de_noche,_por_Rembrandt_van_Rijn.jpg"
+    },
+    {
+      "id": "sainte-victoire-image",
+      "kind": "image",
+      "src": "art/images/sainte-victoire-image-960.webp",
+      "bytes": 189342,
+      "width": 960,
+      "height": 709,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/sainte-victoire-image-480.webp",
+          "bytes": 43054
+        },
+        {
+          "width": 960,
+          "src": "art/images/sainte-victoire-image-960.webp",
+          "bytes": 189342
+        },
+        {
+          "width": 1600,
+          "src": "art/images/sainte-victoire-image-1600.webp",
+          "bytes": 659736
+        }
+      ],
+      "credit": "Paul Cézanne",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont_Sainte-Victoire_with_Large_Pine,_by_Paul_C%C3%A9zanne.jpg"
+    },
+    {
+      "id": "terrasse-cafe-image",
+      "kind": "image",
+      "src": "art/images/terrasse-cafe-image-960.webp",
+      "bytes": 229716,
+      "width": 960,
+      "height": 1197,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/terrasse-cafe-image-480.webp",
+          "bytes": 57004
+        },
+        {
+          "width": 960,
+          "src": "art/images/terrasse-cafe-image-960.webp",
+          "bytes": 229716
+        },
+        {
+          "width": 1600,
+          "src": "art/images/terrasse-cafe-image-1600.webp",
+          "bytes": 692018
+        }
+      ],
+      "credit": "Vincent van Gogh",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Terrace_of_a_Caf%C3%A9_at_Night_(Place_du_Forum)_1888.jpg"
+    },
+    {
+      "id": "van-gogh-image",
+      "kind": "image",
+      "src": "art/images/van-gogh-image-960.webp",
+      "bytes": 243582,
+      "width": 960,
+      "height": 1224,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/van-gogh-image-480.webp",
+          "bytes": 66366
+        },
+        {
+          "width": 960,
+          "src": "art/images/van-gogh-image-960.webp",
+          "bytes": 243582
+        },
+        {
+          "width": 1600,
+          "src": "art/images/van-gogh-image-1600.webp",
+          "bytes": 572062
+        }
+      ],
+      "credit": "Art Institute of Chicago",
+      "license": "CC0",
+      "sourceUrl": "https://www.artic.edu/artworks/80607"
+    },
+    {
+      "id": "vierge-chardonneret-image",
+      "kind": "image",
+      "src": "art/images/vierge-chardonneret-image-960.webp",
+      "bytes": 151832,
+      "width": 960,
+      "height": 1342,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/vierge-chardonneret-image-480.webp",
+          "bytes": 37668
+        },
+        {
+          "width": 960,
+          "src": "art/images/vierge-chardonneret-image-960.webp",
+          "bytes": 151832
+        },
+        {
+          "width": 1600,
+          "src": "art/images/vierge-chardonneret-image-1600.webp",
+          "bytes": 447510
+        }
+      ],
+      "credit": "Raphaël",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Madonna_of_the_Goldfinch_(by_Raffaello_Sanzio)_%E2%80%93_Galleria_degli_Uffizi,_Florence.jpg"
+    },
+    {
+      "id": "vocation-saint-matthieu-image",
+      "kind": "image",
+      "src": "art/images/vocation-saint-matthieu-image-960.webp",
+      "bytes": 59820,
+      "width": 960,
+      "height": 907,
+      "variants": [
+        {
+          "width": 480,
+          "src": "art/images/vocation-saint-matthieu-image-480.webp",
+          "bytes": 14130
+        },
+        {
+          "width": 960,
+          "src": "art/images/vocation-saint-matthieu-image-960.webp",
+          "bytes": 59820
+        },
+        {
+          "width": 1600,
+          "src": "art/images/vocation-saint-matthieu-image-1600.webp",
+          "bytes": 317582
+        }
+      ],
+      "credit": "Gleb Simonov",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg"
+    }
+  ]
+}

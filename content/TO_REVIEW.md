@@ -71,3 +71,62 @@ de la description de chaque fichier (`credit` dans le manifeste, `imageCredit` d
       1930).
 - [ ] Portrait de Vivaldi : tableau anonyme photographié en 2012 par Paul Hermans ; Commons le
       donne pour « domaine public » (reproduction d'une œuvre en deux dimensions).
+
+## Parcours Peinture
+
+### Dates des tableaux
+
+- [ ] **La Cène** : 1495, saisi à la main (Wikidata : 1490) ; peinte vers 1495-1498.
+- [ ] **L'École d'Athènes** : 1509, début de la fresque (Wikidata : 1512) ; achevée en 1511.
+- [ ] **Les Musiciens** : 1597, date du Met (Wikidata : 1595).
+- [ ] **La Vocation de saint Matthieu** : 1600, saisi à la main ; Wikidata donne 1609, ce qui
+      paraît faux (commande de 1599, tableau installé en 1600).
+- [ ] **Les Joueurs de cartes** (Met) : 1890, début de la fourchette 1890-1892 du Met (Wikidata :
+      1891).
+- [ ] Dates approximatives reprises de Wikidata : La Joconde (1503, commencée), La Dame à
+      l'hermine (1490), La Vierge au chardonneret (1505), La Madone Sixtine (1512), Judith
+      décapitant Holopherne (1598), Le Déjeuner des canotiers (1880, achevé en 1881), La Corbeille
+      de pommes (1893).
+
+### Mouvements
+
+- [ ] Les bornes sont conventionnelles : Renaissance 1400-1600, baroque 1600-1750, impressionnisme
+      1860-1890, postimpressionnisme 1886-1905, cubisme 1907-1920.
+- [ ] **Rembrandt** est rangé dans le baroque (on parle aussi de Siècle d'or néerlandais).
+- [ ] **Cézanne** est rangé dans le postimpressionnisme, bien qu'il ait exposé avec les
+      impressionnistes en 1874 et 1877.
+- [ ] **Juan Gris** est le seul cubiste du parcours : Picasso (mort en 1973) et Braque (mort en
+      1963) ne sont pas dans le domaine public.
+
+### Affirmations des résumés
+
+- [ ] Dame à l'hermine : « l'un des rares portraits de femme de Léonard ».
+- [ ] La Cène : technique expérimentale, dégradation très précoce.
+- [ ] Madone Sixtine : peinte pour l'église San Sisto de Plaisance.
+- [ ] Les Musiciens : peint pour le cardinal Del Monte ; l'un des personnages serait un
+      autoportrait.
+- [ ] Leçon d'anatomie : « ce tableau a fait la réputation de Rembrandt à Amsterdam ».
+- [ ] Ronde de nuit : titre dû à un vernis assombri.
+- [ ] Aristote : peint pour un collectionneur de Messine (Antonio Ruffo).
+- [ ] Nymphéas : « quelque 250 toiles » consacrées au bassin de Giverny.
+- [ ] Les Deux Sœurs : terrasse au bord de la Seine, à Chatou.
+- [ ] Terrasse du café le soir : place du Forum, septembre 1888, peinte sur le motif.
+- [ ] La Chambre : trois versions ; celle de Chicago (1889) reprend la première, abîmée par une
+      inondation.
+- [ ] Les Joueurs de cartes : cinq toiles sur ce thème.
+- [ ] Corbeille de pommes : le lien avec le cubisme est une lecture courante, pas un fait.
+- [ ] Portrait de Pablo Picasso : exposé en 1912 à Paris (Salon des Indépendants).
+- [ ] La Bouteille d'anis : l'étiquette est-elle peinte ou collée ?
+
+### Images et licences
+
+- [ ] **Juan Gris** (mort en 1927) est dans le domaine public en Europe, mais le Met et l'Art
+      Institute of Chicago ne placent pas ses tableaux dans leur domaine public. Les trois images
+      viennent donc de Commons, qui les donne pour « domaine public ». Son portrait par Modigliani
+      vient du Met (CC0).
+- [ ] Six tableaux et deux portraits viennent des API des musées, sous CC0 : Met (Les Musiciens,
+      Aristote, Les Joueurs de cartes, autoportrait dessiné de Cézanne) et Art Institute of Chicago
+      (Nymphéas, Les Deux Sœurs, La Chambre, autoportrait de Van Gogh de 1887).
+- [ ] La Vocation de saint Matthieu : photographie de Gleb Simonov (CC0).
+- [ ] Portrait photographique de Renoir : anonyme, vers 1875 (musée d'Orsay), « domaine public »
+      sur Commons.
