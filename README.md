@@ -7,10 +7,10 @@ le contenu est statique, la progression reste sur l'appareil.
 Le cahier des charges complet est dans [`PLAN.md`](PLAN.md), les choix de conception dans
 [`DECISIONS.md`](DECISIONS.md).
 
-> **État : phase 4** — parcours « Musique classique », unité 1 « Les grands repères » (8 leçons,
-> 24 œuvres avec extraits) : sessions et répétition espacée, collection, statistiques, réglages,
-> sauvegarde de la progression et téléchargement hors ligne. Le parcours Peinture arrive en
-> phase 5.
+> **État : phase 5** — deux parcours : « Musique classique », unité 1 « Les grands repères »
+> (8 leçons, 24 œuvres avec extraits), et « Peinture occidentale », unité 1 « Grands mouvements
+> de la peinture » (9 leçons, 27 tableaux, de la Renaissance au cubisme). Sessions et répétition
+> espacée, collection, statistiques, réglages, sauvegarde et téléchargement hors ligne.
 
 ## Prérequis
 
@@ -78,8 +78,8 @@ public/
   interrogée ; 2 à 4 révisions dues sont intercalées.
 - **Révision** (« Réviser (N) » sur l'accueil, quand des cartes sont dues) : jusqu'à 15 cartes,
   les plus en retard d'abord.
-- Une **carte** est une œuvre × une compétence (reconnaître le compositeur à l'écoute, la
-  période, dater l'œuvre). Chaque carte est planifiée par [FSRS](https://github.com/open-spaced-repetition/ts-fsrs),
+- Une **carte** est une œuvre × une compétence : reconnaître le compositeur ou la période à
+  l'écoute, le peintre ou le mouvement d'un tableau, dater l'œuvre. Chaque carte est planifiée par [FSRS](https://github.com/open-spaced-repetition/ts-fsrs),
   au jour près : une erreur la fait revenir le lendemain, une bonne réponse quelques jours plus
   tard, une réponse très rapide encore plus tard. Une carte ratée revient une seconde fois en fin
   de session, sans nouvelle notation.
@@ -87,8 +87,7 @@ public/
   **association** (relier quatre extraits ou tableaux à leur compositeur, peintre, période ou
   mouvement ; quatre notions à leur définition) et **détail** (un gros plan du tableau seulement).
   Une carte nouvelle est toujours posée en QCM ; vrai / faux, association et détail viennent quand
-  elle est mieux connue. Au moins la moitié de chaque session fait écouter ou voir. Le QCM image et
-  le détail servent au parcours Peinture (phase 5).
+  elle est mieux connue. Au moins la moitié de chaque session fait écouter ou voir.
 - Quitter une session en cours n'enregistre rien. Une session terminée met à jour les cartes, le
   journal des réponses, la leçon, les XP et la série ; l'écran de fin montre les XP, la précision,
   l'objectif du jour et les œuvres ajoutées à la collection.
@@ -97,8 +96,10 @@ public/
 
 La barre du bas mène à quatre écrans :
 
-- **Accueil** : objectif du jour, série, prochaine leçon et révisions dues.
-- **Collection** : les œuvres rencontrées, filtrables par période ; chaque fiche permet de
+- **Accueil** : objectif du jour, série, choix du parcours (mémorisé), prochaine leçon et
+  révisions dues.
+- **Collection** : les œuvres rencontrées, filtrables par période (musique) ou par mouvement
+  (peinture) ; chaque fiche permet de
   réécouter (ou revoir) l'œuvre et montre son crédit et sa maîtrise compétence par compétence.
 - **Statistiques** : séries, XP des 30 derniers jours, cartes par niveau (en apprentissage, en
   consolidation, maîtrisées) et points faibles (ce qui est le plus souvent confondu).
@@ -185,10 +186,17 @@ Tout se passe dans `content/` ; `public/content/` et `public/media/` sont géné
      summary: >-
        Une à trois phrases factuelles, montrées après la réponse.
    ```
-   `createdBy`, l'année, les dates d'une personne et son portrait sont complétés par
-   `npm run content:ingest`. Une valeur écrite à la main n'est jamais écrasée : les désaccords avec
-   Wikidata sont listés dans `reports/ingest.md`.
-2. **Extrait audio** — l'ajouter dans `content/manifests/<parcours>-audio.yaml` (fichier Commons,
+   `createdBy`, l'année, les dates d'une personne et son portrait (et, pour un tableau, son image
+   Commons) sont complétés par `npm run content:ingest`. Une valeur écrite à la main n'est jamais
+   écrasée : les désaccords avec Wikidata sont listés dans `reports/ingest.md`.
+   - **Image d'un tableau** : par défaut, celle de Wikidata (P18). Pour une autre image de
+     Commons, écrire `image: File:…` ; pour l'image en accès libre d'un musée, écrire
+     `museumImage: aic:<numéro>` (Art Institute of Chicago) ou `museumImage: met:<numéro>`
+     (Metropolitan Museum of Art) — le numéro est celui de l'URL de l'œuvre sur leur site. Seules
+     les œuvres que le musée place dans le domaine public sont acceptées (CC0).
+   - **Crédit** : `imageCredit` remplace l'auteur donné par Commons quand il est inutilisable ou
+     en anglais.
+2. **Extrait audio** (musique) — l'ajouter dans `content/manifests/<parcours>-audio.yaml` (fichier Commons,
    début, durée de 15 à 25 s). Hors Commons, renseigner aussi `credit`, `license` et `sourceUrl`.
 3. **Leçon** — référencer les nouvelles entités dans `content/courses/<parcours>.yaml` (au moins
    3 par leçon).
@@ -211,7 +219,8 @@ sont gardés dans `.cache/` et ne sont pas retéléchargés. Pour s'identifier c
 ## Contenu et licences
 
 Seuls les médias du domaine public ou sous licence libre (CC0, CC BY, CC BY-SA) sont acceptés : le
-pipeline refuse tout autre fichier. Auteur, licence et source de chaque média sont conservés dans
+pipeline refuse tout autre fichier. Les images viennent de Wikimedia Commons ou des API en accès
+libre de l'Art Institute of Chicago et du Metropolitan Museum of Art (CC0). Auteur, licence et source de chaque média sont conservés dans
 `content/generated/media.json` et affichés dans l'app avec le média.
 
 Les points incertains (dates, attributions, licences d’enregistrements

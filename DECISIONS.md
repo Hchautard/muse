@@ -159,3 +159,33 @@ Choix de conception non couverts par `PLAN.md`, du plus ancien au plus récent.
 - **Écran de fin** : œuvres ajoutées à la collection et état de l'objectif du jour.
 - **Typographie** : le build du contenu met des espaces insécables dans les noms et résumés
   (« n° 3 », guillemets, `;` `:` `!` `?`).
+
+## Phase 5
+
+- **Unité Peinture** : cinq mouvements, neuf peintres (deux par mouvement, sauf le cubisme) et
+  trois tableaux chacun, en neuf leçons construites comme celles de la musique (un mouvement est
+  présenté avec son premier peintre). Les tableaux retenus sont parmi les plus connus de chaque
+  peintre (nombre de liens Wikipédia sur Wikidata), avec des genres variés.
+- **Cubisme** : Juan Gris seul, car Picasso (mort en 1973) et Braque (mort en 1963) ne sont pas
+  dans le domaine public.
+- **Images de musées** : `museumImage: aic:<id>` ou `met:<id>` dans une fiche. Seuls les objets
+  que le musée place dans le domaine public sont acceptés (sous CC0, crédit : le musée). L'Art
+  Institute of Chicago exige l'en-tête `AIC-User-Agent` ; la recherche historique du Met
+  (`/v1/search`) a été retirée le 1er octobre 2026, seule la fiche d'objet est utilisée. Six
+  tableaux et deux portraits en viennent, le reste vient de Commons (P18).
+- **Liens Wikidata par parcours** : une affirmation de Wikidata ne relie plus que des entités du
+  même parcours (sinon les œuvres de Ravel et Debussy rejoignaient l'« impressionnisme » de la
+  peinture).
+- **Crédits des tableaux** : le peintre, écrit en français ; pour une photographie sous licence
+  libre, le photographe. Deux photos sous CC BY-SA dont le photographe n'était pas identifiable ont
+  été remplacées par des reproductions du domaine public, et la photo de Cézanne (minuscule, de
+  source douteuse) par son autoportrait dessiné du Met.
+- **Ordre des parcours** : celui de `COURSE_IDS` (musique, puis peinture), quel que soit le nom des
+  fichiers.
+- **Parcours mémorisé** : le dernier parcours choisi sur l'accueil ou la collection est gardé dans
+  les réglages (donc dans les sauvegardes).
+- **Préchargement des images** : la taille que l'écran affichera (d'après `srcset`/`sizes`), plutôt
+  que toujours la variante 960 px.
+- **Test du contenu publié** : un test Vitest (`scripts/lib/published-content.test.ts`) joue chaque
+  leçon des parcours publiés avec le moteur, puis des révisions, et vérifie que tous les types
+  d'exercice y apparaissent.
