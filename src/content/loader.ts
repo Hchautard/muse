@@ -57,6 +57,13 @@ export const loadCourse = (courseId: CourseId): Promise<CourseIndex> =>
     return createCourseIndex(await fetchJson(entry.file, courseBundleSchema))
   })
 
+/** Every course, e.g. to name the entities of review logs from any course. */
+export const loadCourses = (): Promise<CourseIndex[]> =>
+  cached('courses', async () => {
+    const index = await loadContentIndex()
+    return Promise.all(index.courses.map((c) => loadCourse(c.id)))
+  })
+
 /** Forgets failed or stale loads, e.g. before a retry. */
 export function resetContentCache() {
   cache.clear()
