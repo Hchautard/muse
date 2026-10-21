@@ -59,6 +59,9 @@ export default defineConfig({
             options: {
               cacheName: 'muse-media',
               cacheableResponse: { statuses: [0, 200] },
+              // <audio> requests differ from fetch() in Accept-Encoding: ignore `Vary`, so that
+              // files downloaded for offline use are found.
+              matchOptions: { ignoreVary: true },
               // Safari requests audio with Range headers; serve partial content from the cache.
               rangeRequests: true,
             },
@@ -69,6 +72,7 @@ export default defineConfig({
             options: {
               cacheName: 'muse-content',
               cacheableResponse: { statuses: [0, 200] },
+              matchOptions: { ignoreVary: true },
             },
           },
         ],
