@@ -16,6 +16,11 @@ const contentRoute = new RegExp(`${origin}${escapeRegExp(base)}content/[^?#]+\\.
 
 export default defineConfig({
   base,
+  build: {
+    // One chunk (~180 kB gzipped) precached at install: splitting would not reduce what is
+    // downloaded, so the warning threshold is raised rather than the bundle split.
+    chunkSizeWarningLimit: 700,
+  },
   plugins: [
     react(),
     tailwindcss(),
