@@ -1,6 +1,7 @@
 import { use, useState } from 'react'
 import { Link } from 'react-router'
 import { AsyncBoundary } from '../../app/AsyncBoundary'
+import { useChosenCourse } from '../../app/useChosenCourse'
 import { loadContentIndex, loadCourse } from '../../content/loader'
 import { useCompletedLessons, useDueCount, useTodayStats } from '../../db/hooks'
 import { addDays, localDay } from '../../engine/calendar'
@@ -112,7 +113,7 @@ function DailyGoal({ week, stats }: DailyGoalProps) {
 
 function HomeContent() {
   const index = use(loadContentIndex())
-  const [courseId, setCourseId] = useState<CourseId | undefined>(index.courses[0]?.id)
+  const [courseId, setCourseId] = useChosenCourse(index.courses)
 
   return (
     <>

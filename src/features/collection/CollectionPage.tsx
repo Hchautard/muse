@@ -1,6 +1,7 @@
 import { use, useMemo, useState } from 'react'
 import { Link } from 'react-router'
 import { AsyncBoundary } from '../../app/AsyncBoundary'
+import { useChosenCourse } from '../../app/useChosenCourse'
 import type { CourseIndex } from '../../content/course-index'
 import { loadContentIndex, loadCourse, mediaUrl } from '../../content/loader'
 import { useCourseCards } from '../../db/hooks'
@@ -24,7 +25,7 @@ export function CollectionPage() {
 
 function CollectionContent() {
   const index = use(loadContentIndex())
-  const [courseId, setCourseId] = useState<CourseId | undefined>(index.courses[0]?.id)
+  const [courseId, setCourseId] = useChosenCourse(index.courses)
 
   return (
     <>
@@ -69,7 +70,7 @@ function CourseCollection({ courseId }: { courseId: CourseId }) {
       {groups.length > 1 && (
         <div
           role="group"
-          aria-label="Filtrer par période"
+          aria-label={`Filtrer par ${groups.some((g) => g.type === 'movement') ? 'mouvement' : 'période'}`}
           className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none]"
         >
           {[{ id: null, name: 'Tout' }, ...groups].map((group) => {
