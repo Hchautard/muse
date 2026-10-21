@@ -5,6 +5,7 @@ import { existsSync } from 'node:fs'
 import { readdir, rm } from 'node:fs/promises'
 import { join } from 'node:path'
 import {
+  COURSE_IDS,
   courseBundleSchema,
   RELATION_TYPES,
   type ContentIndex,
@@ -109,6 +110,8 @@ runScript(async () => {
     throw new ContentError(`${errors.length} erreur(s) dans le contenu :\n- ${errors.join('\n- ')}`)
 
   const index: ContentIndex = { schemaVersion: 1, courses: [] }
+  // Courses in the order of COURSE_IDS (music, then painting), whatever the file names.
+  bundles.sort((a, b) => COURSE_IDS.indexOf(a.id) - COURSE_IDS.indexOf(b.id))
   for (const bundle of bundles) {
     const file = `${bundle.id}.json`
     await writeJson(join(PATHS.publicContent, file), bundle)
