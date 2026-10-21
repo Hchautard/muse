@@ -19,3 +19,12 @@ export function addDays(day: string, days: number): string {
 export function startOfNextDay(date: Date): Date {
   return new Date(date.getFullYear(), date.getMonth(), date.getDate() + 1)
 }
+
+/** Whole days from one "YYYY-MM-DD" day to another (negative if `to` is earlier). */
+export function daysBetween(from: string, to: string): number {
+  const toUtc = (day: string) => {
+    const [year, month, date] = day.split('-').map(Number)
+    return Date.UTC(year ?? 0, (month ?? 1) - 1, date ?? 1)
+  }
+  return Math.round((toUtc(to) - toUtc(from)) / 86_400_000)
+}
