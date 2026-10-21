@@ -43,6 +43,16 @@ function sampleProgress(): ProgressData {
       { key: 'dailyGoal', value: 2 },
       { key: 'sound', value: false },
     ],
+    challenges: [
+      {
+        date: '2026-10-21',
+        courseId: 'music',
+        workId: 'bach-1',
+        optionIds: ['vivaldi-2', 'bach-1', 'mozart-1'],
+        focus: { x: 0.31, y: 0.62 },
+        guesses: ['vivaldi-2', 'bach-1'],
+      },
+    ],
   }
 }
 
@@ -61,8 +71,15 @@ describe('progress backup', () => {
 
   it('refuses a backup from a newer version', () => {
     const newer = JSON.parse(serializeBackup(sampleProgress(), at)) as Record<string, unknown>
-    newer.version = 2
+    newer.version = 3
     expect(() => parseBackup(JSON.stringify(newer))).toThrow('version plus récente')
+  })
+
+  it('reads a backup from before the daily challenge', () => {
+    const v1 = JSON.parse(serializeBackup(sampleProgress(), at)) as Record<string, unknown>
+    v1.version = 1
+    delete v1.challenges
+    expect(parseBackup(JSON.stringify(v1)).challenges).toEqual([])
   })
 
   it('refuses a damaged backup', () => {

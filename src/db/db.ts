@@ -1,6 +1,7 @@
 // The learner's progress, stored locally in IndexedDB.
 import { Dexie, type EntityTable } from 'dexie'
 import type { CardRecord } from '../engine/cards'
+import type { ChallengeRecord } from '../engine/challenge'
 import type { ReviewEntry } from '../engine/review'
 import type { DayStats } from '../engine/streak'
 import type { CourseId } from '../schemas/content'
@@ -30,6 +31,7 @@ export type MuseDb = Dexie & {
   lessons: EntityTable<LessonRecord, 'lessonId'>
   daily: EntityTable<DayStats, 'date'>
   settings: EntityTable<SettingRecord, 'key'>
+  challenges: EntityTable<ChallengeRecord, 'date'>
 }
 
 export const db = new Dexie('muse') as MuseDb
@@ -41,6 +43,8 @@ db.version(1).stores({
   daily: 'date',
   settings: 'key',
 })
+// Phase 6: the daily challenge, one row per day.
+db.version(2).stores({ challenges: 'date' })
 
 /** Asks the browser not to evict progress under storage pressure (no prompt on most browsers). */
 export async function requestPersistentStorage(): Promise<void> {

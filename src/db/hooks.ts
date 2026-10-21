@@ -1,6 +1,7 @@
 // Live views of the learner's progress for the screens.
 import type { CardRecord } from '../engine/cards'
 import type { CourseId } from '../schemas/content'
+import { challengeSummary } from './challenge'
 import {
   completedLessonIds,
   dueCount,
@@ -35,3 +36,7 @@ export const useStatsData = (since: string) =>
 
 /** The whole progress, kept ready so that sharing the file can happen right in the tap. */
 export const useProgressData = () => useLiveQuery(exportProgress, 'progress')
+
+/** Today's challenge (once drawn), whether it can be played, and the challenge streak. */
+export const useChallengeSummary = (today: string) =>
+  useLiveQuery(() => challengeSummary(today), `challenge:${today}`)

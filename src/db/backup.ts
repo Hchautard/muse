@@ -2,6 +2,7 @@
 // IndexedDB), so that a round trip can be tested exactly.
 import { z } from 'zod'
 import type { CardRecord } from '../engine/cards'
+import type { ChallengeRecord } from '../engine/challenge'
 import { EXERCISE_KINDS } from '../engine/exercises'
 import { Rating, State, type Grade } from '../engine/fsrs'
 import type { DayStats } from '../engine/streak'
@@ -9,7 +10,8 @@ import { courseIdSchema, idSchema, skillSchema } from '../schemas/content'
 import type { LessonRecord, ReviewLogRecord, SettingRecord } from './db'
 
 export const BACKUP_FORMAT = 'muse-progress'
-export const BACKUP_VERSION = 1
+/** Version 2 adds the daily challenges; version 1 files are still read. */
+export const BACKUP_VERSION = 2
 
 /** Every table of the database. */
 export interface ProgressData {
@@ -18,6 +20,7 @@ export interface ProgressData {
   lessons: LessonRecord[]
   daily: DayStats[]
   settings: SettingRecord[]
+  challenges: ChallengeRecord[]
 }
 
 export interface Backup extends ProgressData {
@@ -54,7 +57,7 @@ const mismatchSchema = z.object({ expectedId: idSchema, chosenId: idSchema })
 
 const backupSchema = z.object({
   format: z.literal(BACKUP_FORMAT),
-  version: z.literal(BACKUP_VERSION),
+  version: z.union([z.literal(1), z.literal(BACKUP_VERSION)]),
   exportedAt: date,
   cards: z.array(
     z.looseObject({
@@ -99,6 +102,18 @@ const backupSchema = z.object({
     }),
   ),
   settings: z.array(z.looseObject({ key: z.string().min(1), value: z.unknown() })),
+  challenges: z
+    .array(
+      z.looseObject({
+        date: day,
+        courseId: courseIdSchema,
+        workId: idSchema,
+        optionIds: z.array(idSchema),
+        focus: z.object({ x: z.number(), y: z.number() }),
+        guesses: z.array(idSchema),
+      }),
+    )
+    .default([]),
 })
 
 export function serializeBackup(data: ProgressData, exportedAt: Date): string {

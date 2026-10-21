@@ -103,7 +103,7 @@ export async function saveSession(session: FinishedSession): Promise<SessionSumm
   return summary
 }
 
-const progressTables = () => [db.cards, db.reviewLog, db.lessons, db.daily]
+const progressTables = () => [db.cards, db.reviewLog, db.lessons, db.daily, db.challenges]
 
 /** Every table, read in one transaction so that the copy is consistent. */
 export function exportProgress(): Promise<ProgressData> {
@@ -113,6 +113,7 @@ export function exportProgress(): Promise<ProgressData> {
     lessons: await db.lessons.toArray(),
     daily: await db.daily.toArray(),
     settings: await db.settings.toArray(),
+    challenges: await db.challenges.toArray(),
   }))
 }
 
@@ -125,10 +126,11 @@ export async function importProgress(data: ProgressData): Promise<void> {
     await db.lessons.bulkAdd(data.lessons)
     await db.daily.bulkAdd(data.daily)
     await db.settings.bulkAdd(data.settings)
+    await db.challenges.bulkAdd(data.challenges)
   })
 }
 
-/** Erases the progress (cards, history, lessons, days); settings are kept. */
+/** Erases the progress (cards, history, lessons, days, challenges); settings are kept. */
 export async function resetProgress(): Promise<void> {
   await db.transaction('rw', progressTables(), async () => {
     await Promise.all(progressTables().map((table) => table.clear()))
