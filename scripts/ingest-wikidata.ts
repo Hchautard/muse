@@ -9,19 +9,15 @@ import {
   stringifyYamlDocument,
   writeText,
 } from './lib/content-files'
-import { buildFactsQuery, parseFacts, planIngest, type KnownEntity } from './lib/wikidata'
+import { buildFactsQuery, knownEntities, parseFacts, planIngest } from './lib/wikidata'
 import { sparql } from './lib/wikimedia'
 
 const BATCH_SIZE = 50
 
 runScript(async () => {
   const files = await loadEntityFiles()
-  const known = new Map<string, KnownEntity>()
-  for (const { data } of files)
-    for (const entity of data.entities)
-      if (entity.wikidataId) known.set(entity.wikidataId, { id: entity.id, type: entity.type })
-
-  const qids = [...known.keys()]
+  const known = knownEntities(files)
+  const qids = [...new Set([...known.values()].flatMap((course) => [...course.keys()]))]
   console.log(`Wikidata : ${qids.length} entités à interroger…`)
   const rows = []
   for (let i = 0; i < qids.length; i += BATCH_SIZE)
@@ -41,7 +37,7 @@ runScript(async () => {
       if (!entity.wikidataId) lines.push('pas d’identifiant Wikidata')
       else if (!entityFacts) lines.push(`${entity.wikidataId} introuvable sur Wikidata`)
       else {
-        const plan = planIngest(entity, entityFacts, data.course, known)
+        const plan = planIngest(entity, entityFacts, data.course, known.get(data.course)!)
         for (const { path, value } of plan.set) {
           doc.setIn(['entities', index, ...path], value)
           lines.push(`complété : ${path.join('.')} = ${JSON.stringify(value)}`)

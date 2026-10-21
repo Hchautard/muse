@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import YAML from 'yaml'
 import { stringifyYamlDocument } from './content-files'
 import { parseTimecode } from './source-schemas'
-import { parseFacts, planIngest, type KnownEntity } from './wikidata'
+import { knownEntities, parseFacts, planIngest, type KnownEntity } from './wikidata'
 import type { SparqlRow } from './wikimedia'
 
 const WD = 'http://www.wikidata.org/entity/'
@@ -137,6 +137,24 @@ describe('planIngest', () => {
       known,
     )
     expect(plan.set.some((s) => s.path[0] === 'image')).toBe(false)
+  })
+})
+
+describe('knownEntities', () => {
+  it('keeps each course’s entities apart', () => {
+    const known = knownEntities([
+      {
+        data: { course: 'music', entities: [{ id: 'ravel', type: 'person', wikidataId: 'Q1178' }] },
+      },
+      {
+        data: {
+          course: 'art',
+          entities: [{ id: 'impressionnisme', type: 'movement', wikidataId: 'Q40415' }],
+        },
+      },
+    ])
+    expect(known.get('music')?.has('Q40415')).toBe(false)
+    expect(known.get('art')?.get('Q40415')).toEqual({ id: 'impressionnisme', type: 'movement' })
   })
 })
 

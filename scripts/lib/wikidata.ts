@@ -147,6 +147,23 @@ export interface KnownEntity {
   type: EntityType
 }
 
+/**
+ * Our entities by Wikidata id, course by course: a Wikidata statement only ever links entities of
+ * the same course (Ravel's « impressionnisme » is not the painting movement).
+ */
+export function knownEntities(
+  files: readonly { data: { course: CourseId; entities: EntitySource[] } }[],
+): Map<CourseId, Map<string, KnownEntity>> {
+  const byCourse = new Map<CourseId, Map<string, KnownEntity>>()
+  for (const { data } of files) {
+    const known = byCourse.get(data.course) ?? new Map<string, KnownEntity>()
+    for (const entity of data.entities)
+      if (entity.wikidataId) known.set(entity.wikidataId, { id: entity.id, type: entity.type })
+    byCourse.set(data.course, known)
+  }
+  return byCourse
+}
+
 export interface IngestPlan {
   /** Fields to set on the entity, keyed by YAML path relative to the entity. */
   set: { path: string[]; value: unknown }[]
