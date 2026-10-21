@@ -206,3 +206,14 @@ Choix de conception non couverts par `PLAN.md`, du plus ancien au plus récent.
   téléphone, sinon copié dans le presse-papiers.
 - **Données** : table `challenges` (version 2 de la base), incluse dans les sauvegardes (format 2 ;
   les fichiers au format 1 restent lisibles) et effacée par la réinitialisation.
+- **Unités 2** : une par parcours, sur le modèle des unités 1 (huit créateurs, trois œuvres
+  chacun). Musique : deux compositeurs par période (Rameau et Haendel, Gluck et Haydn, Schubert et
+  Dvořák, Satie et Holst), pour que « de quelle période ? » ne soit jamais devinable d'avance.
+  Peinture : du romantisme à l'art abstrait (Delacroix, Turner, Courbet, Millet, Seurat, Klimt,
+  Munch, Kandinsky). Les leçons des unités 2 s'ouvrent une fois celles de l'unité 1 terminées.
+- **Choix des compositeurs selon les enregistrements libres** : Purcell, envisagé pour le baroque,
+  n'a presque aucun enregistrement libre exploitable sur Commons ; Rameau le remplace (pièces de
+  clavecin jouées au piano par Marcelle Meyer). Pour Holst, les versions libres sont celles des
+  orchestres militaires américains (domaine public).
+- **Pas de nus explicites** dans le choix des tableaux (L'Origine du monde, La Femme au perroquet
+  écartés).

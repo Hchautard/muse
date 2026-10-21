@@ -7,10 +7,11 @@ le contenu est statique, la progression reste sur l'appareil.
 Le cahier des charges complet est dans [`PLAN.md`](PLAN.md), les choix de conception dans
 [`DECISIONS.md`](DECISIONS.md).
 
-> **État : phase 5** — deux parcours : « Musique classique », unité 1 « Les grands repères »
-> (8 leçons, 24 œuvres avec extraits), et « Peinture occidentale », unité 1 « Grands mouvements
-> de la peinture » (9 leçons, 27 tableaux, de la Renaissance au cubisme). Sessions et répétition
-> espacée, collection, statistiques, réglages, sauvegarde et téléchargement hors ligne.
+> **État : phase 6** — deux parcours de deux unités chacun. « Musique classique » : « Les grands
+> repères » puis « Élargir le répertoire » (16 leçons, 48 œuvres avec extraits). « Peinture
+> occidentale » : « Grands mouvements de la peinture » puis « Du romantisme à l'abstraction »
+> (17 leçons, 51 tableaux). Sessions et répétition espacée, défi du jour, collection,
+> statistiques, réglages, sauvegarde et téléchargement hors ligne.
 
 ## Prérequis
 
