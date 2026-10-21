@@ -113,3 +113,49 @@ Choix de conception non couverts par `PLAN.md`, du plus ancien au plus récent.
   seuil d'avertissement de Vite est relevé à 700 Ko plutôt que de découper le code.
 - **Règles de compétences partagées** : `src/engine/skills.ts` sert au moteur et à la validation
   du contenu.
+
+## Phase 4
+
+- **Association** : l'œuvre y est représentée par son extrait ou son tableau (pas par son titre),
+  pour rester sur la reconnaissance. Quatre paires ; les trois autres œuvres sont choisies à
+  travers leurs réponses (compositeurs, périodes… plus proches à mesure que la carte est connue),
+  parmi les œuvres déjà rencontrées de préférence. Elle apparaît à partir d'une maîtrise de 0,5
+  (20 % des questions audio, 15 % des questions image) et ne note que la carte visée.
+- **Association réussie = sans aucune erreur** (comme la chronologie) : on recommence jusqu'à
+  trouver toutes les paires, mais une seule erreur vaut « Again ». Chaque mauvaise paire est
+  journalisée (`mismatches`) pour les points faibles.
+- **`concept-definition`** : son seul exercice est l'association notion ↔ définition. La définition
+  est la première phrase du `summary`, où le nom de la notion est masqué. Il faut au moins
+  4 concepts dans le parcours ; le contenu actuel n'en a pas encore.
+- **Détail** : gros plan ×2,5 dont le centre est tiré au hasard dans la partie centrale du
+  tableau (25 à 75 % de la largeur et de la hauteur), puis dézoom sur le tableau entier après la
+  réponse. Réservé aux cartes à maîtrise ≥ 0,5 ; « Easy » sous 6 s. Des points d'intérêt choisis à
+  la main pourront être ajoutés au contenu en phase 5 si le hasard tombe trop souvent à côté.
+- **Navigation** : barre d'onglets en bas (Accueil, Collection, Statistiques, Réglages), masquée
+  pendant les sessions.
+- **Collection** : les œuvres qui ont au moins une carte. Maîtrise d'une œuvre = moyenne de ses
+  cartes, sur quatre crans (découverte < 0,25, en cours < 0,6, solide < 1, maîtrisée). Filtre par
+  période (ou par mouvement pour une œuvre sans période).
+- **Cartes par état** : par stabilité FSRS (en apprentissage < 7 jours, en consolidation
+  < 21 jours, maîtrisées au-delà), les états FSRS étant tous « Review » sans pas d'apprentissage.
+- **Points faibles** : paires d'entités confondues dans un sens ou dans l'autre (mauvais choix d'un
+  QCM, d'un détail ou d'un vrai / faux, mauvaises paires d'association), sur les 60 derniers jours,
+  les 5 plus fréquentes.
+- **Objectif du jour** : 1, 2, 3 ou 5 sessions. Un changement vaut pour la journée en cours ; les
+  jours passés gardent leur objectif.
+- **Effets sonores** : synthétisés avec Web Audio (aucun fichier), activés par défaut. Avec la
+  session audio « playback », ils s'entendent aussi en mode silencieux ; ils se coupent dans les
+  Réglages.
+- **Téléchargement hors ligne** : écrit directement dans les caches du service worker
+  (`muse-media`, `muse-content`), trois fichiers à la fois, toutes les tailles d'image (c'est le
+  navigateur qui choisit la variante affichée). Les routes ignorent l'en-tête `Vary`, sinon les
+  requêtes de l'élément `<audio>` ne retrouvent pas les fichiers téléchargés. « Libérer l'espace »
+  retire tous les médias du parcours, y compris ceux de versions précédentes du contenu.
+- **Sauvegarde** : un fichier JSON (`format: "muse-progress"`, `version: 1`, dates en ISO) qui
+  contient toutes les tables. L'import le valide avec zod sans écarter de champ, puis remplace tout
+  (réglages compris) en une transaction ; la réinitialisation garde les réglages. Sur iPhone,
+  l'export passe par la feuille de partage (le fichier est préparé à l'avance, car le partage doit
+  partir du toucher) ; sur ordinateur, c'est un téléchargement.
+- **Écran de fin** : œuvres ajoutées à la collection et état de l'objectif du jour.
+- **Typographie** : le build du contenu met des espaces insécables dans les noms et résumés
+  (« n° 3 », guillemets, `;` `:` `!` `?`).
