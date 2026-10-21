@@ -92,6 +92,15 @@ public/
   journal des réponses, la leçon, les XP et la série ; l'écran de fin montre les XP, la précision,
   l'objectif du jour et les œuvres ajoutées à la collection.
 
+## Défi du jour
+
+Chaque jour, une œuvre déjà rencontrée devient **œuvre mystère** (carte « Défi du jour » de
+l'accueil). Il faut la retrouver parmi six titres, en quatre essais au plus : chaque erreur révèle
+un indice (période ou mouvement, décennie, compositeur ou peintre) et, pour un tableau, élargit le
+gros plan jusqu'à l'œuvre entière. Trouver rapporte de 20 à 5 XP selon l'essai, sans compter comme
+une session ni toucher aux révisions. Une série de défis réussis est tenue à part, et le résultat
+peut se partager sans dévoiler l'œuvre.
+
 ## Collection, statistiques, réglages
 
 La barre du bas mène à quatre écrans :
@@ -125,7 +134,7 @@ conserver durablement (`navigator.storage.persist()`).
   Sur iPhone, la feuille de partage s'ouvre : choisir « Enregistrer dans Fichiers » (ou s'envoyer
   le fichier).
 - **Importer** relit ce fichier et remplace, après confirmation, toute la progression de
-  l'appareil (cartes, historique, leçons, jours, réglages) : c'est ainsi qu'on la restaure ou
+  l'appareil (cartes, historique, leçons, jours, défis, réglages) : c'est ainsi qu'on la restaure ou
   qu'on la transfère sur un autre appareil.
 - **Réinitialiser** efface la progression (pas les réglages), après confirmation.
 

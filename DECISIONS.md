@@ -189,3 +189,20 @@ Choix de conception non couverts par `PLAN.md`, du plus ancien au plus récent.
 - **Test du contenu publié** : un test Vitest (`scripts/lib/published-content.test.ts`) joue chaque
   leçon des parcours publiés avec le moteur, puis des révisions, et vérifie que tous les types
   d'exercice y apparaissent.
+
+## Phase 6
+
+- **Défi du jour** : une œuvre qui a au moins une carte, tirée chaque jour avec la date pour graine,
+  sans reprendre une œuvre des 30 derniers défis tant qu'il en reste. Il est tiré et enregistré à
+  la première ouverture du jour : terminer une leçon ensuite ne le change plus.
+- **Six titres, quatre essais** : les titres proposés suivent les règles des distracteurs (même
+  parcours, années différentes, assez proches : maîtrise fictive de 0,6). Chaque erreur révèle un
+  indice : période ou mouvement, décennie, puis créateur ; pour un tableau, le gros plan passe de
+  ×4 à ×2, puis à l'œuvre entière.
+- **XP du défi** : 20, 15, 10 ou 5 selon l'essai, ajoutés à la journée sans compter de session
+  (l'objectif du jour reste fait de sessions). Le défi ne touche pas aux cartes FSRS. Sa série est
+  distincte de celle de l'objectif.
+- **Partage** : un texte sans le nom de l'œuvre (un carré par essai), par la feuille de partage sur
+  téléphone, sinon copié dans le presse-papiers.
+- **Données** : table `challenges` (version 2 de la base), incluse dans les sauvegardes (format 2 ;
+  les fichiers au format 1 restent lisibles) et effacée par la réinitialisation.
