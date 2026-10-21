@@ -103,7 +103,8 @@ function EntityRow({ course, entity, playing, onToggle }: EntityRowProps) {
         <img
           src={mediaUrl(thumb.src)}
           alt=""
-          className="size-11 shrink-0 rounded-full bg-line object-cover object-top"
+          data-shape={entity.type === 'work' ? 'artwork' : 'portrait'}
+          className="size-11 shrink-0 rounded-full bg-line object-cover object-top data-[shape=artwork]:rounded-md data-[shape=artwork]:object-center"
         />
       ) : (
         <span

@@ -3,6 +3,7 @@ import { largestSrc } from '../../content/course-index'
 import { mediaUrl } from '../../content/loader'
 import type { MediaAsset } from '../../schemas/content'
 import { ExpandIcon } from '../../ui/icons'
+import { ARTWORK_SIZES } from '../../ui/images'
 import { ImageLightbox } from './ImageLightbox'
 
 interface ZoomableImageProps {
@@ -31,7 +32,7 @@ export function ZoomableImage({ image, alt, compact = false }: ZoomableImageProp
           <img
             src={mediaUrl(image.src)}
             srcSet={srcSet || undefined}
-            sizes="(max-width: 36rem) 90vw, 32rem"
+            sizes={ARTWORK_SIZES}
             width={image.width}
             height={image.height}
             alt={alt}

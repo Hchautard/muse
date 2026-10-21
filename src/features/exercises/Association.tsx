@@ -99,7 +99,7 @@ export function Association({ exercise, content, onAnswer }: ExerciseProps<Assoc
     item(
       'right',
       id,
-      'flex min-h-14 items-center justify-between gap-2 px-3.5 py-2 leading-snug font-medium data-[state=matched]:opacity-60',
+      'flex min-h-14 items-center justify-between gap-2 px-3.5 py-2 leading-snug font-medium hyphens-auto data-[state=matched]:opacity-60',
       <>
         {content.entity(id)?.name}
         {isMatched('right', id) && <CheckIcon className="size-4 shrink-0 text-success" />}

@@ -20,6 +20,7 @@ import {
 import type { SessionMode } from '../../engine/session'
 import type { CourseId } from '../../schemas/content'
 import { preloadMedia } from '../../ui/audio'
+import { artworkSrc } from '../../ui/images'
 import { BottomSheet } from '../../ui/BottomSheet'
 import { CloseIcon } from '../../ui/icons'
 import { playSound } from '../../ui/sounds'
@@ -90,10 +91,15 @@ export function SessionRunner({
       for (const id of exerciseMediaIds(next, content)) {
         const media = content.asset(id)
         if (!media) continue
+        // Excerpts as they are; images in the size the exercise will show.
         const src =
-          next.kind === 'detail'
-            ? largestSrc(media)
-            : (media.variants?.find((v) => v.width >= 960)?.src ?? media.src)
+          media.kind === 'audio'
+            ? media.src
+            : next.kind === 'detail'
+              ? largestSrc(media)
+              : next.kind === 'association'
+                ? (media.variants?.[0] ?? media).src
+                : artworkSrc(media)
         preloadMedia(mediaUrl(src))
       }
     }
